@@ -1,0 +1,1778 @@
+[
+  {
+    "id": "1",
+    "date": "2001-11-11",
+    "date_precision": "day",
+    "type": "milestone",
+    "importance": "major",
+    "title": "結成",
+    "description": "東海大学付属浦安高等学校の文化祭で初ライブ。小出祐介・関根史織・堀之内大介・湯浅将平の4人で活動を開始。当初はSUPERCARのコピーバンドとしてスタートしたという。この日を結成日としている。バンド名は、小出が好きだった楽曲(CHOCOLAT「Baseball and Elvis Presley」)から「Base Ball」を提案したが他メンバーに反対され、単語を書き出して組み合わせた結果「見た目・語感が良い」という理由で「Base Ball Bear」に決定。特に深い意味は無く、メンバーは野球やクマに特別思い入れがあるわけではないという。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "external_links": [
+      { "label": "バンド名の由来(タネタン)", "url": "https://moto-neta.com/japanese-music-band/base-ball-bear/" }
+    ]
+  },
+  {
+    "id": "62",
+    "date": "2002-07-01",
+    "date_precision": "year",
+    "type": "milestone",
+    "importance": "major",
+    "title": "デモテープが東芝EMIの目に留まる",
+    "description": "小出祐介と堀之内大介がデモテープをユニバーサルミュージックの新人発掘育成セクション「GREAT HUNTING」に送付。担当ディレクターの加茂啓太郎氏の目に留まり、約1週間後に溜池山王の東芝EMI(現ユニバーサルミュージック)に呼ばれた。これがのちのメジャーデビューにつながる出会いとなった。",
+    "source_url": "https://ticketjam.jp/magazine/music/japan-rock/18877",
+    "source_label": "TicketJam「Base Ball Bear こだわりのギターロックを鳴らす3人組の経歴やオススメ曲は…？」",
+    "date_confidence": "estimated"
+  },
+  {
+    "id": "63",
+    "date": "2003-11-26",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "インディーズデビュー、1stミニアルバム『夕方ジェネレーション』",
+    "description": "インディーズ時代唯一のミニアルバム。本来収録予定だった「YUME is VISION」は、堀之内がアルバイト先で足を怪我しバスドラム連打ができなくなったため見送られ、代わりに「微熱ボーイ」「SUNSET-KI・RE・I」を収録。「YUME is VISION」は翌年シングルとして発売された。",
+    "source_url": "https://ja.wikipedia.org/wiki/%E5%A4%95%E6%96%B9%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3",
+    "source_label": "Wikipedia「夕方ジェネレーション」"
+  },
+  {
+    "id": "64",
+    "date": "2004-07-07",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "インディーズ1stシングル『YUME is VISION』",
+    "description": "インディーズ時代唯一のシングル。前作『夕方ジェネレーション』に収録予定だったが、メンバーの怪我により見送られていた楽曲。",
+    "source_url": "https://ja.wikipedia.org/wiki/YUME_is_VISION",
+    "source_label": "Wikipedia「YUME is VISION」"
+  },
+  {
+    "id": "2",
+    "date": "2005-03-16",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "インディーズ1stフルアルバム『HIGH COLOR TIMES』",
+    "description": "インディーズ時代の1stフルアルバム。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "3",
+    "date": "2006-04-12",
+    "date_precision": "day",
+    "type": "milestone",
+    "importance": "major",
+    "title": "メジャーデビュー『GIRL FRIEND』",
+    "description": "東芝EMI(Capitol Music)より1stミニ・アルバム『GIRL FRIEND』でメジャーデビュー。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "embed": { "provider": "spotify", "kind": "track", "id": "6h0Dyd4lX9tHc5OVljLDk9" }
+  },
+  {
+    "id": "31",
+    "date": "2006-06-21",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『ELECTRIC SUMMER』",
+    "description": "テレビ東京『JAPAN COUNTDOWN』オープニングテーマ。オリコン最高41位。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "embed": { "provider": "spotify", "kind": "track", "id": "2cwrPiaCGuclHSiD1Vm7LA" }
+  },
+  {
+    "id": "32",
+    "date": "2006-10-04",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『STAND BY ME』",
+    "description": "TBS系『COUNT DOWN TV』エンディングテーマ、グリコ「ポッキー」CMソング。オリコン最高26位。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "4",
+    "date": "2006-11-29",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "1stアルバム『C』",
+    "description": "メジャーデビュー後初のフルアルバム。オリコン最高28位。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "embed": { "provider": "spotify", "kind": "album", "id": "3zLkEsKaHsGCgQaboHa5nI" }
+  },
+  {
+    "id": "33",
+    "date": "2007-04-04",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『抱きしめたい』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "34",
+    "date": "2007-05-16",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『ドラマチック』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "35",
+    "date": "2007-07-18",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『真夏の条件』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "36",
+    "date": "2007-10-31",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『愛してる』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "5",
+    "date": "2007-12-05",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "2ndアルバム『十七歳』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "embed": { "provider": "spotify", "kind": "album", "id": "3gQ1H54c3VDulpTPBPs4qe" }
+  },
+  {
+    "id": "37",
+    "date": "2008-05-08",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『changes』",
+    "description": "フジテレビ系アニメ『図書館戦争』エンディングテーマ。『ミュージックステーション』初出演曲でもある。オリコン初のTOP10入り(週間10位)を記録。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "embed": { "provider": "spotify", "kind": "track", "id": "4snesvUGCDwclrEsZpqWZ5" }
+  },
+  {
+    "id": "38",
+    "date": "2008-08-20",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "デジタルシングル『SCHOOL GIRL FANTASY』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "39",
+    "date": "2009-01-07",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『LOVE MATHEMATICS』+ インディーズ・ベスト『完全版「バンドBについて」』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "40",
+    "date": "2009-04-15",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『神々 LOOKS YOU』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "41",
+    "date": "2009-05-16",
+    "date_precision": "day",
+    "type": "milestone",
+    "importance": "minor",
+    "title": "『ミュージックステーション』初出演",
+    "description": "「changes」を披露。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "42",
+    "date": "2009-06-24",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『BREEEEZE GIRL』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "43",
+    "date": "2009-06-27",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "major",
+    "title": "日比谷ノンフィクション 初開催",
+    "description": "日比谷野外大音楽堂で行う恒例ワンマンライブシリーズの第1回。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "44",
+    "date": "2009-08-05",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『Stairway Generation』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "embed": { "provider": "spotify", "kind": "track", "id": "1t88nzq79MbDAkDSOA8YwM" }
+  },
+  {
+    "id": "6",
+    "date": "2009-09-02",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "3rdアルバム『(WHAT IS THE) LOVE & POP?』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "embed": { "provider": "spotify", "kind": "album", "id": "0GbRVemAvBPHXubsJGIWBL" }
+  },
+  {
+    "id": "7",
+    "date": "2010-01-03",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "major",
+    "title": "初の日本武道館公演",
+    "description": "『LIVE;(THIS IS THE) Base Ball Bear.』。バンドにとって初の日本武道館単独公演。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "30",
+    "date": "2010-09-29",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "3.5thアルバム『CYPRESS GIRLS』",
+    "description": "初のセルフプロデュース・コンセプトアルバム。同日発売の『DETECTIVE BOYS』と対をなす作品。小出祐介いわく「これまでの音源では説明できなかった部分」を見せるための2作。チャットモンチーのAcco、サカナクションの山口一郎、iLL、Ryohuら豪華ゲストが参加。",
+    "source_url": "https://ja.wikipedia.org/wiki/CYPRESS_GIRLS",
+    "source_label": "Wikipedia「CYPRESS GIRLS」"
+  },
+  {
+    "id": "61",
+    "date": "2010-09-29",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "3.5thアルバム『DETECTIVE BOYS』",
+    "description": "初のセルフプロデュース・コンセプトアルバム。同日発売の『CYPRESS GIRLS』と対をなす作品。小出祐介いわく「これまでの音源では説明できなかった部分」を見せるための2作。チャットモンチーのAcco、サカナクションの山口一郎、iLL、Ryohuら豪華ゲストが参加。",
+    "source_url": "https://ja.wikipedia.org/wiki/DETECTIVE_BOYS",
+    "source_label": "Wikipedia「DETECTIVE BOYS」"
+  },
+  {
+    "id": "45",
+    "date": "2011-06-29",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『yoakemae』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "46",
+    "date": "2011-08-31",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『short hair』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "47",
+    "date": "2011-10-05",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『Tabibito In The Dark/スローモーションをもう一度 part.2』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "8",
+    "date": "2011-11-09",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "4thアルバム『新呼吸』",
+    "description": "結成10周年記念作。東日本大震災(2011年3月)の影響を大きく受けた作品。「日常に戻ろう」という報道に違和感を覚えた小出祐介が「そもそも“元の日常”は無いのでは」と気づき、「日常は常に新しく始まり続けるもの」という考えに至ったことがタイトルの由来。朝から次の朝までの1日の流れをコンセプトに構成されている。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "embed": { "provider": "spotify", "kind": "album", "id": "2lrLID9WWpPEriUQBo8EN2" }
+  },
+  {
+    "id": "75",
+    "date": "2011-04-01",
+    "date_precision": "month",
+    "type": "live",
+    "importance": "minor",
+    "title": "『10th Anniversary SAYONARA-NOSTALGIA TOUR』(震災による振替あり、SHIBUYA-AX 2DAYS でファイナル)",
+    "description": "結成10周年記念の全国ツアー。3月に予定していた下北沢GARAGE・水戸・千葉・宇都宮・高崎の5公演が東日本大震災(3/11)の影響で延期となったが中止なし、5〜7月に全公演振替開催。ファイナルは2011/6/29〜6/30のSHIBUYA-AX 2DAYS。元のチケットは振替公演でそのまま有効。",
+    "source_url": "https://rockinon.com/news/detail/51277",
+    "source_label": "rockinon.com「Base Ball Bear、10周年記念ツアー振替公演チケット特別販売」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "9",
+    "date": "2012-01-03",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "major",
+    "title": "2度目の日本武道館公演",
+    "description": "『10th Anniversary tour (This Is The) Base Ball Bear part.2「Live新呼吸」』。結成10周年・メジャーデビュー5周年のタイミングでの武道館公演。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "74",
+    "date": "2012-07-11",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『初恋』",
+    "description": "映画『図書館戦争 革命のつばさ』主題歌。図書館戦争シリーズとのタイアップは、2008年のTVアニメ版エンディングテーマ「changes」に続き2度目。",
+    "source_url": "https://tower.jp/article/news/2012/03/09/n12",
+    "source_label": "TOWER RECORDS ONLINE「Base Ball Bear、新曲“初恋”が映画「図書館戦争 革命のつばさ」主題歌に」"
+  },
+  {
+    "id": "10",
+    "date": "2013-02-13",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "1stベストアルバム『バンドBのベスト』+ シングル『PERFECT BLUE』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "embed": { "provider": "spotify", "kind": "album", "id": "5eqqCcvQn0JDJh9htf4HRg" }
+  },
+  {
+    "id": "48",
+    "date": "2013-06-15",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "日比谷ノンフィクションIII",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "49",
+    "date": "2013-06-26",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "3rdミニアルバム『THE CUT』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "50",
+    "date": "2013-11-27",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『ファンファーレがきこえる/senkou_hanabi』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "11",
+    "date": "2014-06-04",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "5thアルバム『二十九歳』",
+    "description": "オリコンチャート最高8位。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "embed": { "provider": "spotify", "kind": "album", "id": "04NEAJ7CisGuCL3BblWzZk" }
+  },
+  {
+    "id": "51",
+    "date": "2015-08-05",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『「それって、for 誰?」part.1』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "52",
+    "date": "2015-09-02",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『文化祭の夜』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "53",
+    "date": "2015-10-07",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "シングル『不思議な夜』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "12",
+    "date": "2015-11-11",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "6thアルバム『C2』",
+    "description": "結成日と同じ11月11日にリリース。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "embed": { "provider": "spotify", "kind": "album", "id": "6lsS8OW6PHJD8sYydYMWSG" }
+  },
+  {
+    "id": "13",
+    "date": "2016-03-02",
+    "date_precision": "day",
+    "type": "milestone",
+    "importance": "major",
+    "title": "湯浅将平が脱退",
+    "description": "2016年2月中旬、スタジオ入り予定日に現れず音信不通に。バンド・スタッフが数日間さまざまな方法で連絡を試みたが繋がらず、第三者を通じて活動継続が困難と判明し、3月2日に脱退が発表された。関係者も納得できないまま公表に至ったという。3月5日からのツアーには元DOPING PANDAの古川ユタカがサポートギタリストとして参加、以後も複数のサポートギタリストを迎えながら活動を継続。",
+    "source_url": "https://www.oricon.co.jp/news/2067802/",
+    "source_label": "ORICON NEWS「Base Ball Bearギター湯浅将平が脱退 2月中旬から直接連絡つかず」"
+  },
+  {
+    "id": "54",
+    "date": "2016-04-30",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "日比谷ノンフィクションV",
+    "description": "湯浅将平脱退後、初の日比谷ノンフィクション。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "14",
+    "date": "2017-04-12",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "7thアルバム『光源』",
+    "description": "湯浅将平脱退後、3人体制となって以来初のアルバム。オリコン最高7位。湯浅の突然の脱退は「重い転換点」だったと語られる一方、制作自体は「かなり健全」だったという。プリプロ〜本チャンを何度も繰り返して楽曲を練り上げ、ベースの関根史織は3人編成で成立するサウンド・リズムアレンジをこれまで以上に意識したと語っている。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "embed": { "provider": "spotify", "kind": "album", "id": "0wFXrlvrWHG2L5MnOMu3G3" }
+  },
+  {
+    "id": "15",
+    "date": "2017-09-23",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "サポートギタリストなし、初の3人編成でライブ",
+    "description": "中津川 THE SOLAR BUDOKAN 2017に出演。湯浅脱退後、初めてサポートギタリストを入れない3人編成でのライブとなった。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "55",
+    "date": "2017-09-30",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "日比谷ノンフィクションVI",
+    "description": "日比谷野外大音楽堂(東京)。ゲスト: 福岡晃子(元チャットモンチー)、呂布カルマほか。光源ツアー中盤に組み込まれた野音公演。",
+    "source_url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%AF%94%E8%B0%B7%E3%83%8E%E3%83%B3%E3%83%95%E3%82%A3%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3",
+    "source_label": "Wikipedia「日比谷ノンフィクション」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "16",
+    "date": "2018-03-01",
+    "date_precision": "month",
+    "type": "milestone",
+    "importance": "major",
+    "title": "3人体制へ移行",
+    "description": "サポートギタリストを迎える体制を終え、小出祐介・関根史織・堀之内大介の3人体制に。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "date_confidence": "estimated"
+  },
+  {
+    "id": "56",
+    "date": "2018-10-21",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "日比谷ノンフィクションVII",
+    "description": "日比谷野外大音楽堂(東京)。ゲスト: ペトロールズ、RHYMESTER。3人体制になって2回目の野音公演。",
+    "source_url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%AF%94%E8%B0%B7%E3%83%8E%E3%83%B3%E3%83%95%E3%82%A3%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3",
+    "source_label": "Wikipedia「日比谷ノンフィクション」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "17",
+    "date": "2018-11-01",
+    "date_precision": "month",
+    "type": "milestone",
+    "importance": "major",
+    "title": "DGP RECORDSへ移籍",
+    "description": "JVCケンウッド・ビクターエンタテインメント傘下のレーベル「DGP RECORDS」に移籍。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "date_confidence": "estimated"
+  },
+  {
+    "id": "57",
+    "date": "2019-01-30",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "1st EP『ポラリス』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "58",
+    "date": "2019-09-15",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "2nd EP『Grape』",
+    "description": "",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」"
+  },
+  {
+    "id": "59",
+    "date": "2019-09-15",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "Guitar！Drum！Bass！Tour ～日比谷ノンフィクションVIII～ (全20公演)",
+    "description": "2nd EP『Grape』と同日にツアー開幕。9/15日比谷野外大音楽堂(日比谷ノンフィクションVIII)を皮切りに全国20公演。9/28香川・高松DIME→9/29愛媛・松山サロンキティ→10/12長崎・DRUM Be-7→10/13熊本・B.9 V2→10/19大阪・なんばHatch→10/26長野・松本Sound Hall a.C→10/27新潟・studio NEXS→11/4神奈川・横浜BAYHALL→11/9山口・LIVE rise SHUNAN→11/10島根・松江AZTiC canova→11/21宮城・仙台darwin→11/23青森・青森Quarter→11/29千葉・千葉LOOK→12/1山梨・甲府CONVICTION→12/7北海道・函館club COCOA→12/8北海道・札幌cube garden→12/15愛知・名古屋DIAMOND HALL→12/21福岡・小倉FUSE→12/22広島・広島CAVE-BE",
+    "source_url": "https://www.diskgarage.com/digaonline/liverepo/128856",
+    "source_label": "DiskGarage「Guitar！Drum！Bass！Tour ～日比谷ノンフィクションⅧ～ ライブレポート」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "18",
+    "date": "2020-01-22",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "8thアルバム『C3』",
+    "description": "DGP RECORDS移籍後、初の作品。オリコン最高16位。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "embed": { "provider": "spotify", "kind": "album", "id": "5H3De5nOaS76Jojto6odD0" }
+  },
+  {
+    "id": "19",
+    "date": "2021-10-27",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "9thアルバム『DIARY KEY』",
+    "description": "結成20周年・メジャーデビュー15周年記念作。オリコン最高26位。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "embed": { "provider": "spotify", "kind": "album", "id": "4ORf1Z1gK6vjUBso8iwLfF" }
+  },
+  {
+    "id": "76",
+    "date": "2022-02-15",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "対バンツアー『LIVE IN LIVE〜I HUB YOU (Take) 2〜』(2022年2月〜3月)",
+    "description": "2022年3月18日まで開催。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "77",
+    "date": "2022-08-01",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "対バンツアー『LIVE IN LIVE〜I HUB YOU 3〜』(2022年8月)",
+    "description": "2022年8月26日まで開催。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "60",
+    "date": "2022-05-15",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "日比谷ノンフィクションIX",
+    "description": "日比谷野外大音楽堂(東京)。コロナ禍を経て約3年ぶりの開催。ゲスト: 花澤香菜ほか。",
+    "source_url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%AF%94%E8%B0%B7%E3%83%8E%E3%83%B3%E3%83%95%E3%82%A3%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3",
+    "source_label": "Wikipedia「日比谷ノンフィクション」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "20",
+    "date": "2022-11-10",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "major",
+    "title": "3度目の日本武道館公演(結成20周年)",
+    "description": "『Base Ball Bear 20th Anniversary「(This Is The) Base Ball Bear part.3」』。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "22",
+    "date": "2022-10-12",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "デジタルシングル『海になりたい part.3』",
+    "description": "3度目の日本武道館公演にあわせて会場限定CDも発売。同CDには「チェンジアップ」(原典は2002年9月リリース、学生時代=デモテープ時代の楽曲)の2022年再録バージョンを収録。ストリーミング配信は無くこのCDでのみ聴取可能。デビュー前の楽曲が約20年の時を経て公式音源化された。VOS限定盤・2023年2月配信版には別途「SEVENTEEN」を収録。",
+    "source_url": "https://ja.wikipedia.org/wiki/%E6%B5%B7%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%9F%E3%81%84_part.3",
+    "source_label": "Wikipedia「海になりたい part.3」"
+  },
+  {
+    "id": "23",
+    "date": "2023-06-28",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "デジタルシングル『Endless Etude』",
+    "description": "",
+    "source_url": "https://www.baseballbear.com/sp/news/",
+    "source_label": "Base Ball Bear Official Website"
+  },
+  {
+    "id": "78",
+    "date": "2023-02-03",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ワンマンツアー『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演)",
+    "description": "2023年2月〜5月の全15公演ツアー。2/3千葉LOOK→2/5横浜F.A.D→2/10さいたまHEAVEN'S ROCK→2/18水戸LIGHT HOUSE→2/19宇都宮HEAVEN'S ROCK→3/8Zepp DiverCity TOKYO→4/9長野LIVE HOUSE J→4/15高松DIME→4/16広島CAVE-BE→4/23福岡DRUM Be-1→5/20札幌cube garden→5/23渋谷CLUB QUATTRO→5/28仙台darwin→5/30名古屋CLUB QUATTRO→5/31梅田CLUB QUATTRO",
+    "source_url": "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+    "source_label": "Skream!「Base Ball Bear、ツアー全日程発表」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "24",
+    "date": "2023-07-22",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "major",
+    "title": "日比谷ノンフィクションX",
+    "description": "毎年恒例のワンマンライブシリーズ。この回は「祝・日比谷野音100周年」を冠して開催。",
+    "source_url": "https://www.baseballbear.com/sp/news/",
+    "source_label": "Base Ball Bear Official Website",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "25",
+    "date": "2024-02-28",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "4thミニアルバム『天使だったじゃないか』",
+    "description": "",
+    "source_url": "https://www.baseballbear.com/sp/news/",
+    "source_label": "Base Ball Bear Official Website"
+  },
+  {
+    "id": "79",
+    "date": "2024-03-06",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ツアー『天使だったじゃないか』TOUR(全17公演)",
+    "description": "4thミニアルバム『天使だったじゃないか』のリリースツアー。3/6千葉LOOK→3/9福岡DRUM Be-1→3/10熊本B.9V2→3/22長野ライブハウスJ→3/23金沢AZ→3/25京都磔磔→3/30横浜BAY HALL→4/12仙台darwin→4/13盛岡CLUB CHANGE WAVE→4/20岡山IMAGE→4/21広島Reed→4/26大阪BIG CAT→4/27名古屋BOTTOM LINE→5/10札幌BESSIE HALL→5/11帯広REST→5/17高松DIME→6/2Zepp Shinjuku TOKYO(ファイナル)",
+    "source_url": "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+    "source_label": "Skream!「Base Ball Bear、ミニ・アルバム『天使だったじゃないか』発表」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/222400" }
+    ]
+  },
+  {
+    "id": "26",
+    "date": "2024-12-18",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "配信シングル『tobu_tori_』",
+    "description": "",
+    "source_url": "https://www.baseballbear.com/sp/news/",
+    "source_label": "Base Ball Bear Official Website"
+  },
+  {
+    "id": "27",
+    "date": "2025-08-06",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "配信シングル『夏の細部』",
+    "description": "",
+    "source_url": "https://www.baseballbear.com/sp/news/",
+    "source_label": "Base Ball Bear Official Website"
+  },
+  {
+    "id": "28",
+    "date": "2026-01-28",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "major",
+    "title": "5thミニアルバム『Lyrical Tattoo』",
+    "description": "結成25周年・メジャーデビュー20周年イヤーの幕開けとなる作品。",
+    "source_url": "https://www.baseballbear.com/sp/news/",
+    "source_label": "Base Ball Bear Official Website",
+    "embed": { "provider": "spotify", "kind": "album", "id": "5hpMoFgDUMXAAi0jcknt77" }
+  },
+  {
+    "id": "29",
+    "date": "2026-02-15",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "Base Ball Bear Tour『Lyrical Tattoo』(全15公演)",
+    "description": "結成25周年・メジャーデビュー20周年イヤーの全国リリースツアー(2/15〜7/11)。2/15愛知BOTTOM LINE→2/27大阪BIG CAT→3/19 Zepp DiverCity(TOKYO)→5/15仙台darwin→5/16新潟GOLDEN PIGS RED→5/28千葉LOOK→6/4京都磔磔→6/6岡山IMAGE→6/7松山Double-u studio→6/19金沢AZ→6/20長野ライブハウスJ→7/3北海道BESSIE HALL→7/5青森Quarter→7/10福岡DRUM Be-1→7/11熊本B.9 V2",
+    "source_url": "https://www.baseballbear.com/sp/news/",
+    "source_label": "Base Ball Bear Official Website",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "65",
+    "date": "2018-09-05",
+    "date_precision": "month",
+    "type": "milestone",
+    "importance": "minor",
+    "title": "小出祐介、新プロジェクト「マテリアルクラブ」始動",
+    "description": "小出祐介がBase Ball Bearとは別に主宰する新プロジェクト。「ソロでもバンドでもユニットでもグループでもない」と称される。福岡晃子(元チャットモンチー)を制作パートナーに、1stソング「00文法」をQ2レーベルより配信。",
+    "source_url": "https://diskgarage.com/digaonline/news/94088",
+    "source_label": "diskgarage「Base Ball Bear 小出祐介主宰の新プロジェクト=“マテリアルクラブ”始動」",
+    "date_confidence": "estimated"
+  },
+  {
+    "id": "66",
+    "date": "2024-10-30",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "小出祐介「material club」2ndアルバム『material club Ⅱ』",
+    "description": "6年の活動休止を経てバンド編成で再始動した「material club」の2ndアルバム。福岡晃子(元チャットモンチー)、成田ハネダ(パスピエ)、キダモティフォ(tricot)、ユナ(元CHAI)が参加。",
+    "source_url": "https://skream.jp/news/2024/09/material_club_2nd_album_release.php",
+    "source_label": "Skream!「material club 2ndアルバム10/30リリース決定」"
+  },
+  {
+    "id": "67",
+    "date": "2023-10-28",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "関根史織、山中さわお(the pillows)とのユニット「さわおとしおり」始動",
+    "description": "関根史織がBase Ball Bearとは別に行うサポート・客演活動の一つ。the pillowsの山中さわおとのユニット「さわおとしおり」で1stアルバム『Private loophole』を会場限定でリリース。関根はほかにもHomecomings、吉澤嘉代子等のサポートベースを務めている。the pillowsは2025年1月31日に解散。",
+    "source_url": "https://www.sma.co.jp/s/sma/news/detail/103877?ima=0000&link=ROBO004",
+    "source_label": "Sony Music Artists「関根史織【さわおとしおり/Private loophole】リリース決定！」"
+  },
+  {
+    "id": "68",
+    "date": "2026-01-11",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "新春ベースボールベアーちゃん祭り2026",
+    "description": "毎年恒例の新春ライブイベント。",
+    "source_url": "https://www.sma.co.jp/s/sma/news/detail/113434?ima=0000&link=ROBO004",
+    "source_label": "Sony Music Artists「Base Ball Bear 20th&25thロードマップ更新」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "69",
+    "date": "2026-04-12",
+    "date_precision": "day",
+    "type": "milestone",
+    "importance": "major",
+    "title": "メジャーデビュー20周年",
+    "description": "2006年4月12日のメジャーデビューからちょうど20年。",
+    "source_url": "https://www.sma.co.jp/s/sma/news/detail/113434?ima=0000&link=ROBO004",
+    "source_label": "Sony Music Artists「Base Ball Bear 20th&25thロードマップ更新」"
+  },
+  {
+    "id": "70",
+    "date": "2026-09-04",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "SHIBUYA NONFICTION III",
+    "description": "2024年に始まった新シリーズライブの第3回。",
+    "source_url": "https://www.sma.co.jp/s/sma/news/detail/113434?ima=0000&link=ROBO004",
+    "source_label": "Sony Music Artists「Base Ball Bear 20th&25thロードマップ更新」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "71",
+    "date": "2026-09-29",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "BIGMAMA 20th Anniversaryに出演",
+    "description": "他アーティストの周年イベントへのゲスト出演。",
+    "source_url": "https://www.sma.co.jp/s/sma/news/detail/113434?ima=0000&link=ROBO004",
+    "source_label": "Sony Music Artists「Base Ball Bear 20th&25thロードマップ更新」"
+  },
+  {
+    "id": "72",
+    "date": "2026-11-01",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "major",
+    "title": "25th Anniversary「(This Is The) Base Ball Bear part.4」",
+    "description": "2010年(part.1)、2012年(part.2)、2022年(part.3)と続く周年記念ライブシリーズの第4弾。結成25周年イヤーを締めくくる公演。",
+    "source_url": "https://www.sma.co.jp/s/sma/news/detail/113434?ima=0000&link=ROBO004",
+    "source_label": "Sony Music Artists「Base Ball Bear 20th&25thロードマップ更新」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "73",
+    "date": "2026-11-15",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "「後角祭」に出演",
+    "description": "他アーティスト主催イベントへのゲスト出演。",
+    "source_url": "https://www.sma.co.jp/s/sma/news/detail/113434?ima=0000&link=ROBO004",
+    "source_label": "Sony Music Artists「Base Ball Bear 20th&25thロードマップ更新」"
+  },
+  {
+    "id": "21",
+    "date": "2026-11-11",
+    "date_precision": "year",
+    "type": "milestone",
+    "importance": "major",
+    "title": "結成25周年・メジャーデビュー20周年",
+    "description": "結成25周年、メジャーデビュー20周年の節目の年。",
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "date_confidence": "estimated"
+  },
+  {
+    "id": "80",
+    "date": "2006-08-01",
+    "date_precision": "month",
+    "type": "live",
+    "importance": "minor",
+    "title": "合同ツアー『若若男女サマーツアー'06』",
+    "description": "チャットモンチー・スノーケルとの合同サマーツアー。主要会場: SHIBUYA-AX(東京)、BIG CAT(大阪)、DRUM LOGOS(福岡)など。メジャーデビュー直後の夏。",
+    "source_url": "https://en.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "date_confidence": "estimated",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "81",
+    "date": "2007-03-01",
+    "date_precision": "month",
+    "type": "live",
+    "importance": "minor",
+    "title": "初単独ワンマンツアー『LIVE BY THE C』(全15公演)",
+    "description": "Base Ball Bear初の全国単独ツアー、全15公演。各地ライブハウスを巡回した記念すべき初ワンマンツアー。",
+    "source_url": "https://en.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "date_confidence": "estimated",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/49655" }
+    ]
+  },
+  {
+    "id": "82",
+    "date": "2007-08-01",
+    "date_precision": "month",
+    "type": "live",
+    "importance": "minor",
+    "title": "ROCK IN JAPAN FESTIVAL 2007 出演",
+    "description": "ひたちなか市 国営ひたち海浜公園(茨城)に出演。メジャーデビュー翌年、大型ロックフェス参加。",
+    "source_url": "https://www.generasia.com/wiki/Base_Ball_Bear",
+    "source_label": "Generasia「Base Ball Bear」",
+    "date_confidence": "estimated"
+  },
+  {
+    "id": "83",
+    "date": "2008-03-01",
+    "date_precision": "month",
+    "type": "live",
+    "importance": "minor",
+    "title": "ツアー『17歳からやってますツアー』",
+    "description": "2008年3月開催の全国ツアー。",
+    "source_url": "https://en.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia「Base Ball Bear」",
+    "date_confidence": "estimated",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "84",
+    "date": "2008-08-01",
+    "date_precision": "month",
+    "type": "live",
+    "importance": "minor",
+    "title": "ROCK IN JAPAN FESTIVAL 2008 出演",
+    "description": "ひたちなか市 国営ひたち海浜公園(茨城)に出演。",
+    "source_url": "https://www.generasia.com/wiki/Base_Ball_Bear",
+    "source_label": "Generasia「Base Ball Bear」",
+    "date_confidence": "estimated"
+  },
+  {
+    "id": "85",
+    "date": "2008-09-19",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "渋谷C.C.Lemonホール 2Days『一日，一日「僕らの２日間演奏」』",
+    "description": "渋谷C.C.Lemonホール(現・LINE CUBE SHIBUYA)で9/19・9/20の2日間ワンマン公演。両日ともSOLD OUT。日程もセットリストも異なる2公演を実施。「次の目標は武道館(玉ねぎが乗っかったところ)」と宣言したことで話題に。",
+    "source_url": "https://rockinon.com/live/detail/6420",
+    "source_label": "rockinon.com「Base Ball Bear @ 渋谷C.C.Lemonホール 2008.09.20」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "86",
+    "date": "2009-03-05",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ツアー『LIVE MATHEMATICS TOUR 09』(全32公演)",
+    "description": "バンド史上最長となる32箇所32公演(2009年3月5日〜5月23日)。3/5千葉LOOK→3/6横浜BAYSIS→3/11静岡Sunash→3/14京都磔磔→3/15神戸VARIT→3/17高知X-Pt→3/18松山SALONKITY→3/20大分T.O.P.S→3/22鹿児島CAPARVO HALL→3/24熊本Be-9→3/26長崎Be-7→3/28周南TIKI-TA→3/31高松DIME→4/1徳島JITTERBUG→4/3岡山CRAZYMAMA KINGDOM→4/5浜松窓枠→4/12三重CLUB CHAOS→4/14奈良NEVER LAND→4/15滋賀U★STONE→4/17富山Soul Power→4/19新潟LOTS→4/25宇都宮HEAVEN'S ROCK→4/26高崎CLUB FLEEZ→4/29郡山HIP SHOT Japan→4/30水戸LIGHT HOUSE→5/7甲府KAZOO HALL→5/9金沢EIGHT HALL→5/10長野LIVE HOUSE J→5/15青森QUARTER→5/16秋田Club SWINDLE→5/17盛岡CLUB Change WAVE→5/23広島CLUB QUATTRO",
+    "source_url": "https://www.barks.jp/news/?id=1000042469",
+    "source_label": "BARKS「Base Ball Bearのツアーにゲスト・アーティスト4組決定」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "87",
+    "date": "2009-10-01",
+    "date_precision": "month",
+    "type": "live",
+    "importance": "minor",
+    "title": "ホールツアー『Zeppyramid tour』(全5公演)",
+    "description": "全国5ヶ所Zepp会場を一挙巡回。Zepp Sapporo・Zepp Sendai・Zepp Nagoya・Zepp Fukuoka・Zepp Osakaを回るホールクラスの大規模ツアー。",
+    "source_url": "https://www.livefans.jp/groups/10268",
+    "source_label": "LiveFans「Base Ball Bear Zeppyramid tour」",
+    "date_confidence": "estimated",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/10268" }
+    ]
+  },
+  {
+    "id": "88",
+    "date": "2010-08-07",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ROCK IN JAPAN FESTIVAL 2010 出演(LIBERTAステージ)",
+    "description": "ひたちなか市 国営ひたち海浜公園(茨城)LIBERTAステージに出演。",
+    "source_url": "https://rijfes.jp/2026/history/",
+    "source_label": "ROCK IN JAPAN FESTIVAL 出演歴"
+  },
+  {
+    "id": "89",
+    "date": "2011-08-06",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ROCK IN JAPAN FESTIVAL 2011 出演(LAKEステージ)",
+    "description": "ひたちなか市 国営ひたち海浜公園(茨城)LAKEステージに出演。",
+    "source_url": "https://rijfes.jp/2026/history/",
+    "source_label": "ROCK IN JAPAN FESTIVAL 出演歴"
+  },
+  {
+    "id": "90",
+    "date": "2012-08-04",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ROCK IN JAPAN FESTIVAL 2012 出演(LAKEステージ)",
+    "description": "ひたちなか市 国営ひたち海浜公園(茨城)LAKEステージに出演。",
+    "source_url": "https://rijfes.jp/2026/history/",
+    "source_label": "ROCK IN JAPAN FESTIVAL 出演歴"
+  },
+  {
+    "id": "91",
+    "date": "2013-04-04",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ツアー『バンドBのゆくえツアー』(全8公演)",
+    "description": "4/4大阪なんばHatch→4/6広島CLUB QUATTRO→4/12名古屋DIAMOND HALL→4/14福岡DRUM LOGOS→4/19仙台darwin→4/20新潟LOTS→4/25赤坂BLITZ(東京)→4/28札幌cube garden(ファイナル)。",
+    "source_url": "https://www.universal-music.co.jp/base-ball-bear/news/2013-01-08-02/",
+    "source_label": "Universal Music Japan「全国ツアー『バンドBのゆくえツアー』開催決定！」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/21310" }
+    ]
+  },
+  {
+    "id": "92",
+    "date": "2013-08-03",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ROCK IN JAPAN FESTIVAL 2013 出演(LAKEステージ)",
+    "description": "ひたちなか市 国営ひたち海浜公園(茨城)LAKEステージに出演。",
+    "source_url": "https://rijfes.jp/2026/history/",
+    "source_label": "ROCK IN JAPAN FESTIVAL 出演歴"
+  },
+  {
+    "id": "93",
+    "date": "2013-12-29",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "COUNT DOWN JAPAN 13/14 出演(GALAXYステージ)",
+    "description": "幕張メッセ国際展示場(千葉)GALAXYステージに出演。年越しカウントダウン前日の出演。",
+    "source_url": "https://rijfes.jp/2026/history/",
+    "source_label": "ROCK IN JAPAN FESTIVAL 出演歴"
+  },
+  {
+    "id": "94",
+    "date": "2014-08-02",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ROCK IN JAPAN FESTIVAL 2014 出演(LAKEステージ)",
+    "description": "ひたちなか市 国営ひたち海浜公園(茨城)LAKEステージに出演。",
+    "source_url": "https://rijfes.jp/2026/history/",
+    "source_label": "ROCK IN JAPAN FESTIVAL 出演歴"
+  },
+  {
+    "id": "95",
+    "date": "2014-09-06",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ツアー『BaseBallBear TOUR「二十九歳」』",
+    "description": "9月6日〜11月29日、5thアルバム『二十九歳』を携えた全国ライブハウスツアー。",
+    "source_url": "https://www.livefans.jp/groups/46726",
+    "source_label": "LiveFans「BaseBallBear TOUR「二十九歳」」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/46726" }
+    ]
+  },
+  {
+    "id": "96",
+    "date": "2015-08-01",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ROCK IN JAPAN FESTIVAL 2015 出演(LAKEステージ)",
+    "description": "ひたちなか市 国営ひたち海浜公園(茨城)LAKEステージに出演。",
+    "source_url": "https://rijfes.jp/2026/history/",
+    "source_label": "ROCK IN JAPAN FESTIVAL 出演歴"
+  },
+  {
+    "id": "97",
+    "date": "2015-11-01",
+    "date_precision": "month",
+    "type": "live",
+    "importance": "minor",
+    "title": "ツアー『Base Ball Bear Tour「三十一歳」』",
+    "description": "6thアルバム『C2』のリリースツアー。2015年11月〜2016年初頭にかけて全国を巡回。",
+    "source_url": "https://www.livefans.jp/groups/65932",
+    "source_label": "LiveFans「Base Ball Bear Tour「三十一歳」」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/65932" }
+    ]
+  },
+  {
+    "id": "98",
+    "date": "2016-03-05",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ツアー『LIVE BY THE C2』(メジャー10周年・結成15周年)",
+    "description": "メジャーデビュー10周年・結成15周年記念ツアー。湯浅将平の脱退発表(3/2)直後に開始し3/28まで続行。サポートに元DOPING PANDAの古川ユタカを迎えた。",
+    "source_url": "https://www.livefans.jp/groups/76580",
+    "source_label": "LiveFans「Base Ball Bear Tour「LIVE BY THE C2」」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/76580" }
+    ]
+  },
+  {
+    "id": "99",
+    "date": "2016-11-11",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ツアー『バンドBのすべて 2016-2017』(全36公演)",
+    "description": "3人体制移行後初の大型全国ツアー、全36公演(11/11〜翌3/29)。11/11下北沢GARAGE→11/12名古屋DIAMOND HALL→11/23福井CHOP→11/25金沢AZ→11/26松本Sound Hall a.C→12/3山口周南rise→12/4松江AZTiC canova→12/6京都磔磔→12/9さいたまHEAVEN'S ROCK→12/11横浜BAY HALL→12/17郡山HIP SHOT JAPAN→12/18仙台darwin→1/7高松DIME→1/8高知X-pt.→1/14水戸LIGHT HOUSE→1/15宇都宮HEAVEN'S ROCK→1/21長崎DRUM Be-7→1/22福岡DRUM LOGOS→1/27千葉LOOK→2/4鹿児島SR HALL→2/5熊本B.9 V2→2/11四日市Club Chaos→2/12静岡UMBER→2/17岡山IMAGE→2/18広島CAVE-BE→2/25松山サロンキティ→2/26徳島club GRINDHOUSE→3/4盛岡CLUB CHANGE WAVE→3/5青森Quarter→3/9帯広Rest→3/11札幌PENNY LANE 24→3/12旭川CASINO DRIVE→3/18高崎club FLEEZ→3/19新潟LOTS→3/24なんばHatch→3/29Zepp TOKYO(ファイナル)",
+    "source_url": "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+    "source_label": "Skream!「Base Ball Bear、11月より全国ツアー開催決定」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "100",
+    "date": "2017-06-11",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ツアー『Base Ball Bear Tour「光源」』(全30公演)",
+    "description": "7thアルバム『光源』ツアー(2017年6月〜2018年1月)、全30公演。6/11浜松窓枠→6/13四日市Club Chaos→6/15京都磔磔→6/17金沢AZ→6/25仙台Rensa→9/30日比谷野外大音楽堂(日比谷ノンフィクションVI)→10/6旭川CASINO DRIVE→10/7札幌PENNY LANE 24→10/9函館Club Cocoa→10/14青森Quarter→10/15盛岡CLUB CHANGE WAVE→10/21山口LIVE rise SHUNAN→10/22広島CAVE-BE→10/27千葉LOOK→10/28水戸LIGHT HOUSE→11/3甲府CONVICTION→11/23米子AZTiC laughs→11/25岡山IMAGE→12/2高崎clubFLEEZ→12/3宇都宮HEAVEN'S ROCK→12/9新潟LOTS→12/10松本Sound Hall a.C→12/16埼玉HEAVEN'S ROCK→12/17横浜Bay Hall→12/23高松MONSTER→12/24高知X-pt.→1/6なんばHatch→1/14名古屋DIAMOND HALL→1/20宮崎SR BOX→1/21福岡DRUM LOGOS",
+    "source_url": "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+    "source_label": "Skream!「Base Ball Bear、6月より全30公演ツアー開催決定」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "101",
+    "date": "2019-05-04",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "JAPAN JAM 2019 出演(LOTUSステージ)",
+    "description": "千葉市蘇我スポーツ公園(千葉)LOTUSステージに出演。",
+    "source_url": "https://rijfes.jp/2026/history/",
+    "source_label": "ROCK IN JAPAN FESTIVAL 出演歴"
+  },
+  {
+    "id": "102",
+    "date": "2021-11-11",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ツアー『DIARY KEY Tour』(全9公演)",
+    "description": "結成20周年当日の中野サンプラザ公演からスタート。11/11中野サンプラザ→11/16仙台Rensa→11/29名古屋DIAMONDHALL→11/30大阪BIG CAT→12/4新潟LOTS→12/5金沢AZ→12/15札幌cube garden→12/18福岡DRUM Be-1→12/19広島LIVE VANQUISH",
+    "source_url": "https://skream.jp/news/2021/09/base_ball_bear_diary_key_tour.php",
+    "source_label": "Skream!「Base Ball Bear、全国ツアー開催決定」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "103",
+    "date": "2023-05-03",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "JAPAN JAM 2023 出演(BUZZステージ)",
+    "description": "千葉市蘇我スポーツ公園(千葉)BUZZステージに出演。",
+    "source_url": "https://rijfes.jp/2026/history/",
+    "source_label": "ROCK IN JAPAN FESTIVAL 出演歴"
+  },
+  {
+    "id": "104",
+    "date": "2010-06-19",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "日比谷ノンフィクション pt.2 (2DAYS)",
+    "description": "日比谷野外大音楽堂で初の2DAYS公演(6/19・6/20)。ゲスト: 呂布、サカナクション。「HALL IN MY LIFE」最終公演として位置づけられた。",
+    "source_url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%AF%94%E8%B0%B7%E3%83%8E%E3%83%B3%E3%83%95%E3%82%A3%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3",
+    "source_label": "Wikipedia「日比谷ノンフィクション」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "105",
+    "date": "2015-06-13",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "日比谷ノンフィクション IV",
+    "description": "日比谷野外大音楽堂(東京)。ゲスト: RHYMESTER。インディーズ楽曲を一切演奏しない方針を示した公演。",
+    "source_url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%AF%94%E8%B0%B7%E3%83%8E%E3%83%B3%E3%83%95%E3%82%A3%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3",
+    "source_label": "Wikipedia「日比谷ノンフィクション」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "106",
+    "date": "2014-05-03",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "VIVA LA ROCK 2014 出演(第1回)",
+    "description": "さいたまスーパーアリーナ(埼玉)。記念すべき第1回VIVA LA ROCKに出演。以降4年連続出演が続いた。",
+    "source_url": "https://vivalarock.jp/2017/report/baseballbear.html",
+    "source_label": "VIVA LA ROCK 2017 Flash Report"
+  },
+  {
+    "id": "107",
+    "date": "2015-05-05",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "VIVA LA ROCK 2015 出演(STARステージ 15:30〜)",
+    "description": "さいたまスーパーアリーナ(埼玉)STARステージ 15:30〜16:20出演。",
+    "source_url": "https://vivalarock.jp/2015/report/baseballbear.html",
+    "source_label": "VIVA LA ROCK 2015 Flash Report"
+  },
+  {
+    "id": "108",
+    "date": "2016-05-28",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "VIVA LA ROCK 2016 出演",
+    "description": "さいたまスーパーアリーナ(埼玉)に出演。湯浅将平の脱退(3月)後、サポートギタリストを迎えての出演。",
+    "source_url": "https://vivalarock.jp/2016/report/baseballbear.html",
+    "source_label": "VIVA LA ROCK 2016 Flash Report",
+    "date_confidence": "estimated"
+  },
+  {
+    "id": "109",
+    "date": "2017-05-03",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "VIVA LA ROCK 2017 出演(VIVA!ステージ 10:30〜)",
+    "description": "さいたまスーパーアリーナ(埼玉)VIVA!ステージ 10:30〜11:05。第1回から4年連続出演。弓木英梨乃がサポートギタリストとして参加。",
+    "source_url": "https://vivalarock.jp/2017/report/baseballbear.html",
+    "source_label": "VIVA LA ROCK 2017 Flash Report"
+  },
+  {
+    "id": "110",
+    "date": "2018-05-18",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ツアー『LIVE IN LIVE』(全8公演、3人体制)",
+    "description": "サポートメンバーなし3人体制での初ツアー(2018年5月〜6月)。5/18名古屋CLUB QUATTRO→5/25渋谷CLUB QUATTRO→5/27仙台darwin→6/9岡山IMAGE→6/10梅田CLUB QUATTRO→6/15札幌cube garden→6/17金沢AZ→6/23小倉FUSE",
+    "source_url": "https://www.baseballbear.com/special/liveinlive/",
+    "source_label": "Base Ball Bear LIVE IN LIVE 特設サイト",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "111",
+    "date": "2019-05-03",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "VIVA LA ROCK 2019 出演(VIVA!ステージ 16:35〜)",
+    "description": "さいたまスーパーアリーナ(埼玉)VIVA!ステージ 16:35〜17:15。3人体制として初のVIVA LA ROCK出演、2018年の不出場を経て復帰。",
+    "source_url": "https://vivalarock.jp/2019/report/baseballbear.html",
+    "source_label": "VIVA LA ROCK 2019 Flash Report"
+  },
+  {
+    "id": "112",
+    "date": "2020-08-25",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "FC限定配信ライブ『LIVE IN LIVE〜IN YOUR HOME,MY HOME GROUND〜』",
+    "description": "新型コロナウイルス流行に伴い、ファンクラブ限定の生配信ライブとして開催。無観客での初の配信ライブ。",
+    "source_url": "https://www.musicman.co.jp/artist/335831",
+    "source_label": "Musicman「Base Ball Bear、初のFC限定生配信ライブ決定」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/169246" }
+    ]
+  },
+  {
+    "id": "113",
+    "date": "2021-05-03",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "VIVA LA ROCK 2021 出演(GREATステージ)",
+    "description": "さいたまスーパーアリーナ(埼玉)GREATステージに出演。セットリスト: 17才・short hair・SYUUU・changes・Stairway Generation・BREEEEZE GIRL。",
+    "source_url": "https://vivalarock.jp/2021/report/baseballbear.html",
+    "source_label": "VIVA LA ROCK 2021 Flash Report"
+  },
+  {
+    "id": "114",
+    "date": "2018-12-13",
+    "date_precision": "day",
+    "type": "milestone",
+    "importance": "minor",
+    "title": "関根史織、インストユニット「stico」始動",
+    "description": "関根史織がtatsu(LÄ-PPISCH)、オータコージ(曽我部恵一バンド)とともにチャップマン・スティックを中心としたインストユニット「stico」を結成。12/21に渋谷HOMEで初ライブを開催。2020年2月に1st音源『象と話す女』をリリース。",
+    "source_url": "https://rockinon.com/news/detail/182362",
+    "source_label": "rockinon.com「Base Ball Bear関根史織、インストユニット『stico』を始動」"
+  },
+  {
+    "id": "115",
+    "date": "2021-10-15",
+    "date_precision": "day",
+    "type": "milestone",
+    "importance": "minor",
+    "title": "関根史織、椎名林檎主宰バンド「Elopers」でMステ出演",
+    "description": "テレビ朝日『ミュージックステーション』35周年4時間スペシャルに、椎名林檎が結成した一夜限りのバンド「Elopers」のベースとして出演。Vo.アイナ・ジ・エンド(BiSH)、Gt.ユウ(チリヌルヲワカ)、Dr.ほな・いこか(ゲスの極み乙女。)とともに東京事変「群青日和」を披露。",
+    "source_url": "https://www.sma.co.jp/s/sma/news/detail/95510?ima=0000",
+    "source_label": "Sony Music Artists「椎名林檎プロデュース バンド「Elopers」に関根史織が参加！」"
+  },
+  {
+    "id": "117",
+    "date": "2009-06-27",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "major",
+    "title": "日比谷ノンフィクション(第1回) — 初の野外大音楽堂ワンマン",
+    "description": "日比谷野外大音楽堂(東京)でのバンド初の野音ワンマン公演。以降恒例シリーズとなる「日比谷ノンフィクション」の第1回。ゲストなし、4人編成。",
+    "source_url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%AF%94%E8%B0%B7%E3%83%8E%E3%83%B3%E3%83%95%E3%82%A3%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3",
+    "source_label": "Wikipedia「日比谷ノンフィクション」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/10270" }
+    ]
+  },
+  {
+    "id": "119",
+    "date": "2013-06-15",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "日比谷ノンフィクションIII — 初映像化",
+    "description": "日比谷野外大音楽堂(東京)。ゲストなし。「ファンファーレがきこえる/senkou hanabi」シングルと同日発売のライブDVDとして後に映像化(オリコン15位、5000セット限定)。DVDには2009・2010年のノンフィクション映像も収録。",
+    "source_url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%AF%94%E8%B0%B7%E3%83%8E%E3%83%B3%E3%83%95%E3%82%A3%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3III",
+    "source_label": "Wikipedia「日比谷ノンフィクションIII」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/23479" }
+    ]
+  },
+  {
+    "id": "120",
+    "date": "2016-04-30",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "日比谷ノンフィクションV 〜LIVE BY THE C2〜 — 湯浅脱退後、ゲスト4ギタリスト",
+    "description": "日比谷野外大音楽堂(東京)。湯浅将平脱退(3/2)後初の野音公演。ゲスト: フルカワユタカ(ex.DOPING PANDA)、田渕ひさ子(toddle)、ハヤシ(POLYSICS)、石毛輝(lovefilm/the telephones)の4名がブロックごとにサポートギター。全19曲。C2ツアーのファイナル位置づけ。",
+    "source_url": "https://natalie.mu/music/news/185821",
+    "source_label": "音楽ナタリー「日比谷ノンフィクションⅤレポ」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "121",
+    "date": "2024-09-21",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "SHIBUYA NONFICTION(第1回) — 日比谷から渋谷へ",
+    "description": "LINE CUBE SHIBUYA(渋谷公会堂、東京)。2023年に10回完結した「日比谷ノンフィクション」の流れを汲む新シリーズ第1回。即日SOLD OUT、U-NEXTにて独占ライブ配信も実施。SMA50周年記念協賛。",
+    "source_url": "https://www.sma.co.jp/s/sma/news/detail/106903",
+    "source_label": "Sony Music Artists「SHIBUYA NONFICTION 開催決定」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/230170" }
+    ]
+  },
+  {
+    "id": "122",
+    "date": "2025-11-16",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "SHIBUYA NONFICTION II",
+    "description": "LINE CUBE SHIBUYA(渋谷公会堂、東京)。新シリーズ「SHIBUYA NONFICTION」の第2回。「夏の細部」配信リリースと同時に発表。",
+    "source_url": "https://barks.jp/news/1005815/",
+    "source_label": "BARKS「Base Ball Bear新曲「夏の細部」リリース＆SHIBUYA NONFICTION II発表」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "123",
+    "date": "2010-01-03",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "major",
+    "title": "初の日本武道館公演『(This Is The) Base Ball Bear』part.1",
+    "description": "結成10周年を控えた1月3日に初の日本武道館ワンマン。2008年のC.C.Lemonホールで「次は玉ねぎ(武道館)」と宣言してから約1年半での実現。ライブ音源は2022年10月にデジタル配信。",
+    "source_url": "https://www.livefans.jp/events/215943",
+    "source_label": "LiveFans「Base Ball Bear @ 日本武道館 2010.01.03」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/events/215943" }
+    ]
+  },
+  {
+    "id": "124",
+    "date": "2012-01-03",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "major",
+    "title": "2度目の日本武道館公演『(This Is The) Base Ball Bear』part.2 「Live 新呼吸」",
+    "description": "4thアルバム『新呼吸』を携えた10th Anniversaryの武道館公演。20曲のセットリスト。DVD化後にオリコン11位。2022年10月にライブアルバムとしてデジタル配信。",
+    "source_url": "https://ja.wikipedia.org/wiki/10th_Anniversary_tour(This_Is_The)Base_Ball_Bear_part.2%E3%80%8CLive%E6%96%B0%E5%91%BC%E5%90%B8%E3%80%8D",
+    "source_label": "Wikipedia「10th Anniversary tour(This Is The)Base Ball Bear part.2」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "125",
+    "date": "2012-05-20",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ツアー『TOUR 新呼吸』(全19公演、ファイナルはニコ生中継)",
+    "description": "4thアルバム『新呼吸』のリリースツアー(5/20〜7/11)。5/20 Zepp Tokyo→5/24仙台darwin→5/26青森Quarter→5/27盛岡Club Change WAVE→6/1札幌PENNY LANE 24→6/2苫小牧ELLCUBE→6/7京都磔磔→6/9福岡DRUM LOGOS→6/10宮崎SR-BOX→6/13高松DIME→6/14岡山IMAGE→6/16なんばHatch→6/17広島CLUB QUATTRO→6/23高崎club FLEEZ→6/24水戸LIGHT HOUSE→6/30新潟LOTS→7/6名古屋Club Diamond Hall→7/7浜松窓枠→7/11 SHIBUYA-AX(ファイナル、ニコ生中継)。",
+    "source_url": "https://www.livefans.jp/groups/10783",
+    "source_label": "LiveFans「Base Ball Bear TOUR 新呼吸」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/10783" }
+    ]
+  },
+  {
+    "id": "126",
+    "date": "2008-05-09",
+    "date_precision": "day",
+    "type": "milestone",
+    "importance": "minor",
+    "title": "テレビ朝日『ミュージックステーション』初出演",
+    "description": "「changes」(図書館戦争ED)発売翌日の5/9(金)に生放送のMステに初出演。「2008年ブレイク最右翼」と評され、シングル「17才」「changes」を軸に一気にお茶の間への知名度を広げた。",
+    "source_url": "https://barks.jp/news/?id=1000039886",
+    "source_label": "BARKS「2008年ブレイク最右翼、Base Ball BearがMステ初出演」"
+  },
+  {
+    "id": "127",
+    "date": "2007-07-01",
+    "date_precision": "month",
+    "type": "live",
+    "importance": "minor",
+    "title": "合同ツアー『若若男女サマーツアー'07』(第2回)",
+    "description": "チャットモンチー・シュノーケルとのスリーマン合同夏ツアー第2弾。2006年に続く3バンド恒例のイベント。",
+    "source_url": "https://www.generasia.com/wiki/Base_Ball_Bear",
+    "source_label": "Generasia「Base Ball Bear」",
+    "date_confidence": "estimated",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "128",
+    "date": "2008-07-16",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "合同ツアー『若若男女サマーツアー'08』JCB HALL ファイナル(第3回・最終回)",
+    "description": "チャットモンチー・シュノーケルとの合同夏ツアー3年目のJCB HALLファイナル。各バンドが互いの楽曲をカバーする企画や、全員参加のm-flo「Summer Time Love」セッションが話題に。",
+    "source_url": "https://rockinon.com/live/detail/4517",
+    "source_label": "rockinon.com「若若男女サマーツアー'08 @ JCB HALL 2008.07.16」"
+  },
+  {
+    "id": "129",
+    "date": "2012-09-01",
+    "date_precision": "month",
+    "type": "live",
+    "importance": "minor",
+    "title": "ツアー『TOUR 新呼吸 take2』(2012年秋)",
+    "description": "「TOUR 新呼吸」(2012年5〜7月)に続く第2弾全国ツアー。2012年9月〜11月開催。会場例: 11/23 滋賀U☆STONEほか全国を網羅。",
+    "source_url": "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%91%BC%E5%90%B8",
+    "source_label": "Wikipedia「新呼吸」",
+    "date_confidence": "estimated",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "130",
+    "date": "2019-04-28",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ARABAKI ROCK FEST.19 出演(ARAHABAKIステージ 13:00〜)",
+    "description": "みちのく公園北地区「エコキャンプみちのく」(宮城)のARAHABAKIステージに2日目13:00〜出演。前後: 赤い公園(12:00〜)、TOMOVSKY(14:10〜)。",
+    "source_url": "https://rockinon.com/news/detail/183932",
+    "source_label": "rockinon.com「ARABAKI ROCK FEST.19 第3弾ラインナップ」"
+  },
+  {
+    "id": "131",
+    "date": "2020-10-09",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "配信ライブ『LIVE IN LIVE〜IN YOUR HOME, TAKE C3〜』",
+    "description": "オンライン配信ライブ(21:00〜)。2020年8月のFC限定配信に続く第2弾オンラインライブ。COVID-19禍中の活動継続の一環。",
+    "source_url": "https://www.livefans.jp/groups/170760",
+    "source_label": "LiveFans「LIVE IN LIVE～IN YOUR HOME, TAKE C3～」"
+  },
+  {
+    "id": "132",
+    "date": "2020-05-01",
+    "date_precision": "month",
+    "type": "milestone",
+    "importance": "minor",
+    "title": "全国ツアー『Base Ball Bear TOUR「LIVE BY THE C3」』COVID-19により中止",
+    "description": "8thアルバム『C3』(2020/1/22)に合わせた全国ツアーが新型コロナウイルスの感染拡大のため全公演中止。代わりに8/25のFC限定配信ライブ、10/9のスタジオ配信ライブ「LIVE IN LIVE〜IN YOUR HOME, TAKE C3〜」を開催した。",
+    "source_url": "https://lp.p.pia.jp/shared/cnt-s/cnt-s-11-02_2_a102bb30-a8e1-444f-bf69-51b5803e4287.html",
+    "source_label": "ぴあ「Base Ball Bear C3再現スタジオライブ配信決定」",
+    "date_confidence": "estimated"
+  },
+  {
+    "id": "133",
+    "date": "2026-08-23",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "MONSTER baSH 2026 出演(アコースティックセット)",
+    "description": "国営讃岐まんのう公園(香川)。2日目(8/23)にアコースティックセットで出演。トリはASIAN KUNG-FU GENERATION。",
+    "source_url": "https://skream.jp/news/2026/05/monster_bash_2026_2nd_lineup.php",
+    "source_label": "Skream!「MONSTER baSH 2026 全出演アーティスト発表」"
+  },
+  {
+    "id": "134",
+    "date": "2026-11-29",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "「ロックアンセム2026 EX」出演 — TenTwenty・山内総一郎と3マン",
+    "description": "EX THEATER ROPPONGI(東京)。TenTwenty、山内総一郎(フジファブリック)との3マンイベント。16:00開場/17:00開演。",
+    "source_url": "https://www.sma.co.jp/s/sma/news/detail/114052",
+    "source_label": "Sony Music Artists「ロックアンセム2026 EX出演決定」"
+  },
+  {
+    "id": "116",
+    "date": "2025-05-22",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "『LIVE IN LIVE ～ C2 to C3 ～』(2025年)",
+    "description": "アルバム『C2』(2015)と『C3』(2020)の楽曲を並べて演奏する企画ライブ。5/22渋谷CLUB QUATTRO→7/31梅田CLUB QUATTROほか開催。",
+    "source_url": "https://skream.jp/news/2025/03/base_ball_bear_live_in_live_c2_to_c3.php",
+    "source_label": "Skream!「Base Ball Bear、\"LIVE IN LIVE ～ C2 to C3 ～\"開催決定」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/246115" }
+    ]
+  },
+  {
+    "id": "135",
+    "date": "2023-12-27",
+    "date_precision": "day",
+    "type": "milestone",
+    "importance": "minor",
+    "title": "FM802 RADIO CRAZY 2023 — 関根史織＆堀之内大介×崎山蒼志・Rei・橋本絵莉子 SPセッション",
+    "description": "大阪・LIVE HOUSE Antenna(インテックス大阪5号館内)にて「FM802 35th & SMA 50th pre Anniversary SPECIAL LIVE」として開催されたFM802 RADIO CRAZY 2023内のコラボセッション。関根史織(Ba)・堀之内大介(Dr)が崎山蒼志・Rei・橋本絵莉子とともに参加。演奏曲：「What Do You Want?」(Rei×関根史織＆堀之内大介)、「かえれない」(橋本絵莉子×Rei×関根史織＆堀之内大介)、「燈」(崎山蒼志×関根史織＆堀之内大介)。映像は2024年9月にYouTubeチャンネル「OPEN MIC by JIM BEAM」で公開。",
+    "source_url": "https://skream.jp/news/2024/09/radio_crazy_session.php",
+    "source_label": "Skream!「FM802 RADIO CRAZY 2023 SPセッション映像公開」",
+    "external_links": [
+      { "label": "「燈」セッション映像(YouTube)", "url": "https://www.youtube.com/watch?v=ZhX88DeyqoY" },
+      { "label": "「かえれない」セッション映像(YouTube)", "url": "https://www.youtube.com/watch?v=O5Yw3UgQ_wo" },
+      { "label": "「What Do You Want?」セッション映像(YouTube)", "url": "https://www.youtube.com/watch?v=l1jnU_gFEBM" }
+    ]
+  },
+  {
+    "id": "136",
+    "date": "2024-07-14",
+    "date_precision": "day",
+    "type": "milestone",
+    "importance": "minor",
+    "title": "SMA50th × JOIN ALIVE 2024「五重の奏」— 関根史織・堀之内大介が参加",
+    "description": "いわみざわ公園(北海道岩見沢)で開催されたJOIN ALIVE 2024の2日目に、Sony Music Artists 50周年記念企画「五重の奏」に参加。関根史織(Ba)・堀之内大介(Dr)がサポート演奏を担当。ボーカル: 綾小路翔(氣志團)・木村カエラ・崎山蒼志・錦鯉。演奏メンバー: 堂島孝平(G)・山本薫(G/クジラ夜の街)・関根史織(B)・渡辺シュンスケ(Key/Schroeder-Headz)・堀之内大介(Dr)。",
+    "source_url": "https://joinalive.jp/2024/",
+    "source_label": "JOIN ALIVE 2024 公式サイト",
+    "external_links": [
+      { "label": "JOIN ALIVEアーティストページ", "url": "https://joinalive.jp/2024/artist/" }
+    ]
+  },
+  {
+    "id": "144",
+    "date": "2022-04-30",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "VIVA LA ROCK 2022 出演(WORLDステージ 12:35〜)",
+    "description": "さいたまスーパーアリーナ(埼玉)WORLDステージに出演。12:35〜13:10(約35分)。セットリスト: すべては君のせいで・いまは僕の目を見て・short hair・DIARY KEY・Tabibito In The Dark・The Cut。",
+    "source_url": "https://vivalarock.jp/2022/report/baseballbear.html",
+    "source_label": "VIVA LA ROCK 2022 PHOTO & REPORT"
+  },
+  {
+    "id": "141",
+    "date": "2024-01-07",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "新春ベースボールベアーちゃん祭り2024",
+    "description": "毎年恒例の新春ワンマンイベント2024年版。EX THEATER ROPPONGI(東京)にて開演17:00。",
+    "source_url": "https://www.livefans.jp/groups/219683",
+    "source_label": "LiveFans「新春ベースボールベアーちゃん祭り2024」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/219683" }
+    ]
+  },
+  {
+    "id": "142",
+    "date": "2025-01-05",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "新春ベースボールベアーちゃん祭り2025",
+    "description": "毎年恒例の新春ワンマンイベント2025年版。きゅりあん(東京)にて開催。",
+    "source_url": "https://www.livefans.jp/groups/238669",
+    "source_label": "LiveFans「新春ベースボールベアーちゃん祭り2025」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/238669" }
+    ]
+  },
+  {
+    "id": "143",
+    "date": "2011-10-01",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "10th Anniversary 2011年秋ツアー (全9公演)",
+    "description": "10周年記念ライブハウスツアー第2弾(春の「SAYONARA-NOSTALGIA TOUR」に続く秋編)。シングル「Tabibito In The Dark」(10/5発売)リリース直前に開幕。10/1青森Quarter→10/2秋田Club SWINDLE→10/4山形MUSIC SHOWA Session→10/8福岡DRUM LOGOS→10/9広島CLUB QUATTRO→10/15名古屋DIAMOND HALL→10/22大阪なんばHatch→10/29仙台darwin→10/30福島・郡山Hip Shot Japan。",
+    "source_url": "https://skream.jp/news/2011/07/base_ball_bearshort_hair831.php",
+    "source_label": "Skream!「Base Ball Bear、新曲「short hair」を8月31日にリリース！ 秋のツアーも決定」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "140",
+    "date": "2010-10-22",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ツアー『(Shine On You)Cypress Girls & Detective Boys』(全14公演)",
+    "description": "3.5thアルバム『CYPRESS GIRLS』『DETECTIVE BOYS』(2010/9/29同時発売)のリリースツアー。10/22福岡DRUM LOGOS→10/23山口・周南TIKI-TA→10/26神戸VARIT→10/28〜10/29大阪・梅田AKASO(2Days)→11/2福島・郡山Hip Shot Japan→11/3仙台darwin→11/8京都磔磔(追加公演)→11/10〜11/11名古屋CLUB QUATTRO(2Days)→11/13福井CHOP→11/14富山SOUL POWER→11/16恵比寿LIQUIDROOM(追加公演)→11/19新木場STUDIO COAST(ファイナル)。",
+    "source_url": "https://www.baseballbear.com/tour_10.html",
+    "source_label": "Base Ball Bear公式サイト「TOUR 2010」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "137",
+    "date": "2021-06-30",
+    "date_precision": "day",
+    "type": "release",
+    "importance": "minor",
+    "title": "配信シングル「プールサイダー」",
+    "description": "配信限定シングル。「水際の見学者」という意味のタイトルで、瑞々しい3ピース・サウンドのサマー・アンセム。2021年第2弾シングル。6/4のツアー・ファイナル見逃し配信内で初披露されていた。",
+    "source_url": "https://skream.jp/news/2021/06/base_ball_bear_pool_sider.php",
+    "source_label": "Skream!「Base Ball Bear、配信SG『プールサイダー』リリース決定」"
+  },
+  {
+    "id": "138",
+    "date": "2021-09-06",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "LIVE IN LIVE 2021 — コロナ禍明け初の有観客ワンマン2公演",
+    "description": "COVID-19による無観客・配信ライブ期間を経て、有観客でのワンマンライブに復帰。9/6恵比寿LIQUIDROOM・9/8梅田CLUB QUATTROの2公演。開場18:00/開演19:00。チケット6,900円。",
+    "source_url": "https://skream.jp/news/2021/06/base_ball_bear_live_in_live.php",
+    "source_label": "Skream!「Base Ball Bear、9月に東阪で有観客ライヴ開催決定」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/artists/3066" }
+    ]
+  },
+  {
+    "id": "139",
+    "date": "2009-10-31",
+    "date_precision": "day",
+    "type": "live",
+    "importance": "minor",
+    "title": "ツアー『Zeppyramid tour』(全5公演) — 3rdアルバムリリースツアー",
+    "description": "3rdアルバム『(WHAT IS THE) LOVE & POP?』(2009/9/2)に合わせた全国Zepp5会場ツアー。10/31Zepp Sapporo→11/3Zepp Sendai→11/6Zepp Nagoya→11/14Zepp Fukuoka→11/15Zepp Osaka。",
+    "source_url": "https://www.livefans.jp/groups/10268",
+    "source_label": "LiveFans「Base Ball Bear Zeppyramid tour」",
+    "external_links": [
+      { "label": "LiveFansでセットリストを探す", "url": "https://www.livefans.jp/groups/10268" }
+    ]
+  }
+]

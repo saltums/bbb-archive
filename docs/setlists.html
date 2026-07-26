@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>セットリスト統計 | BBB Chronicle</title>
+<meta name="description" content="Base Ball Bearのライブセットリストを集計・可視化するファン制作ダッシュボード。">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="setlists.css">
+</head>
+<body>
+  <header class="page-header page-header--compact">
+    <div class="page-header__inner">
+      <p class="eyebrow"><a href="index.html">← 年表に戻る</a></p>
+      <h1 class="title title--sm">セットリスト<span class="title__sub">統計</span></h1>
+      <p class="lead">これまでのライブで演奏された曲を集計した非公式ファンダッシュボードです。</p>
+    </div>
+  </header>
+
+  <main class="sl-main">
+    <section class="sl-kpis" id="slKpis" aria-label="サマリー"></section>
+
+    <section class="sl-section">
+      <h2>曲別 演奏回数ランキング</h2>
+      <p class="sl-section__note">収録されているセットリストの中で、多く演奏された曲順。</p>
+      <div id="slSongRanking" class="sl-bars"></div>
+    </section>
+
+    <section class="sl-section">
+      <h2>年別 ライブ頻度</h2>
+      <div id="slYearChart" class="sl-bars sl-bars--col"></div>
+      <h3 class="sl-subheading">よく演奏された会場</h3>
+      <div id="slVenueRanking" class="sl-bars"></div>
+    </section>
+
+    <section class="sl-section">
+      <h2>YouTube 再生回数ランキング</h2>
+      <p class="sl-section__note" id="slYoutubeFetchedAt"></p>
+      <div id="slYoutubeRanking" class="sl-bars"></div>
+    </section>
+
+    <section class="sl-section">
+      <h2>ツアー別 セットリスト</h2>
+      <div class="sl-tour-controls">
+        <select id="slTourSelect" aria-label="ツアーを選択"></select>
+      </div>
+      <div id="slTourShows" class="sl-shows"></div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>セットリストデータの多くは<a href="https://www.setlist.fm" target="_blank" rel="noopener">setlist.fm</a>のAPIから取得しています(定期的に再取得・更新)。一部はご本人がLiveFans等で確認の上、手動で追加しています。各セットリストの出典は詳細内に個別表示しています。</p>
+  </footer>
+
+  <script src="setlists.js"></script>
+</body>
+</html>

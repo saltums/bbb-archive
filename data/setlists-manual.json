@@ -1,0 +1,20 @@
+[
+  {
+    "_comment": "setlist.fmに無いライブ情報を手動で追加するファイルです。ご自身でLiveFans/X/2ch等を見て確認した内容を、下のサンプルをコピーして書き足してください。1件が1つの{}です。",
+    "_example": {
+      "id": "manual-2016-02-27-konasongfes",
+      "source": "manual",
+      "source_label": "LiveFans",
+      "source_url": "https://www.livefans.jp/artists/3066",
+      "date": "2016-02-27",
+      "tour": "こなそんフェス2016",
+      "venue": "会場名",
+      "city": "都市名, Japan",
+      "sets": [
+        { "label": "Main", "songs": ["曲名1", "曲名2"] },
+        { "label": "Encore", "songs": ["曲名3"] }
+      ],
+      "note": "任意メモ(例: 石毛輝がサポートで出演、など)"
+    }
+  }
+]

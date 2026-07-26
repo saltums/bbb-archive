@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Base Ball Bear 年表 | BBB Chronicle</title>
+<meta name="description" content="Base Ball Bearの結成から現在までを追うファン制作の非公式年表。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__inner">
+      <p class="eyebrow">UNOFFICIAL FAN CHRONICLE</p>
+      <h1 class="title">Base Ball Bear<span class="title__sub">年表</span></h1>
+      <p class="lead">2001年の結成から現在まで。リリース・ライブ・出来事を時系列でたどる非公式ファンアーカイブです。</p>
+      <nav class="official-links" aria-label="公式リンク">
+        <a href="https://www.baseballbear.com/" target="_blank" rel="noopener">公式サイト</a>
+        <a href="https://open.spotify.com/artist/3RkPaFeTMrHIsB5HMEUdNt" target="_blank" rel="noopener">Spotify</a>
+        <a href="https://www.youtube.com/channel/UCT6xcaNMEM6t7sEFUNLI9sQ" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.livefans.jp/artists/3066" target="_blank" rel="noopener">LiveFans</a>
+        <a href="setlists.html">セットリスト統計 →</a>
+        <a href="updates.html">最新情報 →</a>
+        <a href="songs.html">楽曲一覧 →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="legend" aria-label="凡例">
+      <span class="legend__item"><i class="dot dot--release"></i>リリース</span>
+      <span class="legend__item"><i class="dot dot--live"></i>ライブ</span>
+      <span class="legend__item"><i class="dot dot--milestone"></i>できごと</span>
+      <label class="legend__toggle">
+        <input type="checkbox" id="majorOnlyToggle">
+        主要な出来事のみ表示
+      </label>
+    </section>
+
+    <section class="timeline-wrap" aria-label="年表">
+      <p class="timeline-order-hint">↑ 新しい出来事が上、結成当時が下 ↓</p>
+      <div class="timeline-list" id="timelineList">
+        <!-- 年見出し・イベント一覧はJSで生成 -->
+      </div>
+    </section>
+  </main>
+
+  <div class="detail-overlay" id="detailOverlay" hidden>
+    <div class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+      <button class="detail-close" id="detailClose" aria-label="閉じる">×</button>
+      <p class="detail-date" id="detailDate"></p>
+      <h2 class="detail-title" id="detailTitle"></h2>
+      <p class="detail-desc" id="detailDesc"></p>
+      <div class="detail-embed" id="detailEmbed"></div>
+      <div class="detail-links" id="detailLinks"></div>
+      <p class="detail-source" id="detailSource"></p>
+    </div>
+  </div>
+
+  <section class="members" aria-label="メンバー">
+    <h2 class="members__heading">メンバー</h2>
+    <div class="members__grid">
+      <div class="member-card">
+        <p class="member-card__name">小出祐介 <span class="member-card__role">Vo/Gt</span></p>
+        <div class="member-card__links">
+          <a href="https://x.com/Base_Ball_Bear_" target="_blank" rel="noopener">X</a>
+          <a href="https://www.instagram.com/base_ball_bear_/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="member-card">
+        <p class="member-card__name">関根史織 <span class="member-card__role">Ba/Cho</span></p>
+        <div class="member-card__links">
+          <a href="https://www.instagram.com/sekine_bbb/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="member-card">
+        <p class="member-card__name">堀之内大介 <span class="member-card__role">Dr/Cho</span></p>
+        <div class="member-card__links">
+          <a href="https://x.com/horinouchi_bbb" target="_blank" rel="noopener">X</a>
+          <a href="https://www.instagram.com/horinouchi_bbb/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <p class="members__note">バンド公式: <a href="https://x.com/Base_Ball_Bear_" target="_blank" rel="noopener">X</a> / <a href="https://www.instagram.com/baseballbear_official/" target="_blank" rel="noopener">Instagram</a>(小出のアカウントと共通)</p>
+  </section>
+
+  <footer class="page-footer">
+    <p>年表データの一次情報は主に<a href="https://ja.wikipedia.org/wiki/Base_Ball_Bear" target="_blank" rel="noopener">Wikipedia「Base Ball Bear」</a>。非公式のファン制作サイトです。誤り等あればご指摘ください。</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
