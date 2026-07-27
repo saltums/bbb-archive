@@ -18,12 +18,21 @@
   // --- 吹き出し管理 ---
   let activeBubble = null;
   let bubbleTimer = null;
+  const lastBubbleIdx = new Map(); // anchorEl → 前回のインデックス
 
   function showBubble(anchorEl, comments, sentimentObj) {
     // 既存の吹き出しを閉じる
     if (activeBubble) dismissBubble(activeBubble);
 
-    const idx = Math.floor(Math.random() * comments.length);
+    // 前回と同じコメントを避ける
+    const prev = lastBubbleIdx.get(anchorEl);
+    let idx;
+    if (comments.length <= 1) {
+      idx = 0;
+    } else {
+      do { idx = Math.floor(Math.random() * comments.length); } while (idx === prev);
+    }
+    lastBubbleIdx.set(anchorEl, idx);
     const text = comments[idx];
     const isPos = (sentimentObj.positive || []).includes(text);
 
