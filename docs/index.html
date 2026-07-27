@@ -37,7 +37,17 @@
     </section>
 
     <section class="timeline-wrap" aria-label="年表">
-      <p class="timeline-order-hint">↑ 新しい出来事が上、結成当時が下 ↓</p>
+      <div class="tl-era-bar" aria-hidden="true">
+        <div class="tl-era-bar__end">
+          <span class="tl-era-bar__arrow tl-era-bar__arrow--up">▲</span>
+          <span class="tl-era-bar__year">現在</span>
+        </div>
+        <div class="tl-era-bar__track"></div>
+        <div class="tl-era-bar__end">
+          <span class="tl-era-bar__arrow tl-era-bar__arrow--down">▼</span>
+          <span class="tl-era-bar__year">2001</span>
+        </div>
+      </div>
       <div class="timeline-list" id="timelineList">
         <!-- 年見出し・イベント一覧はJSで生成 -->
       </div>
