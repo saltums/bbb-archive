@@ -463,6 +463,12 @@ a { color: var(--accent); }
   color: var(--ink-dim);
   letter-spacing: 0.03em;
 }
+.tl-bubble__source-link {
+  color: var(--ink-dim);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.tl-bubble__source-link:hover { color: var(--accent); }
 
 @keyframes bubble-in {
   0%   { opacity: 0; transform: scale(0.72) translateY(10px); }

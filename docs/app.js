@@ -33,14 +33,25 @@
       do { idx = Math.floor(Math.random() * comments.length); } while (idx === prev);
     }
     lastBubbleIdx.set(anchorEl, idx);
-    const text = comments[idx];
-    const isPos = (sentimentObj.positive || []).includes(text);
+
+    // コメントは文字列 or {text, source, source_url} オブジェクトに対応
+    const raw = comments[idx];
+    const text       = typeof raw === "string" ? raw : raw.text;
+    const srcLabel   = typeof raw === "string" ? "5ch ファンの声" : (raw.source || "5ch ファンの声");
+    const srcUrl     = typeof raw === "string" ? null : (raw.source_url || null);
+
+    const allPos = (sentimentObj.positive || []).map((c) => typeof c === "string" ? c : c.text);
+    const isPos  = allPos.includes(text);
+
+    const srcHtml = srcUrl
+      ? `<a class="tl-bubble__source-link" href="${srcUrl}" target="_blank" rel="noopener">${srcLabel}</a>`
+      : `<span>${srcLabel}</span>`;
 
     const bubble = document.createElement("div");
     bubble.className = "tl-bubble" + (isPos ? " tl-bubble--pos" : " tl-bubble--neg");
     bubble.innerHTML = `
       <p class="tl-bubble__text">${text}</p>
-      <p class="tl-bubble__source">5ch ファンの声 · ${isPos ? "好意的" : "批判的"}</p>
+      <p class="tl-bubble__source">${srcHtml} · ${isPos ? "好意的" : "批判的"}</p>
     `;
     document.body.appendChild(bubble);
     activeBubble = bubble;
