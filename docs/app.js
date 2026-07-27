@@ -157,7 +157,7 @@
 
   Promise.all([
     fetch("data/timeline.json", { cache: "no-store" }).then((res) => (res.ok ? res.json() : [])),
-    fetch("data/sentiment.json", { cache: "no-store" }).then((res) => (res.ok ? res.json() : [])).catch(() => []),
+    fetch("data/sentiment-manual.json", { cache: "no-store" }).then((res) => (res.ok ? res.json() : [])).catch(() => []),
   ])
     .then(([events, sentiment]) => {
       sentimentByEventId = new Map((sentiment || []).map((s) => [String(s.event_id), s]));
