@@ -85,22 +85,66 @@ a { color: var(--accent); }
 .official-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.5rem;
+  align-items: center;
 }
 
-.official-links a {
-  padding: 0.45rem 0.9rem;
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
   border: 1px solid var(--line);
-  border-radius: 999px;
-  text-decoration: none;
+  background: var(--bg-raised);
   color: var(--ink);
-  font-size: 0.85rem;
-  transition: border-color 0.15s ease, color 0.15s ease;
+  text-decoration: none;
+  font-size: 1.15rem;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: border-color 0.15s, transform 0.15s, background 0.15s;
 }
 
-.official-links a:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+.icon-link svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  fill: currentColor;
+  display: block;
+  flex-shrink: 0;
+}
+
+.icon-link:hover {
+  border-color: currentColor;
+  transform: scale(1.12);
+}
+
+.icon-link--spotify { color: #1db954; }
+.icon-link--youtube { color: #ff2020; }
+.icon-link--x       { color: var(--ink); }
+.icon-link--instagram { color: #e1306c; }
+
+.icon-link--page {
+  border-style: dashed;
+}
+
+.icon-link--sm {
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.95rem;
+}
+
+.icon-link--sm svg {
+  width: 0.85rem;
+  height: 0.85rem;
+}
+
+.icon-link-divider {
+  display: inline-block;
+  width: 1px;
+  height: 1.5rem;
+  background: var(--line);
+  margin: 0 0.1rem;
 }
 
 .legend {
