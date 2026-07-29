@@ -37,7 +37,13 @@
         "title":  "インディーズデビュー、1stミニアルバム『夕方ジェネレーション』",
         "description":  "インディーズ時代唯一のミニアルバム。本来収録予定だった「YUME is VISION」は、堀之内がアルバイト先で足を怪我しバスドラム連打ができなくなったため見送られ、代わりに「微熱ボーイ」「SUNSET-KI・RE・I」を収録。「YUME is VISION」は翌年シングルとして発売された。",
         "source_url":  "https://ja.wikipedia.org/wiki/%E5%A4%95%E6%96%B9%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3",
-        "source_label":  "Wikipedia「夕方ジェネレーション」"
+        "source_label":  "Wikipedia「夕方ジェネレーション」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E5%A4%95%E6%96%B9%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "64",
@@ -48,7 +54,13 @@
         "title":  "インディーズ1stシングル『YUME is VISION』",
         "description":  "インディーズ時代唯一のシングル。前作『夕方ジェネレーション』に収録予定だったが、メンバーの怪我により見送られていた楽曲。",
         "source_url":  "https://ja.wikipedia.org/wiki/YUME_is_VISION",
-        "source_label":  "Wikipedia「YUME is VISION」"
+        "source_label":  "Wikipedia「YUME is VISION」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20YUME%20is%20VISION",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "2",
@@ -59,7 +71,13 @@
         "title":  "インディーズ1stフルアルバム『HIGH COLOR TIMES』",
         "description":  "インディーズ時代の1stフルアルバム。",
         "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」"
+        "source_label":  "Wikipedia「Base Ball Bear」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20HIGH%20COLOR%20TIMES",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "3",
@@ -96,6 +114,10 @@
                                {
                                    "label":  "Wikipedia",
                                    "url":  "https://ja.wikipedia.org/wiki/ELECTRIC_SUMMER"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20ELECTRIC%20SUMMER",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -113,6 +135,10 @@
                                {
                                    "label":  "Wikipedia",
                                    "url":  "https://ja.wikipedia.org/wiki/STAND_BY_ME_(Base_Ball_Bear%E3%81%AE%E6%9B%B2)"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20STAND%20BY%20ME",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -135,6 +161,10 @@
                                {
                                    "label":  "Wikipedia (アルバム)",
                                    "url":  "https://ja.wikipedia.org/wiki/C_(Base_Ball_Bear%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/browse/MPREb_OYXO3s2pZog",
+                                   "label":  "YouTube Music (アルバム)"
                                }
                            ]
     },
@@ -152,6 +182,10 @@
                                {
                                    "label":  "Wikipedia",
                                    "url":  "https://ja.wikipedia.org/wiki/%E6%8A%B1%E3%81%8D%E3%81%97%E3%82%81%E3%81%9F%E3%81%84_(Base_Ball_Bear%E3%81%AE%E6%9B%B2)"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E6%8A%B1%E3%81%8D%E3%81%97%E3%82%81%E3%81%9F%E3%81%84",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -169,6 +203,10 @@
                                {
                                    "label":  "Wikipedia",
                                    "url":  "https://ja.wikipedia.org/wiki/%E3%83%89%E3%83%A9%E3%83%9E%E3%83%81%E3%83%83%E3%82%AF_(Base_Ball_Bear%E3%81%AE%E6%9B%B2)"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E3%83%89%E3%83%A9%E3%83%9E%E3%83%81%E3%83%83%E3%82%AF",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -186,6 +224,10 @@
                                {
                                    "label":  "Wikipedia",
                                    "url":  "https://ja.wikipedia.org/wiki/%E7%9C%9F%E5%A4%8F%E3%81%AE%E6%9D%A1%E4%BB%B6"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E7%9C%9F%E5%A4%8F%E3%81%AE%E6%9D%A1%E4%BB%B6",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -203,6 +245,10 @@
                                {
                                    "label":  "Wikipedia",
                                    "url":  "https://ja.wikipedia.org/wiki/%E6%84%9B%E3%81%97%E3%81%A6%E3%82%8B_(Base_Ball_Bear%E3%81%AE%E6%9B%B2)"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E6%84%9B%E3%81%97%E3%81%A6%E3%82%8B",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -225,6 +271,10 @@
                                {
                                    "label":  "Wikipedia (アルバム)",
                                    "url":  "https://ja.wikipedia.org/wiki/%E5%8D%81%E4%B8%83%E6%AD%B3_(Base_Ball_Bear%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E5%8D%81%E4%B8%83%E6%AD%B3",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -247,6 +297,10 @@
                                {
                                    "label":  "Wikipedia",
                                    "url":  "https://ja.wikipedia.org/wiki/Changes_(Base_Ball_Bear%E3%81%AE%E6%9B%B2)"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20changes",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -259,7 +313,13 @@
         "title":  "デジタルシングル『SCHOOL GIRL FANTASY』",
         "description":  "",
         "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」"
+        "source_label":  "Wikipedia「Base Ball Bear」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20SCHOOL%20GIRL%20FANTASY",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "39",
@@ -275,6 +335,10 @@
                                {
                                    "label":  "Wikipedia (LOVE MATHEMATICS)",
                                    "url":  "https://ja.wikipedia.org/wiki/LOVE_MATHEMATICS"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20LOVE%20MATHEMATICS",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -292,6 +356,10 @@
                                {
                                    "label":  "Wikipedia",
                                    "url":  "https://ja.wikipedia.org/wiki/%E7%A5%9E%E3%80%85LOOKS_YOU"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E7%A5%9E%E3%80%85LOOKS%20YOU",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -320,6 +388,10 @@
                                {
                                    "label":  "Wikipedia",
                                    "url":  "https://ja.wikipedia.org/wiki/BREEEEZE_GIRL"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20BREEEEZE%20GIRL",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -359,6 +431,10 @@
                                {
                                    "label":  "Wikipedia",
                                    "url":  "https://ja.wikipedia.org/wiki/Stairway_Generation"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20Stairway%20Generation",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -381,6 +457,10 @@
                                {
                                    "label":  "Wikipedia (アルバム)",
                                    "url":  "https://ja.wikipedia.org/wiki/(WHAT_IS_THE)LOVE_%26_POP%3F"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20LOVE%20POP",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -410,7 +490,13 @@
         "title":  "3.5thアルバム『CYPRESS GIRLS』",
         "description":  "初のセルフプロデュース・コンセプトアルバム。同日発売の『DETECTIVE BOYS』と対をなす作品。小出祐介いわく「これまでの音源では説明できなかった部分」を見せるための2作。チャットモンチーのAcco、サカナクションの山口一郎、iLL、Ryohuら豪華ゲストが参加。",
         "source_url":  "https://ja.wikipedia.org/wiki/CYPRESS_GIRLS",
-        "source_label":  "Wikipedia「CYPRESS GIRLS」"
+        "source_label":  "Wikipedia「CYPRESS GIRLS」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20CYPRESS%20GIRLS",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "61",
@@ -421,7 +507,13 @@
         "title":  "3.5thアルバム『DETECTIVE BOYS』",
         "description":  "初のセルフプロデュース・コンセプトアルバム。同日発売の『CYPRESS GIRLS』と対をなす作品。小出祐介いわく「これまでの音源では説明できなかった部分」を見せるための2作。チャットモンチーのAcco、サカナクションの山口一郎、iLL、Ryohuら豪華ゲストが参加。",
         "source_url":  "https://ja.wikipedia.org/wiki/DETECTIVE_BOYS",
-        "source_label":  "Wikipedia「DETECTIVE BOYS」"
+        "source_label":  "Wikipedia「DETECTIVE BOYS」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20DETECTIVE%20BOYS",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "45",
@@ -437,6 +529,10 @@
                                {
                                    "label":  "Wikipedia",
                                    "url":  "https://ja.wikipedia.org/wiki/Yoakemae"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20yoakemae",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -449,7 +545,13 @@
         "title":  "シングル『short hair』",
         "description":  "",
         "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」"
+        "source_label":  "Wikipedia「Base Ball Bear」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20short%20hair",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "47",
@@ -460,7 +562,13 @@
         "title":  "シングル『Tabibito In The Dark/スローモーションをもう一度 part.2』",
         "description":  "",
         "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」"
+        "source_label":  "Wikipedia「Base Ball Bear」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20Tabibito%20In%20The%20Dark",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "8",
@@ -481,6 +589,10 @@
                                {
                                    "label":  "Wikipedia (アルバム)",
                                    "url":  "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%91%BC%E5%90%B8"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E6%96%B0%E5%91%BC%E5%90%B8",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -524,10 +636,16 @@
         "date_precision":  "day",
         "type":  "release",
         "importance":  "minor",
-        "title":  "シングル『初恋』",
+        "title":  "2ndミニアルバム『初恋』",
         "description":  "映画『図書館戦争 革命のつばさ』主題歌。図書館戦争シリーズとのタイアップは、2008年のTVアニメ版エンディングテーマ「changes」に続き2度目。",
         "source_url":  "https://tower.jp/article/news/2012/03/09/n12",
-        "source_label":  "TOWER RECORDS ONLINE「Base Ball Bear、新曲“初恋”が映画「図書館戦争 革命のつばさ」主題歌に」"
+        "source_label":  "TOWER RECORDS ONLINE「Base Ball Bear、新曲“初恋”が映画「図書館戦争 革命のつばさ」主題歌に」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E5%88%9D%E6%81%8B",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "10",
@@ -543,7 +661,13 @@
                       "provider":  "spotify",
                       "kind":  "album",
                       "id":  "5eqqCcvQn0JDJh9htf4HRg"
-                  }
+                  },
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E3%83%90%E3%83%B3%E3%83%89B%E3%81%AE%E3%83%99%E3%82%B9%E3%83%88",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "48",
@@ -571,7 +695,13 @@
         "title":  "3rdミニアルバム『THE CUT』",
         "description":  "",
         "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」"
+        "source_label":  "Wikipedia「Base Ball Bear」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20THE%20CUT",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "50",
@@ -582,7 +712,13 @@
         "title":  "シングル『ファンファーレがきこえる/senkou_hanabi』",
         "description":  "",
         "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」"
+        "source_label":  "Wikipedia「Base Ball Bear」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E3%83%95%E3%82%A1%E3%83%B3%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%81%8C%E3%81%8D%E3%81%93%E3%81%88%E3%82%8B",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "11",
@@ -603,6 +739,10 @@
                                {
                                    "label":  "Wikipedia (アルバム)",
                                    "url":  "https://ja.wikipedia.org/wiki/%E4%BA%8C%E5%8D%81%E4%B9%9D%E6%AD%B3"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E4%BA%8C%E5%8D%81%E4%B9%9D%E6%AD%B3",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -615,7 +755,13 @@
         "title":  "シングル『「それって、for 誰?」part.1』",
         "description":  "",
         "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」"
+        "source_label":  "Wikipedia「Base Ball Bear」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E3%81%9D%E3%82%8C%E3%81%A3%E3%81%A6%20for%20%E8%AA%B0",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "52",
@@ -626,7 +772,13 @@
         "title":  "シングル『文化祭の夜』",
         "description":  "",
         "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」"
+        "source_label":  "Wikipedia「Base Ball Bear」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E6%96%87%E5%8C%96%E7%A5%AD%E3%81%AE%E5%A4%9C",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "53",
@@ -637,7 +789,13 @@
         "title":  "シングル『不思議な夜』",
         "description":  "",
         "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」"
+        "source_label":  "Wikipedia「Base Ball Bear」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E4%B8%8D%E6%80%9D%E8%AD%B0%E3%81%AA%E5%A4%9C",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "12",
@@ -658,6 +816,10 @@
                                {
                                    "label":  "Wikipedia (アルバム)",
                                    "url":  "https://ja.wikipedia.org/wiki/C2_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20C2",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -708,6 +870,10 @@
                                {
                                    "label":  "Wikipedia (アルバム)",
                                    "url":  "https://ja.wikipedia.org/wiki/%E5%85%89%E6%BA%90_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E5%85%89%E6%BA%90",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -789,7 +955,13 @@
         "title":  "1st EP『ポラリス』",
         "description":  "",
         "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」"
+        "source_label":  "Wikipedia「Base Ball Bear」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E3%83%9D%E3%83%A9%E3%83%AA%E3%82%B9",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "58",
@@ -800,7 +972,13 @@
         "title":  "2nd EP『Grape』",
         "description":  "",
         "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」"
+        "source_label":  "Wikipedia「Base Ball Bear」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20Grape%20EP",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "59",
@@ -838,6 +1016,10 @@
                                {
                                    "label":  "Wikipedia (アルバム)",
                                    "url":  "https://ja.wikipedia.org/wiki/C3_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20C3",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -860,6 +1042,10 @@
                                {
                                    "label":  "Wikipedia (アルバム)",
                                    "url":  "https://ja.wikipedia.org/wiki/DIARY_KEY"
+                               },
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20DIARY%20KEY",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -940,7 +1126,13 @@
         "title":  "デジタルシングル『海になりたい part.3』",
         "description":  "3度目の日本武道館公演にあわせて会場限定CDも発売。同CDには「チェンジアップ」(原典は2002年9月リリース、学生時代=デモテープ時代の楽曲)の2022年再録バージョンを収録。ストリーミング配信は無くこのCDでのみ聴取可能。デビュー前の楽曲が約20年の時を経て公式音源化された。VOS限定盤・2023年2月配信版には別途「SEVENTEEN」を収録。",
         "source_url":  "https://ja.wikipedia.org/wiki/%E6%B5%B7%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%9F%E3%81%84_part.3",
-        "source_label":  "Wikipedia「海になりたい part.3」"
+        "source_label":  "Wikipedia「海になりたい part.3」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E6%B5%B7%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%9F%E3%81%84",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "23",
@@ -951,7 +1143,13 @@
         "title":  "デジタルシングル『Endless Etude』",
         "description":  "",
         "source_url":  "https://www.baseballbear.com/sp/news/",
-        "source_label":  "Base Ball Bear Official Website"
+        "source_label":  "Base Ball Bear Official Website",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20Endless%20Etude",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "78",
@@ -996,7 +1194,13 @@
         "title":  "4thミニアルバム『天使だったじゃないか』",
         "description":  "",
         "source_url":  "https://www.baseballbear.com/sp/news/",
-        "source_label":  "Base Ball Bear Official Website"
+        "source_label":  "Base Ball Bear Official Website",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E5%A4%A9%E4%BD%BF%E3%81%A0%E3%81%A3%E3%81%9F%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%8B",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "79",
@@ -1024,7 +1228,13 @@
         "title":  "配信シングル『tobu_tori_』",
         "description":  "",
         "source_url":  "https://www.baseballbear.com/sp/news/",
-        "source_label":  "Base Ball Bear Official Website"
+        "source_label":  "Base Ball Bear Official Website",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20tobu_tori_",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "27",
@@ -1035,7 +1245,13 @@
         "title":  "配信シングル『夏の細部』",
         "description":  "",
         "source_url":  "https://www.baseballbear.com/sp/news/",
-        "source_label":  "Base Ball Bear Official Website"
+        "source_label":  "Base Ball Bear Official Website",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E5%A4%8F%E3%81%AE%E7%B4%B0%E9%83%A8",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "28",
@@ -1051,7 +1267,13 @@
                       "provider":  "spotify",
                       "kind":  "album",
                       "id":  "5hpMoFgDUMXAAi0jcknt77"
-                  }
+                  },
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20Lyrical%20Tattoo",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "29",
@@ -1091,7 +1313,13 @@
         "title":  "小出祐介「material club」2ndアルバム『material club Ⅱ』",
         "description":  "6年の活動休止を経てバンド編成で再始動した「material club」の2ndアルバム。福岡晃子(元チャットモンチー)、成田ハネダ(パスピエ)、キダモティフォ(tricot)、ユナ(元CHAI)が参加。",
         "source_url":  "https://skream.jp/news/2024/09/material_club_2nd_album_release.php",
-        "source_label":  "Skream!「material club 2ndアルバム10/30リリース決定」"
+        "source_label":  "Skream!「material club 2ndアルバム10/30リリース決定」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=material%20club%20%E5%B0%8F%E5%87%BA%E7%A5%90%E4%BB%8B%20material%20club%20II",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "67",
@@ -2102,7 +2330,13 @@
         "title":  "配信シングル「プールサイダー」",
         "description":  "配信限定シングル。「水際の見学者」という意味のタイトルで、瑞々しい3ピース・サウンドのサマー・アンセム。2021年第2弾シングル。6/4のツアー・ファイナル見逃し配信内で初披露されていた。",
         "source_url":  "https://skream.jp/news/2021/06/base_ball_bear_pool_sider.php",
-        "source_label":  "Skream!「Base Ball Bear、配信SG『プールサイダー』リリース決定」"
+        "source_label":  "Skream!「Base Ball Bear、配信SG『プールサイダー』リリース決定」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E3%83%97%E3%83%BC%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%80%E3%83%BC",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  "138",
@@ -2186,9 +2420,283 @@
         "date_precision":  "day",
         "type":  "release",
         "importance":  "major",
-        "title":  "メジャーデビューシングル『GIRL FRIEND』",
-        "description":  "EMIミュージック・ジャパンよりメジャーデビュー。1stシングル「GIRL FRIEND」「ELECTRIC SUMMER」「STAND BY ME」の3枚を立て続けにリリース。",
+        "title":  "メジャーデビュー1stミニアルバム『GIRL FRIEND』",
+        "description":  "EMIミュージック・ジャパンよりメジャーデビュー。1stミニアルバム「GIRL FRIEND」をリリース。",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20GIRL%20FRIEND",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
+    },
+    {
+        "id":  149,
+        "date":  "2002-07-01",
+        "date_precision":  "month",
+        "date_confidence":  "estimated",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "自主制作デモ「前 -front-」「後 -back-」",
+        "description":  "高校在学中に自主制作・自費録音した最初期のデモCD。「前 -front-」「後 -back-」の2作を連続制作。ライブ会場で手売り。",
+        "source_url":  "https://www.generasia.com/wiki/Base_Ball_Bear",
+        "source_label":  "generasia"
+    },
+    {
+        "id":  150,
+        "date":  "2002-10-01",
+        "date_precision":  "month",
+        "date_confidence":  "estimated",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "自主制作デモ「ホワイトワイライト」",
+        "description":  "高校在学中の自主制作3作目のデモCD。ライブ会場のみ配布。",
+        "source_url":  "https://www.generasia.com/wiki/Base_Ball_Bear",
+        "source_label":  "generasia"
+    },
+    {
+        "id":  151,
+        "date":  "2003-06-01",
+        "date_precision":  "month",
+        "date_confidence":  "estimated",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "インディーズ先行デモ「YUME is VISION」「YUME/SAYONARA」",
+        "description":  "正式インディーズデビュー（夕方ジェネレーション）の前に制作・配布したデモ音源。「YUME is VISION」「YUME / SAYONARA」の2作。",
+        "source_url":  "https://www.generasia.com/wiki/Base_Ball_Bear",
+        "source_label":  "generasia"
+    },
+    {
+        "id":  152,
+        "date":  "2004-12-24",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "スプリットシングル「B Beginning!!」(Bacon / Base Ball Bear)",
+        "description":  "ロックバンドBaconとのスプリットシングル(catalog: UKDZ-41)。インディーズ期のクリスマスに限定リリース。",
+        "source_url":  "https://www.hmv.co.jp/en/artist_Bacon-%E3%83%99%E3%83%BC%E3%82%B3%E3%83%B3-Base-Ball-Bear_000000000251257/item_B-Beginning_1782009",
+        "source_label":  "HMV",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base+Ball+Bear+B+Beginning",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
+    },
+    {
+        "id":  153,
+        "date":  "2005-10-14",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "インディーズ「バンドBについて」(会場限定1000枚)",
+        "description":  "ライブ会場のみ販売の限定アルバム。1000枚限定。翌年メジャー流通版がリリースされる原型。",
         "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
         "source_label":  "Wikipedia"
+    },
+    {
+        "id":  154,
+        "date":  "2006-01-12",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "INTRODUCING ALBUM「バンドBについて」(メジャー流通版・5000枚)",
+        "description":  "EMI流通によるメジャーデビュー前の先行アルバム。5000枚限定。「ラビリンスへのタイミング」1曲追加収録。1ヶ月で完売。",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base+Ball+Bear+バンドBについて",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
+    },
+    {
+        "id":  155,
+        "date":  "2010-03-17",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "ライブアルバム「1235」",
+        "description":  "2010年1月3日の日本武道館公演を収録したライブアルバム。",
+        "source_url":  "https://www.generasia.com/wiki/Base_Ball_Bear",
+        "source_label":  "generasia",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base+Ball+Bear+1235+live",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
+    },
+    {
+        "id":  156,
+        "date":  "2011-04-07",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "会場限定シングル「yoakemae-no-yoakemae」",
+        "description":  "ライブ会場のみ販売のシングル。10周年ツアー中に配布・販売。",
+        "source_url":  "https://www.generasia.com/wiki/Base_Ball_Bear",
+        "source_label":  "generasia",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base+Ball+Bear+yoakemae-no-yoakemae",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
+    },
+    {
+        "id":  157,
+        "date":  "2013-07-24",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "配信シングル「senkou_hanabi」",
+        "description":  "「ファンファーレがきこえる / senkou_hanabi」のダブルA面シングルに先立ち、「senkou_hanabi」を先行配信リリース。",
+        "source_url":  "https://www.generasia.com/wiki/Base_Ball_Bear",
+        "source_label":  "generasia",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base+Ball+Bear+senkou_hanabi",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
+    },
+    {
+        "id":  158,
+        "date":  "2010-06-23",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "配信シングル「きみの目」feat. 山口一郎 (サカナクション)",
+        "description":  "サカナクション山口一郎とのコラボレーション配信シングル。",
+        "source_url":  "https://www.generasia.com/wiki/Base_Ball_Bear",
+        "source_label":  "generasia",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base+Ball+Bear+きみの目+山口一郎",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
+    },
+    {
+        "id":  159,
+        "date":  "2010-07-21",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "配信シングル「クチビル・ディテクティヴ」",
+        "description":  "3.5thアルバムDETECTIVE BOYS期の配信シングル。",
+        "source_url":  "https://www.generasia.com/wiki/Base_Ball_Bear",
+        "source_label":  "generasia",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base+Ball+Bear+クチビル+ディテクティヴ",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
+    },
+    {
+        "id":  160,
+        "date":  "2010-08-25",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "配信シングル「Transfer Girl」",
+        "description":  "CYPRESS GIRLS期の配信シングル。",
+        "source_url":  "https://www.generasia.com/wiki/Base_Ball_Bear",
+        "source_label":  "generasia",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base+Ball+Bear+Transfer+Girl",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
+    },
+    {
+        "id":  161,
+        "date":  "2010-09-15",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "配信シングル「十字架You and I」",
+        "description":  "3.5thアルバムCYPRESS GIRLS期の配信シングル。",
+        "source_url":  "https://www.generasia.com/wiki/Base_Ball_Bear",
+        "source_label":  "generasia",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base+Ball+Bear+十字架+You+and+I",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
+    },
+    {
+        "id":  162,
+        "date":  "2016-09-28",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "増補改訂完全版「バンドBのベスト」",
+        "description":  "2013年の1stベストアルバムに新曲・追加曲を加えた増補改訂版。湯浅脱退後の3人体制になっての再編集盤。",
+        "source_url":  "https://www.generasia.com/wiki/Base_Ball_Bear",
+        "source_label":  "generasia",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base+Ball+Bear+バンドBのベスト+増補",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
+    },
+    {
+        "id":  163,
+        "date":  "2019-01-05",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "配信先行シングル「Flame」",
+        "description":  "1st EP「ポラリス」発売に先立つ先行配信シングル。3人体制後のDGP RECORDS初配信作。",
+        "source_url":  "https://www.generasia.com/wiki/Base_Ball_Bear",
+        "source_label":  "generasia",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base+Ball+Bear+Flame",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
+    },
+    {
+        "id":  164,
+        "date":  "2019-12-25",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "配信シングル「Cross Words」",
+        "description":  "クリスマス配信の限定シングル。「Grape」EP後のリリース。",
+        "source_url":  "https://www.generasia.com/wiki/Base_Ball_Bear",
+        "source_label":  "generasia",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base+Ball+Bear+Cross+Words",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
+    },
+    {
+        "id":  165,
+        "date":  "2021-03-24",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "マキシシングル「SYUUU / ドライブ」(5000枚限定)",
+        "description":  "「不思議な夜」(2015)から約5年5ヶ月ぶりのCDシングル。DGP RECORDS初CDシングル。5000枚限定生産。「ドライブ」はモヤモヤさまぁ~ず2エンディング曲。",
+        "source_url":  "https://www.jvcmusic.co.jp/-/Discography/A026389/VIZL-1880.html",
+        "source_label":  "Victor Entertainment",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base+Ball+Bear+SYUUU+ドライブ",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     }
 ]
