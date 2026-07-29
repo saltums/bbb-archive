@@ -1,4 +1,4 @@
-﻿[
+[
     {
         "_comment":  "各年表イベント(timeline.jsonのid)に紐づく「当時の反応」の手動入力欄です。LiveFans/X/2ch等、ご自身で確認した内容をpositive/negativeに箇条書きで追加してください。空のままなら年表側には何も表示されません。"
     },
@@ -75,7 +75,21 @@
     {
         "event_id":  "8",
         "positive":  [
-
+                         {
+                             "text":  "見事に融合されたサウンドは邦ロックバンドでも屈指になった",
+                             "source":  "hatenablog（naoki398）",
+                             "source_url":  "https://naoki398.hatenablog.com/entry/20111125/1322219371"
+                         },
+                         {
+                             "text":  "小出さんの作詞作曲のセンスは同年代の誰にも越えられないくらいのレベルの高さがある",
+                             "source":  "hatenablog（naoki398）",
+                             "source_url":  "https://naoki398.hatenablog.com/entry/20111125/1322219371"
+                         },
+                         {
+                             "text":  "思い出主義との決別を果たす為の強烈なコンセプトアルバム",
+                             "source":  "hatenablog（oka-p）",
+                             "source_url":  "https://oka-p.hatenablog.com/entry/2015/10/01/221804"
+                         }
                      ],
         "negative":  [
 
@@ -116,7 +130,7 @@
                              "source_url":  "https://ameblo.jp/overalive/entry-11869708894.html"
                          },
                          {
-                             "text":  "「"魔王"の感動は単体で聴いたところで味わえない。一曲目から順番に聴けば、変われない小出祐介を連れて、新しいBase Ball Bearが駆け抜けていく」",
+                             "text":  "「\"魔王\"の感動は単体で聴いたところで味わえない。一曲目から順番に聴けば、変われない小出祐介を連れて、新しいBase Ball Bearが駆け抜けていく」",
                              "source":  "Ameblo ファンブログ overalive",
                              "source_url":  "https://ameblo.jp/overalive/entry-11869708894.html"
                          },
@@ -134,7 +148,21 @@
     {
         "event_id":  "12",
         "positive":  [
-
+                         {
+                             "text":  "一音一音が太く強くタフなバンドサウンド",
+                             "source":  "note（TKD）",
+                             "source_url":  "https://note.com/ja0505pa/n/n26a9ef4c1ada"
+                         },
+                         {
+                             "text":  "ドラムとベースでブインブイン引っ張るので、楽曲がギターで塗りつぶされることなくスッキリと聴ける",
+                             "source":  "note（nasu）",
+                             "source_url":  "https://note.com/nasuhuawa4519/n/nf06224f8456c"
+                         },
+                         {
+                             "text":  "4人での作品の最高到達点がこの作品",
+                             "source":  "note（nasu）",
+                             "source_url":  "https://note.com/nasuhuawa4519/n/nf06224f8456c"
+                         }
                      ],
         "negative":  [
 
@@ -162,12 +190,21 @@
     {
         "event_id":  "14",
         "positive":  [
-                         "「3人になっても光源はあんなに良かった」3人体制作品の中で最高評価を得る声が多数",
-                         "3人時代の序列として「光源＞Grape＞ポラリス」という評価軸がファン間に定着",
-                         "「コンスタントにアルバムが出ることを当たり前だと思ったらダメ、こいちゃんは新曲いっぱい作ってくれてありがたい」",
-                         "「光源が最高傑作だと思ってるんだけど」",
-                         "「光源、黒歴史認定されてると思われがちだけどライブでもっと演ってほしいな。3人のLow wayとか聴きたい」",
-                         "「小出のアルバムはどんどん変えていくって言ってるんだから、二枚先三枚先でまたハマるアルバム作ると思う」"
+                         {
+                             "text":  "懐の広さとか射程の長さに大人としての成長を感じる",
+                             "source":  "hatenablog（olsen-revue）",
+                             "source_url":  "https://olsen-revue.hatenablog.com/entry/2017/11/06/124439"
+                         },
+                         {
+                             "text":  "なのにちゃんとこうやって刺さる、これは表現としてなかなか高い領域に達しているんじゃないか",
+                             "source":  "hatenablog（olsen-revue）",
+                             "source_url":  "https://olsen-revue.hatenablog.com/entry/2017/11/06/124439"
+                         },
+                         {
+                             "text":  "8曲とこれまでのフルアルバムの中で最少の曲数であり、その分粒立った曲を味わえる",
+                             "source":  "note（TKD）",
+                             "source_url":  "https://note.com/ja0505pa/n/n26a9ef4c1ada"
+                         }
                      ],
         "negative":  [
                          "「3人体制はミックスもあるだろうけど基本ギター一本で音重ねないから物足りない部分がある」",
@@ -211,7 +248,21 @@
     {
         "event_id":  "18",
         "positive":  [
-
+                         {
+                             "text":  "ドキュメンタリーとしても感涙ものだし、それを吹き飛ばすロックバンドの勢いと技術と迫力に満ちてるし、傑作の名を付すに相応しいアルバムに仕上がってる",
+                             "source":  "note（TKD）",
+                             "source_url":  "https://note.com/ja0505pa/n/n79d0878744a6"
+                         },
+                         {
+                             "text":  "パラレルワールドをテーマにした光源がC3が出たことで本当にパラレルワールドのベボベが作ったみたいなポジション",
+                             "source":  "note（月の人）",
+                             "source_url":  "https://note.com/shapemoon/n/n6fd9fc04a328"
+                         },
+                         {
+                             "text":  "ここにきてもう一度、ライブという営みを明朗に歌おう！という心意気が感じられる",
+                             "source":  "note（月の人）",
+                             "source_url":  "https://note.com/shapemoon/n/n6fd9fc04a328"
+                         }
                      ],
         "negative":  [
 
@@ -221,7 +272,21 @@
     {
         "event_id":  "19",
         "positive":  [
-
+                         {
+                             "text":  "結成20周年を迎えるベボベの不変と普遍と変革と今とこれからが深く明記された一枚",
+                             "source":  "note（TKD）",
+                             "source_url":  "https://note.com/ja0505pa/n/n09d465b743db"
+                         },
+                         {
+                             "text":  "深刻さとかつてない肯定力に満ちた作品",
+                             "source":  "note（月の人）",
+                             "source_url":  "https://note.com/shapemoon/n/n8e1e404724ca"
+                         },
+                         {
+                             "text":  "dieありき、だからドLIVEする——死があるからこそ生きることに全力になれる",
+                             "source":  "note（月の人）",
+                             "source_url":  "https://note.com/shapemoon/n/n8e1e404724ca"
+                         }
                      ],
         "negative":  [
 
@@ -628,10 +693,26 @@
     {
         "event_id":  "57",
         "positive":  [
-                         "「ポラリスはライブで聴くとめちゃくちゃ良い、特にライブ映えする」",
-                         "「ポラリスもGrapeもめっちゃ好き」という熱心なファン層も存在",
-                         "「EPくらいのボリュームがちょうどいい。今回のはポラリスも大きく超えてきた」(Grapeへの反応)",
-                         "「ポラリスは音源だと微妙だけどライブで聴くとめちゃくちゃ良いと思った。特にライブ映えする」"
+                         {
+                             "text":  "全てがハイレベルで、ほぼ綺麗な五角形みたいなバンド",
+                             "source":  "note（月の人）",
+                             "source_url":  "https://note.com/shapemoon/n/n8e61e12790aa"
+                         },
+                         {
+                             "text":  "その骨組み自体がめちゃくちゃカッコ良い",
+                             "source":  "note（月の人）",
+                             "source_url":  "https://note.com/shapemoon/n/n8e61e12790aa"
+                         },
+                         {
+                             "text":  "3人の新しいスタイルで完全に構成された初めての作品",
+                             "source":  "hatenablog（fujimon-sas）",
+                             "source_url":  "https://fujimon-sas.hatenadiary.jp/entry/2019/02/04/180000"
+                         },
+                         {
+                             "text":  "ギタードラムベース……輝くフレーズ　結んだ先にポラリス、という一節が今のバンドのすべてを物語っている",
+                             "source":  "hatenablog（fujimon-sas）",
+                             "source_url":  "https://fujimon-sas.hatenadiary.jp/entry/2019/02/04/180000"
+                         }
                      ],
         "negative":  [
                          "「Grapeとポラリスはあまり好きな感じじゃなかった。光源は好きだけど」という声が多数派",
