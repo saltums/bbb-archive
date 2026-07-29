@@ -35,10 +35,18 @@
     {
         "event_id":  "4",
         "positive":  [
-
+                         {
+                             "text":  "80年代的なビートとクロスオーバー感が良く、楽器隊の技術力が光る作品",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1165160529/"
+                         }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "ボーカルの声の不安定さが気になる",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1165160529/"
+                         }
                      ],
         "note":  "5ch過去ログ: https://kako.5ch.io/test/read.cgi/musicjg/1165160529/ (vol.7, 2006年12月) / https://kako.5ch.io/test/read.cgi/musicjg/1167889304/ (vol.8, 2007年1月)"
     },
@@ -89,10 +97,19 @@
                              "text":  "思い出主義との決別を果たす為の強烈なコンセプトアルバム",
                              "source":  "hatenablog（oka-p）",
                              "source_url":  "https://oka-p.hatenablog.com/entry/2015/10/01/221804"
+                         },
+                         {
+                             "text":  "ポップと歌詞の深さが融合した、10周年を迎えたバンドの新しい魅力",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1322327317/"
                          }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "新しい試みは評価できるが、メンバーの個性がやや埋没してしまっているのが惜しい",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1322327317/"
+                         }
                      ],
         "note":  "5ch過去ログ: https://kako.5ch.io/test/read.cgi/musicjg/1319274295/ (vol.42, 2011年10月) / https://kako.5ch.io/test/read.cgi/musicjg/1322327317/ (vol.43, 2011年11月)"
     },
@@ -138,10 +155,19 @@
                              "text":  "「本当の本当に、完璧な大傑作です。『二十九歳』絶対に聴いてください」",
                              "source":  "Ameblo ファンブログ overalive",
                              "source_url":  "https://ameblo.jp/overalive/entry-11869708894.html"
+                         },
+                         {
+                             "text":  "ライブで聴くと一層引き立つ、楽曲構成が良い作品",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1410086951/"
                          }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "新しい試みは感じるが、従来の楽曲の方が好みという声も",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1410086951/"
+                         }
                      ],
         "note":  "5ch過去ログ: https://kako.5ch.io/test/read.cgi/musicjg/1385696128/ (vol.50, 2013年11月) / https://kako.5ch.io/test/read.cgi/musicjg/1400580795/ (vol.51, 2014年5月)"
     },
@@ -162,10 +188,19 @@
                              "text":  "4人での作品の最高到達点がこの作品",
                              "source":  "note（nasu）",
                              "source_url":  "https://note.com/nasuhuawa4519/n/nf06224f8456c"
+                         },
+                         {
+                             "text":  "新しいサウンド方向への挑戦が評価される、実験的な試みが成功した作品",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1342800838/"
                          }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "楽曲の完成度にばらつきがあり、後半は物足りないという指摘も",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1342800838/"
+                         }
                      ],
         "note":  "5ch過去ログ: https://kako.5ch.io/test/read.cgi/musicjg/1342800838/ (vol.46, 2012年7月) / https://kako.5ch.io/test/read.cgi/musicjg/1352737147/ (vol.47, 2012年11月)"
     },
