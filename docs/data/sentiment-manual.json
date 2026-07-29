@@ -105,12 +105,31 @@
     {
         "event_id":  "11",
         "positive":  [
-
+                         {
+                             "text":  "「生まれて初めてロックバンドのアルバムで涙が溢れてきた。Base Ball Bearのニューアルバム、完璧です」",
+                             "source":  "Ameblo ファンブログ overalive",
+                             "source_url":  "https://ameblo.jp/overalive/entry-11869708894.html"
+                         },
+                         {
+                             "text":  "「全曲が力強くベボベを主張する良曲揃い粒揃い。歌詞カードを睨みながらじっと聴き入って、あっという間に一時間超を過ごしてしまう大作」",
+                             "source":  "Ameblo ファンブログ overalive",
+                             "source_url":  "https://ameblo.jp/overalive/entry-11869708894.html"
+                         },
+                         {
+                             "text":  "「"魔王"の感動は単体で聴いたところで味わえない。一曲目から順番に聴けば、変われない小出祐介を連れて、新しいBase Ball Bearが駆け抜けていく」",
+                             "source":  "Ameblo ファンブログ overalive",
+                             "source_url":  "https://ameblo.jp/overalive/entry-11869708894.html"
+                         },
+                         {
+                             "text":  "「本当の本当に、完璧な大傑作です。『二十九歳』絶対に聴いてください」",
+                             "source":  "Ameblo ファンブログ overalive",
+                             "source_url":  "https://ameblo.jp/overalive/entry-11869708894.html"
+                         }
                      ],
         "negative":  [
 
                      ],
-        "note":  ""
+        "note":  "出典: Ameblo ファンブログ「overalive」2014年6月4日のアルバムレビュー記事より。"
     },
     {
         "event_id":  "12",
@@ -296,12 +315,35 @@
     {
         "event_id":  "28",
         "positive":  [
-
+                         {
+                             "text":  "「TIME SHIFT GIRL」、このnoteを書いている時点では1番好きと言っても過言ではない…いやどの曲もいいのだけど！Bメロのファルセット、切なさが加速させられて、もうね…！",
+                             "source":  "note TKD アルバムレビュー",
+                             "source_url":  "https://note.com/ja0505pa/n/n12babdc884a2"
+                         },
+                         {
+                             "text":  "「(The rise of) Offline Souls」のイントロのギターフレーズ、バーッと眼前が開けていく感じ！気持ちがイイ！これまでの楽曲の中では「HIGH COLOR TIMES」を思い出すような素晴らしいイントロ",
+                             "source":  "note TKD アルバムレビュー",
+                             "source_url":  "https://note.com/ja0505pa/n/n12babdc884a2"
+                         },
+                         {
+                             "text":  "「今」性の強い詞を普遍性を持たせつつ書けるという点で小出は優れた作詞家だと思う。3ピースロックバンドとしてさらに進化した矜持が詰まったアルバム",
+                             "source":  "note TKD アルバムレビュー",
+                             "source_url":  "https://note.com/ja0505pa/n/n12babdc884a2"
+                         },
+                         {
+                             "text":  "2015年に「この曲をfor you」と歌い、10年経った今も「Still singing for you」と歌い続ける芯の強さよ",
+                             "source":  "note TKD アルバムレビュー",
+                             "source_url":  "https://note.com/ja0505pa/n/n12babdc884a2"
+                         }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "「振り切った作品」との評価を得つつも、やや説明的かつ分かりやすすぎる面がある、という正直な指摘も",
+                             "source":  "note 月の人 ディスクレビュー",
+                             "source_url":  "https://note.com/shapemoon/n/n99c4b16801f5"
+                         }
                      ],
-        "note":  ""
+        "note":  "出典: note TKD アルバムレビュー(2026年2月)および月の人ディスクレビュー(2026年2月)より。"
     },
     {
         "event_id":  "29",

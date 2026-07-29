@@ -1,6 +1,24 @@
 (function () {
   "use strict";
 
+  // --- ハンバーガーメニュー ---
+  const navToggle = document.getElementById("navToggle");
+  const navDropdown = document.getElementById("navDropdown");
+  if (navToggle && navDropdown) {
+    navToggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const open = !navDropdown.hidden;
+      navDropdown.hidden = open;
+      navToggle.setAttribute("aria-expanded", String(!open));
+    });
+    document.addEventListener("click", (e) => {
+      if (!navDropdown.hidden && !navDropdown.contains(e.target) && e.target !== navToggle) {
+        navDropdown.hidden = true;
+        navToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
   const TYPE_LABEL = {
     release: "リリース",
     live: "ライブ",
