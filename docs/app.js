@@ -29,6 +29,17 @@
   const overlay = document.getElementById("detailOverlay");
   const closeBtn = document.getElementById("detailClose");
   const majorOnlyToggle = document.getElementById("majorOnlyToggle");
+  const filterBtns = document.querySelectorAll(".filter-btn");
+
+  let activeFilter = "all";
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      activeFilter = btn.dataset.filter;
+      filterBtns.forEach((b) => b.classList.toggle("filter-btn--active", b === btn));
+      render(allEvents);
+    });
+  });
 
   let sentimentByEventId = new Map();
   let allEvents = [];
@@ -175,9 +186,12 @@
       return;
     }
 
+    const typeFiltered = activeFilter === "all"
+      ? events
+      : events.filter((ev) => ev.type === activeFilter);
     const filtered = majorOnlyToggle && majorOnlyToggle.checked
-      ? events.filter((ev) => ev.importance === "major")
-      : events;
+      ? typeFiltered.filter((ev) => ev.importance === "major")
+      : typeFiltered;
     const sorted = [...filtered].sort((a, b) => toDays(b.date) - toDays(a.date));
     const cutoffDay = toDays(new Date().toISOString().slice(0, 10)) - 5 * 365.25;
 

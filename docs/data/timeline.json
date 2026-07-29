@@ -2179,5 +2179,16 @@
         "external_links":  [
 
                            ]
+    },
+    {
+        "id":  148,
+        "date":  "2006-04-12",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "major",
+        "title":  "メジャーデビューシングル『GIRL FRIEND』",
+        "description":  "EMIミュージック・ジャパンよりメジャーデビュー。1stシングル「GIRL FRIEND」「ELECTRIC SUMMER」「STAND BY ME」の3枚を立て続けにリリース。",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia"
     }
 ]

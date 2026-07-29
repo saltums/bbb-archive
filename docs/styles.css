@@ -89,10 +89,12 @@ a { color: var(--accent); }
   align-items: center;
 }
 
-/* --- ハンバーガーメニュー --- */
+/* --- ハンバーガーメニュー (右上固定) --- */
 .nav-menu {
-  position: relative;
-  display: inline-block;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 300;
 }
 
 .nav-hamburger {
@@ -138,7 +140,8 @@ a { color: var(--accent); }
 .nav-dropdown {
   position: absolute;
   top: calc(100% + 10px);
-  left: 0;
+  right: 0;
+  left: auto;
   min-width: 180px;
   background: var(--bg-raised);
   border: 1px solid var(--line);
@@ -277,6 +280,63 @@ a { color: var(--accent); }
   gap: 0.4rem;
   margin-left: auto;
   cursor: pointer;
+}
+
+/* --- フィルターバー --- */
+.filter-bar {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.72rem;
+  border-radius: 99px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink-dim);
+  font-size: 0.78rem;
+  font-weight: 500;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s, color 0.12s;
+}
+
+.filter-btn:hover {
+  border-color: var(--ink-dim);
+  color: var(--ink);
+}
+
+.filter-btn--active[data-filter="all"] {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.filter-btn--active[data-filter="release"] {
+  background: rgba(79, 214, 196, 0.14);
+  border-color: var(--release);
+  color: var(--release);
+}
+
+.filter-btn--active[data-filter="live"] {
+  background: rgba(255, 184, 79, 0.14);
+  border-color: var(--live);
+  color: var(--live);
+}
+
+.filter-btn--active[data-filter="milestone"] {
+  background: var(--accent-soft);
+  border-color: var(--milestone);
+  color: var(--milestone);
+}
+
+.dot--inline {
+  display: inline-block;
+  flex-shrink: 0;
 }
 
 .dot {

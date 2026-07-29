@@ -8,16 +8,11 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header__inner">
-      <p class="eyebrow">UNOFFICIAL FAN CHRONICLE</p>
-      <h1 class="title">Base Ball Bear<span class="title__sub">年表</span></h1>
-      <p class="lead">2001年の結成から現在まで。リリース・ライブ・出来事を時系列でたどる非公式ファンアーカイブです。</p>
-      <div class="nav-menu">
-        <button class="nav-hamburger" id="navToggle" aria-label="リンク一覧を開く" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-        <nav class="nav-dropdown" id="navDropdown" aria-label="公式リンク" hidden>
+  <div class="nav-menu">
+    <button class="nav-hamburger" id="navToggle" aria-label="リンク一覧を開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-dropdown" id="navDropdown" aria-label="公式リンク" hidden>
           <a href="https://www.baseballbear.com/" target="_blank" rel="noopener" class="nav-menu-item">
             <span class="nav-menu-item__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
@@ -54,18 +49,27 @@
             <span class="nav-menu-item__label">楽曲一覧</span>
           </a>
         </nav>
-      </div>
+  </div>
+
+  <header class="page-header">
+    <div class="page-header__inner">
+      <p class="eyebrow">UNOFFICIAL FAN CHRONICLE</p>
+      <h1 class="title">Base Ball Bear<span class="title__sub">年表</span></h1>
+      <p class="lead">2001年の結成から現在まで。リリース・ライブ・出来事を時系列でたどる非公式ファンアーカイブです。</p>
     </div>
   </header>
 
   <main>
-    <section class="legend" aria-label="凡例">
-      <span class="legend__item"><i class="dot dot--release"></i>リリース</span>
-      <span class="legend__item"><i class="dot dot--live"></i>ライブ</span>
-      <span class="legend__item"><i class="dot dot--milestone"></i>できごと</span>
+    <section class="legend" aria-label="表示設定">
+      <div class="filter-bar" role="group" aria-label="タイプで絞り込む">
+        <button class="filter-btn filter-btn--active" data-filter="all">すべて</button>
+        <button class="filter-btn" data-filter="release"><i class="dot dot--release dot--inline"></i>楽曲</button>
+        <button class="filter-btn" data-filter="live"><i class="dot dot--live dot--inline"></i>ライブ</button>
+        <button class="filter-btn" data-filter="milestone"><i class="dot dot--milestone dot--inline"></i>出来事</button>
+      </div>
       <label class="legend__toggle">
         <input type="checkbox" id="majorOnlyToggle">
-        主要な出来事のみ表示
+        主要のみ
       </label>
     </section>
 
