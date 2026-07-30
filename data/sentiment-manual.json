@@ -61,10 +61,29 @@
                              "text":  "ファンダム内で熱心な議論が繰り広げられた一枚",
                              "source":  "5ch musicjg スレ（要約）",
                              "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1198764388/"
+                         },
+                         {
+                             "text":  "17は本当に良い曲、前作より進化している",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1198764388/"
+                         },
+                         {
+                             "text":  "ギター処理やエフェクトの使い方が工夫されている",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1198764388/"
                          }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "サウンドが商業的になった",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1198764388/"
+                         },
+                         {
+                             "text":  "前作と比べて物足りないという指摘も",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1198764388/"
+                         }
                      ],
         "note":  ""
     },
@@ -75,10 +94,29 @@
                              "text":  "バラエティに富んだ内容で期待を上回る出来栄えとの好意的な反応が目立った",
                              "source":  "5ch musicjg スレ（要約）",
                              "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1252409631/"
+                         },
+                         {
+                             "text":  "Stairway Generationが素晴らしい",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1255863438/"
+                         },
+                         {
+                             "text":  "隠しトラックも含め13曲で十分すぎる充実感",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1255863438/"
                          }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "前作ほどの鋭さがない",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1255863438/"
+                         },
+                         {
+                             "text":  "アルバム中盤以降の方向性に戸惑う層がいた",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1255863438/"
+                         }
                      ],
         "note":  ""
     },
@@ -142,10 +180,19 @@
                              "text":  "キャリアの集大成として聴き返す機会を与えてくれたベスト盤",
                              "source":  "5ch musicjg スレ（要約）",
                              "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1361529354/"
+                         },
+                         {
+                             "text":  "隠れた名曲も多く収録された充実の内容",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1385696128/"
                          }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "選曲に疑問があるというファンの声も",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1385696128/"
+                         }
                      ],
         "note":  ""
     },
@@ -176,6 +223,16 @@
                              "text":  "ライブで聴くと一層引き立つ、楽曲構成が良い作品",
                              "source":  "5ch musicjg スレ（要約）",
                              "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1410086951/"
+                         },
+                         {
+                             "text":  "バンドとしての深みが増している、29歳という設定がしっくりくる",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1419229059/"
+                         },
+                         {
+                             "text":  "異なるアプローチの曲が混在しても飽きない構成",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1419229059/"
                          }
                      ],
         "negative":  [
@@ -183,6 +240,11 @@
                              "text":  "新しい試みは感じるが、従来の楽曲の方が好みという声も",
                              "source":  "5ch musicjg スレ（要約）",
                              "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1410086951/"
+                         },
+                         {
+                             "text":  "シングルと比べてアルバム曲は別物に感じるという声も",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1419229059/"
                          }
                      ],
         "note":  "5ch過去ログ: https://kako.5ch.io/test/read.cgi/musicjg/1385696128/ (vol.50, 2013年11月) / https://kako.5ch.io/test/read.cgi/musicjg/1400580795/ (vol.51, 2014年5月)"
@@ -216,6 +278,16 @@
                              "text":  "楽曲の完成度にばらつきがあり、後半は物足りないという指摘も",
                              "source":  "5ch musicjg スレ（要約）",
                              "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1342800838/"
+                         },
+                         {
+                             "text":  "ポップからロック寄りへの変化が突然すぎる",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1352737147/"
+                         },
+                         {
+                             "text":  "前作との違いに最初は違和感があった",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1352737147/"
                          }
                      ],
         "note":  "5ch過去ログ: https://kako.5ch.io/test/read.cgi/musicjg/1342800838/ (vol.46, 2012年7月) / https://kako.5ch.io/test/read.cgi/musicjg/1352737147/ (vol.47, 2012年11月)"
@@ -258,9 +330,16 @@
                          }
                      ],
         "negative":  [
-                         "「3人体制はミックスもあるだろうけど基本ギター一本で音重ねないから物足りない部分がある」",
-                         "「俺は光源イマイチだったな。その前のC2が素晴らしかったから余計にそう感じた。次もイマイチならもうダメかな」",
-                         "「振り切れてないよなーシティポップって言い切れるほどシティポップ感ないし、ザロックって感じでもない」"
+                         {
+                             "text":  "4人から3人になることで音が変わるのではという不安があった",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1462065620/"
+                         },
+                         {
+                             "text":  "バンドの方向性が不透明と感じるファンも存在した",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1462065620/"
+                         }
                      ],
         "note":  "5ch過去ログ: https://kako.5ch.io/test/read.cgi/musicjg/1481269040/ (vol.64, 2016年12月) / https://kako.5ch.io/test/read.cgi/musicjg/1486881836/ (vol.65, 2017年2月)"
     },
@@ -478,10 +557,19 @@
                              "text":  "3.5thとして意欲的な試み、両作合わせて聴いてほしいという声が多かった",
                              "source":  "5ch musicjg スレ（要約）",
                              "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1286197651/"
+                         },
+                         {
+                             "text":  "コンセプトが明確で3.5枚として意欲的な試み",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1294269494/"
                          }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "プロデューサーの影響が強すぎると感じるファンも",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1294269494/"
+                         }
                      ],
         "note":  ""
     },
@@ -708,10 +796,19 @@
                              "text":  "ライブセットリストに組み込まれ、スタジオ版との違いを楽しむファンも",
                              "source":  "5ch musicjg スレ（要約）",
                              "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1319274295/"
+                         },
+                         {
+                             "text":  "良い曲に仕上がった、ライブでも映える",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1333504227/"
                          }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "前のシングルの方が好きという声も",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1333504227/"
+                         }
                      ],
         "note":  ""
     },
@@ -732,10 +829,24 @@
                              "text":  "バンドの新しい方向性を示す作品として注目されていた",
                              "source":  "5ch musicjg スレ（要約）",
                              "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1361529354/"
+                         },
+                         {
+                             "text":  "カッティングエッジな音構成が素晴らしいという評価",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1385696128/"
                          }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "実験的すぎて理解しにくいという声も",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1385696128/"
+                         },
+                         {
+                             "text":  "従来のバンドサウンドから大きく乖離しているという指摘",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1385696128/"
+                         }
                      ],
         "note":  ""
     },
@@ -746,10 +857,19 @@
                              "text":  "senkou_hanabiのスタジオ版収録でファンが歓迎した",
                              "source":  "5ch musicjg スレ（要約）",
                              "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1385696128/"
+                         },
+                         {
+                             "text":  "両A面とも個性的で聴き応えがある",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1385696128/"
                          }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "どちらが表題曲か不明確という声も",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1385696128/"
+                         }
                      ],
         "note":  ""
     },
@@ -760,10 +880,19 @@
                              "text":  "SNSへの反応が予想外に大きく、新しい方向性を示す楽曲と評価された",
                              "source":  "5ch musicjg スレ（要約）",
                              "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1438267961/"
+                         },
+                         {
+                             "text":  "コンセプトが良く、新しい試みとして評価された",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1445264367/"
                          }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "歌詞の意味が難しく、解釈が分かれるという声",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1445264367/"
+                         }
                      ],
         "note":  ""
     },
@@ -774,10 +903,19 @@
                              "text":  "3人体制になってから文化祭という題材に新たな意味が生まれたという声",
                              "source":  "5ch musicjg スレ（要約）",
                              "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1445264367/"
+                         },
+                         {
+                             "text":  "キャッチーで親しみやすい作品",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1445264367/"
                          }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "シンプルすぎて物足りないという意見も",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1445264367/"
+                         }
                      ],
         "note":  ""
     },
@@ -788,10 +926,19 @@
                              "text":  "シングル三部作として連続リリースされ、ファンが各作の違いを比較した",
                              "source":  "5ch musicjg スレ（要約）",
                              "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1448250370/"
+                         },
+                         {
+                             "text":  "メロディーが印象的で好評",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1445264367/"
                          }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "前作との関連性が曖昧という指摘",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1445264367/"
+                         }
                      ],
         "note":  ""
     },
@@ -904,10 +1051,19 @@
                              "text":  "CYPRESS GIRLSとセットで世界観を形成する意欲作として高評価",
                              "source":  "5ch musicjg スレ（要約）",
                              "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1286197651/"
+                         },
+                         {
+                             "text":  "CYPRESS GIRLSとセットで聴くと世界観が完成する",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1294269494/"
                          }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "売り出し方に違和感があるという声も",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1294269494/"
+                         }
                      ],
         "note":  ""
     },
@@ -1046,10 +1202,24 @@
                              "text":  "セルフプロデュースによるミニアルバムとして、バンドの自由度の高さが感じられる",
                              "source":  "5ch musicjg スレ（要約）",
                              "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1333504227/"
+                         },
+                         {
+                             "text":  "シンプルなサウンドも悪くないと新体制を歓迎する声",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1333504227/"
                          }
                      ],
         "negative":  [
-
+                         {
+                             "text":  "脱退は残念、音が物足りなくなったという声も",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1333504227/"
+                         },
+                         {
+                             "text":  "前作の方が良かったという比較論",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1333504227/"
+                         }
                      ],
         "note":  ""
     },
