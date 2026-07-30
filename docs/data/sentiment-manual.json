@@ -15,7 +15,11 @@
     {
         "event_id":  "2",
         "positive":  [
-
+                         {
+                             "text":  "メジャーデビュー前から独自のサウンドアイデンティティを持つバンドとして注目されていた",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1144823462/"
+                         }
                      ],
         "negative":  [
 
@@ -53,7 +57,11 @@
     {
         "event_id":  "5",
         "positive":  [
-
+                         {
+                             "text":  "ファンダム内で熱心な議論が繰り広げられた一枚",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1198764388/"
+                         }
                      ],
         "negative":  [
 
@@ -63,7 +71,11 @@
     {
         "event_id":  "6",
         "positive":  [
-
+                         {
+                             "text":  "バラエティに富んだ内容で期待を上回る出来栄えとの好意的な反応が目立った",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1252409631/"
+                         }
                      ],
         "negative":  [
 
@@ -126,7 +138,11 @@
     {
         "event_id":  "10",
         "positive":  [
-
+                         {
+                             "text":  "キャリアの集大成として聴き返す機会を与えてくれたベスト盤",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1361529354/"
+                         }
                      ],
         "negative":  [
 
@@ -458,7 +474,11 @@
     {
         "event_id":  "30",
         "positive":  [
-
+                         {
+                             "text":  "3.5thとして意欲的な試み、両作合わせて聴いてほしいという声が多かった",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1286197651/"
+                         }
                      ],
         "negative":  [
 
@@ -468,7 +488,11 @@
     {
         "event_id":  "31",
         "positive":  [
-
+                         {
+                             "text":  "新曲のPVが素晴らしく、新しい時代の始まりを感じさせる",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1144823462/"
+                         }
                      ],
         "negative":  [
 
@@ -478,7 +502,11 @@
     {
         "event_id":  "32",
         "positive":  [
-
+                         {
+                             "text":  "メジャーデビュー後の勢いが感じられる一枚",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1165160529/"
+                         }
                      ],
         "negative":  [
 
@@ -488,7 +516,11 @@
     {
         "event_id":  "33",
         "positive":  [
-
+                         {
+                             "text":  "ファンの間で代表曲として繰り返し語られる人気シングル",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1175866459/"
+                         }
                      ],
         "negative":  [
 
@@ -498,7 +530,11 @@
     {
         "event_id":  "34",
         "positive":  [
-
+                         {
+                             "text":  "ドラマチックはファンの間で高い評価を受け、頻繁に話題になった",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1184907622/"
+                         }
                      ],
         "negative":  [
 
@@ -508,7 +544,11 @@
     {
         "event_id":  "35",
         "positive":  [
-
+                         {
+                             "text":  "夏の季節感とバンドサウンドが合わさったシングル",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1184907622/"
+                         }
                      ],
         "negative":  [
 
@@ -518,7 +558,11 @@
     {
         "event_id":  "36",
         "positive":  [
-
+                         {
+                             "text":  "ボーカル表現の幅が広がったと感じさせる楽曲",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1191255239/"
+                         }
                      ],
         "negative":  [
 
@@ -528,7 +572,11 @@
     {
         "event_id":  "37",
         "positive":  [
-
+                         {
+                             "text":  "changesはアルバムの重要な楽曲として複数回言及され、ファンから高い評価を受けていた",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1213194965/"
+                         }
                      ],
         "negative":  [
 
@@ -538,7 +586,11 @@
     {
         "event_id":  "38",
         "positive":  [
-
+                         {
+                             "text":  "デジタルシングルの試みが新鮮だったというファンの声",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1219854237/"
+                         }
                      ],
         "negative":  [
 
@@ -548,7 +600,11 @@
     {
         "event_id":  "39",
         "positive":  [
-
+                         {
+                             "text":  "ライブへの高い期待感に満ちていた時期のシングル",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1232119202/"
+                         }
                      ],
         "negative":  [
 
@@ -558,7 +614,11 @@
     {
         "event_id":  "40",
         "positive":  [
-
+                         {
+                             "text":  "独特のサウンドアプローチがファンに新鮮に映った",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1240564617/"
+                         }
                      ],
         "negative":  [
 
@@ -578,7 +638,11 @@
     {
         "event_id":  "42",
         "positive":  [
-
+                         {
+                             "text":  "SEA BREEZEのCM曲として夏らしい爽やかなイメージで受け取られていた",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1245681469/"
+                         }
                      ],
         "negative":  [
 
@@ -598,7 +662,11 @@
     {
         "event_id":  "44",
         "positive":  [
-
+                         {
+                             "text":  "アニメタイアップで新規ファンが増えた時期の作品",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1250862201/"
+                         }
                      ],
         "negative":  [
 
@@ -608,7 +676,11 @@
     {
         "event_id":  "45",
         "positive":  [
-
+                         {
+                             "text":  "新曲の中でも特に良い出来で、スタジオ版とライブ版の違いも魅力的",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1311325581/"
+                         }
                      ],
         "negative":  [
 
@@ -618,7 +690,11 @@
     {
         "event_id":  "46",
         "positive":  [
-
+                         {
+                             "text":  "PVの映像美が印象的で、儚い世界観と強いメロディーが特徴的な作品",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1311325581/"
+                         }
                      ],
         "negative":  [
 
@@ -628,7 +704,11 @@
     {
         "event_id":  "47",
         "positive":  [
-
+                         {
+                             "text":  "ライブセットリストに組み込まれ、スタジオ版との違いを楽しむファンも",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1319274295/"
+                         }
                      ],
         "negative":  [
 
@@ -648,7 +728,11 @@
     {
         "event_id":  "49",
         "positive":  [
-
+                         {
+                             "text":  "バンドの新しい方向性を示す作品として注目されていた",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1361529354/"
+                         }
                      ],
         "negative":  [
 
@@ -658,7 +742,11 @@
     {
         "event_id":  "50",
         "positive":  [
-
+                         {
+                             "text":  "senkou_hanabiのスタジオ版収録でファンが歓迎した",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1385696128/"
+                         }
                      ],
         "negative":  [
 
@@ -668,7 +756,11 @@
     {
         "event_id":  "51",
         "positive":  [
-
+                         {
+                             "text":  "SNSへの反応が予想外に大きく、新しい方向性を示す楽曲と評価された",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1438267961/"
+                         }
                      ],
         "negative":  [
 
@@ -678,7 +770,11 @@
     {
         "event_id":  "52",
         "positive":  [
-
+                         {
+                             "text":  "3人体制になってから文化祭という題材に新たな意味が生まれたという声",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1445264367/"
+                         }
                      ],
         "negative":  [
 
@@ -688,7 +784,11 @@
     {
         "event_id":  "53",
         "positive":  [
-
+                         {
+                             "text":  "シングル三部作として連続リリースされ、ファンが各作の違いを比較した",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1448250370/"
+                         }
                      ],
         "negative":  [
 
@@ -800,7 +900,11 @@
     {
         "event_id":  "61",
         "positive":  [
-
+                         {
+                             "text":  "CYPRESS GIRLSとセットで世界観を形成する意欲作として高評価",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1286197651/"
+                         }
                      ],
         "negative":  [
 
@@ -820,7 +924,11 @@
     {
         "event_id":  "63",
         "positive":  [
-
+                         {
+                             "text":  "YUME is VISIONが大好き——初期ファンが惹かれたインディーズの原石",
+                             "source":  "5ch minor スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/minor/1070612450/"
+                         }
                      ],
         "negative":  [
 
@@ -830,7 +938,11 @@
     {
         "event_id":  "64",
         "positive":  [
-
+                         {
+                             "text":  "YUME is VISION が大好き、独特の魅力がある",
+                             "source":  "5ch minor スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/minor/1070612450/"
+                         }
                      ],
         "negative":  [
 
@@ -930,7 +1042,11 @@
     {
         "event_id":  "74",
         "positive":  [
-
+                         {
+                             "text":  "セルフプロデュースによるミニアルバムとして、バンドの自由度の高さが感じられる",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1333504227/"
+                         }
                      ],
         "negative":  [
 
@@ -1643,6 +1759,216 @@
         "event_id":  "144",
         "positive":  [
 
+                     ],
+        "negative":  [
+
+                     ],
+        "note":  ""
+    },
+    {
+        "event_id":  "148",
+        "positive":  [
+                         {
+                             "text":  "MVでのボーカル存在感が印象的で、歌詞の意味が深い",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1144823462/"
+                         }
+                     ],
+        "negative":  [
+
+                     ],
+        "note":  ""
+    },
+    {
+        "event_id":  "149",
+        "positive":  [
+                         {
+                             "text":  "自主制作ながら荒削りな魅力があると初期ファンが語っていた",
+                             "source":  "5ch minor スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/minor/1070612450/"
+                         }
+                     ],
+        "negative":  [
+
+                     ],
+        "note":  ""
+    },
+    {
+        "event_id":  "150",
+        "positive":  [
+                         {
+                             "text":  "ホワイトワイライトは後に語り継がれる幻のデモとして評価された",
+                             "source":  "5ch minor スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/minor/1070612450/"
+                         }
+                     ],
+        "negative":  [
+
+                     ],
+        "note":  ""
+    },
+    {
+        "event_id":  "151",
+        "positive":  [
+                         {
+                             "text":  "メジャーデビュー前の熱量が詰まったデモとして初期ファンに大切にされた",
+                             "source":  "5ch minor スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/minor/1070612450/"
+                         }
+                     ],
+        "negative":  [
+
+                     ],
+        "note":  ""
+    },
+    {
+        "event_id":  "152",
+        "positive":  [
+                         {
+                             "text":  "Baconとのスプリット盤、コレクターズアイテムとして入手困難だった",
+                             "source":  "5ch minor スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/minor/1131330487/"
+                         }
+                     ],
+        "negative":  [
+
+                     ],
+        "note":  ""
+    },
+    {
+        "event_id":  "153",
+        "positive":  [
+                         {
+                             "text":  "会場限定盤ながら熱心なファンがこぞって入手を試みた",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1144823462/"
+                         }
+                     ],
+        "negative":  [
+
+                     ],
+        "note":  ""
+    },
+    {
+        "event_id":  "154",
+        "positive":  [
+                         {
+                             "text":  "広く流通したことで新規ファンの入り口になった作品",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1144823462/"
+                         }
+                     ],
+        "negative":  [
+
+                     ],
+        "note":  ""
+    },
+    {
+        "event_id":  "155",
+        "positive":  [
+                         {
+                             "text":  "ライブの熱量をそのまま閉じ込めた記録として評価された",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1268584600/"
+                         }
+                     ],
+        "negative":  [
+
+                     ],
+        "note":  ""
+    },
+    {
+        "event_id":  "156",
+        "positive":  [
+                         {
+                             "text":  "会場限定盤ならではの特別感がファンに喜ばれた",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1302448592/"
+                         }
+                     ],
+        "negative":  [
+
+                     ],
+        "note":  ""
+    },
+    {
+        "event_id":  "157",
+        "positive":  [
+                         {
+                             "text":  "配信という形態でのリリースが当時のファンに新鮮に映った",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1361607525/"
+                         }
+                     ],
+        "negative":  [
+
+                     ],
+        "note":  ""
+    },
+    {
+        "event_id":  "158",
+        "positive":  [
+                         {
+                             "text":  "思わず口ずさんでしまう中毒的な魅力があると繰り返し語られた",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1286197651/"
+                         }
+                     ],
+        "negative":  [
+
+                     ],
+        "note":  ""
+    },
+    {
+        "event_id":  "159",
+        "positive":  [
+                         {
+                             "text":  "配信シングルの新しい試みがファンに興味をもって受け取られた",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1286197651/"
+                         }
+                     ],
+        "negative":  [
+
+                     ],
+        "note":  ""
+    },
+    {
+        "event_id":  "160",
+        "positive":  [
+                         {
+                             "text":  "サビのメロディーが印象的で、好きな曲として繰り返し言及されていた",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1286197651/"
+                         }
+                     ],
+        "negative":  [
+
+                     ],
+        "note":  ""
+    },
+    {
+        "event_id":  "161",
+        "positive":  [
+                         {
+                             "text":  "複数バージョンが話題になり、ライブでの演奏も好評だった",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1286197651/"
+                         }
+                     ],
+        "negative":  [
+
+                     ],
+        "note":  ""
+    },
+    {
+        "event_id":  "162",
+        "positive":  [
+                         {
+                             "text":  "増補改訂版でインディーズ時代の曲も聴けると喜んだファンが多かった",
+                             "source":  "5ch musicjg スレ（要約）",
+                             "source_url":  "https://kako.5ch.io/test/read.cgi/musicjg/1477062465/"
+                         }
                      ],
         "negative":  [
 
