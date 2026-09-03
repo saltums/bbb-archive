@@ -1808,7 +1808,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "tour":  "Base Ball Bear TOUR「DIARY KEY」"
     },
     {
         "id":  "103",
@@ -1921,7 +1922,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "tour":  "Base Ball Bear Tour「LIVE IN LIVE」"
     },
     {
         "id":  "111",
@@ -5831,6 +5833,295 @@
         "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
         "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
         "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  346,
+        "date":  "2021-11-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "DIARY KEY Tour @ 中野サンプラザ（東京）",
+        "description":  "Base Ball Bear TOUR『DIARY KEY』(全9公演) — 中野サンプラザ",
+        "venue":  "中野サンプラザ",
+        "city":  "東京",
+        "tour":  "Base Ball Bear TOUR「DIARY KEY」",
+        "source_url":  "https://skream.jp/news/2021/09/base_ball_bear_diary_key_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  347,
+        "date":  "2021-11-16",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "DIARY KEY Tour @ 仙台Rensa（仙台）",
+        "description":  "Base Ball Bear TOUR『DIARY KEY』(全9公演) — 仙台Rensa",
+        "venue":  "仙台Rensa",
+        "city":  "仙台",
+        "tour":  "Base Ball Bear TOUR「DIARY KEY」",
+        "source_url":  "https://skream.jp/news/2021/09/base_ball_bear_diary_key_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  348,
+        "date":  "2021-11-29",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "DIARY KEY Tour @ 名古屋DIAMOND HALL（名古屋）",
+        "description":  "Base Ball Bear TOUR『DIARY KEY』(全9公演) — 名古屋DIAMOND HALL",
+        "venue":  "名古屋DIAMOND HALL",
+        "city":  "名古屋",
+        "tour":  "Base Ball Bear TOUR「DIARY KEY」",
+        "source_url":  "https://skream.jp/news/2021/09/base_ball_bear_diary_key_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  349,
+        "date":  "2021-11-30",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "DIARY KEY Tour @ 大阪BIG CAT（大阪）",
+        "description":  "Base Ball Bear TOUR『DIARY KEY』(全9公演) — 大阪BIG CAT",
+        "venue":  "大阪BIG CAT",
+        "city":  "大阪",
+        "tour":  "Base Ball Bear TOUR「DIARY KEY」",
+        "source_url":  "https://skream.jp/news/2021/09/base_ball_bear_diary_key_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  350,
+        "date":  "2021-12-04",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "DIARY KEY Tour @ 新潟LOTS（新潟）",
+        "description":  "Base Ball Bear TOUR『DIARY KEY』(全9公演) — 新潟LOTS",
+        "venue":  "新潟LOTS",
+        "city":  "新潟",
+        "tour":  "Base Ball Bear TOUR「DIARY KEY」",
+        "source_url":  "https://skream.jp/news/2021/09/base_ball_bear_diary_key_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  351,
+        "date":  "2021-12-05",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "DIARY KEY Tour @ 金沢AZ（金沢）",
+        "description":  "Base Ball Bear TOUR『DIARY KEY』(全9公演) — 金沢AZ",
+        "venue":  "金沢AZ",
+        "city":  "金沢",
+        "tour":  "Base Ball Bear TOUR「DIARY KEY」",
+        "source_url":  "https://skream.jp/news/2021/09/base_ball_bear_diary_key_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  352,
+        "date":  "2021-12-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "DIARY KEY Tour @ 札幌Cube Garden（札幌）",
+        "description":  "Base Ball Bear TOUR『DIARY KEY』(全9公演) — 札幌Cube Garden",
+        "venue":  "札幌Cube Garden",
+        "city":  "札幌",
+        "tour":  "Base Ball Bear TOUR「DIARY KEY」",
+        "source_url":  "https://skream.jp/news/2021/09/base_ball_bear_diary_key_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  353,
+        "date":  "2021-12-18",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "DIARY KEY Tour @ DRUM Be-1（福岡）",
+        "description":  "Base Ball Bear TOUR『DIARY KEY』(全9公演) — DRUM Be-1",
+        "venue":  "DRUM Be-1",
+        "city":  "福岡",
+        "tour":  "Base Ball Bear TOUR「DIARY KEY」",
+        "source_url":  "https://skream.jp/news/2021/09/base_ball_bear_diary_key_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  354,
+        "date":  "2021-12-19",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "DIARY KEY Tour @ 広島Live Vanquish（広島）",
+        "description":  "Base Ball Bear TOUR『DIARY KEY』(全9公演) — 広島Live Vanquish",
+        "venue":  "広島Live Vanquish",
+        "city":  "広島",
+        "tour":  "Base Ball Bear TOUR「DIARY KEY」",
+        "source_url":  "https://skream.jp/news/2021/09/base_ball_bear_diary_key_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  355,
+        "date":  "2018-05-18",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE (3人体制) @ 名古屋CLUB QUATTRO（名古屋）",
+        "description":  "Base Ball Bear Tour『LIVE IN LIVE』(全8公演、3人体制) — 名古屋CLUB QUATTRO",
+        "venue":  "名古屋CLUB QUATTRO",
+        "city":  "名古屋",
+        "tour":  "Base Ball Bear Tour「LIVE IN LIVE」",
+        "source_url":  "https://www.baseballbear.com/special/liveinlive/",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  356,
+        "date":  "2018-05-25",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE (3人体制) @ 渋谷CLUB QUATTRO（東京）",
+        "description":  "Base Ball Bear Tour『LIVE IN LIVE』(全8公演、3人体制) — 渋谷CLUB QUATTRO",
+        "venue":  "渋谷CLUB QUATTRO",
+        "city":  "東京",
+        "tour":  "Base Ball Bear Tour「LIVE IN LIVE」",
+        "source_url":  "https://www.baseballbear.com/special/liveinlive/",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  357,
+        "date":  "2018-05-27",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE (3人体制) @ 仙台darwin（仙台）",
+        "description":  "Base Ball Bear Tour『LIVE IN LIVE』(全8公演、3人体制) — 仙台darwin",
+        "venue":  "仙台darwin",
+        "city":  "仙台",
+        "tour":  "Base Ball Bear Tour「LIVE IN LIVE」",
+        "source_url":  "https://www.baseballbear.com/special/liveinlive/",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  358,
+        "date":  "2018-06-09",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE (3人体制) @ 岡山IMAGE（岡山）",
+        "description":  "Base Ball Bear Tour『LIVE IN LIVE』(全8公演、3人体制) — 岡山IMAGE",
+        "venue":  "岡山IMAGE",
+        "city":  "岡山",
+        "tour":  "Base Ball Bear Tour「LIVE IN LIVE」",
+        "source_url":  "https://www.baseballbear.com/special/liveinlive/",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  359,
+        "date":  "2018-06-10",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE (3人体制) @ 梅田CLUB QUATTRO（大阪）",
+        "description":  "Base Ball Bear Tour『LIVE IN LIVE』(全8公演、3人体制) — 梅田CLUB QUATTRO",
+        "venue":  "梅田CLUB QUATTRO",
+        "city":  "大阪",
+        "tour":  "Base Ball Bear Tour「LIVE IN LIVE」",
+        "source_url":  "https://www.baseballbear.com/special/liveinlive/",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  360,
+        "date":  "2018-06-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE (3人体制) @ 札幌cube garden（札幌）",
+        "description":  "Base Ball Bear Tour『LIVE IN LIVE』(全8公演、3人体制) — 札幌cube garden",
+        "venue":  "札幌cube garden",
+        "city":  "札幌",
+        "tour":  "Base Ball Bear Tour「LIVE IN LIVE」",
+        "source_url":  "https://www.baseballbear.com/special/liveinlive/",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  361,
+        "date":  "2018-06-17",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE (3人体制) @ 金沢AZ（金沢）",
+        "description":  "Base Ball Bear Tour『LIVE IN LIVE』(全8公演、3人体制) — 金沢AZ",
+        "venue":  "金沢AZ",
+        "city":  "金沢",
+        "tour":  "Base Ball Bear Tour「LIVE IN LIVE」",
+        "source_url":  "https://www.baseballbear.com/special/liveinlive/",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  362,
+        "date":  "2018-06-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE (3人体制) @ 小倉FUSE（北九州）",
+        "description":  "Base Ball Bear Tour『LIVE IN LIVE』(全8公演、3人体制) — 小倉FUSE",
+        "venue":  "小倉FUSE",
+        "city":  "北九州",
+        "tour":  "Base Ball Bear Tour「LIVE IN LIVE」",
+        "source_url":  "https://www.baseballbear.com/special/liveinlive/",
+        "source_label":  "公式サイト",
         "external_links":  [
 
                            ]
