@@ -1786,7 +1786,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "tour":  "Base Ball Bear Tour「光源」"
     },
     {
         "id":  "101",
@@ -2147,7 +2148,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/groups/10783"
                                }
-                           ]
+                           ],
+        "tour":  "TOUR 新呼吸"
     },
     {
         "id":  "126",
@@ -2205,7 +2207,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "tour":  "TOUR 新呼吸 take2"
     },
     {
         "id":  "130",
@@ -7779,6 +7782,40 @@
         "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
         "source_url":  "https://rockinon.com/news/detail/51277",
         "source_label":  "rockinon.com",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  460,
+        "date":  "2012-05-20",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "major",
+        "title":  "TOUR 新呼吸 @ Zepp Tokyo（東京）",
+        "description":  "『TOUR 新呼吸』(全19公演) — Zepp Tokyo",
+        "venue":  "Zepp Tokyo",
+        "city":  "東京",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/07/_base_ball_bearshibuyaax.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  461,
+        "date":  "2012-07-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "major",
+        "title":  "TOUR 新呼吸 @ SHIBUYA-AX（東京）",
+        "description":  "『TOUR 新呼吸』(全19公演) — SHIBUYA-AX",
+        "venue":  "SHIBUYA-AX",
+        "city":  "東京",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/07/_base_ball_bearshibuyaax.php",
+        "source_label":  "SKREAM!",
         "external_links":  [
 
                            ]
