@@ -1088,7 +1088,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "tour":  "LIVE IN LIVE〜I HUB YOU (Take) 2〜"
     },
     {
         "id":  "77",
@@ -1105,7 +1106,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "tour":  "LIVE IN LIVE〜I HUB YOU 3〜"
     },
     {
         "id":  "60",
@@ -6462,6 +6464,91 @@
         "tour":  "Guitar！Drum！Bass！Tour (2019)",
         "source_url":  "https://www.diskgarage.com/digaonline/liverepo/128856",
         "source_label":  "DiskGarage",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  383,
+        "date":  "2022-02-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE〜I HUB YOU (Take) 2〜 @ Zepp Nagoya（名古屋）",
+        "description":  "対バンツアー(2022) — with the telephones",
+        "venue":  "Zepp Nagoya",
+        "city":  "名古屋",
+        "tour":  "LIVE IN LIVE〜I HUB YOU (Take) 2〜",
+        "source_url":  "https://skream.jp/news/2022/01/base_ball_bear_live_in_live_i_hub_you_take_2.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  384,
+        "date":  "2022-03-18",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE〜I HUB YOU (Take) 2〜 @ Zepp Osaka BaySide（大阪）",
+        "description":  "対バンツアー(2022) — with KANA-BOON (2/14から延期)",
+        "venue":  "Zepp Osaka BaySide",
+        "city":  "大阪",
+        "tour":  "LIVE IN LIVE〜I HUB YOU (Take) 2〜",
+        "source_url":  "https://skream.jp/news/2022/01/base_ball_bear_live_in_live_i_hub_you_take_2.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  385,
+        "date":  "2022-08-01",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE〜I HUB YOU 3〜 @ Zepp Nagoya（名古屋）",
+        "description":  "対バンツアー(2022年8月) — with Creepy Nuts",
+        "venue":  "Zepp Nagoya",
+        "city":  "名古屋",
+        "tour":  "LIVE IN LIVE〜I HUB YOU 3〜",
+        "source_url":  "https://skream.jp/news/2022/06/base_ball_bear_live_in_live_i_hub_you_3.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  386,
+        "date":  "2022-08-24",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE〜I HUB YOU 3〜 @ Zepp Fukuoka（福岡）",
+        "description":  "対バンツアー(2022年8月) — with フレデリック",
+        "venue":  "Zepp Fukuoka",
+        "city":  "福岡",
+        "tour":  "LIVE IN LIVE〜I HUB YOU 3〜",
+        "source_url":  "https://skream.jp/news/2022/06/base_ball_bear_live_in_live_i_hub_you_3.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  387,
+        "date":  "2022-08-26",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE〜I HUB YOU 3〜 @ Zepp Osaka Bayside（大阪）",
+        "description":  "対バンツアー(2022年8月) — with ASIAN KUNG-FU GENERATION",
+        "venue":  "Zepp Osaka Bayside",
+        "city":  "大阪",
+        "tour":  "LIVE IN LIVE〜I HUB YOU 3〜",
+        "source_url":  "https://skream.jp/news/2022/06/base_ball_bear_live_in_live_i_hub_you_3.php",
+        "source_label":  "SKREAM!",
         "external_links":  [
 
                            ]
