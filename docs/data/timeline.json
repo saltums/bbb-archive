@@ -1423,7 +1423,9 @@
         "title":  "BIGMAMA 20th Anniversaryに出演",
         "description":  "他アーティストの周年イベントへのゲスト出演。",
         "source_url":  "https://www.sma.co.jp/s/sma/news/detail/113434?ima=0000\u0026link=ROBO004",
-        "source_label":  "Sony Music Artists「Base Ball Bear 20th\u002625thロードマップ更新」"
+        "source_label":  "Sony Music Artists「Base Ball Bear 20th\u002625thロードマップ更新」",
+        "venue":  "F.A.D YOKOHAMA",
+        "city":  "横浜"
     },
     {
         "id":  "72",
@@ -1481,7 +1483,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "tour":  "若若男女サマーツアー\u002706"
     },
     {
         "id":  "81",
@@ -1595,7 +1598,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/groups/10268"
                                }
-                           ]
+                           ],
+        "tour":  "Zeppyramid tour"
     },
     {
         "id":  "88",
@@ -2439,7 +2443,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/groups/10268"
                                }
-                           ]
+                           ],
+        "tour":  "Zeppyramid tour"
     },
     {
         "id":  145,
@@ -3019,6 +3024,380 @@
         "tour":  "Tour Lyrical Tattoo",
         "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
         "source_label":  "encore",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  181,
+        "date":  "2006-08-22",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "若若男女サマーツアー\u002706 @ SHIBUYA-AX（東京）",
+        "description":  "合同サマーツアー（with Chatmonchy・Snowkel）。",
+        "venue":  "SHIBUYA-AX",
+        "city":  "東京",
+        "tour":  "若若男女サマーツアー\u002706",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  182,
+        "date":  "2006-08-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "若若男女サマーツアー\u002706 @ BIGCAT（大阪）",
+        "description":  "合同サマーツアー（with Chatmonchy・Snowkel）。",
+        "venue":  "BIGCAT",
+        "city":  "大阪",
+        "tour":  "若若男女サマーツアー\u002706",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  183,
+        "date":  "2006-08-25",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "若若男女サマーツアー\u002706 @ DRUM LOGOS（福岡）",
+        "description":  "合同サマーツアー（with Chatmonchy・Snowkel）。",
+        "venue":  "DRUM LOGOS",
+        "city":  "福岡",
+        "tour":  "若若男女サマーツアー\u002706",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  184,
+        "date":  "2006-12-31",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "COUNTDOWN JAPAN 06/07 -WEST- @ Intex Osaka（大阪）",
+        "description":  "メジャーデビュー年のカウントダウンJAPAN出演。",
+        "venue":  "Intex Osaka",
+        "city":  "大阪",
+        "tour":  "COUNTDOWN JAPAN 06/07 -WEST-",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  185,
+        "date":  "2009-10-31",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Zeppyramid tour @ Zepp Sapporo（札幌）",
+        "description":  "3rdアルバムリリースツアー。全5公演のZeppシリーズ。",
+        "venue":  "Zepp Sapporo",
+        "city":  "札幌",
+        "tour":  "Zeppyramid tour",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  186,
+        "date":  "2009-11-03",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Zeppyramid tour @ Zepp Sendai（仙台）",
+        "description":  "3rdアルバムリリースツアー。全5公演のZeppシリーズ。",
+        "venue":  "Zepp Sendai",
+        "city":  "仙台",
+        "tour":  "Zeppyramid tour",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  187,
+        "date":  "2009-11-06",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Zeppyramid tour @ Zepp Nagoya（名古屋）",
+        "description":  "3rdアルバムリリースツアー。全5公演のZeppシリーズ。",
+        "venue":  "Zepp Nagoya",
+        "city":  "名古屋",
+        "tour":  "Zeppyramid tour",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  188,
+        "date":  "2009-11-14",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Zeppyramid tour @ Zepp Fukuoka（福岡）",
+        "description":  "3rdアルバムリリースツアー。全5公演のZeppシリーズ。",
+        "venue":  "Zepp Fukuoka",
+        "city":  "福岡",
+        "tour":  "Zeppyramid tour",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  189,
+        "date":  "2009-11-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Zeppyramid tour @ Zepp Osaka（大阪）",
+        "description":  "3rdアルバムリリースツアー。全5公演のZeppシリーズ。ファイナル。",
+        "venue":  "Zepp Osaka",
+        "city":  "大阪",
+        "tour":  "Zeppyramid tour",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  190,
+        "date":  "2010-03-26",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "TOUR;HALL IN MY LIFE @ 大阪厚生年金会館 大ホール（大阪）",
+        "description":  "ホールツアー第1弾。初のホール公演シリーズ。",
+        "venue":  "大阪厚生年金会館 大ホール",
+        "city":  "大阪",
+        "tour":  "TOUR;HALL IN MY LIFE",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  191,
+        "date":  "2010-04-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "TOUR;HALL IN MY LIFE @ 浦安市文化会館（千葉）",
+        "description":  "ホールツアー。浦安公演。",
+        "venue":  "浦安市文化会館",
+        "city":  "浦安",
+        "tour":  "TOUR;HALL IN MY LIFE",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  192,
+        "date":  "2010-05-08",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "TOUR;HALL IN MY LIFE @ 福岡国際会議場（福岡）",
+        "description":  "ホールツアー。福岡公演。",
+        "venue":  "福岡国際会議場",
+        "city":  "福岡",
+        "tour":  "TOUR;HALL IN MY LIFE",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  193,
+        "date":  "2010-05-14",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "TOUR;HALL IN MY LIFE @ 名古屋市公会堂（名古屋）",
+        "description":  "ホールツアー。名古屋公演。",
+        "venue":  "名古屋市公会堂",
+        "city":  "名古屋",
+        "tour":  "TOUR;HALL IN MY LIFE",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  194,
+        "date":  "2022-02-24",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "LIVE IN LIVE〜I HUB YOU (Take) 2〜 @ Zepp Haneda（東京）",
+        "description":  "対バンツアー。ゲストアーティストとの共演。",
+        "venue":  "Zepp Haneda(TOKYO)",
+        "city":  "東京",
+        "tour":  "LIVE IN LIVE〜I HUB YOU (Take) 2〜",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  195,
+        "date":  "2022-05-10",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "ワンマンライブ @ SENDAI GIGS（仙台）",
+        "description":  "",
+        "venue":  "SENDAI GIGS",
+        "city":  "仙台",
+        "tour":  "",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  196,
+        "date":  "2022-08-24",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "ワンマンライブ @ Zepp Fukuoka（福岡）",
+        "description":  "",
+        "venue":  "Zepp Fukuoka",
+        "city":  "福岡",
+        "tour":  "",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  197,
+        "date":  "2023-10-06",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "ワンマンライブ @ CLUB CITTA\u0027（川崎）",
+        "description":  "",
+        "venue":  "CLUB CITTA\u0027",
+        "city":  "川崎",
+        "tour":  "",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  198,
+        "date":  "2023-11-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "FULL BIT Vol.2 @ KT Zepp Yokohama（横浜）",
+        "description":  "対バンイベント出演。",
+        "venue":  "KT Zepp Yokohama",
+        "city":  "横浜",
+        "tour":  "FULL BIT Vol.2",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  199,
+        "date":  "2024-08-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "ワンマンライブ @ Nagoya CLUB QUATTRO（名古屋）",
+        "description":  "",
+        "venue":  "Nagoya CLUB QUATTRO",
+        "city":  "名古屋",
+        "tour":  "",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  200,
+        "date":  "2024-10-12",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "TOKYO ISLAND 2024 @ 海の森公園（東京）",
+        "description":  "TOKYO ISLAND 2024フェスティバル出演。",
+        "venue":  "Umi no Mori Kouen",
+        "city":  "東京",
+        "tour":  "TOKYO ISLAND 2024",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  201,
+        "date":  "2025-12-30",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "COUNTDOWN JAPAN 25/26 @ 幕張メッセ（千葉）",
+        "description":  "カウントダウンJAPAN出演。",
+        "venue":  "Makuhari Messe",
+        "city":  "千葉",
+        "tour":  "COUNTDOWN JAPAN 25/26",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  202,
+        "date":  "2026-10-12",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "TOKYO ISLAND 2026 @ 海の森公園（東京）",
+        "description":  "TOKYO ISLAND 2026フェスティバル出演。",
+        "venue":  "Umi no Mori Kouen",
+        "city":  "東京",
+        "tour":  "TOKYO ISLAND 2026",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
         "external_links":  [
 
                            ]
