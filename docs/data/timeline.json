@@ -3401,5 +3401,1042 @@
         "external_links":  [
 
                            ]
+    },
+    {
+        "id":  203,
+        "date":  "2009-03-05",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 千葉LOOK（千葉）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 千葉LOOK",
+        "venue":  "千葉LOOK",
+        "city":  "千葉",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  204,
+        "date":  "2009-03-06",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 横浜BAYSIS（横浜）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 横浜BAYSIS",
+        "venue":  "横浜BAYSIS",
+        "city":  "横浜",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  205,
+        "date":  "2009-03-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 静岡Sunash（静岡）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 静岡Sunash",
+        "venue":  "静岡Sunash",
+        "city":  "静岡",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  206,
+        "date":  "2009-03-14",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 京都磔磔（京都）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 京都磔磔",
+        "venue":  "京都磔磔",
+        "city":  "京都",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  207,
+        "date":  "2009-03-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 神戸VARIT（神戸）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 神戸VARIT",
+        "venue":  "神戸VARIT",
+        "city":  "神戸",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  208,
+        "date":  "2009-03-17",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 高知X-Pt（高知）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 高知X-Pt",
+        "venue":  "高知X-Pt",
+        "city":  "高知",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  209,
+        "date":  "2009-03-18",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 松山SALONKITY（松山）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 松山SALONKITY",
+        "venue":  "松山SALONKITY",
+        "city":  "松山",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  210,
+        "date":  "2009-03-20",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 大分T.O.P.S（大分）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 大分T.O.P.S",
+        "venue":  "大分T.O.P.S",
+        "city":  "大分",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  211,
+        "date":  "2009-03-22",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 鹿児島CAPARVO HALL（鹿児島）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 鹿児島CAPARVO HALL",
+        "venue":  "鹿児島CAPARVO HALL",
+        "city":  "鹿児島",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  212,
+        "date":  "2009-03-24",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 熊本Be-9（熊本）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 熊本Be-9",
+        "venue":  "熊本Be-9",
+        "city":  "熊本",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  213,
+        "date":  "2009-03-26",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 長崎Be-7（長崎）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 長崎Be-7",
+        "venue":  "長崎Be-7",
+        "city":  "長崎",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  214,
+        "date":  "2009-03-28",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 周南TIKI-TA（周南）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 周南TIKI-TA",
+        "venue":  "周南TIKI-TA",
+        "city":  "周南",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  215,
+        "date":  "2009-03-31",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 高松DIME（高松）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 高松DIME",
+        "venue":  "高松DIME",
+        "city":  "高松",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  216,
+        "date":  "2009-04-01",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 徳島JITTERBUG（徳島）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 徳島JITTERBUG",
+        "venue":  "徳島JITTERBUG",
+        "city":  "徳島",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  217,
+        "date":  "2009-04-03",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 岡山CRAZYMAMA KINGDOM（岡山）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 岡山CRAZYMAMA KINGDOM",
+        "venue":  "岡山CRAZYMAMA KINGDOM",
+        "city":  "岡山",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  218,
+        "date":  "2009-04-05",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 浜松窓枠（浜松）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 浜松窓枠",
+        "venue":  "浜松窓枠",
+        "city":  "浜松",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  219,
+        "date":  "2009-04-12",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 三重CLUB CHAOS（四日市）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 三重CLUB CHAOS",
+        "venue":  "三重CLUB CHAOS",
+        "city":  "四日市",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  220,
+        "date":  "2009-04-14",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 奈良NEVER LAND（奈良）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 奈良NEVER LAND",
+        "venue":  "奈良NEVER LAND",
+        "city":  "奈良",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  221,
+        "date":  "2009-04-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 滋賀U★STONE（彦根）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 滋賀U★STONE",
+        "venue":  "滋賀U★STONE",
+        "city":  "彦根",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  222,
+        "date":  "2009-04-17",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 富山Soul Power（富山）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 富山Soul Power",
+        "venue":  "富山Soul Power",
+        "city":  "富山",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  223,
+        "date":  "2009-04-19",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 新潟LOTS（新潟）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 新潟LOTS",
+        "venue":  "新潟LOTS",
+        "city":  "新潟",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  224,
+        "date":  "2009-04-25",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 宇都宮HEAVEN\u0027S ROCK（宇都宮）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 宇都宮HEAVEN\u0027S ROCK",
+        "venue":  "宇都宮HEAVEN\u0027S ROCK",
+        "city":  "宇都宮",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  225,
+        "date":  "2009-04-26",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 高崎CLUB FLEEZ（高崎）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 高崎CLUB FLEEZ",
+        "venue":  "高崎CLUB FLEEZ",
+        "city":  "高崎",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  226,
+        "date":  "2009-04-29",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 郡山HIP SHOT Japan（郡山）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 郡山HIP SHOT Japan",
+        "venue":  "郡山HIP SHOT Japan",
+        "city":  "郡山",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  227,
+        "date":  "2009-04-30",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 水戸LIGHT HOUSE（水戸）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 水戸LIGHT HOUSE",
+        "venue":  "水戸LIGHT HOUSE",
+        "city":  "水戸",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  228,
+        "date":  "2009-05-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 甲府KAZOO HALL（甲府）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 甲府KAZOO HALL",
+        "venue":  "甲府KAZOO HALL",
+        "city":  "甲府",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  229,
+        "date":  "2009-05-09",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 金沢EIGHT HALL（金沢）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 金沢EIGHT HALL",
+        "venue":  "金沢EIGHT HALL",
+        "city":  "金沢",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  230,
+        "date":  "2009-05-10",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 長野LIVE HOUSE J（長野）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 長野LIVE HOUSE J",
+        "venue":  "長野LIVE HOUSE J",
+        "city":  "長野",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  231,
+        "date":  "2009-05-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 青森QUARTER（青森）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 青森QUARTER",
+        "venue":  "青森QUARTER",
+        "city":  "青森",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  232,
+        "date":  "2009-05-16",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 秋田Club SWINDLE（秋田）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 秋田Club SWINDLE",
+        "venue":  "秋田Club SWINDLE",
+        "city":  "秋田",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  233,
+        "date":  "2009-05-17",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 盛岡CLUB Change WAVE（盛岡）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 盛岡CLUB Change WAVE",
+        "venue":  "盛岡CLUB Change WAVE",
+        "city":  "盛岡",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  234,
+        "date":  "2009-05-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 広島CLUB QUATTRO（広島）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 広島CLUB QUATTRO",
+        "venue":  "広島CLUB QUATTRO",
+        "city":  "広島",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  235,
+        "date":  "2017-06-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 浜松窓枠（浜松）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 浜松窓枠",
+        "venue":  "浜松窓枠",
+        "city":  "浜松",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  236,
+        "date":  "2017-06-13",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 四日市Club Chaos（四日市）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 四日市Club Chaos",
+        "venue":  "四日市Club Chaos",
+        "city":  "四日市",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  237,
+        "date":  "2017-06-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 京都磔磔（京都）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 京都磔磔",
+        "venue":  "京都磔磔",
+        "city":  "京都",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  238,
+        "date":  "2017-06-17",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 金沢AZ（金沢）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 金沢AZ",
+        "venue":  "金沢AZ",
+        "city":  "金沢",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  239,
+        "date":  "2017-06-25",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 仙台Rensa（仙台）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 仙台Rensa",
+        "venue":  "仙台Rensa",
+        "city":  "仙台",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  240,
+        "date":  "2017-10-06",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 旭川CASINO DRIVE（旭川）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 旭川CASINO DRIVE",
+        "venue":  "旭川CASINO DRIVE",
+        "city":  "旭川",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  241,
+        "date":  "2017-10-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 札幌PENNY LANE 24（札幌）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 札幌PENNY LANE 24",
+        "venue":  "札幌PENNY LANE 24",
+        "city":  "札幌",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  242,
+        "date":  "2017-10-09",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 函館Club Cocoa（函館）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 函館Club Cocoa",
+        "venue":  "函館Club Cocoa",
+        "city":  "函館",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  243,
+        "date":  "2017-10-14",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 青森Quarter（青森）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 青森Quarter",
+        "venue":  "青森Quarter",
+        "city":  "青森",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  244,
+        "date":  "2017-10-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 盛岡CLUB CHANGE WAVE（盛岡）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 盛岡CLUB CHANGE WAVE",
+        "venue":  "盛岡CLUB CHANGE WAVE",
+        "city":  "盛岡",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  245,
+        "date":  "2017-10-21",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 山口LIVE rise SHUNAN（周南）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 山口LIVE rise SHUNAN",
+        "venue":  "山口LIVE rise SHUNAN",
+        "city":  "周南",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  246,
+        "date":  "2017-10-22",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 広島CAVE-BE（広島）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 広島CAVE-BE",
+        "venue":  "広島CAVE-BE",
+        "city":  "広島",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  247,
+        "date":  "2017-10-27",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 千葉LOOK（千葉）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 千葉LOOK",
+        "venue":  "千葉LOOK",
+        "city":  "千葉",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  248,
+        "date":  "2017-10-28",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 水戸LIGHT HOUSE（水戸）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 水戸LIGHT HOUSE",
+        "venue":  "水戸LIGHT HOUSE",
+        "city":  "水戸",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  249,
+        "date":  "2017-11-03",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 甲府CONVICTION（甲府）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 甲府CONVICTION",
+        "venue":  "甲府CONVICTION",
+        "city":  "甲府",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  250,
+        "date":  "2017-11-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 米子AZTiC laughs（米子）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 米子AZTiC laughs",
+        "venue":  "米子AZTiC laughs",
+        "city":  "米子",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  251,
+        "date":  "2017-11-25",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 岡山IMAGE（岡山）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 岡山IMAGE",
+        "venue":  "岡山IMAGE",
+        "city":  "岡山",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  252,
+        "date":  "2017-12-02",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 高崎clubFLEEZ（高崎）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 高崎clubFLEEZ",
+        "venue":  "高崎clubFLEEZ",
+        "city":  "高崎",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  253,
+        "date":  "2017-12-03",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 宇都宮HEAVEN\u0027S ROCK VJ-2（宇都宮）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 宇都宮HEAVEN\u0027S ROCK VJ-2",
+        "venue":  "宇都宮HEAVEN\u0027S ROCK VJ-2",
+        "city":  "宇都宮",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  254,
+        "date":  "2017-12-09",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 新潟LOTS（新潟）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 新潟LOTS",
+        "venue":  "新潟LOTS",
+        "city":  "新潟",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  255,
+        "date":  "2017-12-10",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 松本Sound Hall a.C（松本）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 松本Sound Hall a.C",
+        "venue":  "松本Sound Hall a.C",
+        "city":  "松本",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  256,
+        "date":  "2017-12-16",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ HEAVEN\u0027S ROCK さいたま新都心 VJ-3（さいたま）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — HEAVEN\u0027S ROCK さいたま新都心 VJ-3",
+        "venue":  "HEAVEN\u0027S ROCK さいたま新都心 VJ-3",
+        "city":  "さいたま",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  257,
+        "date":  "2017-12-17",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 横浜Bay Hall（横浜）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 横浜Bay Hall",
+        "venue":  "横浜Bay Hall",
+        "city":  "横浜",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  258,
+        "date":  "2017-12-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 高松MONSTER（高松）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 高松MONSTER",
+        "venue":  "高松MONSTER",
+        "city":  "高松",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  259,
+        "date":  "2017-12-24",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 高知X-pt.（高知）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 高知X-pt.",
+        "venue":  "高知X-pt.",
+        "city":  "高知",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  260,
+        "date":  "2018-01-06",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ なんばHatch（大阪）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — なんばHatch",
+        "venue":  "なんばHatch",
+        "city":  "大阪",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  261,
+        "date":  "2018-01-14",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 名古屋DIAMOND HALL（名古屋）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 名古屋DIAMOND HALL",
+        "venue":  "名古屋DIAMOND HALL",
+        "city":  "名古屋",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  262,
+        "date":  "2018-01-20",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 宮崎SR BOX（宮崎）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 宮崎SR BOX",
+        "venue":  "宮崎SR BOX",
+        "city":  "宮崎",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  263,
+        "date":  "2018-01-21",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 福岡DRUM LOGOS（福岡）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 福岡DRUM LOGOS",
+        "venue":  "福岡DRUM LOGOS",
+        "city":  "福岡",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
     }
 ]
