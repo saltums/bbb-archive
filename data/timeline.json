@@ -2277,7 +2277,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/groups/246115"
                                }
-                           ]
+                           ],
+        "tour":  "LIVE IN LIVE ～C2 to C3～"
     },
     {
         "id":  "135",
@@ -2432,7 +2433,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "tour":  "LIVE IN LIVE 2021 (有観客)"
     },
     {
         "id":  "139",
@@ -6548,6 +6550,74 @@
         "city":  "大阪",
         "tour":  "LIVE IN LIVE〜I HUB YOU 3〜",
         "source_url":  "https://skream.jp/news/2022/06/base_ball_bear_live_in_live_i_hub_you_3.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  388,
+        "date":  "2021-09-06",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE 2021 @ 恵比寿LIQUIDROOM（東京）",
+        "description":  "コロナ禍明け初の有観客ワンマン(2021) — 恵比寿LIQUIDROOM",
+        "venue":  "恵比寿LIQUIDROOM",
+        "city":  "東京",
+        "tour":  "LIVE IN LIVE 2021 (有観客)",
+        "source_url":  "https://skream.jp/news/2021/06/base_ball_bear_live_in_live.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  389,
+        "date":  "2021-09-08",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE 2021 @ 梅田CLUB QUATTRO（大阪）",
+        "description":  "コロナ禍明け初の有観客ワンマン(2021) — 梅田CLUB QUATTRO",
+        "venue":  "梅田CLUB QUATTRO",
+        "city":  "大阪",
+        "tour":  "LIVE IN LIVE 2021 (有観客)",
+        "source_url":  "https://skream.jp/news/2021/06/base_ball_bear_live_in_live.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  390,
+        "date":  "2025-05-22",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE ～C2 to C3～ @ 渋谷CLUB QUATTRO（東京）",
+        "description":  "C2リリース10周年特別企画 — 渋谷CLUB QUATTRO",
+        "venue":  "渋谷CLUB QUATTRO",
+        "city":  "東京",
+        "tour":  "LIVE IN LIVE ～C2 to C3～",
+        "source_url":  "https://skream.jp/news/2025/03/base_ball_bear_live_in_live_c2_to_c3.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  391,
+        "date":  "2025-07-31",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE ～C2 to C3～ @ 梅田CLUB QUATTRO（大阪）",
+        "description":  "C2リリース10周年特別企画 — 梅田CLUB QUATTRO",
+        "venue":  "梅田CLUB QUATTRO",
+        "city":  "大阪",
+        "tour":  "LIVE IN LIVE ～C2 to C3～",
+        "source_url":  "https://skream.jp/news/2025/03/base_ball_bear_live_in_live_c2_to_c3.php",
         "source_label":  "SKREAM!",
         "external_links":  [
 
