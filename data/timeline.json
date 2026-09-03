@@ -4438,5 +4438,855 @@
         "external_links":  [
 
                            ]
+    },
+    {
+        "id":  264,
+        "date":  "2016-11-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 下北沢GARAGE（東京）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 下北沢GARAGE",
+        "venue":  "下北沢GARAGE",
+        "city":  "東京",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  265,
+        "date":  "2016-11-12",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 名古屋DIAMOND HALL（名古屋）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 名古屋DIAMOND HALL",
+        "venue":  "名古屋DIAMOND HALL",
+        "city":  "名古屋",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  266,
+        "date":  "2016-11-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 福井CHOP（福井）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 福井CHOP",
+        "venue":  "福井CHOP",
+        "city":  "福井",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  267,
+        "date":  "2016-11-25",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 金沢AZ（金沢）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 金沢AZ",
+        "venue":  "金沢AZ",
+        "city":  "金沢",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  268,
+        "date":  "2016-11-26",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 松本Sound Hall a.C（松本）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 松本Sound Hall a.C",
+        "venue":  "松本Sound Hall a.C",
+        "city":  "松本",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  269,
+        "date":  "2016-12-03",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 周南rise（周南）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 周南rise",
+        "venue":  "周南rise",
+        "city":  "周南",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  270,
+        "date":  "2016-12-04",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 松江AZTiC canova（松江）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 松江AZTiC canova",
+        "venue":  "松江AZTiC canova",
+        "city":  "松江",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  271,
+        "date":  "2016-12-06",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 京都磔磔（京都）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 京都磔磔",
+        "venue":  "京都磔磔",
+        "city":  "京都",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  272,
+        "date":  "2016-12-09",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ HEAVEN\u0027S ROCK さいたま新都心 VJ-3（さいたま）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — HEAVEN\u0027S ROCK さいたま新都心 VJ-3",
+        "venue":  "HEAVEN\u0027S ROCK さいたま新都心 VJ-3",
+        "city":  "さいたま",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  273,
+        "date":  "2016-12-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 横浜BAY HALL（横浜）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 横浜BAY HALL",
+        "venue":  "横浜BAY HALL",
+        "city":  "横浜",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  274,
+        "date":  "2016-12-17",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 郡山HIP SHOT JAPAN（郡山）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 郡山HIP SHOT JAPAN",
+        "venue":  "郡山HIP SHOT JAPAN",
+        "city":  "郡山",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  275,
+        "date":  "2016-12-18",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 仙台darwin（仙台）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 仙台darwin",
+        "venue":  "仙台darwin",
+        "city":  "仙台",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  276,
+        "date":  "2017-01-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 高松DIME（高松）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 高松DIME",
+        "venue":  "高松DIME",
+        "city":  "高松",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  277,
+        "date":  "2017-01-08",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 高知X-pt.（高知）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 高知X-pt.",
+        "venue":  "高知X-pt.",
+        "city":  "高知",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  278,
+        "date":  "2017-01-14",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 水戸LIGHT HOUSE（水戸）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 水戸LIGHT HOUSE",
+        "venue":  "水戸LIGHT HOUSE",
+        "city":  "水戸",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  279,
+        "date":  "2017-01-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 宇都宮HEAVEN\u0027S ROCK VJ-2（宇都宮）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 宇都宮HEAVEN\u0027S ROCK VJ-2",
+        "venue":  "宇都宮HEAVEN\u0027S ROCK VJ-2",
+        "city":  "宇都宮",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  280,
+        "date":  "2017-01-21",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 長崎DRUM Be-7（長崎）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 長崎DRUM Be-7",
+        "venue":  "長崎DRUM Be-7",
+        "city":  "長崎",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  281,
+        "date":  "2017-01-22",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 福岡DRUM LOGOS（福岡）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 福岡DRUM LOGOS",
+        "venue":  "福岡DRUM LOGOS",
+        "city":  "福岡",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  282,
+        "date":  "2017-01-27",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 千葉LOOK（千葉）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 千葉LOOK",
+        "venue":  "千葉LOOK",
+        "city":  "千葉",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  283,
+        "date":  "2017-02-04",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 鹿児島SR HALL（鹿児島）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 鹿児島SR HALL",
+        "venue":  "鹿児島SR HALL",
+        "city":  "鹿児島",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  284,
+        "date":  "2017-02-05",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 熊本B.9 V2（熊本）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 熊本B.9 V2",
+        "venue":  "熊本B.9 V2",
+        "city":  "熊本",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  285,
+        "date":  "2017-02-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 四日市Club Chaos（四日市）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 四日市Club Chaos",
+        "venue":  "四日市Club Chaos",
+        "city":  "四日市",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  286,
+        "date":  "2017-02-12",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 静岡UMBER（静岡）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 静岡UMBER",
+        "venue":  "静岡UMBER",
+        "city":  "静岡",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  287,
+        "date":  "2017-02-17",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 岡山IMAGE（岡山）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 岡山IMAGE",
+        "venue":  "岡山IMAGE",
+        "city":  "岡山",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  288,
+        "date":  "2017-02-18",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 広島CAVE-BE（広島）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 広島CAVE-BE",
+        "venue":  "広島CAVE-BE",
+        "city":  "広島",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  289,
+        "date":  "2017-02-25",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 松山Salon Kitty（松山）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 松山Salon Kitty",
+        "venue":  "松山Salon Kitty",
+        "city":  "松山",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  290,
+        "date":  "2017-02-26",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 徳島club GRINDHOUSE（徳島）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 徳島club GRINDHOUSE",
+        "venue":  "徳島club GRINDHOUSE",
+        "city":  "徳島",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  291,
+        "date":  "2017-03-04",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 盛岡CLUB CHANGE WAVE（盛岡）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 盛岡CLUB CHANGE WAVE",
+        "venue":  "盛岡CLUB CHANGE WAVE",
+        "city":  "盛岡",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  292,
+        "date":  "2017-03-05",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 青森Quarter（青森）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 青森Quarter",
+        "venue":  "青森Quarter",
+        "city":  "青森",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  293,
+        "date":  "2017-03-09",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 帯広Rest（帯広）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 帯広Rest",
+        "venue":  "帯広Rest",
+        "city":  "帯広",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  294,
+        "date":  "2017-03-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 札幌PENNY LANE 24（札幌）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 札幌PENNY LANE 24",
+        "venue":  "札幌PENNY LANE 24",
+        "city":  "札幌",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  295,
+        "date":  "2017-03-12",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 旭川CASINO DRIVE（旭川）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 旭川CASINO DRIVE",
+        "venue":  "旭川CASINO DRIVE",
+        "city":  "旭川",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  296,
+        "date":  "2017-03-18",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 高崎club FLEEZ（高崎）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 高崎club FLEEZ",
+        "venue":  "高崎club FLEEZ",
+        "city":  "高崎",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  297,
+        "date":  "2017-03-19",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 新潟LOTS（新潟）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 新潟LOTS",
+        "venue":  "新潟LOTS",
+        "city":  "新潟",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  298,
+        "date":  "2017-03-24",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ なんばHatch（大阪）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — なんばHatch",
+        "venue":  "なんばHatch",
+        "city":  "大阪",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  299,
+        "date":  "2017-03-29",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ Zepp Tokyo（東京）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — Zepp Tokyo",
+        "venue":  "Zepp Tokyo",
+        "city":  "東京",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  300,
+        "date":  "2010-10-22",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Cypress Girls \u0026 Detective Boys Tour @ 福岡DRUM LOGOS（福岡）",
+        "description":  "『TOUR;(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演) — 福岡DRUM LOGOS",
+        "venue":  "福岡DRUM LOGOS",
+        "city":  "福岡",
+        "tour":  "(Shine On You)Cypress Girls \u0026 Detective Boys",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  301,
+        "date":  "2010-10-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Cypress Girls \u0026 Detective Boys Tour @ 周南TIKI-TA（周南）",
+        "description":  "『TOUR;(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演) — 周南TIKI-TA",
+        "venue":  "周南TIKI-TA",
+        "city":  "周南",
+        "tour":  "(Shine On You)Cypress Girls \u0026 Detective Boys",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  302,
+        "date":  "2010-10-26",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Cypress Girls \u0026 Detective Boys Tour @ 神戸VARIT（神戸）",
+        "description":  "『TOUR;(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演) — 神戸VARIT",
+        "venue":  "神戸VARIT",
+        "city":  "神戸",
+        "tour":  "(Shine On You)Cypress Girls \u0026 Detective Boys",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  303,
+        "date":  "2010-10-28",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Cypress Girls \u0026 Detective Boys Tour @ 梅田AKASO（大阪）",
+        "description":  "『TOUR;(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演) — 梅田AKASO",
+        "venue":  "梅田AKASO",
+        "city":  "大阪",
+        "tour":  "(Shine On You)Cypress Girls \u0026 Detective Boys",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  304,
+        "date":  "2010-10-29",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Cypress Girls \u0026 Detective Boys Tour @ 梅田AKASO（大阪）",
+        "description":  "『TOUR;(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演) — 梅田AKASO",
+        "venue":  "梅田AKASO",
+        "city":  "大阪",
+        "tour":  "(Shine On You)Cypress Girls \u0026 Detective Boys",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  305,
+        "date":  "2010-11-02",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Cypress Girls \u0026 Detective Boys Tour @ 郡山Hip Shot Japan（郡山）",
+        "description":  "『TOUR;(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演) — 郡山Hip Shot Japan",
+        "venue":  "郡山Hip Shot Japan",
+        "city":  "郡山",
+        "tour":  "(Shine On You)Cypress Girls \u0026 Detective Boys",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  306,
+        "date":  "2010-11-03",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Cypress Girls \u0026 Detective Boys Tour @ 仙台darwin（仙台）",
+        "description":  "『TOUR;(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演) — 仙台darwin",
+        "venue":  "仙台darwin",
+        "city":  "仙台",
+        "tour":  "(Shine On You)Cypress Girls \u0026 Detective Boys",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  307,
+        "date":  "2010-11-08",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Cypress Girls \u0026 Detective Boys Tour @ 京都磔磔（京都）",
+        "description":  "『TOUR;(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演) — 京都磔磔",
+        "venue":  "京都磔磔",
+        "city":  "京都",
+        "tour":  "(Shine On You)Cypress Girls \u0026 Detective Boys",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  308,
+        "date":  "2010-11-10",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Cypress Girls \u0026 Detective Boys Tour @ 名古屋CLUB QUATTRO（名古屋）",
+        "description":  "『TOUR;(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演) — 名古屋CLUB QUATTRO",
+        "venue":  "名古屋CLUB QUATTRO",
+        "city":  "名古屋",
+        "tour":  "(Shine On You)Cypress Girls \u0026 Detective Boys",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  309,
+        "date":  "2010-11-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Cypress Girls \u0026 Detective Boys Tour @ 名古屋CLUB QUATTRO（名古屋）",
+        "description":  "『TOUR;(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演) — 名古屋CLUB QUATTRO",
+        "venue":  "名古屋CLUB QUATTRO",
+        "city":  "名古屋",
+        "tour":  "(Shine On You)Cypress Girls \u0026 Detective Boys",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  310,
+        "date":  "2010-11-13",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Cypress Girls \u0026 Detective Boys Tour @ 福井CHOP（福井）",
+        "description":  "『TOUR;(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演) — 福井CHOP",
+        "venue":  "福井CHOP",
+        "city":  "福井",
+        "tour":  "(Shine On You)Cypress Girls \u0026 Detective Boys",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  311,
+        "date":  "2010-11-14",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Cypress Girls \u0026 Detective Boys Tour @ 富山SOUL POWER（富山）",
+        "description":  "『TOUR;(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演) — 富山SOUL POWER",
+        "venue":  "富山SOUL POWER",
+        "city":  "富山",
+        "tour":  "(Shine On You)Cypress Girls \u0026 Detective Boys",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  312,
+        "date":  "2010-11-16",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Cypress Girls \u0026 Detective Boys Tour @ 恵比寿LIQUIDROOM（東京）",
+        "description":  "『TOUR;(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演) — 恵比寿LIQUIDROOM",
+        "venue":  "恵比寿LIQUIDROOM",
+        "city":  "東京",
+        "tour":  "(Shine On You)Cypress Girls \u0026 Detective Boys",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  313,
+        "date":  "2010-11-19",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Cypress Girls \u0026 Detective Boys Tour @ 新木場STUDIO COAST（東京）",
+        "description":  "『TOUR;(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演) — 新木場STUDIO COAST",
+        "venue":  "新木場STUDIO COAST",
+        "city":  "東京",
+        "tour":  "(Shine On You)Cypress Girls \u0026 Detective Boys",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
     }
 ]
