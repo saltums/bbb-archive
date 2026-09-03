@@ -617,7 +617,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』"
     },
     {
         "id":  "9",
@@ -1653,7 +1654,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/groups/21310"
                                }
-                           ]
+                           ],
+        "tour":  "バンドBのゆくえツアー"
     },
     {
         "id":  "92",
@@ -1703,7 +1705,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/groups/46726"
                                }
-                           ]
+                           ],
+        "tour":  "Base Ball Bear TOUR「二十九歳」"
     },
     {
         "id":  "96",
@@ -1731,7 +1734,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/groups/65932"
                                }
-                           ]
+                           ],
+        "tour":  "Base Ball Bear Tour「三十一歳」"
     },
     {
         "id":  "98",
@@ -6619,6 +6623,1162 @@
         "tour":  "LIVE IN LIVE ～C2 to C3～",
         "source_url":  "https://skream.jp/news/2025/03/base_ball_bear_live_in_live_c2_to_c3.php",
         "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  392,
+        "date":  "2013-04-04",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのゆくえツアー @ なんばHatch（大阪）",
+        "description":  "『バンドBのゆくえツアー』(全8公演) — なんばHatch",
+        "venue":  "なんばHatch",
+        "city":  "大阪",
+        "tour":  "バンドBのゆくえツアー",
+        "source_url":  "https://www.universal-music.co.jp/base-ball-bear/news/2013-01-08-02/",
+        "source_label":  "Universal Music Japan",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  393,
+        "date":  "2013-04-06",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのゆくえツアー @ 広島CLUB QUATTRO（広島）",
+        "description":  "『バンドBのゆくえツアー』(全8公演) — 広島CLUB QUATTRO",
+        "venue":  "広島CLUB QUATTRO",
+        "city":  "広島",
+        "tour":  "バンドBのゆくえツアー",
+        "source_url":  "https://www.universal-music.co.jp/base-ball-bear/news/2013-01-08-02/",
+        "source_label":  "Universal Music Japan",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  394,
+        "date":  "2013-04-12",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのゆくえツアー @ 名古屋CLUB DIAMOND HALL（名古屋）",
+        "description":  "『バンドBのゆくえツアー』(全8公演) — 名古屋CLUB DIAMOND HALL",
+        "venue":  "名古屋CLUB DIAMOND HALL",
+        "city":  "名古屋",
+        "tour":  "バンドBのゆくえツアー",
+        "source_url":  "https://www.universal-music.co.jp/base-ball-bear/news/2013-01-08-02/",
+        "source_label":  "Universal Music Japan",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  395,
+        "date":  "2013-04-14",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのゆくえツアー @ 福岡DRUM LOGOS（福岡）",
+        "description":  "『バンドBのゆくえツアー』(全8公演) — 福岡DRUM LOGOS",
+        "venue":  "福岡DRUM LOGOS",
+        "city":  "福岡",
+        "tour":  "バンドBのゆくえツアー",
+        "source_url":  "https://www.universal-music.co.jp/base-ball-bear/news/2013-01-08-02/",
+        "source_label":  "Universal Music Japan",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  396,
+        "date":  "2013-04-19",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのゆくえツアー @ 仙台darwin（仙台）",
+        "description":  "『バンドBのゆくえツアー』(全8公演) — 仙台darwin",
+        "venue":  "仙台darwin",
+        "city":  "仙台",
+        "tour":  "バンドBのゆくえツアー",
+        "source_url":  "https://www.universal-music.co.jp/base-ball-bear/news/2013-01-08-02/",
+        "source_label":  "Universal Music Japan",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  397,
+        "date":  "2013-04-20",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのゆくえツアー @ 新潟LOTS（新潟）",
+        "description":  "『バンドBのゆくえツアー』(全8公演) — 新潟LOTS",
+        "venue":  "新潟LOTS",
+        "city":  "新潟",
+        "tour":  "バンドBのゆくえツアー",
+        "source_url":  "https://www.universal-music.co.jp/base-ball-bear/news/2013-01-08-02/",
+        "source_label":  "Universal Music Japan",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  398,
+        "date":  "2013-04-25",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのゆくえツアー @ 赤坂BLITZ（東京）",
+        "description":  "『バンドBのゆくえツアー』(全8公演) — 赤坂BLITZ",
+        "venue":  "赤坂BLITZ",
+        "city":  "東京",
+        "tour":  "バンドBのゆくえツアー",
+        "source_url":  "https://www.universal-music.co.jp/base-ball-bear/news/2013-01-08-02/",
+        "source_label":  "Universal Music Japan",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  399,
+        "date":  "2013-04-28",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのゆくえツアー @ 札幌CUBE GARDEN（札幌）",
+        "description":  "『バンドBのゆくえツアー』(全8公演) — 札幌CUBE GARDEN",
+        "venue":  "札幌CUBE GARDEN",
+        "city":  "札幌",
+        "tour":  "バンドBのゆくえツアー",
+        "source_url":  "https://www.universal-music.co.jp/base-ball-bear/news/2013-01-08-02/",
+        "source_label":  "Universal Music Japan",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  400,
+        "date":  "2015-09-12",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ LIGHT HOUSE（水戸）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — LIGHT HOUSE",
+        "venue":  "LIGHT HOUSE",
+        "city":  "水戸",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  401,
+        "date":  "2015-09-13",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ HEAVEN\u0027S ROCK Utsunomiya VJ-2（宇都宮）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — HEAVEN\u0027S ROCK Utsunomiya VJ-2",
+        "venue":  "HEAVEN\u0027S ROCK Utsunomiya VJ-2",
+        "city":  "宇都宮",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  402,
+        "date":  "2015-09-19",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ NAVANA Hall（釧路）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — NAVANA Hall",
+        "venue":  "NAVANA Hall",
+        "city":  "釧路",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  403,
+        "date":  "2015-09-21",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ PENNY LANE 24（札幌）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — PENNY LANE 24",
+        "venue":  "PENNY LANE 24",
+        "city":  "札幌",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  404,
+        "date":  "2015-09-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ club COCOA（函館）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — club COCOA",
+        "venue":  "club COCOA",
+        "city":  "函館",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  405,
+        "date":  "2015-09-26",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ AZTiC laughs（米子）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — AZTiC laughs",
+        "venue":  "AZTiC laughs",
+        "city":  "米子",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  406,
+        "date":  "2015-09-27",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ 広島CLUB QUATTRO（広島）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — 広島CLUB QUATTRO",
+        "venue":  "広島CLUB QUATTRO",
+        "city":  "広島",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  407,
+        "date":  "2015-10-03",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ LOTS（新潟）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — LOTS",
+        "venue":  "LOTS",
+        "city":  "新潟",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  408,
+        "date":  "2015-10-04",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ EIGHT HALL（金沢）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — EIGHT HALL",
+        "venue":  "EIGHT HALL",
+        "city":  "金沢",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  409,
+        "date":  "2015-10-10",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ DRUM LOGOS（福岡）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — DRUM LOGOS",
+        "venue":  "DRUM LOGOS",
+        "city":  "福岡",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  410,
+        "date":  "2015-10-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ SR BOX（宮崎）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — SR BOX",
+        "venue":  "SR BOX",
+        "city":  "宮崎",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  411,
+        "date":  "2015-10-17",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ DIME（高松）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — DIME",
+        "venue":  "DIME",
+        "city":  "高松",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  412,
+        "date":  "2015-10-18",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ Salon Kitty（松山）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — Salon Kitty",
+        "venue":  "Salon Kitty",
+        "city":  "松山",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  413,
+        "date":  "2015-10-24",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ UMBER（静岡）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — UMBER",
+        "venue":  "UMBER",
+        "city":  "静岡",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  414,
+        "date":  "2015-10-26",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ Taku Taku（京都）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — Taku Taku",
+        "venue":  "Taku Taku",
+        "city":  "京都",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  415,
+        "date":  "2015-10-31",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ CRAZYMAMA KINGDOM（岡山）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — CRAZYMAMA KINGDOM",
+        "venue":  "CRAZYMAMA KINGDOM",
+        "city":  "岡山",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  416,
+        "date":  "2015-11-01",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ 名古屋DIAMOND HALL（名古屋）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — 名古屋DIAMOND HALL",
+        "venue":  "名古屋DIAMOND HALL",
+        "city":  "名古屋",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  417,
+        "date":  "2015-11-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ 仙台darwin（仙台）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — 仙台darwin",
+        "venue":  "仙台darwin",
+        "city":  "仙台",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  418,
+        "date":  "2015-11-08",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ CLUB CHANGE WAVE（盛岡）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — CLUB CHANGE WAVE",
+        "venue":  "CLUB CHANGE WAVE",
+        "city":  "盛岡",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  419,
+        "date":  "2015-11-12",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ 千葉LOOK（千葉）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — 千葉LOOK",
+        "venue":  "千葉LOOK",
+        "city":  "千葉",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  420,
+        "date":  "2015-11-14",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ HEAVEN\u0027S ROCK Saitama VJ-3（さいたま）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — HEAVEN\u0027S ROCK Saitama VJ-3",
+        "venue":  "HEAVEN\u0027S ROCK Saitama VJ-3",
+        "city":  "さいたま",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  421,
+        "date":  "2015-11-21",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ 高崎club FLEEZ（高崎）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — 高崎club FLEEZ",
+        "venue":  "高崎club FLEEZ",
+        "city":  "高崎",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  422,
+        "date":  "2015-11-22",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ Conviction（甲府）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — Conviction",
+        "venue":  "Conviction",
+        "city":  "甲府",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  423,
+        "date":  "2015-11-29",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ Zepp Namba（大阪）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — Zepp Namba",
+        "venue":  "Zepp Namba",
+        "city":  "大阪",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  424,
+        "date":  "2015-12-04",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ 豊洲PIT（東京）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — 豊洲PIT",
+        "venue":  "豊洲PIT",
+        "city":  "東京",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  425,
+        "date":  "2014-03-25",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "ツアー『2014春ライブツアー「光蘚」』(全3公演)",
+        "description":  "2014春ライブツアー「光蘚」全3公演",
+        "venue":  null,
+        "city":  null,
+        "tour":  "2014春ライブツアー「光蘚」",
+        "source_url":  "https://rockinon.com/news/detail/97396",
+        "source_label":  "rockinon.com",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  426,
+        "date":  "2014-03-25",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "2014春ライブツアー「光蘚」 @ SHIBUYA-AX（東京）",
+        "description":  "『2014春ライブツアー「光蘚」』(全3公演) — SHIBUYA-AX",
+        "venue":  "SHIBUYA-AX",
+        "city":  "東京",
+        "tour":  "2014春ライブツアー「光蘚」",
+        "source_url":  "https://rockinon.com/news/detail/97396",
+        "source_label":  "rockinon.com",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  427,
+        "date":  "2014-03-30",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "2014春ライブツアー「光蘚」 @ なんばHatch（大阪）",
+        "description":  "『2014春ライブツアー「光蘚」』(全3公演) — なんばHatch",
+        "venue":  "なんばHatch",
+        "city":  "大阪",
+        "tour":  "2014春ライブツアー「光蘚」",
+        "source_url":  "https://rockinon.com/news/detail/97396",
+        "source_label":  "rockinon.com",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  428,
+        "date":  "2014-04-04",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "2014春ライブツアー「光蘚」 @ 名古屋BOTTOM LINE（名古屋）",
+        "description":  "『2014春ライブツアー「光蘚」』(全3公演) — 名古屋BOTTOM LINE",
+        "venue":  "名古屋BOTTOM LINE",
+        "city":  "名古屋",
+        "tour":  "2014春ライブツアー「光蘚」",
+        "source_url":  "https://rockinon.com/news/detail/97396",
+        "source_label":  "rockinon.com",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  429,
+        "date":  "2014-09-06",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear TOUR「二十九歳」 @ 高崎club FLEEZ（高崎）",
+        "description":  "『Base Ball Bear TOUR「二十九歳」』(全22公演) — 高崎club FLEEZ",
+        "venue":  "高崎club FLEEZ",
+        "city":  "高崎",
+        "tour":  "Base Ball Bear TOUR「二十九歳」",
+        "source_url":  "https://skream.jp/news/2014/12/base-ball-bear_29tour_documentary.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  430,
+        "date":  "2014-09-20",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear TOUR「二十九歳」 @ PENNY LANE 24（札幌）",
+        "description":  "『Base Ball Bear TOUR「二十九歳」』(全22公演) — PENNY LANE 24",
+        "venue":  "PENNY LANE 24",
+        "city":  "札幌",
+        "tour":  "Base Ball Bear TOUR「二十九歳」",
+        "source_url":  "https://skream.jp/news/2014/12/base-ball-bear_29tour_documentary.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  431,
+        "date":  "2014-10-12",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear TOUR「二十九歳」 @ 福岡DRUM LOGOS（福岡）",
+        "description":  "『Base Ball Bear TOUR「二十九歳」』(全22公演) — 福岡DRUM LOGOS",
+        "venue":  "福岡DRUM LOGOS",
+        "city":  "福岡",
+        "tour":  "Base Ball Bear TOUR「二十九歳」",
+        "source_url":  "https://skream.jp/news/2014/12/base-ball-bear_29tour_documentary.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  432,
+        "date":  "2014-10-25",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear TOUR「二十九歳」 @ 広島CLUB QUATTRO（広島）",
+        "description":  "『Base Ball Bear TOUR「二十九歳」』(全22公演) — 広島CLUB QUATTRO",
+        "venue":  "広島CLUB QUATTRO",
+        "city":  "広島",
+        "tour":  "Base Ball Bear TOUR「二十九歳」",
+        "source_url":  "https://skream.jp/news/2014/12/base-ball-bear_29tour_documentary.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  433,
+        "date":  "2014-11-02",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear TOUR「二十九歳」 @ 仙台darwin（仙台）",
+        "description":  "『Base Ball Bear TOUR「二十九歳」』(全22公演) — 仙台darwin",
+        "venue":  "仙台darwin",
+        "city":  "仙台",
+        "tour":  "Base Ball Bear TOUR「二十九歳」",
+        "source_url":  "https://skream.jp/news/2014/12/base-ball-bear_29tour_documentary.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  434,
+        "date":  "2014-11-29",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear TOUR「二十九歳」 @ Zepp DiverCity Tokyo（東京）",
+        "description":  "『Base Ball Bear TOUR「二十九歳」』(全22公演) — Zepp DiverCity Tokyo",
+        "venue":  "Zepp DiverCity Tokyo",
+        "city":  "東京",
+        "tour":  "Base Ball Bear TOUR「二十九歳」",
+        "source_url":  "https://skream.jp/news/2014/12/base-ball-bear_29tour_documentary.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  435,
+        "date":  "2014-10-31",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear TOUR「二十九歳」 @ Zepp Nagoya（名古屋）",
+        "description":  "『Base Ball Bear TOUR「二十九歳」』(全22公演) — Zepp Nagoya",
+        "venue":  "Zepp Nagoya",
+        "city":  "名古屋",
+        "tour":  "Base Ball Bear TOUR「二十九歳」",
+        "source_url":  "https://rockinon.com/live/detail/114401",
+        "source_label":  "rockinon.com",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  436,
+        "date":  "2014-11-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "major",
+        "title":  "Base Ball Bear TOUR「二十九歳」 @ 下北沢GARAGE（東京）",
+        "description":  "『Base Ball Bear TOUR「二十九歳」』(全22公演) — 下北沢GARAGE",
+        "venue":  "下北沢GARAGE",
+        "city":  "東京",
+        "tour":  "Base Ball Bear TOUR「二十九歳」",
+        "source_url":  "https://rockinon.com/live/detail/114401",
+        "source_label":  "rockinon.com",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  452,
+        "date":  "2015-03-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "ツアー『Base Ball Bear Tour「二十九歳＋一」』開幕(全15公演)",
+        "description":  "二十九歳ツアーで回れなかった地域を巡る追加ツアー 全15公演",
+        "venue":  null,
+        "city":  null,
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  437,
+        "date":  "2015-03-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「二十九歳＋一」 @ Club SWINDLE（秋田）",
+        "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — Club SWINDLE",
+        "venue":  "Club SWINDLE",
+        "city":  "秋田",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  438,
+        "date":  "2015-03-08",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「二十九歳＋一」 @ 青森Quarter（青森）",
+        "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — 青森Quarter",
+        "venue":  "青森Quarter",
+        "city":  "青森",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  439,
+        "date":  "2015-03-13",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「二十九歳＋一」 @ 松山SALON KITTY（松山）",
+        "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — 松山SALON KITTY",
+        "venue":  "松山SALON KITTY",
+        "city":  "松山",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  440,
+        "date":  "2015-03-14",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「二十九歳＋一」 @ club GRINDHOUSE（徳島）",
+        "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — club GRINDHOUSE",
+        "venue":  "club GRINDHOUSE",
+        "city":  "徳島",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  441,
+        "date":  "2015-03-19",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「二十九歳＋一」 @ SR HALL（鹿児島）",
+        "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — SR HALL",
+        "venue":  "SR HALL",
+        "city":  "鹿児島",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  442,
+        "date":  "2015-03-21",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「二十九歳＋一」 @ kokura FUSE（北九州）",
+        "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — kokura FUSE",
+        "venue":  "kokura FUSE",
+        "city":  "北九州",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  443,
+        "date":  "2015-03-22",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「二十九歳＋一」 @ TIKI-TA（周南）",
+        "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — TIKI-TA",
+        "venue":  "TIKI-TA",
+        "city":  "周南",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  444,
+        "date":  "2015-03-28",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「二十九歳＋一」 @ AZTiC canova（松江）",
+        "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — AZTiC canova",
+        "venue":  "AZTiC canova",
+        "city":  "松江",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  445,
+        "date":  "2015-04-05",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「二十九歳＋一」 @ 福井CHOP（福井）",
+        "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — 福井CHOP",
+        "venue":  "福井CHOP",
+        "city":  "福井",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  446,
+        "date":  "2015-04-12",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「二十九歳＋一」 @ LIVE HOUSE J（長野）",
+        "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — LIVE HOUSE J",
+        "venue":  "LIVE HOUSE J",
+        "city":  "長野",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  447,
+        "date":  "2015-04-17",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「二十九歳＋一」 @ 神戸VARIT.（神戸）",
+        "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — 神戸VARIT.",
+        "venue":  "神戸VARIT.",
+        "city":  "神戸",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  448,
+        "date":  "2015-04-18",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「二十九歳＋一」 @ 奈良NEVER LAND（奈良）",
+        "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — 奈良NEVER LAND",
+        "venue":  "奈良NEVER LAND",
+        "city":  "奈良",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  449,
+        "date":  "2015-04-25",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「二十九歳＋一」 @ 千葉LOOK（千葉）",
+        "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — 千葉LOOK",
+        "venue":  "千葉LOOK",
+        "city":  "千葉",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  450,
+        "date":  "2015-04-26",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「二十九歳＋一」 @ HEAVEN\u0027S ROCK Saitama VJ-3（さいたま）",
+        "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — HEAVEN\u0027S ROCK Saitama VJ-3",
+        "venue":  "HEAVEN\u0027S ROCK Saitama VJ-3",
+        "city":  "さいたま",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  451,
+        "date":  "2015-04-29",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「二十九歳＋一」 @ LiveHouse 浜松（浜松）",
+        "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — LiveHouse 浜松",
+        "venue":  "LiveHouse 浜松",
+        "city":  "浜松",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  453,
+        "date":  "2011-05-25",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』 @ 旭川CASINO DRIVE（旭川）",
+        "description":  "『Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』』(全32公演) — 旭川CASINO DRIVE",
+        "venue":  "旭川CASINO DRIVE",
+        "city":  "旭川",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "source_url":  "https://rockinon.com/news/detail/51277",
+        "source_label":  "rockinon.com",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  454,
+        "date":  "2011-05-29",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』 @ 水戸club SONIC（水戸）",
+        "description":  "『Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』』(全32公演) — 水戸club SONIC",
+        "venue":  "水戸club SONIC",
+        "city":  "水戸",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "source_url":  "https://rockinon.com/news/detail/51277",
+        "source_label":  "rockinon.com",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  455,
+        "date":  "2011-06-20",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』 @ 千葉LOOK（千葉）",
+        "description":  "『Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』』(全32公演) — 千葉LOOK",
+        "venue":  "千葉LOOK",
+        "city":  "千葉",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "source_url":  "https://rockinon.com/news/detail/51277",
+        "source_label":  "rockinon.com",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  456,
+        "date":  "2011-06-24",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』 @ 高崎club FLEEZ（高崎）",
+        "description":  "『Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』』(全32公演) — 高崎club FLEEZ",
+        "venue":  "高崎club FLEEZ",
+        "city":  "高崎",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "source_url":  "https://rockinon.com/news/detail/51277",
+        "source_label":  "rockinon.com",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  457,
+        "date":  "2011-06-26",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』 @ HEAVEN\u0027S ROCK Utsunomiya VJ-2（宇都宮）",
+        "description":  "『Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』』(全32公演) — HEAVEN\u0027S ROCK Utsunomiya VJ-2",
+        "venue":  "HEAVEN\u0027S ROCK Utsunomiya VJ-2",
+        "city":  "宇都宮",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "source_url":  "https://rockinon.com/news/detail/51277",
+        "source_label":  "rockinon.com",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  458,
+        "date":  "2011-06-30",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "major",
+        "title":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』 @ SHIBUYA-AX（東京）",
+        "description":  "『Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』』(全32公演) — SHIBUYA-AX",
+        "venue":  "SHIBUYA-AX",
+        "city":  "東京",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "source_url":  "https://rockinon.com/news/detail/51277",
+        "source_label":  "rockinon.com",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  459,
+        "date":  "2011-07-01",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』 @ 下北沢GARAGE（東京）",
+        "description":  "『Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』』(全32公演) — 下北沢GARAGE",
+        "venue":  "下北沢GARAGE",
+        "city":  "東京",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "source_url":  "https://rockinon.com/news/detail/51277",
+        "source_label":  "rockinon.com",
         "external_links":  [
 
                            ]
