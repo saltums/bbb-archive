@@ -445,6 +445,52 @@
   transform: translateX(-50%) translateY(0);
 }
 
+/* Custom song input */
+.sc-custom-wrap {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  border-top: 1px solid var(--line);
+  flex-shrink: 0;
+}
+
+.sc-custom-input {
+  flex: 1;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.4rem 0.65rem;
+  color: var(--ink);
+  font-size: 0.8rem;
+  font-family: var(--font);
+  outline: none;
+  min-width: 0;
+}
+.sc-custom-input:focus { border-color: var(--accent); }
+.sc-custom-input::placeholder { color: var(--ink-dim); font-size: 0.75rem; }
+
+.sc-custom-add {
+  flex-shrink: 0;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  color: var(--ink-dim);
+  cursor: pointer;
+  font-family: var(--font);
+  transition: background 0.12s, color 0.12s, border-color 0.12s;
+}
+.sc-custom-add:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* Live select */
+.sc-live-select {
+  cursor: pointer;
+  appearance: auto;
+}
+.sc-live-select option[value=""] { color: var(--ink-dim); }
+
 /* ========== Mobile ========== */
 .sc-mobile-tabs {
   display: none;
@@ -515,12 +561,20 @@
     </div>
     <div class="sc-album-tabs" id="scAlbumTabs"></div>
     <div class="sc-songs" id="scSongs"></div>
+    <!-- Custom song input -->
+    <div class="sc-custom-wrap">
+      <input class="sc-custom-input" id="scCustomInput" type="text" placeholder="データにない曲・コラボ曲を追加…" autocomplete="off" spellcheck="false">
+      <button class="sc-custom-add" id="scCustomAdd">追加</button>
+    </div>
   </div>
 
   <!-- Setlist Builder -->
   <div class="sc-builder" id="scBuilder">
     <!-- Metadata -->
     <div class="sc-meta">
+      <select class="sc-input sc-live-select" id="scLiveSelect">
+        <option value="">── ライブ日程から選ぶ ──</option>
+      </select>
       <div class="sc-meta-row">
         <input class="sc-input" id="scDate" type="date" placeholder="日付">
         <input class="sc-input" id="scVenue" type="text" placeholder="会場名">
@@ -592,6 +646,9 @@
   const scCity = document.getElementById("scCity");
   const scTour = document.getElementById("scTour");
   const scToast = document.getElementById("scToast");
+  const scLiveSelect = document.getElementById("scLiveSelect");
+  const scCustomInput = document.getElementById("scCustomInput");
+  const scCustomAdd = document.getElementById("scCustomAdd");
 
   // ===== Load songs.json =====
   fetch("data/songs.json", { cache: "no-store" })
@@ -604,6 +661,56 @@
     .catch(() => {
       scSongs.innerHTML = '<p class="sc-empty">曲データの読み込みに失敗しました。</p>';
     });
+
+  // ===== Load timeline.json for live schedule =====
+  fetch("data/timeline.json", { cache: "no-store" })
+    .then((r) => (r.ok ? r.json() : []))
+    .then((data) => {
+      const lives = (data || [])
+        .filter((ev) => ev.type === "live" && ev.date)
+        .sort((a, b) => b.date.localeCompare(a.date));
+
+      lives.forEach((ev) => {
+        const opt = document.createElement("option");
+        opt.value = JSON.stringify({
+          date: ev.date || "",
+          venue: ev.venue || "",
+          city: ev.city || "",
+          tour: ev.tour || "",
+          title: ev.title || "",
+        });
+        opt.textContent = ev.date + " " + (ev.title || "");
+        scLiveSelect.appendChild(opt);
+      });
+    })
+    .catch(() => {});
+
+  scLiveSelect.addEventListener("change", () => {
+    const val = scLiveSelect.value;
+    if (!val) return;
+    try {
+      const ev = JSON.parse(val);
+      if (ev.date) scDate.value = ev.date;
+      if (ev.venue) scVenue.value = ev.venue;
+      if (ev.city) scCity.value = ev.city;
+      if (ev.tour) scTour.value = ev.tour;
+    } catch (_) {}
+    scLiveSelect.value = "";
+  });
+
+  // ===== Custom song input =====
+  function addCustomSong() {
+    const name = scCustomInput.value.trim();
+    if (!name) return;
+    addSong(name);
+    scCustomInput.value = "";
+    scCustomInput.focus();
+  }
+
+  scCustomAdd.addEventListener("click", addCustomSong);
+  scCustomInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") addCustomSong();
+  });
 
   // ===== Load saved setlists =====
   try {
