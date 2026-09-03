@@ -1018,8 +1018,8 @@
                                }
                            ],
         "venue":  "日比谷野外大音楽堂",
-        "tour":  "日比谷ノンフィクションVIII",
-        "city":  "東京"
+        "city":  "東京",
+        "tour":  "Guitar！Drum！Bass！Tour (2019)"
     },
     {
         "id":  "18",
@@ -6122,6 +6122,346 @@
         "tour":  "Base Ball Bear Tour「LIVE IN LIVE」",
         "source_url":  "https://www.baseballbear.com/special/liveinlive/",
         "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  363,
+        "date":  "2018-10-13",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE〜I HUB YOU〜 @ なんばHatch（大阪）",
+        "description":  "『LIVE IN LIVE〜I HUB YOU〜』対バンツアー(2018) — with キュウソネコカミ",
+        "venue":  "なんばHatch",
+        "city":  "大阪",
+        "tour":  "LIVE IN LIVE〜I HUB YOU〜 (2018)",
+        "source_url":  "https://www.baseballbear.com/special/ihubyou/",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  364,
+        "date":  "2018-11-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE〜I HUB YOU〜 @ 名古屋DIAMOND HALL（名古屋）",
+        "description":  "『LIVE IN LIVE〜I HUB YOU〜』対バンツアー(2018) — with the pillows",
+        "venue":  "名古屋DIAMOND HALL",
+        "city":  "名古屋",
+        "tour":  "LIVE IN LIVE〜I HUB YOU〜 (2018)",
+        "source_url":  "https://www.baseballbear.com/special/ihubyou/",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  365,
+        "date":  "2019-02-03",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "17才から17年やってますツアー @ 広島CAVE-BE（広島）",
+        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — 広島CAVE-BE",
+        "venue":  "広島CAVE-BE",
+        "city":  "広島",
+        "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SMA公式",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  366,
+        "date":  "2019-02-10",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "17才から17年やってますツアー @ 仙台Rensa（仙台）",
+        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — 仙台Rensa",
+        "venue":  "仙台Rensa",
+        "city":  "仙台",
+        "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SMA公式",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  367,
+        "date":  "2019-02-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "17才から17年やってますツアー @ 盛岡CLUB CHANGE WAVE（盛岡）",
+        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — 盛岡CLUB CHANGE WAVE",
+        "venue":  "盛岡CLUB CHANGE WAVE",
+        "city":  "盛岡",
+        "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SMA公式",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  368,
+        "date":  "2019-02-16",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "17才から17年やってますツアー @ 静岡UMBER（静岡）",
+        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — 静岡UMBER",
+        "venue":  "静岡UMBER",
+        "city":  "静岡",
+        "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SMA公式",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  369,
+        "date":  "2019-02-17",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "17才から17年やってますツアー @ なんばHatch（大阪）",
+        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — なんばHatch",
+        "venue":  "なんばHatch",
+        "city":  "大阪",
+        "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SMA公式",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  370,
+        "date":  "2019-02-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "17才から17年やってますツアー @ 札幌PENNY LANE 24（札幌）",
+        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — 札幌PENNY LANE 24",
+        "venue":  "札幌PENNY LANE 24",
+        "city":  "札幌",
+        "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SMA公式",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  371,
+        "date":  "2019-02-24",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "17才から17年やってますツアー @ 帯広Rest（帯広）",
+        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — 帯広Rest",
+        "venue":  "帯広Rest",
+        "city":  "帯広",
+        "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SMA公式",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  372,
+        "date":  "2019-03-02",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "17才から17年やってますツアー @ 金沢AZ（金沢）",
+        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — 金沢AZ",
+        "venue":  "金沢AZ",
+        "city":  "金沢",
+        "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SMA公式",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  373,
+        "date":  "2019-03-03",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "17才から17年やってますツアー @ 新潟LOTS（新潟）",
+        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — 新潟LOTS",
+        "venue":  "新潟LOTS",
+        "city":  "新潟",
+        "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SMA公式",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  374,
+        "date":  "2019-03-09",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "17才から17年やってますツアー @ 岡山IMAGE（岡山）",
+        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — 岡山IMAGE",
+        "venue":  "岡山IMAGE",
+        "city":  "岡山",
+        "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SMA公式",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  375,
+        "date":  "2019-03-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "17才から17年やってますツアー @ Zepp DiverCity TOKYO（東京）",
+        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — Zepp DiverCity TOKYO",
+        "venue":  "Zepp DiverCity TOKYO",
+        "city":  "東京",
+        "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SMA公式",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  376,
+        "date":  "2019-03-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "17才から17年やってますツアー @ 福岡DRUM LOGOS（福岡）",
+        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — 福岡DRUM LOGOS",
+        "venue":  "福岡DRUM LOGOS",
+        "city":  "福岡",
+        "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SMA公式",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  377,
+        "date":  "2019-04-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "17才から17年やってますツアー @ 高松MONSTER（高松）",
+        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — 高松MONSTER",
+        "venue":  "高松MONSTER",
+        "city":  "高松",
+        "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SMA公式",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  378,
+        "date":  "2019-04-19",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "17才から17年やってますツアー @ 名古屋DIAMOND HALL（名古屋）",
+        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — 名古屋DIAMOND HALL",
+        "venue":  "名古屋DIAMOND HALL",
+        "city":  "名古屋",
+        "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SMA公式",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  379,
+        "date":  "2019-10-19",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ なんばHatch（大阪）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — なんばHatch",
+        "venue":  "なんばHatch",
+        "city":  "大阪",
+        "tour":  "Guitar！Drum！Bass！Tour (2019)",
+        "source_url":  "https://www.diskgarage.com/digaonline/liverepo/128856",
+        "source_label":  "DiskGarage",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  380,
+        "date":  "2019-11-21",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 仙台darwin（仙台）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 仙台darwin",
+        "venue":  "仙台darwin",
+        "city":  "仙台",
+        "tour":  "Guitar！Drum！Bass！Tour (2019)",
+        "source_url":  "https://www.diskgarage.com/digaonline/liverepo/128856",
+        "source_label":  "DiskGarage",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  381,
+        "date":  "2019-11-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 青森Quarter（青森）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 青森Quarter",
+        "venue":  "青森Quarter",
+        "city":  "青森",
+        "tour":  "Guitar！Drum！Bass！Tour (2019)",
+        "source_url":  "https://www.diskgarage.com/digaonline/liverepo/128856",
+        "source_label":  "DiskGarage",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  382,
+        "date":  "2019-12-08",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 札幌Cube Garden（札幌）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 札幌Cube Garden",
+        "venue":  "札幌Cube Garden",
+        "city":  "札幌",
+        "tour":  "Guitar！Drum！Bass！Tour (2019)",
+        "source_url":  "https://www.diskgarage.com/digaonline/liverepo/128856",
+        "source_label":  "DiskGarage",
         "external_links":  [
 
                            ]
