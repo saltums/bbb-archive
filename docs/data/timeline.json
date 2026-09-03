@@ -1,4 +1,4 @@
-﻿[
+[
     {
         "id":  "1",
         "date":  "2001-11-11",
@@ -410,7 +410,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "日比谷野外大音楽堂",
+        "tour":  "日比谷ノンフィクション",
+        "city":  "東京"
     },
     {
         "id":  "44",
@@ -479,7 +482,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "日本武道館",
+        "tour":  "(This Is The) Base Ball Bear part.1",
+        "city":  "東京"
     },
     {
         "id":  "30",
@@ -628,7 +634,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "日本武道館",
+        "tour":  "(This Is The) Base Ball Bear part.2 Live 新呼吸",
+        "city":  "東京"
     },
     {
         "id":  "74",
@@ -684,7 +693,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "日比谷野外大音楽堂",
+        "tour":  "日比谷ノンフィクションIII",
+        "city":  "東京"
     },
     {
         "id":  "49",
@@ -849,7 +861,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "日比谷野外大音楽堂",
+        "tour":  "日比谷ノンフィクションV",
+        "city":  "東京"
     },
     {
         "id":  "14",
@@ -903,7 +918,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "日比谷野外大音楽堂",
+        "tour":  "日比谷ノンフィクションVI",
+        "city":  "東京"
     },
     {
         "id":  "16",
@@ -932,7 +950,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "日比谷野外大音楽堂",
+        "tour":  "日比谷ノンフィクションVII",
+        "city":  "東京"
     },
     {
         "id":  "17",
@@ -995,7 +1016,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "日比谷野外大音楽堂",
+        "tour":  "日比谷ノンフィクションVIII",
+        "city":  "東京"
     },
     {
         "id":  "18",
@@ -1098,7 +1122,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "日比谷野外大音楽堂",
+        "tour":  "日比谷ノンフィクションIX",
+        "city":  "東京"
     },
     {
         "id":  "20",
@@ -1115,7 +1142,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "日本武道館",
+        "tour":  "結成20周年",
+        "city":  "東京"
     },
     {
         "id":  "22",
@@ -1183,7 +1213,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "日比谷野外大音楽堂",
+        "tour":  "日比谷ノンフィクションX",
+        "city":  "東京"
     },
     {
         "id":  "25",
@@ -1290,7 +1323,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "tour":  "Tour Lyrical Tattoo"
     },
     {
         "id":  "65",
@@ -1375,7 +1409,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "渋谷公会堂",
+        "tour":  "SHIBUYA NONFICTION III",
+        "city":  "東京"
     },
     {
         "id":  "71",
@@ -1521,7 +1558,9 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "渋谷C.C.Lemonホール",
+        "city":  "東京"
     },
     {
         "id":  "86",
@@ -1791,7 +1830,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "日比谷野外大音楽堂",
+        "tour":  "日比谷ノンフィクション pt.2",
+        "city":  "東京"
     },
     {
         "id":  "105",
@@ -1808,7 +1850,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "日比谷野外大音楽堂",
+        "tour":  "日比谷ノンフィクション IV",
+        "city":  "東京"
     },
     {
         "id":  "106",
@@ -1948,7 +1993,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/groups/10270"
                                }
-                           ]
+                           ],
+        "venue":  "日比谷野外大音楽堂",
+        "tour":  "日比谷ノンフィクション",
+        "city":  "東京"
     },
     {
         "id":  "119",
@@ -1965,7 +2013,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/groups/23479"
                                }
-                           ]
+                           ],
+        "venue":  "日比谷野外大音楽堂",
+        "tour":  "日比谷ノンフィクションIII",
+        "city":  "東京"
     },
     {
         "id":  "120",
@@ -1982,7 +2033,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "日比谷野外大音楽堂",
+        "tour":  "日比谷ノンフィクションV",
+        "city":  "東京"
     },
     {
         "id":  "121",
@@ -1999,7 +2053,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/groups/230170"
                                }
-                           ]
+                           ],
+        "venue":  "渋谷公会堂",
+        "tour":  "SHIBUYA NONFICTION",
+        "city":  "東京"
     },
     {
         "id":  "122",
@@ -2016,7 +2073,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "渋谷公会堂",
+        "tour":  "SHIBUYA NONFICTION II",
+        "city":  "東京"
     },
     {
         "id":  "123",
@@ -2033,7 +2093,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/events/215943"
                                }
-                           ]
+                           ],
+        "venue":  "日本武道館",
+        "tour":  "(This Is The) Base Ball Bear part.1",
+        "city":  "東京"
     },
     {
         "id":  "124",
@@ -2050,7 +2113,10 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "venue":  "日本武道館",
+        "tour":  "(This Is The) Base Ball Bear part.2 Live 新呼吸",
+        "city":  "東京"
     },
     {
         "id":  "125",
@@ -2136,7 +2202,10 @@
         "title":  "ARABAKI ROCK FEST.19 出演(ARAHABAKIステージ 13:00〜)",
         "description":  "みちのく公園北地区「エコキャンプみちのく」(宮城)のARAHABAKIステージに2日目13:00〜出演。前後: 赤い公園(12:00〜)、TOMOVSKY(14:10〜)。",
         "source_url":  "https://rockinon.com/news/detail/183932",
-        "source_label":  "rockinon.com「ARABAKI ROCK FEST.19 第3弾ラインナップ」"
+        "source_label":  "rockinon.com「ARABAKI ROCK FEST.19 第3弾ラインナップ」",
+        "venue":  "荒吐野外ステージ",
+        "tour":  "ARABAKI ROCK FEST.19",
+        "city":  "宮城"
     },
     {
         "id":  "131",
@@ -2697,6 +2766,261 @@
                                    "url":  "https://music.youtube.com/search?q=Base+Ball+Bear+SYUUU+ドライブ",
                                    "label":  "YouTube Music"
                                }
+                           ]
+    },
+    {
+        "id":  166,
+        "date":  "2026-02-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ THE BOTTOM LINE(愛知)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: THE BOTTOM LINE（愛知）。",
+        "venue":  "THE BOTTOM LINE",
+        "city":  "愛知",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  167,
+        "date":  "2026-02-27",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ BIGCAT(大阪)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: BIGCAT（大阪）。",
+        "venue":  "BIGCAT",
+        "city":  "大阪",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  168,
+        "date":  "2026-03-19",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ Zepp DiverCity(TOKYO)(東京)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: Zepp DiverCity(TOKYO)（東京）。",
+        "venue":  "Zepp DiverCity(TOKYO)",
+        "city":  "東京",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  169,
+        "date":  "2026-05-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ 仙台darwin(仙台)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: 仙台darwin（仙台）。",
+        "venue":  "仙台darwin",
+        "city":  "仙台",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  170,
+        "date":  "2026-05-16",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ GOLDEN PIGS RED(新潟)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: GOLDEN PIGS RED（新潟）。",
+        "venue":  "GOLDEN PIGS RED",
+        "city":  "新潟",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  171,
+        "date":  "2026-05-28",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ 千葉LOOK(千葉)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: 千葉LOOK（千葉）。",
+        "venue":  "千葉LOOK",
+        "city":  "千葉",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  172,
+        "date":  "2026-06-04",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ 磔磔(京都)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: 磔磔（京都）。",
+        "venue":  "磔磔",
+        "city":  "京都",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  173,
+        "date":  "2026-06-06",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ IMAGE(岡山)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: IMAGE（岡山）。",
+        "venue":  "IMAGE",
+        "city":  "岡山",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  174,
+        "date":  "2026-06-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ 松山Double-u studio(松山)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: 松山Double-u studio（松山）。",
+        "venue":  "松山Double-u studio",
+        "city":  "松山",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  175,
+        "date":  "2026-06-19",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ 金沢AZ(金沢)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: 金沢AZ（金沢）。",
+        "venue":  "金沢AZ",
+        "city":  "金沢",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  176,
+        "date":  "2026-06-20",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ ライブハウスJ(長野)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: ライブハウスJ（長野）。",
+        "venue":  "ライブハウスJ",
+        "city":  "長野",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  177,
+        "date":  "2026-07-03",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ BESSIE HALL(札幌)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: BESSIE HALL（札幌）。",
+        "venue":  "BESSIE HALL",
+        "city":  "札幌",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  178,
+        "date":  "2026-07-05",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ Quarter(青森)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: Quarter（青森）。",
+        "venue":  "Quarter",
+        "city":  "青森",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  179,
+        "date":  "2026-07-10",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ DRUM Be-1(福岡)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: DRUM Be-1（福岡）。",
+        "venue":  "DRUM Be-1",
+        "city":  "福岡",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  180,
+        "date":  "2026-07-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ B.9 V2(熊本)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: B.9 V2（熊本）。ツアーファイナル。",
+        "venue":  "B.9 V2",
+        "city":  "熊本",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
                            ]
     }
 ]
