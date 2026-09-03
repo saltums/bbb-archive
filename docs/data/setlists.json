@@ -1,1 +1,127 @@
-﻿[]
+[
+    {
+        "date":  "2019-04-28",
+        "venue":  "エコキャンプみちのく (ARAHABAKIステージ)",
+        "city":  "宮城",
+        "tour":  null,
+        "sets":  [
+                     {
+                         "label":  "本編",
+                         "songs":  [
+                                       "17才",
+                                       "ポラリス",
+                                       "ドラマチック",
+                                       "The Cut",
+                                       "LOVE MATHEMATICS",
+                                       "祭りのあと"
+                                   ]
+                     }
+                 ],
+        "note":  "ARABAKI ROCK FEST.19 / 2日目 13:00〜",
+        "source_url":  "https://lyfe8.com/arabaki2019/",
+        "source_label":  "Lyfe8 ARABAKI 2019セトリまとめ"
+    },
+    {
+        "date":  "2019-05-04",
+        "venue":  "千葉市蘇我スポーツ公園 (LOTUSステージ)",
+        "city":  "千葉",
+        "tour":  null,
+        "sets":  [
+                     {
+                         "label":  "本編",
+                         "songs":  [
+                                       "17才",
+                                       "ポラリス",
+                                       "short hair",
+                                       "ドラマチック",
+                                       "The CUT",
+                                       "LOVE MATHEMATICS",
+                                       "祭りのあと"
+                                   ]
+                     }
+                 ],
+        "note":  "JAPAN JAM 2019 / 13:30〜 / リハーサル: PERFECT BLUE",
+        "source_url":  "https://report-newage.com/27729",
+        "source_label":  "ライブレポートまとめ"
+    },
+    {
+        "date":  "2026-02-15",
+        "venue":  "BOTTOM LINE",
+        "city":  "愛知",
+        "tour":  "Tour Lyrical Tattoo",
+        "sets":  [
+                     {
+                         "label":  "本編",
+                         "songs":  [
+                                       "Lyrical Tattoo",
+                                       "short hair",
+                                       "ランドリー",
+                                       "caramel dog",
+                                       "メタモルフォーゼ真っ最中",
+                                       "TIME SHIFT GIRL",
+                                       "ヘヴンズドアー・ガールズ",
+                                       "USER UNKNOWN",
+                                       "Remains",
+                                       "WHITE ROOM",
+                                       "ドライブ",
+                                       "夏の細部",
+                                       "夕日、刺さる部屋",
+                                       "BLUE、たる",
+                                       "LOVE MATHEMATICS",
+                                       "ドラマチック",
+                                       "(The rise of) Offline Souls"
+                                   ]
+                     },
+                     {
+                         "label":  "アンコール",
+                         "songs":  [
+                                       "夕方ジェネレーション",
+                                       "Power (Pop) of Love"
+                                   ]
+                     }
+                 ],
+        "note":  "Tour Lyrical Tattoo オープナー（全15公演中1本目）",
+        "source_url":  "https://note.com/uny_note/n/nd6363e8b7833",
+        "source_label":  "note（uny_note）ライブレポート"
+    },
+    {
+        "date":  "2026-07-10",
+        "venue":  "DRUM Be-1",
+        "city":  "福岡",
+        "tour":  "Tour Lyrical Tattoo",
+        "sets":  [
+                     {
+                         "label":  "本編",
+                         "songs":  [
+                                       "Lyrical Tattoo",
+                                       "short hair",
+                                       "ランドリー",
+                                       "caramel dog",
+                                       "メタモルフォーゼ真っ最中",
+                                       "TIME SHIFT GIRL",
+                                       "ヘヴンズドアー・ガールズ",
+                                       "USER UNKNOWN",
+                                       "Remains",
+                                       "WHITE ROOM",
+                                       "ドライブ",
+                                       "夏の細部",
+                                       "夕日、刺さる部屋",
+                                       "BLUE、たる",
+                                       "LOVE MATHEMATICS",
+                                       "ドラマチック",
+                                       "(The rise of) Offline Souls"
+                                   ]
+                     },
+                     {
+                         "label":  "アンコール",
+                         "songs":  [
+                                       "GIRL FRIEND",
+                                       "Power (Pop) of Love"
+                                   ]
+                     }
+                 ],
+        "note":  "Tour Lyrical Tattoo セミファイナル（全15公演中14本目）。アンコールがオープナーの夕方ジェネレーションからGIRL FRIENDに変化。",
+        "source_url":  "https://spice.eplus.jp/articles/347552",
+        "source_label":  "SPICE（eplus）ライブレポート"
+    }
+]
