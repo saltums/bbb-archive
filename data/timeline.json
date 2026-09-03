@@ -1196,7 +1196,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
-                           ]
+                           ],
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!"
     },
     {
         "id":  "24",
@@ -1250,7 +1251,8 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/groups/222400"
                                }
-                           ]
+                           ],
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR"
     },
     {
         "id":  "26",
@@ -5285,6 +5287,550 @@
         "tour":  "(Shine On You)Cypress Girls \u0026 Detective Boys",
         "source_url":  "https://www.baseballbear.com/tour_10.html",
         "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  314,
+        "date":  "2023-02-03",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ 千葉LOOK（千葉）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — 千葉LOOK",
+        "venue":  "千葉LOOK",
+        "city":  "千葉",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  315,
+        "date":  "2023-02-05",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ F.A.D YOKOHAMA（横浜）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — F.A.D YOKOHAMA",
+        "venue":  "F.A.D YOKOHAMA",
+        "city":  "横浜",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  316,
+        "date":  "2023-02-10",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ HEAVEN\u0027S ROCK さいたま新都心 VJ-3（さいたま）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — HEAVEN\u0027S ROCK さいたま新都心 VJ-3",
+        "venue":  "HEAVEN\u0027S ROCK さいたま新都心 VJ-3",
+        "city":  "さいたま",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  317,
+        "date":  "2023-02-18",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ 水戸LIGHT HOUSE（水戸）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — 水戸LIGHT HOUSE",
+        "venue":  "水戸LIGHT HOUSE",
+        "city":  "水戸",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  318,
+        "date":  "2023-02-19",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ 宇都宮HEAVEN\u0027S ROCK VJ-2（宇都宮）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — 宇都宮HEAVEN\u0027S ROCK VJ-2",
+        "venue":  "宇都宮HEAVEN\u0027S ROCK VJ-2",
+        "city":  "宇都宮",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  319,
+        "date":  "2023-03-08",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ Zepp DiverCity TOKYO（東京）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — Zepp DiverCity TOKYO",
+        "venue":  "Zepp DiverCity TOKYO",
+        "city":  "東京",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  320,
+        "date":  "2023-04-09",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ 長野LIVE HOUSE J（長野）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — 長野LIVE HOUSE J",
+        "venue":  "長野LIVE HOUSE J",
+        "city":  "長野",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  321,
+        "date":  "2023-04-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ 高松DIME（高松）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — 高松DIME",
+        "venue":  "高松DIME",
+        "city":  "高松",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  322,
+        "date":  "2023-04-16",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ 広島CAVE-BE（広島）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — 広島CAVE-BE",
+        "venue":  "広島CAVE-BE",
+        "city":  "広島",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  323,
+        "date":  "2023-04-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ DRUM Be-1（福岡）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — DRUM Be-1",
+        "venue":  "DRUM Be-1",
+        "city":  "福岡",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  324,
+        "date":  "2023-05-20",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ 札幌Cube Garden（札幌）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — 札幌Cube Garden",
+        "venue":  "札幌Cube Garden",
+        "city":  "札幌",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  325,
+        "date":  "2023-05-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ 渋谷CLUB QUATTRO（東京）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — 渋谷CLUB QUATTRO",
+        "venue":  "渋谷CLUB QUATTRO",
+        "city":  "東京",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  326,
+        "date":  "2023-05-28",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ 仙台darwin（仙台）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — 仙台darwin",
+        "venue":  "仙台darwin",
+        "city":  "仙台",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  327,
+        "date":  "2023-05-30",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ 名古屋CLUB QUATTRO（名古屋）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — 名古屋CLUB QUATTRO",
+        "venue":  "名古屋CLUB QUATTRO",
+        "city":  "名古屋",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  328,
+        "date":  "2023-05-31",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ なんばHatch（大阪）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — なんばHatch",
+        "venue":  "なんばHatch",
+        "city":  "大阪",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  329,
+        "date":  "2024-03-06",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 千葉LOOK（千葉）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 千葉LOOK",
+        "venue":  "千葉LOOK",
+        "city":  "千葉",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  330,
+        "date":  "2024-03-09",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ DRUM Be-1（福岡）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — DRUM Be-1",
+        "venue":  "DRUM Be-1",
+        "city":  "福岡",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  331,
+        "date":  "2024-03-10",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 熊本B.9 V2（熊本）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 熊本B.9 V2",
+        "venue":  "熊本B.9 V2",
+        "city":  "熊本",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  332,
+        "date":  "2024-03-22",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 長野ライブハウスJ（長野）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 長野ライブハウスJ",
+        "venue":  "長野ライブハウスJ",
+        "city":  "長野",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  333,
+        "date":  "2024-03-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 金沢AZ（金沢）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 金沢AZ",
+        "venue":  "金沢AZ",
+        "city":  "金沢",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  334,
+        "date":  "2024-03-25",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 京都磔磔（京都）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 京都磔磔",
+        "venue":  "京都磔磔",
+        "city":  "京都",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  335,
+        "date":  "2024-03-30",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 横浜BAY HALL（横浜）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 横浜BAY HALL",
+        "venue":  "横浜BAY HALL",
+        "city":  "横浜",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  336,
+        "date":  "2024-04-12",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 仙台darwin（仙台）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 仙台darwin",
+        "venue":  "仙台darwin",
+        "city":  "仙台",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  337,
+        "date":  "2024-04-13",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 盛岡CLUB CHANGE WAVE（盛岡）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 盛岡CLUB CHANGE WAVE",
+        "venue":  "盛岡CLUB CHANGE WAVE",
+        "city":  "盛岡",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  338,
+        "date":  "2024-04-20",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 岡山IMAGE（岡山）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 岡山IMAGE",
+        "venue":  "岡山IMAGE",
+        "city":  "岡山",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  339,
+        "date":  "2024-04-21",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 広島Reed（広島）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 広島Reed",
+        "venue":  "広島Reed",
+        "city":  "広島",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  340,
+        "date":  "2024-04-26",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 梅田BIG CAT（大阪）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 梅田BIG CAT",
+        "venue":  "梅田BIG CAT",
+        "city":  "大阪",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  341,
+        "date":  "2024-04-27",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 名古屋BOTTOM LINE（名古屋）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 名古屋BOTTOM LINE",
+        "venue":  "名古屋BOTTOM LINE",
+        "city":  "名古屋",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  342,
+        "date":  "2024-05-10",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 札幌BESSIE HALL（札幌）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 札幌BESSIE HALL",
+        "venue":  "札幌BESSIE HALL",
+        "city":  "札幌",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  343,
+        "date":  "2024-05-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 帯広Rest（帯広）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 帯広Rest",
+        "venue":  "帯広Rest",
+        "city":  "帯広",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  344,
+        "date":  "2024-05-17",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 高松DIME（高松）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 高松DIME",
+        "venue":  "高松DIME",
+        "city":  "高松",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  345,
+        "date":  "2024-06-02",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ Zepp Shinjuku TOKYO（東京）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — Zepp Shinjuku TOKYO",
+        "venue":  "Zepp Shinjuku TOKYO",
+        "city":  "東京",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
         "external_links":  [
 
                            ]
