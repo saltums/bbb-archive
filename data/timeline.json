@@ -468,26 +468,6 @@
                            ]
     },
     {
-        "id":  "7",
-        "date":  "2010-01-03",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "major",
-        "title":  "初の日本武道館公演",
-        "description":  "『LIVE;(THIS IS THE) Base Ball Bear.』。バンドにとって初の日本武道館単独公演。",
-        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」",
-        "external_links":  [
-                               {
-                                   "label":  "LiveFansでセットリストを探す",
-                                   "url":  "https://www.livefans.jp/artists/3066"
-                               }
-                           ],
-        "venue":  "日本武道館",
-        "tour":  "(This Is The) Base Ball Bear part.1",
-        "city":  "東京"
-    },
-    {
         "id":  "30",
         "date":  "2010-09-29",
         "date_precision":  "day",
@@ -685,8 +665,6 @@
         "date_precision":  "day",
         "type":  "live",
         "importance":  "minor",
-        "title":  "日比谷ノンフィクションIII",
-        "description":  "",
         "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
         "source_label":  "Wikipedia「Base Ball Bear」",
         "external_links":  [
@@ -697,7 +675,9 @@
                            ],
         "venue":  "日比谷野外大音楽堂",
         "tour":  "日比谷ノンフィクションIII",
-        "city":  "東京"
+        "city":  "東京",
+        "title":  "日比谷ノンフィクションIII — 初映像化",
+        "description":  "日比谷野外大音楽堂3年ぶりのワンマン。初のBlu-ray/DVD映像化。"
     },
     {
         "id":  "49",
@@ -853,8 +833,6 @@
         "date_precision":  "day",
         "type":  "live",
         "importance":  "minor",
-        "title":  "日比谷ノンフィクションV",
-        "description":  "湯浅将平脱退後、初の日比谷ノンフィクション。",
         "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
         "source_label":  "Wikipedia「Base Ball Bear」",
         "external_links":  [
@@ -865,7 +843,9 @@
                            ],
         "venue":  "日比谷野外大音楽堂",
         "tour":  "日比谷ノンフィクションV",
-        "city":  "東京"
+        "city":  "東京",
+        "title":  "日比谷ノンフィクションV 〜LIVE BY THE C2〜",
+        "description":  "湯浅脱退後初の日比谷。ゲスト4名ギタリスト迎えた特別公演。LIVE BY THE C2ファイナル。"
     },
     {
         "id":  "14",
@@ -1589,7 +1569,6 @@
     },
     {
         "id":  "87",
-        "date":  "2009-10-01",
         "date_precision":  "month",
         "type":  "live",
         "importance":  "minor",
@@ -1604,7 +1583,8 @@
                                    "url":  "https://www.livefans.jp/groups/10268"
                                }
                            ],
-        "tour":  "Zeppyramid tour"
+        "tour":  "Zeppyramid tour",
+        "date":  "2009-10-31"
     },
     {
         "id":  "88",
@@ -1992,66 +1972,6 @@
         "description":  "テレビ朝日『ミュージックステーション』35周年4時間スペシャルに、椎名林檎が結成した一夜限りのバンド「Elopers」のベースとして出演。Vo.アイナ・ジ・エンド(BiSH)、Gt.ユウ(チリヌルヲワカ)、Dr.ほな・いこか(ゲスの極み乙女。)とともに東京事変「群青日和」を披露。",
         "source_url":  "https://www.sma.co.jp/s/sma/news/detail/95510?ima=0000",
         "source_label":  "Sony Music Artists「椎名林檎プロデュース バンド「Elopers」に関根史織が参加！」"
-    },
-    {
-        "id":  "117",
-        "date":  "2009-06-27",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "major",
-        "title":  "日比谷ノンフィクション(第1回) — 初の野外大音楽堂ワンマン",
-        "description":  "日比谷野外大音楽堂(東京)でのバンド初の野音ワンマン公演。以降恒例シリーズとなる「日比谷ノンフィクション」の第1回。ゲストなし、4人編成。",
-        "source_url":  "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%AF%94%E8%B0%B7%E3%83%8E%E3%83%B3%E3%83%95%E3%82%A3%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3",
-        "source_label":  "Wikipedia「日比谷ノンフィクション」",
-        "external_links":  [
-                               {
-                                   "label":  "LiveFansでセットリストを探す",
-                                   "url":  "https://www.livefans.jp/groups/10270"
-                               }
-                           ],
-        "venue":  "日比谷野外大音楽堂",
-        "tour":  "日比谷ノンフィクション",
-        "city":  "東京"
-    },
-    {
-        "id":  "119",
-        "date":  "2013-06-15",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "minor",
-        "title":  "日比谷ノンフィクションIII — 初映像化",
-        "description":  "日比谷野外大音楽堂(東京)。ゲストなし。「ファンファーレがきこえる/senkou hanabi」シングルと同日発売のライブDVDとして後に映像化(オリコン15位、5000セット限定)。DVDには2009・2010年のノンフィクション映像も収録。",
-        "source_url":  "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%AF%94%E8%B0%B7%E3%83%8E%E3%83%B3%E3%83%95%E3%82%A3%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3III",
-        "source_label":  "Wikipedia「日比谷ノンフィクションIII」",
-        "external_links":  [
-                               {
-                                   "label":  "LiveFansでセットリストを探す",
-                                   "url":  "https://www.livefans.jp/groups/23479"
-                               }
-                           ],
-        "venue":  "日比谷野外大音楽堂",
-        "tour":  "日比谷ノンフィクションIII",
-        "city":  "東京"
-    },
-    {
-        "id":  "120",
-        "date":  "2016-04-30",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "minor",
-        "title":  "日比谷ノンフィクションV 〜LIVE BY THE C2〜 — 湯浅脱退後、ゲスト4ギタリスト",
-        "description":  "日比谷野外大音楽堂(東京)。湯浅将平脱退(3/2)後初の野音公演。ゲスト: フルカワユタカ(ex.DOPING PANDA)、田渕ひさ子(toddle)、ハヤシ(POLYSICS)、石毛輝(lovefilm/the telephones)の4名がブロックごとにサポートギター。全19曲。C2ツアーのファイナル位置づけ。",
-        "source_url":  "https://natalie.mu/music/news/185821",
-        "source_label":  "音楽ナタリー「日比谷ノンフィクションⅤレポ」",
-        "external_links":  [
-                               {
-                                   "label":  "LiveFansでセットリストを探す",
-                                   "url":  "https://www.livefans.jp/artists/3066"
-                               }
-                           ],
-        "venue":  "日比谷野外大音楽堂",
-        "tour":  "日比谷ノンフィクションV",
-        "city":  "東京"
     },
     {
         "id":  "121",
@@ -2442,24 +2362,6 @@
                                }
                            ],
         "tour":  "LIVE IN LIVE 2021 (有観客)"
-    },
-    {
-        "id":  "139",
-        "date":  "2009-10-31",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "minor",
-        "title":  "ツアー『Zeppyramid tour』(全5公演) — 3rdアルバムリリースツアー",
-        "description":  "3rdアルバム『(WHAT IS THE) LOVE \u0026 POP?』(2009/9/2)に合わせた全国Zepp5会場ツアー。10/31Zepp Sapporo→11/3Zepp Sendai→11/6Zepp Nagoya→11/14Zepp Fukuoka→11/15Zepp Osaka。",
-        "source_url":  "https://www.livefans.jp/groups/10268",
-        "source_label":  "LiveFans「Base Ball Bear Zeppyramid tour」",
-        "external_links":  [
-                               {
-                                   "label":  "LiveFansでセットリストを探す",
-                                   "url":  "https://www.livefans.jp/groups/10268"
-                               }
-                           ],
-        "tour":  "Zeppyramid tour"
     },
     {
         "id":  145,
