@@ -8044,5 +8044,430 @@
         "external_links":  [
 
                            ]
+    },
+    {
+        "id":  481,
+        "date":  "2007-05-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE BY THE C @ SHIBUYA-AX（東京）",
+        "description":  "初単独ワンマンツアー『LIVE BY THE C』(全15公演) ツアー終盤 — SHIBUYA-AX",
+        "venue":  "SHIBUYA-AX",
+        "city":  "東京",
+        "tour":  "LIVE BY THE C",
+        "source_url":  "https://www.youtube.com/watch?v=rqva1PlRDlk",
+        "source_label":  "YouTube (LIVE BY THE C SHIBUYA-AX 2007-05-11)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  482,
+        "date":  "2016-03-05",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE BY THE C2 @ 仙台darwin（仙台）",
+        "description":  "『LIVE BY THE C2』(全8公演) — 仙台darwin",
+        "venue":  "仙台darwin",
+        "city":  "仙台",
+        "tour":  "LIVE BY THE C2",
+        "source_url":  "https://ja.wikipedia.org/wiki/C2_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+        "source_label":  "C2 - Wikipedia",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  483,
+        "date":  "2016-03-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE BY THE C2 @ 岡山IMAGE（岡山）",
+        "description":  "『LIVE BY THE C2』(全8公演) — 岡山IMAGE",
+        "venue":  "岡山IMAGE",
+        "city":  "岡山",
+        "tour":  "LIVE BY THE C2",
+        "source_url":  "https://ja.wikipedia.org/wiki/C2_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+        "source_label":  "C2 - Wikipedia",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  484,
+        "date":  "2016-03-12",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE BY THE C2 @ 高松MONSTER（高松）",
+        "description":  "『LIVE BY THE C2』(全8公演) — 高松MONSTER",
+        "venue":  "高松MONSTER",
+        "city":  "高松",
+        "tour":  "LIVE BY THE C2",
+        "source_url":  "https://ja.wikipedia.org/wiki/C2_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+        "source_label":  "C2 - Wikipedia",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  485,
+        "date":  "2016-03-19",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE BY THE C2 @ 福岡DRUM LOGOS（福岡）",
+        "description":  "『LIVE BY THE C2』(全8公演) — 福岡DRUM LOGOS",
+        "venue":  "福岡DRUM LOGOS",
+        "city":  "福岡",
+        "tour":  "LIVE BY THE C2",
+        "source_url":  "https://ja.wikipedia.org/wiki/C2_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+        "source_label":  "C2 - Wikipedia",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  486,
+        "date":  "2016-04-02",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE BY THE C2 @ 名古屋DIAMOND HALL（名古屋）",
+        "description":  "『LIVE BY THE C2』(全8公演) — 名古屋DIAMOND HALL",
+        "venue":  "名古屋DIAMOND HALL",
+        "city":  "名古屋",
+        "tour":  "LIVE BY THE C2",
+        "source_url":  "https://ja.wikipedia.org/wiki/C2_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+        "source_label":  "C2 - Wikipedia",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  487,
+        "date":  "2016-04-09",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE BY THE C2 @ 新潟LOTS（新潟）",
+        "description":  "『LIVE BY THE C2』(全8公演) — 新潟LOTS",
+        "venue":  "新潟LOTS",
+        "city":  "新潟",
+        "tour":  "LIVE BY THE C2",
+        "source_url":  "https://ja.wikipedia.org/wiki/C2_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+        "source_label":  "C2 - Wikipedia",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  488,
+        "date":  "2016-04-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE BY THE C2 @ 大阪なんばHatch（大阪）",
+        "description":  "『LIVE BY THE C2』(全8公演) — 大阪なんばHatch",
+        "venue":  "大阪なんばHatch",
+        "city":  "大阪",
+        "tour":  "LIVE BY THE C2",
+        "source_url":  "https://ja.wikipedia.org/wiki/C2_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+        "source_label":  "C2 - Wikipedia",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  489,
+        "date":  "2012-05-24",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 仙台darwin（仙台）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 仙台darwin",
+        "venue":  "仙台darwin",
+        "city":  "仙台",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  490,
+        "date":  "2012-05-26",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 青森Quarter（青森）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 青森Quarter",
+        "venue":  "青森Quarter",
+        "city":  "青森",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  491,
+        "date":  "2012-05-27",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 盛岡Club Change Wave（盛岡）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 盛岡Club Change Wave",
+        "venue":  "盛岡Club Change Wave",
+        "city":  "盛岡",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  492,
+        "date":  "2012-06-01",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 札幌PENNY LANE 24（札幌）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 札幌PENNY LANE 24",
+        "venue":  "札幌PENNY LANE 24",
+        "city":  "札幌",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  493,
+        "date":  "2012-06-02",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 苫小牧Ell.CUBE（苫小牧）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 苫小牧Ell.CUBE",
+        "venue":  "苫小牧Ell.CUBE",
+        "city":  "苫小牧",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  494,
+        "date":  "2012-06-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 京都磔磔（京都）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 京都磔磔",
+        "venue":  "京都磔磔",
+        "city":  "京都",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  495,
+        "date":  "2012-06-09",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 福岡DRUM LOGOS（福岡）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 福岡DRUM LOGOS",
+        "venue":  "福岡DRUM LOGOS",
+        "city":  "福岡",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  496,
+        "date":  "2012-06-10",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 宮崎SR BOX（宮崎）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 宮崎SR BOX",
+        "venue":  "宮崎SR BOX",
+        "city":  "宮崎",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  497,
+        "date":  "2012-06-13",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 高松DIME（高松）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 高松DIME",
+        "venue":  "高松DIME",
+        "city":  "高松",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  498,
+        "date":  "2012-06-14",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 岡山IMAGE（岡山）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 岡山IMAGE",
+        "venue":  "岡山IMAGE",
+        "city":  "岡山",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  499,
+        "date":  "2012-06-16",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 大阪なんばHatch（大阪）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 大阪なんばHatch",
+        "venue":  "大阪なんばHatch",
+        "city":  "大阪",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  500,
+        "date":  "2012-06-17",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 広島CLUB QUATTRO（広島）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 広島CLUB QUATTRO",
+        "venue":  "広島CLUB QUATTRO",
+        "city":  "広島",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  501,
+        "date":  "2012-06-23",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 高崎club FLEEZ（高崎）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 高崎club FLEEZ",
+        "venue":  "高崎club FLEEZ",
+        "city":  "高崎",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  502,
+        "date":  "2012-06-24",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 水戸LIGHT HOUSE（水戸）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 水戸LIGHT HOUSE",
+        "venue":  "水戸LIGHT HOUSE",
+        "city":  "水戸",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  503,
+        "date":  "2012-06-30",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 新潟LOTS（新潟）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 新潟LOTS",
+        "venue":  "新潟LOTS",
+        "city":  "新潟",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  504,
+        "date":  "2012-07-06",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 名古屋DIAMOND HALL（名古屋）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 名古屋DIAMOND HALL",
+        "venue":  "名古屋DIAMOND HALL",
+        "city":  "名古屋",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  505,
+        "date":  "2012-07-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 @ 浜松窓枠（浜松）",
+        "description":  "『TOUR 新呼吸』(全19公演) — 浜松窓枠",
+        "venue":  "浜松窓枠",
+        "city":  "浜松",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/05/base_ball_bear_2.php",
+        "source_label":  "Skream! ニュース (2012年5月)",
+        "external_links":  [
+
+                           ]
     }
 ]
