@@ -6377,37 +6377,37 @@
     },
     {
         "id":  377,
-        "date":  "2019-04-07",
         "date_precision":  "day",
         "type":  "live",
         "importance":  "normal",
-        "title":  "17才から17年やってますツアー @ 高松MONSTER（高松）",
-        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — 高松MONSTER",
-        "venue":  "高松MONSTER",
-        "city":  "高松",
         "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
-        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
-        "source_label":  "SMA公式",
         "external_links":  [
 
-                           ]
+                           ],
+        "date":  "2019-04-07",
+        "venue":  "水戸LIGHT HOUSE",
+        "city":  "水戸",
+        "title":  "LIVE IN LIVE～17才から17年やってますツアー～ @ 水戸LIGHT HOUSE（水戸）",
+        "description":  "『LIVE IN LIVE～17才から17年やってますツアー～』(全18公演) — 水戸LIGHT HOUSE",
+        "source_url":  "https://www.diskgarage.com/digaonline/news/101187",
+        "source_label":  "ディスクガレージ公演情報"
     },
     {
         "id":  378,
-        "date":  "2019-04-19",
         "date_precision":  "day",
         "type":  "live",
         "importance":  "normal",
-        "title":  "17才から17年やってますツアー @ 名古屋DIAMOND HALL（名古屋）",
-        "description":  "『LIVE IN LIVE〜17才から17年やってますツアー〜』(全18公演) — 名古屋DIAMOND HALL",
-        "venue":  "名古屋DIAMOND HALL",
-        "city":  "名古屋",
         "tour":  "LIVE IN LIVE〜17才から17年やってますツアー〜",
-        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
-        "source_label":  "SMA公式",
         "external_links":  [
 
-                           ]
+                           ],
+        "date":  "2019-03-10",
+        "venue":  "名古屋DIAMOND HALL",
+        "city":  "名古屋",
+        "title":  "LIVE IN LIVE～17才から17年やってますツアー～ @ 名古屋DIAMOND HALL（名古屋）",
+        "description":  "『LIVE IN LIVE～17才から17年やってますツアー～』(全18公演) — 名古屋DIAMOND HALL",
+        "source_url":  "https://www.diskgarage.com/digaonline/news/101187",
+        "source_label":  "ディスクガレージ公演情報"
     },
     {
         "id":  379,
@@ -7816,6 +7816,329 @@
         "tour":  "TOUR 新呼吸",
         "source_url":  "https://skream.jp/news/2012/07/_base_ball_bearshibuyaax.php",
         "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  462,
+        "date":  "2019-03-24",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE～17才から17年やってますツアー～ @ 鹿児島SR HALL（鹿児島）",
+        "description":  "『LIVE IN LIVE～17才から17年やってますツアー～』(全18公演) — 鹿児島SR HALL",
+        "venue":  "鹿児島SR HALL",
+        "city":  "鹿児島",
+        "tour":  "LIVE IN LIVE～17才から17年やってますツアー～",
+        "source_url":  "https://www.diskgarage.com/digaonline/news/101187",
+        "source_label":  "ディスクガレージ公演情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  463,
+        "date":  "2019-04-06",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE～17才から17年やってますツアー～ @ HEAVEN\u0027S ROCK Saitama Shintoshin VJ-3（さいたま）",
+        "description":  "『LIVE IN LIVE～17才から17年やってますツアー～』(全18公演) — HEAVEN\u0027S ROCK Saitama Shintoshin VJ-3",
+        "venue":  "HEAVEN\u0027S ROCK Saitama Shintoshin VJ-3",
+        "city":  "さいたま",
+        "tour":  "LIVE IN LIVE～17才から17年やってますツアー～",
+        "source_url":  "https://www.diskgarage.com/digaonline/news/101187",
+        "source_label":  "ディスクガレージ公演情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  464,
+        "date":  "2019-04-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE～17才から17年やってますツアー～ @ 京都磔磔（京都）",
+        "description":  "『LIVE IN LIVE～17才から17年やってますツアー～』(全18公演) — 京都磔磔",
+        "venue":  "京都磔磔",
+        "city":  "京都",
+        "tour":  "LIVE IN LIVE～17才から17年やってますツアー～",
+        "source_url":  "https://www.diskgarage.com/digaonline/news/101187",
+        "source_label":  "ディスクガレージ公演情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  465,
+        "date":  "2019-04-13",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE～17才から17年やってますツアー～ @ 高松DIME（高松）",
+        "description":  "『LIVE IN LIVE～17才から17年やってますツアー～』(全18公演) — 高松DIME",
+        "venue":  "高松DIME",
+        "city":  "高松",
+        "tour":  "LIVE IN LIVE～17才から17年やってますツアー～",
+        "source_url":  "https://www.diskgarage.com/digaonline/news/101187",
+        "source_label":  "ディスクガレージ公演情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  466,
+        "date":  "2019-09-28",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 高松DIME（高松）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 高松DIME",
+        "venue":  "高松DIME",
+        "city":  "高松",
+        "tour":  "Guitar！Drum！Bass！Tour",
+        "source_url":  "https://skream.jp/news/2019/09/base_ball_bear_imahabokuno_mv.php",
+        "source_label":  "Skream! ライブ情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  467,
+        "date":  "2019-09-29",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 松山SALON KITTY（松山）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 松山SALON KITTY",
+        "venue":  "松山SALON KITTY",
+        "city":  "松山",
+        "tour":  "Guitar！Drum！Bass！Tour",
+        "source_url":  "https://skream.jp/news/2019/09/base_ball_bear_imahabokuno_mv.php",
+        "source_label":  "Skream! ライブ情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  468,
+        "date":  "2019-10-12",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 長崎DRUM Be-7（長崎）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 長崎DRUM Be-7",
+        "venue":  "長崎DRUM Be-7",
+        "city":  "長崎",
+        "tour":  "Guitar！Drum！Bass！Tour",
+        "source_url":  "https://skream.jp/news/2019/09/base_ball_bear_imahabokuno_mv.php",
+        "source_label":  "Skream! ライブ情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  469,
+        "date":  "2019-10-13",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 熊本B.9 V2（熊本）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 熊本B.9 V2",
+        "venue":  "熊本B.9 V2",
+        "city":  "熊本",
+        "tour":  "Guitar！Drum！Bass！Tour",
+        "source_url":  "https://skream.jp/news/2019/09/base_ball_bear_imahabokuno_mv.php",
+        "source_label":  "Skream! ライブ情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  470,
+        "date":  "2019-10-26",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 松本Sound Hall a.C（松本）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 松本Sound Hall a.C",
+        "venue":  "松本Sound Hall a.C",
+        "city":  "松本",
+        "tour":  "Guitar！Drum！Bass！Tour",
+        "source_url":  "https://skream.jp/news/2019/09/base_ball_bear_imahabokuno_mv.php",
+        "source_label":  "Skream! ライブ情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  471,
+        "date":  "2019-10-27",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 新潟Studio NEXS（新潟）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 新潟Studio NEXS",
+        "venue":  "新潟Studio NEXS",
+        "city":  "新潟",
+        "tour":  "Guitar！Drum！Bass！Tour",
+        "source_url":  "https://skream.jp/news/2019/09/base_ball_bear_imahabokuno_mv.php",
+        "source_label":  "Skream! ライブ情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  472,
+        "date":  "2019-11-04",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 横浜BAYHALL（横浜）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 横浜BAYHALL",
+        "venue":  "横浜BAYHALL",
+        "city":  "横浜",
+        "tour":  "Guitar！Drum！Bass！Tour",
+        "source_url":  "https://skream.jp/news/2019/09/base_ball_bear_imahabokuno_mv.php",
+        "source_label":  "Skream! ライブ情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  473,
+        "date":  "2019-11-09",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 周南LIVE rise SHUNAN（周南）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 周南LIVE rise SHUNAN",
+        "venue":  "周南LIVE rise SHUNAN",
+        "city":  "周南",
+        "tour":  "Guitar！Drum！Bass！Tour",
+        "source_url":  "https://skream.jp/news/2019/09/base_ball_bear_imahabokuno_mv.php",
+        "source_label":  "Skream! ライブ情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  474,
+        "date":  "2019-11-10",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 松江AZTiC canova（松江）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 松江AZTiC canova",
+        "venue":  "松江AZTiC canova",
+        "city":  "松江",
+        "tour":  "Guitar！Drum！Bass！Tour",
+        "source_url":  "https://skream.jp/news/2019/09/base_ball_bear_imahabokuno_mv.php",
+        "source_label":  "Skream! ライブ情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  475,
+        "date":  "2019-11-29",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 千葉LOOK（千葉）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 千葉LOOK",
+        "venue":  "千葉LOOK",
+        "city":  "千葉",
+        "tour":  "Guitar！Drum！Bass！Tour",
+        "source_url":  "https://skream.jp/news/2019/09/base_ball_bear_imahabokuno_mv.php",
+        "source_label":  "Skream! ライブ情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  476,
+        "date":  "2019-12-01",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 甲府CONVICTION（甲府）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 甲府CONVICTION",
+        "venue":  "甲府CONVICTION",
+        "city":  "甲府",
+        "tour":  "Guitar！Drum！Bass！Tour",
+        "source_url":  "https://skream.jp/news/2019/09/base_ball_bear_imahabokuno_mv.php",
+        "source_label":  "Skream! ライブ情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  477,
+        "date":  "2019-12-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 函館club COCOA（函館）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 函館club COCOA",
+        "venue":  "函館club COCOA",
+        "city":  "函館",
+        "tour":  "Guitar！Drum！Bass！Tour",
+        "source_url":  "https://skream.jp/news/2019/09/base_ball_bear_imahabokuno_mv.php",
+        "source_label":  "Skream! ライブ情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  478,
+        "date":  "2019-12-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 名古屋DIAMOND HALL（名古屋）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 名古屋DIAMOND HALL",
+        "venue":  "名古屋DIAMOND HALL",
+        "city":  "名古屋",
+        "tour":  "Guitar！Drum！Bass！Tour",
+        "source_url":  "https://skream.jp/news/2019/09/base_ball_bear_imahabokuno_mv.php",
+        "source_label":  "Skream! ライブ情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  479,
+        "date":  "2019-12-21",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 北九州FUSE（北九州）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 北九州FUSE",
+        "venue":  "北九州FUSE",
+        "city":  "北九州",
+        "tour":  "Guitar！Drum！Bass！Tour",
+        "source_url":  "https://skream.jp/news/2019/09/base_ball_bear_imahabokuno_mv.php",
+        "source_label":  "Skream! ライブ情報",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  480,
+        "date":  "2019-12-22",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar！Drum！Bass！Tour @ 広島CAVE-BE（広島）",
+        "description":  "『Guitar！Drum！Bass！Tour』(全20公演) — 広島CAVE-BE",
+        "venue":  "広島CAVE-BE",
+        "city":  "広島",
+        "tour":  "Guitar！Drum！Bass！Tour",
+        "source_url":  "https://skream.jp/news/2019/09/base_ball_bear_imahabokuno_mv.php",
+        "source_label":  "Skream! ライブ情報",
         "external_links":  [
 
                            ]

@@ -1,240 +1,256 @@
 [
   {
-    "album_title": "海になりたい part.3",
-    "type": "single",
-    "release_date": "2022-10-12",
-    "timeline_event_id": "22",
-    "source_url": "https://ja.wikipedia.org/wiki/%E6%B5%B7%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%9F%E3%81%84_part.3",
-    "source_label": "Wikipedia「海になりたい part.3」",
-    "note": "配信版は表題曲のみ。武道館会場限定盤には「チェンジアップ」(原典2002年9月、学生時代=デモテープ時代の楽曲の2022年再録版、ストリーミング配信無し)、VOS限定盤・2023年2月配信版には「SEVENTEEN」を追加収録。",
-    "tracks": ["海になりたい part.3", "チェンジアップ(2022年再録)", "SEVENTEEN"]
-  },
-  {
-    "album_title": "夕方ジェネレーション",
+    "id": "c_2006",
+    "title": "C",
+    "year": 2006,
     "type": "album",
-    "release_date": "2003-11-26",
-    "timeline_event_id": "63",
-    "source_url": "https://ja.wikipedia.org/wiki/%E5%A4%95%E6%96%B9%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3",
-    "source_label": "Wikipedia「夕方ジェネレーション」",
-    "note": "インディーズ時代唯一のミニアルバム",
-    "tracks": ["SAYONARA-NOSTALGIA", "つよがり少女", "メタモルフォーゼ真っ最中", "微熱ボーイ", "SUNSET-KI・RE・I", "夕方ジェネレーション", "BOY MEETS GIRL"]
+    "songs": [
+      "CRAZY FOR YOUの季節",
+      "GIRL FRIEND",
+      "祭りのあと",
+      "ELECTRIC SUMMER",
+      "スイミングガール",
+      "YOU'RE MY SUNSHINEのすべて",
+      "GIRL OF ARMS",
+      "DEATH と LOVE",
+      "STAND BY ME",
+      "ラストダンス",
+      "SHE IS BACK"
+    ]
   },
   {
-    "album_title": "YUME is VISION",
-    "type": "single",
-    "release_date": "2004-07-07",
-    "timeline_event_id": "64",
-    "source_url": "https://ja.wikipedia.org/wiki/YUME_is_VISION",
-    "source_label": "Wikipedia「YUME is VISION」",
-    "note": "インディーズ時代唯一のシングル",
-    "tracks": ["YUME is VISION", "君のスピード感", "東京ピラミッド", "ドッペルゲンガー・グラデュエーション"]
+    "id": "17sai_2007",
+    "title": "十七歳",
+    "year": 2007,
+    "type": "album",
+    "songs": [
+      "17才",
+      "ドラマチック",
+      "抱きしめたい",
+      "ヘヴンズドアー・ガールズ",
+      "愛してる",
+      "SEVENTEEN ROMANCE",
+      "FUTATSU NO SEKAI",
+      "真夏の条件",
+      "青い春.虚無",
+      "WINK SNIPER",
+      "協奏曲",
+      "気付いてほしい"
+    ]
   },
   {
-    "album_title": "ELECTRIC SUMMER",
-    "type": "single",
-    "release_date": "2006-06-21",
-    "timeline_event_id": "31",
-    "source_url": "https://ja.wikipedia.org/wiki/ELECTRIC_SUMMER",
-    "source_label": "Wikipedia「ELECTRIC SUMMER」",
-    "tracks": ["ELECTRIC SUMMER", "Good bye", "SAYONARA-NOSTALGIA(LAST SUMMER ver.)"]
+    "id": "lovepop_2009",
+    "title": "(WHAT IS THE)LOVE & POP?",
+    "year": 2009,
+    "type": "album",
+    "songs": [
+      "Stairway Generation",
+      "SOSOS",
+      "changes",
+      "神々LOOKS YOU",
+      "LOVE LETTER FROM HEART BEAT",
+      "ホワイトワイライト",
+      "BREEEEZE GIRL",
+      "LOVE MATHEMATICS",
+      "SIMAITAI",
+      "海になりたい part.2",
+      "レモンスカッシュ感覚",
+      "ラブ&ポップ"
+    ]
   },
   {
-    "album_title": "STAND BY ME",
-    "type": "single",
-    "release_date": "2006-10-04",
-    "timeline_event_id": "32",
-    "source_url": "https://ja.wikipedia.org/wiki/STAND_BY_ME_(Base_Ball_Bear%E3%81%AE%E6%9B%B2)",
-    "source_label": "Wikipedia「STAND BY ME (Base Ball Bearの曲)」",
-    "tracks": ["STAND BY ME", "天空Lonely Hearts", "BOY MEETS GIRL(LIVE from THE\"GIRL FRIEND\"SHOW at 下北沢CLUB Que on May 20th,2006)"]
+    "id": "cypress_2010",
+    "title": "CYPRESS GIRLS",
+    "year": 2010,
+    "type": "mini",
+    "songs": [
+      "十字架You and I",
+      "BAND GIRL'S SPIRAL DAYS",
+      "Shine On You Cypress Girl",
+      "beautiful wall",
+      "kamiawanai",
+      "kimino-me",
+      "檸檬タージュ",
+      "Project Blue"
+    ]
   },
   {
-    "album_title": "抱きしめたい",
-    "type": "single",
-    "release_date": "2007-04-04",
-    "timeline_event_id": "33",
-    "source_url": "https://ja.wikipedia.org/wiki/%E6%8A%B1%E3%81%8D%E3%81%97%E3%82%81%E3%81%9F%E3%81%84_(Base_Ball_Bear%E3%81%AE%E6%9B%B2)",
-    "source_label": "Wikipedia「抱きしめたい (Base Ball Bearの曲)」",
-    "tracks": ["抱きしめたい", "彼氏彼女の関係(新しい関係 ver.)"]
+    "id": "detective_2010",
+    "title": "DETECTIVE BOYS",
+    "year": 2010,
+    "type": "mini",
+    "songs": [
+      "クチビル・ディテクティヴ",
+      "Transfer Girl",
+      "BOYFRIEN℃",
+      "LOVESICK",
+      "WHITE ROOM",
+      "星がほしい",
+      "歌ってるんだBaby.",
+      "東京"
+    ]
   },
   {
-    "album_title": "ドラマチック",
-    "type": "single",
-    "release_date": "2007-05-16",
-    "timeline_event_id": "34",
-    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%89%E3%83%A9%E3%83%9E%E3%83%81%E3%83%83%E3%82%AF_(Base_Ball_Bear%E3%81%AE%E6%9B%B2)",
-    "source_label": "Wikipedia「ドラマチック (Base Ball Bearの曲)」",
-    "tracks": ["ドラマチック", "Transparent 26 o'clock", "夕方ジェネレーション[New Evening Version]"]
+    "id": "shinkokyuu_2011",
+    "title": "新呼吸",
+    "year": 2011,
+    "type": "album",
+    "songs": [
+      "深朝",
+      "ダビングデイズ",
+      "school zone",
+      "転校生",
+      "スローモーションをもう一度",
+      "short hair",
+      "Tabibito In The Dark",
+      "ヒカリナ",
+      "夜空1/2",
+      "kodoku no synthesizer",
+      "yoakemae",
+      "新呼吸"
+    ]
   },
   {
-    "album_title": "真夏の条件",
-    "type": "single",
-    "release_date": "2007-07-18",
-    "timeline_event_id": "35",
-    "source_url": "https://ja.wikipedia.org/wiki/%E7%9C%9F%E5%A4%8F%E3%81%AE%E6%9D%A1%E4%BB%B6",
-    "source_label": "Wikipedia「真夏の条件」",
-    "tracks": ["真夏の条件", "極彩色イマジネイション(新しいイマジネイション ver.)"]
+    "id": "29sai_2014",
+    "title": "二十九歳",
+    "year": 2014,
+    "type": "album",
+    "songs": [
+      "何才",
+      "アンビバレントダンサー",
+      "ファンファーレがきこえる",
+      "Ghost Town",
+      "yellow",
+      "そんなに好きじゃなかった",
+      "The Cut feat. RHYMESTER",
+      "ERAい人",
+      "方舟",
+      "The End",
+      "スクランブル",
+      "UNDER THE STAR LIGHT",
+      "PERFECT BLUE",
+      "光蘚",
+      "魔王",
+      "カナリア"
+    ]
   },
   {
-    "album_title": "愛してる",
-    "type": "single",
-    "release_date": "2007-10-31",
-    "timeline_event_id": "36",
-    "source_url": "https://ja.wikipedia.org/wiki/%E6%84%9B%E3%81%97%E3%81%A6%E3%82%8B_(Base_Ball_Bear%E3%81%AE%E6%9B%B2)",
-    "source_label": "Wikipedia「愛してる (Base Ball Bearの曲)」",
-    "tracks": ["愛してる", "カジュアルラヴ", "愛してる(Karaoke ver.)", "愛してる(史織ロケッツ ver.)"]
+    "id": "c2_2015",
+    "title": "C2",
+    "year": 2015,
+    "type": "album",
+    "songs": [
+      "「それって、for 誰?」part.1",
+      "こぼさないでShadow",
+      "美しいのさ",
+      "曖してる",
+      "文化祭の夜",
+      "レインメーカー",
+      "どうしよう",
+      "カシカ",
+      "ホーリーロンリーマウンテン",
+      "HUMAN",
+      "不思議な夜",
+      "「それって、for 誰?」part.2"
+    ]
   },
   {
-    "album_title": "神々 LOOKS YOU",
-    "type": "single",
-    "release_date": "2009-04-15",
-    "timeline_event_id": "40",
-    "source_url": "https://ja.wikipedia.org/wiki/%E7%A5%9E%E3%80%85LOOKS_YOU",
-    "source_label": "Wikipedia「神々LOOKS YOU」",
-    "tracks": ["神々LOOKS YOU", "image club", "BOYS MAY CRY"]
+    "id": "kougen_2017",
+    "title": "光源",
+    "year": 2017,
+    "type": "album",
+    "songs": [
+      "すべては君のせいで",
+      "逆バタフライ・エフェクト",
+      "Low way",
+      "(LIKE A)TRANSFER GIRL",
+      "寛解",
+      "SHINE",
+      "リアリティーズ",
+      "Darling"
+    ]
   },
   {
-    "album_title": "BREEEEZE GIRL",
-    "type": "single",
-    "release_date": "2009-06-24",
-    "timeline_event_id": "42",
-    "source_url": "https://ja.wikipedia.org/wiki/BREEEEZE_GIRL",
-    "source_label": "Wikipedia「BREEEEZE GIRL」",
-    "tracks": ["BREEEEZE GIRL", "BREEEEZE GIRL II", "LOVE MATHEMATICS(渋谷会\"TRUE LOVE\"REMIX)"]
+    "id": "c3_2020",
+    "title": "C3",
+    "year": 2020,
+    "type": "album",
+    "songs": [
+      "試される",
+      "いまは僕の目を見て",
+      "Flame",
+      "Summer Melt",
+      "L.I.L",
+      "EIGHT BEAT詩",
+      "セプテンバー・ステップス",
+      "PARK",
+      "Grape Juice",
+      "ポラリス",
+      "Cross Words",
+      "風来"
+    ]
   },
   {
-    "album_title": "Stairway Generation",
-    "type": "single",
-    "release_date": "2009-08-05",
-    "timeline_event_id": "44",
-    "source_url": "https://ja.wikipedia.org/wiki/Stairway_Generation",
-    "source_label": "Wikipedia「Stairway Generation」",
-    "tracks": ["Stairway Generation", "USER UNKNOWN", "恋愛白書"]
+    "id": "tenshi_2024",
+    "title": "天使だったじゃないか",
+    "year": 2024,
+    "type": "mini",
+    "songs": [
+      "ランドリー",
+      "_FREE_",
+      "Thousands Chords Wonders",
+      "Late Show",
+      "夕日、刺さる部屋",
+      "Power (Pop) of Love"
+    ]
   },
   {
-    "album_title": "yoakemae",
-    "type": "single",
-    "release_date": "2011-06-29",
-    "timeline_event_id": "45",
-    "source_url": "https://ja.wikipedia.org/wiki/Yoakemae",
-    "source_label": "Wikipedia「yoakemae」",
-    "tracks": ["yoakemae", "Fragile Baby"]
+    "id": "lyrical_2026",
+    "title": "Lyrical Tattoo",
+    "year": 2026,
+    "type": "mini",
+    "songs": [
+      "Lyrical Tattoo",
+      "caramel dog",
+      "TIME SHIFT GIRL",
+      "Remains",
+      "夏の細部",
+      "BLUE、たる",
+      "(The rise of) Offline Souls"
+    ]
   },
   {
-    "album_title": "short hair",
-    "type": "single",
-    "release_date": "2011-08-31",
-    "timeline_event_id": "46",
-    "source_url": "https://ja.wikipedia.org/wiki/Short_hair",
-    "source_label": "Wikipedia「short hair」",
-    "tracks": ["short hair", "ido feat. 呂布"]
-  },
-  {
-    "album_title": "PERFECT BLUE",
-    "type": "single",
-    "release_date": "2013-02-13",
-    "timeline_event_id": "10",
-    "source_url": "https://ja.wikipedia.org/wiki/PERFECT_BLUE",
-    "source_label": "Wikipedia「PERFECT BLUE」",
-    "tracks": ["PERFECT BLUE", "アイノシタイ", "Typical Girl"]
-  },
-  {
-    "album_title": "ファンファーレがきこえる/senkou_hanabi",
-    "type": "single",
-    "release_date": "2013-11-27",
-    "timeline_event_id": "50",
-    "source_url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%83%B3%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%81%8C%E3%81%8D%E3%81%93%E3%81%88%E3%82%8B/senkou_hanabi",
-    "source_label": "Wikipedia「ファンファーレがきこえる/senkou_hanabi」",
-    "tracks": ["ファンファーレがきこえる", "senkou_hanabi", "ファンファーレがきこえる(カラオケ・バージョン)", "senkou_hanabi(カラオケ・バージョン)"]
-  },
-  {
-    "album_title": "文化祭の夜",
-    "type": "single",
-    "release_date": "2015-09-02",
-    "timeline_event_id": "52",
-    "source_url": "https://ja.wikipedia.org/wiki/%E6%96%87%E5%8C%96%E7%A5%AD%E3%81%AE%E5%A4%9C",
-    "source_label": "Wikipedia「文化祭の夜」",
-    "note": "完全生産限定盤DISC2には『二十九歳』全曲のインストゥルメンタル版を収録(重複のためここでは割愛)",
-    "tracks": ["文化祭の夜", "文化祭の夜(Instrumental)", "アルバム特報"]
-  },
-  {
-    "album_title": "CYPRESS GIRLS",
-    "release_date": "2010-09-29",
-    "timeline_event_id": "30",
-    "source_url": "https://ja.wikipedia.org/wiki/CYPRESS_GIRLS",
-    "source_label": "Wikipedia「CYPRESS GIRLS」",
-    "tracks": ["十字架You and I", "BAND GIRL'S SPIRAL DAYS", "Shine On You Cypress Girl", "beautiful wall(DUB)", "kamiawanai", "kimino-me", "檸檬タージュ", "Project Blue"]
-  },
-  {
-    "album_title": "DETECTIVE BOYS",
-    "release_date": "2010-09-29",
-    "timeline_event_id": "61",
-    "source_url": "https://ja.wikipedia.org/wiki/DETECTIVE_BOYS",
-    "source_label": "Wikipedia「DETECTIVE BOYS」",
-    "tracks": ["クチビル・ディテクティヴ", "Transfer Girl", "BOYFRIEN℃", "LOVESICK", "WHITE ROOM", "星がほしい", "歌ってるんだBaby.(1+1=new1 ver.)", "東京"]
-  },
-  {
-    "album_title": "C",
-    "release_date": "2006-11-29",
-    "timeline_event_id": "4",
-    "source_url": "https://ja.wikipedia.org/wiki/C_(Base_Ball_Bear%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
-    "source_label": "Wikipedia「C (Base Ball Bearのアルバム)」",
-    "tracks": ["CRAZY FOR YOUの季節<Album ver.>", "GIRL FRIEND", "祭りのあと", "ELECTRIC SUMMER", "スイミングガール", "YOU'RE MY SUNSHINEのすべて", "GIRL OF ARMS", "DEATH と LOVE", "STAND BY ME", "ラストダンス", "SHE IS BACK"]
-  },
-  {
-    "album_title": "十七歳",
-    "release_date": "2007-12-05",
-    "timeline_event_id": "5",
-    "source_url": "https://ja.wikipedia.org/wiki/%E5%8D%81%E4%B8%83%E6%AD%B3_(Base_Ball_Bear%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
-    "source_label": "Wikipedia「十七歳 (Base Ball Bearのアルバム)」",
-    "tracks": ["17才", "ドラマチック", "抱きしめたい", "ヘヴンズドアー・ガールズ", "愛してる", "SEVENTEEN ROMANCE", "FUTATSU NO SEKAI", "真夏の条件", "青い春.虚無", "WINK SNIPER", "協奏曲", "気付いてほしい"]
-  },
-  {
-    "album_title": "新呼吸",
-    "release_date": "2011-11-09",
-    "timeline_event_id": "8",
-    "source_url": "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%91%BC%E5%90%B8",
-    "source_label": "Wikipedia「新呼吸」",
-    "tracks": ["深朝", "ダビングデイズ", "school zone", "転校生", "スローモーションをもう一度", "short hair", "Tabibito In The Dark", "ヒカリナ", "夜空1/2", "kodoku no synthesizer", "yoakemae(hontou_no_yoakemae ver.)", "新呼吸"]
-  },
-  {
-    "album_title": "二十九歳",
-    "release_date": "2014-06-04",
-    "timeline_event_id": "11",
-    "source_url": "https://ja.wikipedia.org/wiki/%E4%BA%8C%E5%8D%81%E4%B9%9D%E6%AD%B3",
-    "source_label": "Wikipedia「二十九歳」",
-    "tracks": ["何才", "アンビバレントダンサー", "ファンファーレがきこえる(Album Mix)", "Ghost Town", "yellow", "そんなに好きじゃなかった", "The Cut -feat. RHYMESTER-(Album Mix)", "ERAい人", "方舟", "The End", "スクランブル", "UNDER THE STAR LIGHT", "PERFECT BLUE(Album Mix)", "光蘚(Album Mix)", "魔王", "カナリア"]
-  },
-  {
-    "album_title": "C2",
-    "release_date": "2015-11-11",
-    "timeline_event_id": "12",
-    "source_url": "https://ja.wikipedia.org/wiki/C2_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
-    "source_label": "Wikipedia「C2 (アルバム)」",
-    "note": "DISC1のみ(限定盤DISC2はインストゥルメンタル、DISC3は『C』のリマスター収録のため割愛)",
-    "tracks": ["「それって、for 誰?」part.1", "こぼさないでShadow", "美しいのさ", "曖してる", "文化祭の夜", "レインメーカー", "どうしよう", "カシカ", "ホーリーロンリーマウンテン", "HUMAN", "不思議な夜", "「それって、for 誰?」part.2"]
-  },
-  {
-    "album_title": "光源",
-    "release_date": "2017-04-12",
-    "timeline_event_id": "14",
-    "source_url": "https://ja.wikipedia.org/wiki/%E5%85%89%E6%BA%90_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
-    "source_label": "Wikipedia「光源 (アルバム)」",
-    "tracks": ["すべては君のせいで", "逆バタフライ・エフェクト", "Low way", "(LIKE A)TRANSFER GIRL", "寛解", "SHINE", "リアリティーズ", "Darling"]
-  },
-  {
-    "album_title": "C3",
-    "release_date": "2020-01-22",
-    "timeline_event_id": "18",
-    "source_url": "https://ja.wikipedia.org/wiki/C3_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
-    "source_label": "Wikipedia「C3 (アルバム)」",
-    "tracks": ["試される(2020 ver.)", "いまは僕の目を見て(C3 Mix)", "Flame(C3 Mix)", "Summer Melt(C3 mix)", "L.I.L", "EIGHT BEAT詩", "セプテンバー・ステップス(C3 mix)", "PARK(C3 Mix)", "Grape Juice(C3 mix)", "ポラリス(C3 mix)", "Cross Words", "風来"]
-  },
-  {
-    "album_title": "DIARY KEY",
-    "release_date": "2021-10-27",
-    "timeline_event_id": "19",
-    "source_url": "https://ja.wikipedia.org/wiki/DIARY_KEY",
-    "source_label": "Wikipedia「DIARY KEY」",
-    "tracks": ["DIARY KEY", "プールサイダー", "動くベロ", "SYUUU", "Henshin", "A HAPPY NEW YEAR", "悪い夏", "_touch", "生活PRISM feat. valknee", "海へ", "ドライブ(album mix)"]
+    "id": "singles",
+    "title": "シングル・その他",
+    "year": null,
+    "type": "singles",
+    "songs": [
+      "夕方ジェネレーション",
+      "Boy Meets Girl",
+      "ELECTRIC SUMMER",
+      "真夏の条件",
+      "LOVE MATHEMATICS",
+      "yoakemae",
+      "short hair",
+      "senkou_hanabi",
+      "ドライブ",
+      "PERFECT BLUE",
+      "海になりたい part.3",
+      "初恋",
+      "若者のゆくえ",
+      "君はノンフィクション",
+      "USER UNKNOWN",
+      "メタモルフォーゼ真っ最中",
+      "ヘヴンズドアー・ガールズ",
+      "GIRL FRIEND",
+      "夕日、刺さる部屋",
+      "ポラリス",
+      "PARK",
+      "Flame",
+      "Summer Melt",
+      "Grape Juice",
+      "セプテンバー・ステップス",
+      "EIGHT BEAT詩"
+    ]
   }
 ]
