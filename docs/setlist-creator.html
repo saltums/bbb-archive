@@ -484,6 +484,26 @@
 }
 .sc-custom-add:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 
+.sc-mc-btn {
+  flex-shrink: 0;
+  padding: 0.4rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  color: var(--ink-dim);
+  cursor: pointer;
+  font-family: var(--font);
+  letter-spacing: 0.05em;
+  transition: background 0.12s, color 0.12s, border-color 0.12s;
+}
+.sc-mc-btn:hover { background: #6b7280; border-color: #6b7280; color: #fff; }
+
+.sc-setlist-song--mc { background: var(--bg-raised); }
+.sc-setlist-song--mc .sc-setlist-song__num { visibility: hidden; }
+.sc-setlist-song--mc .sc-setlist-song__name { color: var(--ink-dim); font-style: italic; }
+
 /* Live select */
 .sc-live-select {
   cursor: pointer;
@@ -563,6 +583,7 @@
     <div class="sc-songs" id="scSongs"></div>
     <!-- Custom song input -->
     <div class="sc-custom-wrap">
+      <button class="sc-mc-btn" id="scMcBtn">MC</button>
       <input class="sc-custom-input" id="scCustomInput" type="text" placeholder="データにない曲・コラボ曲を追加…" autocomplete="off" spellcheck="false">
       <button class="sc-custom-add" id="scCustomAdd">追加</button>
     </div>
@@ -649,6 +670,7 @@
   const scLiveSelect = document.getElementById("scLiveSelect");
   const scCustomInput = document.getElementById("scCustomInput");
   const scCustomAdd = document.getElementById("scCustomAdd");
+  const scMcBtn = document.getElementById("scMcBtn");
 
   // ===== Load songs.json =====
   fetch("data/songs.json", { cache: "no-store" })
@@ -709,7 +731,7 @@
 
   scCustomAdd.addEventListener("click", addCustomSong);
   scCustomInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") addCustomSong();
+    if (e.key === "Enter" && !e.isComposing) addCustomSong();
   });
 
   // ===== Load saved setlists =====
@@ -825,12 +847,13 @@
   // ===== Setlist builder =====
   function addSong(song) {
     const sec = sections[activeSection];
-    if (!sec.songs.includes(song)) {
-      sec.songs.push(song);
-      renderSongs();
-      renderSetlist();
-    }
+    if (song !== "MC" && sec.songs.includes(song)) return;
+    sec.songs.push(song);
+    renderSongs();
+    renderSetlist();
   }
+
+  scMcBtn.addEventListener("click", () => addSong("MC"));
 
   function removeSong(secIdx, songIdx) {
     sections[secIdx].songs.splice(songIdx, 1);
@@ -890,11 +913,14 @@
         empty.textContent = "← 左から曲を選んでください";
         div.appendChild(empty);
       } else {
+        let songNum = 0;
         sec.songs.forEach((song, idx) => {
+          const isMc = song === "MC";
+          if (!isMc) songNum++;
           const row = document.createElement("div");
-          row.className = "sc-setlist-song";
+          row.className = "sc-setlist-song" + (isMc ? " sc-setlist-song--mc" : "");
           row.innerHTML = `
-            <span class="sc-setlist-song__num">${idx + 1}</span>
+            <span class="sc-setlist-song__num">${isMc ? "" : songNum}</span>
             <span class="sc-setlist-song__name">${song}</span>
             <button class="sc-setlist-song__up" title="上へ">▲</button>
             <button class="sc-setlist-song__down" title="下へ">▼</button>
