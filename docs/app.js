@@ -134,6 +134,11 @@
     return `${y}/${Number(m)}/${Number(d)}`;
   }
 
+  function shortDateStr(dateStr) {
+    const [y, m, d] = dateStr.split("-");
+    return `${y}/${Number(m)}/${Number(d)}`;
+  }
+
   function buildEmbed(ev) {
     if (!ev.embed) return "";
     const { provider, kind, id } = ev.embed;
@@ -179,6 +184,116 @@
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !overlay.hidden) closeDetail(); });
 
   // --- 年表レンダリング ---
+
+  function appendEvent(ev) {
+    const s = sentimentByEventId.get(String(ev.id));
+    const allComments = s ? [...(s.positive || []), ...(s.negative || [])] : [];
+    const hasBubble = allComments.length > 0;
+    const hasLinks = ev.external_links && ev.external_links.length > 0;
+
+    const wrap = document.createElement("div");
+    wrap.className = `tl-item-wrap tl-item--${ev.type} tl-item--${ev.importance === "minor" ? "minor" : "major"}`;
+
+    const btn = document.createElement("button");
+    btn.className = "tl-item__btn";
+    btn.innerHTML = `
+      <span class="tl-item__rail"><span class="tl-item__dot"></span></span>
+      <span class="tl-item__body">
+        <span class="tl-item__date">${shortDate(ev)} ・ ${TYPE_LABEL[ev.type] || ev.type}</span>
+        <span class="tl-item__title">${ev.title}${hasLinks ? ' <span class="tl-link-badge" title="リンクあり">🔗</span>' : ''}</span>
+      </span>
+    `;
+    btn.addEventListener("click", () => openDetail(ev));
+    wrap.appendChild(btn);
+
+    if (hasBubble) {
+      const bubbleBtn = document.createElement("button");
+      bubbleBtn.className = "tl-bubble-btn";
+      bubbleBtn.setAttribute("aria-label", "当時のファンの声を見る");
+      bubbleBtn.textContent = "💬";
+      bubbleBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        showBubble(bubbleBtn, allComments, s);
+      });
+      wrap.appendChild(bubbleBtn);
+    }
+
+    list.appendChild(wrap);
+  }
+
+  function appendTourGroup(group, tourName) {
+    const container = document.createElement("div");
+    container.className = "tl-tour-group";
+
+    // ヘッダー行（ツアー名・日程レンジ・公演数）
+    const headerRow = document.createElement("div");
+    headerRow.className = "tl-item-wrap tl-item--live tl-item--major";
+
+    const startShort = shortDateStr(group.lastDate);
+    const endShort = shortDateStr(group.firstDate);
+    const dateRange = group.events.length === 1 ? startShort : `${startShort}〜${endShort}`;
+    const count = group.events.length;
+    const hasLinks = group.events.some((ev) => ev.external_links && ev.external_links.length > 0);
+
+    const headerBtn = document.createElement("button");
+    headerBtn.className = "tl-item__btn";
+    headerBtn.innerHTML = `
+      <span class="tl-item__rail"><span class="tl-item__dot"></span></span>
+      <span class="tl-item__body">
+        <span class="tl-item__date">${dateRange} ・ ライブ ・ 全${count}公演</span>
+        <span class="tl-item__title">${tourName}${hasLinks ? ' <span class="tl-link-badge" title="リンクあり">🔗</span>' : ''} <span class="tl-tour-chevron" aria-hidden="true">▶</span></span>
+      </span>
+    `;
+
+    // 公演リスト（初期非表示）
+    const showsList = document.createElement("div");
+    showsList.className = "tl-tour-shows";
+    showsList.hidden = true;
+
+    group.events.forEach((ev) => {
+      const s2 = sentimentByEventId.get(String(ev.id));
+      const allC = s2 ? [...(s2.positive || []), ...(s2.negative || [])] : [];
+      const hasEvLinks = ev.external_links && ev.external_links.length > 0;
+
+      const showWrap = document.createElement("div");
+      showWrap.className = "tl-item-wrap tl-item--live tl-item--minor";
+
+      const showBtn = document.createElement("button");
+      showBtn.className = "tl-item__btn";
+      showBtn.innerHTML = `
+        <span class="tl-item__rail"><span class="tl-item__dot"></span></span>
+        <span class="tl-item__body">
+          <span class="tl-item__date">${shortDate(ev)}</span>
+          <span class="tl-item__title">${ev.title}${hasEvLinks ? ' <span class="tl-link-badge" title="リンクあり">🔗</span>' : ''}</span>
+        </span>
+      `;
+      showBtn.addEventListener("click", () => openDetail(ev));
+      showWrap.appendChild(showBtn);
+
+      if (allC.length > 0) {
+        const bb = document.createElement("button");
+        bb.className = "tl-bubble-btn";
+        bb.setAttribute("aria-label", "当時のファンの声を見る");
+        bb.textContent = "💬";
+        bb.addEventListener("click", (e) => { e.stopPropagation(); showBubble(bb, allC, s2); });
+        showWrap.appendChild(bb);
+      }
+
+      showsList.appendChild(showWrap);
+    });
+
+    headerBtn.addEventListener("click", () => {
+      const opening = showsList.hidden;
+      showsList.hidden = !opening;
+      headerBtn.querySelector(".tl-tour-chevron").textContent = opening ? "▼" : "▶";
+    });
+
+    headerRow.appendChild(headerBtn);
+    container.appendChild(headerRow);
+    container.appendChild(showsList);
+    list.appendChild(container);
+  }
+
   function render(events) {
     list.innerHTML = "";
     if (!events || events.length === 0) {
@@ -194,6 +309,24 @@
       : typeFiltered;
     const sorted = [...filtered].sort((a, b) => toDays(b.date) - toDays(a.date));
     const cutoffDay = toDays(new Date().toISOString().slice(0, 10)) - 5 * 365.25;
+
+    // ツアーグループを構築（2公演以上のツアーのみ）
+    const tourMap = new Map();
+    sorted.forEach((ev) => {
+      if (ev.type === "live" && ev.tour) {
+        if (!tourMap.has(ev.tour)) {
+          tourMap.set(ev.tour, { events: [], firstDate: ev.date, lastDate: ev.date });
+        }
+        const g = tourMap.get(ev.tour);
+        g.events.push(ev);
+        if (toDays(ev.date) > toDays(g.firstDate)) g.firstDate = ev.date;
+        if (toDays(ev.date) < toDays(g.lastDate)) g.lastDate = ev.date;
+      }
+    });
+    const validTours = new Set(
+      [...tourMap.entries()].filter(([, g]) => g.events.length >= 2).map(([name]) => name)
+    );
+    const renderedTours = new Set();
 
     let lastYearShown = null;
     let cutoffInserted = false;
@@ -216,42 +349,13 @@
         list.appendChild(heading);
       }
 
-      // sentimentデータがあるか確認
-      const s = sentimentByEventId.get(String(ev.id));
-      const allComments = s ? [...(s.positive || []), ...(s.negative || [])] : [];
-      const hasBubble = allComments.length > 0;
-
-      // ラッパーdiv（本体ボタン + 吹き出しボタンを横並び）
-      const wrap = document.createElement("div");
-      wrap.className = `tl-item-wrap tl-item--${ev.type} tl-item--${ev.importance === "minor" ? "minor" : "major"}`;
-
-      // 本体ボタン
-      const btn = document.createElement("button");
-      btn.className = "tl-item__btn";
-      btn.innerHTML = `
-        <span class="tl-item__rail"><span class="tl-item__dot"></span></span>
-        <span class="tl-item__body">
-          <span class="tl-item__date">${shortDate(ev)} ・ ${TYPE_LABEL[ev.type] || ev.type}</span>
-          <span class="tl-item__title">${ev.title}</span>
-        </span>
-      `;
-      btn.addEventListener("click", () => openDetail(ev));
-      wrap.appendChild(btn);
-
-      // 吹き出しボタン（sentimentあるイベントのみ）
-      if (hasBubble) {
-        const bubbleBtn = document.createElement("button");
-        bubbleBtn.className = "tl-bubble-btn";
-        bubbleBtn.setAttribute("aria-label", "当時のファンの声を見る");
-        bubbleBtn.textContent = "💬";
-        bubbleBtn.addEventListener("click", (e) => {
-          e.stopPropagation();
-          showBubble(bubbleBtn, allComments, s);
-        });
-        wrap.appendChild(bubbleBtn);
+      if (ev.type === "live" && ev.tour && validTours.has(ev.tour)) {
+        if (renderedTours.has(ev.tour)) return;
+        renderedTours.add(ev.tour);
+        appendTourGroup(tourMap.get(ev.tour), ev.tour);
+      } else {
+        appendEvent(ev);
       }
-
-      list.appendChild(wrap);
     });
   }
 

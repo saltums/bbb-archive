@@ -578,6 +578,44 @@ a { color: var(--accent); }
   font-size: 1.02rem;
 }
 
+/* --- 🔗 リンクバッジ --- */
+
+.tl-link-badge {
+  display: inline-block;
+  font-size: 0.72em;
+  vertical-align: middle;
+  margin-left: 0.25em;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+/* --- ツアーグループ --- */
+
+.tl-tour-group {
+  display: block;
+}
+
+.tl-tour-chevron {
+  display: inline-block;
+  font-size: 0.65em;
+  vertical-align: middle;
+  margin-left: 0.3em;
+  opacity: 0.55;
+  transition: transform 0.15s;
+}
+
+.tl-tour-shows {
+  padding-left: 0;
+}
+
+.tl-tour-shows .tl-item__body {
+  border-bottom: 1px solid var(--line);
+}
+
+.tl-tour-shows .tl-item-wrap:last-child .tl-item__body {
+  border-bottom: none;
+}
+
 /* --- 吹き出しボタン --- */
 
 .tl-bubble-btn {
