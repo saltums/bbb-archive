@@ -1,256 +1,1715 @@
 [
   {
+    "id": "yuugata_2003",
+    "album_title": "夕方ジェネレーション",
+    "type": "indie",
+    "release_date": "2003-11-26",
+    "note": "インディーズ1stミニアルバム。インディーズデビュー作。",
+    "tracks": [
+      {
+        "title": "夕方ジェネレーション",
+        "external_links": []
+      },
+      {
+        "title": "Boy Meets Girl",
+        "external_links": []
+      },
+      {
+        "title": "SAYONARA-NOSTALGIA",
+        "external_links": []
+      },
+      {
+        "title": "微熱ボーイ",
+        "external_links": []
+      },
+      {
+        "title": "SUNSET-KI・RE・I",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "yume_2004",
+    "album_title": "YUME is VISION",
+    "type": "single",
+    "release_date": "2004-07-07",
+    "note": "インディーズ1stシングル。",
+    "tracks": [
+      {
+        "title": "YUME is VISION",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "b_beginning_2004",
+    "album_title": "B Beginning!!",
+    "type": "single",
+    "release_date": "2004-12-24",
+    "note": "Baconとのスプリットシングル。",
+    "tracks": [
+      {
+        "title": "B Beginning!!",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "hct_2005",
+    "album_title": "HIGH COLOR TIMES",
+    "type": "indie",
+    "release_date": "2005-03-16",
+    "note": "インディーズ1stフルアルバム。",
+    "tracks": [
+      {
+        "title": "HIGH COLOR TIMES",
+        "external_links": []
+      },
+      {
+        "title": "CRAZY FOR YOUの季節",
+        "external_links": []
+      },
+      {
+        "title": "ELECTRIC SUMMER",
+        "external_links": [],
+        "note": "同名別曲"
+      },
+      {
+        "title": "微熱ボーイ",
+        "external_links": []
+      },
+      {
+        "title": "SUNSET-KI・RE・I",
+        "external_links": []
+      },
+      {
+        "title": "SHE IS BACK",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "band_b_2006",
+    "album_title": "バンドBについて",
+    "type": "single",
+    "release_date": "2006-01-12",
+    "note": "プレデビューCD。東芝EMIより。",
+    "tracks": [
+      {
+        "title": "バンドBについて",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "girl_friend_mini_2006",
+    "album_title": "GIRL FRIEND",
+    "type": "mini",
+    "release_date": "2006-04-12",
+    "note": "メジャーデビュー 1stミニアルバム。",
+    "tracks": [
+      {
+        "title": "GIRL FRIEND",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=dc09HoF_M1Q"
+          }
+        ]
+      },
+      {
+        "title": "祭りのあと",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=PO-G_n5GJrM"
+          },
+          {
+            "label": "MV 360度版 (YouTube)",
+            "url": "https://www.youtube.com/watch?v=Z4QJVBfZmeA"
+          }
+        ]
+      },
+      {
+        "title": "GIRL OF ARMS",
+        "external_links": []
+      },
+      {
+        "title": "YOU'RE MY SUNSHINEのすべて",
+        "external_links": []
+      },
+      {
+        "title": "スイミングガール",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "electric_summer_2006",
+    "album_title": "ELECTRIC SUMMER",
+    "type": "single",
+    "release_date": "2006-06-21",
+    "note": "1stシングル。テレビ東京『JAPAN COUNTDOWN』OPテーマ。",
+    "tracks": [
+      {
+        "title": "ELECTRIC SUMMER",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=baVH_BFtQXU"
+          }
+        ]
+      },
+      {
+        "title": "Good bye",
+        "external_links": [],
+        "note": "カップリング"
+      },
+      {
+        "title": "SAYONARA-NOSTALGIA（LAST SUMMER ver.）",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/ELECTRIC_SUMMER",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "stand_by_me_2006",
+    "album_title": "STAND BY ME",
+    "type": "single",
+    "release_date": "2006-10-04",
+    "note": "2ndシングル。TBS系『COUNT DOWN TV』EDテーマ。",
+    "tracks": [
+      {
+        "title": "STAND BY ME",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=Smvpr-LtWbc"
+          }
+        ]
+      },
+      {
+        "title": "天空Lonely Hearts",
+        "external_links": [],
+        "note": "カップリング"
+      },
+      {
+        "title": "BOY MEETS GIRL（LIVE ver.）",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/STAND_BY_ME_(Base_Ball_Bear%E3%81%AE%E6%9B%B2)",
+    "source_label": "Wikipedia"
+  },
+  {
     "id": "c_2006",
-    "title": "C",
-    "year": 2006,
+    "album_title": "C",
     "type": "album",
-    "songs": [
-      "CRAZY FOR YOUの季節",
-      "GIRL FRIEND",
-      "祭りのあと",
-      "ELECTRIC SUMMER",
-      "スイミングガール",
-      "YOU'RE MY SUNSHINEのすべて",
-      "GIRL OF ARMS",
-      "DEATH と LOVE",
-      "STAND BY ME",
-      "ラストダンス",
-      "SHE IS BACK"
-    ]
+    "release_date": "2006-11-29",
+    "note": "1stアルバム。",
+    "tracks": [
+      {
+        "title": "CRAZY FOR YOUの季節",
+        "external_links": []
+      },
+      {
+        "title": "GIRL FRIEND",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=dc09HoF_M1Q"
+          }
+        ]
+      },
+      {
+        "title": "祭りのあと",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=PO-G_n5GJrM"
+          },
+          {
+            "label": "MV 360度版 (YouTube)",
+            "url": "https://www.youtube.com/watch?v=Z4QJVBfZmeA"
+          }
+        ]
+      },
+      {
+        "title": "ELECTRIC SUMMER",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=baVH_BFtQXU"
+          }
+        ]
+      },
+      {
+        "title": "スイミングガール",
+        "external_links": []
+      },
+      {
+        "title": "YOU'RE MY SUNSHINEのすべて",
+        "external_links": []
+      },
+      {
+        "title": "GIRL OF ARMS",
+        "external_links": []
+      },
+      {
+        "title": "DEATH と LOVE",
+        "external_links": []
+      },
+      {
+        "title": "STAND BY ME",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=Smvpr-LtWbc"
+          }
+        ]
+      },
+      {
+        "title": "ラストダンス",
+        "external_links": []
+      },
+      {
+        "title": "SHE IS BACK",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "dakishimetai_2007",
+    "album_title": "抱きしめたい",
+    "type": "single",
+    "release_date": "2007-04-04",
+    "note": "3rdシングル。",
+    "tracks": [
+      {
+        "title": "抱きしめたい",
+        "external_links": []
+      },
+      {
+        "title": "ヘヴンズドアー・ガールズ",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "dramatic_2007",
+    "album_title": "ドラマチック",
+    "type": "single",
+    "release_date": "2007-05-16",
+    "note": "4thシングル。",
+    "tracks": [
+      {
+        "title": "ドラマチック",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=Og0nJf6cIhw"
+          }
+        ]
+      },
+      {
+        "title": "SEVENTEEN ROMANCE",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "manatsu_2007",
+    "album_title": "真夏の条件",
+    "type": "single",
+    "release_date": "2007-07-18",
+    "note": "5thシングル。",
+    "tracks": [
+      {
+        "title": "真夏の条件",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=PEikiz8r2wk"
+          }
+        ]
+      },
+      {
+        "title": "協奏曲",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "aishiteru_2007",
+    "album_title": "愛してる",
+    "type": "single",
+    "release_date": "2007-10-31",
+    "note": "6thシングル。",
+    "tracks": [
+      {
+        "title": "愛してる",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=NeGM9infxH0"
+          }
+        ]
+      },
+      {
+        "title": "気付いてほしい",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
   },
   {
     "id": "17sai_2007",
-    "title": "十七歳",
-    "year": 2007,
+    "album_title": "十七歳",
     "type": "album",
-    "songs": [
-      "17才",
-      "ドラマチック",
-      "抱きしめたい",
-      "ヘヴンズドアー・ガールズ",
-      "愛してる",
-      "SEVENTEEN ROMANCE",
-      "FUTATSU NO SEKAI",
-      "真夏の条件",
-      "青い春.虚無",
-      "WINK SNIPER",
-      "協奏曲",
-      "気付いてほしい"
-    ]
+    "release_date": "2007-12-05",
+    "note": "2ndアルバム。",
+    "tracks": [
+      {
+        "title": "17才",
+        "external_links": [
+          {
+            "label": "MV (YouTube/Vevo)",
+            "url": "https://www.youtube.com/watch?v=2cdfJbdLZoA"
+          }
+        ]
+      },
+      {
+        "title": "ドラマチック",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=Og0nJf6cIhw"
+          }
+        ]
+      },
+      {
+        "title": "抱きしめたい",
+        "external_links": []
+      },
+      {
+        "title": "ヘヴンズドアー・ガールズ",
+        "external_links": []
+      },
+      {
+        "title": "愛してる",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=NeGM9infxH0"
+          }
+        ]
+      },
+      {
+        "title": "SEVENTEEN ROMANCE",
+        "external_links": []
+      },
+      {
+        "title": "FUTATSU NO SEKAI",
+        "external_links": []
+      },
+      {
+        "title": "真夏の条件",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=PEikiz8r2wk"
+          }
+        ]
+      },
+      {
+        "title": "青い春.虚無",
+        "external_links": []
+      },
+      {
+        "title": "WINK SNIPER",
+        "external_links": []
+      },
+      {
+        "title": "協奏曲",
+        "external_links": []
+      },
+      {
+        "title": "気付いてほしい",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "changes_2008",
+    "album_title": "changes",
+    "type": "single",
+    "release_date": "2008-05-08",
+    "note": "7thシングル。フジテレビ系アニメ『図書館戦争』EDテーマ。",
+    "tracks": [
+      {
+        "title": "changes",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=G9eShsO_q50"
+          }
+        ]
+      },
+      {
+        "title": "祭りのあと",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=PO-G_n5GJrM"
+          }
+        ],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "sgf_2008",
+    "album_title": "SCHOOL GIRL FANTASY",
+    "type": "digital",
+    "release_date": "2008-08-20",
+    "note": "デジタルシングル。",
+    "tracks": [
+      {
+        "title": "SCHOOL GIRL FANTASY",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "love_math_2009",
+    "album_title": "LOVE MATHEMATICS",
+    "type": "single",
+    "release_date": "2009-01-07",
+    "note": "8thシングル。",
+    "tracks": [
+      {
+        "title": "LOVE MATHEMATICS",
+        "external_links": []
+      },
+      {
+        "title": "海になりたい part.2",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "kamigami_2009",
+    "album_title": "神々 LOOKS YOU",
+    "type": "single",
+    "release_date": "2009-04-15",
+    "note": "9thシングル。",
+    "tracks": [
+      {
+        "title": "神々LOOKS YOU",
+        "external_links": []
+      },
+      {
+        "title": "レモンスカッシュ感覚",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "breeeeze_2009",
+    "album_title": "BREEEEZE GIRL",
+    "type": "single",
+    "release_date": "2009-06-24",
+    "note": "10thシングル。",
+    "tracks": [
+      {
+        "title": "BREEEEZE GIRL",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=Pno3nts_ZIE"
+          },
+          {
+            "label": "MV アルバムver. (YouTube)",
+            "url": "https://www.youtube.com/watch?v=bLnRythb-pw"
+          }
+        ]
+      },
+      {
+        "title": "ラブ&ポップ",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "stairway_2009",
+    "album_title": "Stairway Generation",
+    "type": "single",
+    "release_date": "2009-08-05",
+    "note": "11thシングル。",
+    "tracks": [
+      {
+        "title": "Stairway Generation",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=rVPoIlCpllU"
+          }
+        ]
+      },
+      {
+        "title": "祭りのあと",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=PO-G_n5GJrM"
+          },
+          {
+            "label": "MV 360度版 (2016ver.)",
+            "url": "https://www.youtube.com/watch?v=Z4QJVBfZmeA"
+          }
+        ],
+        "note": "カップリング"
+      },
+      {
+        "title": "レインメーカー",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
   },
   {
     "id": "lovepop_2009",
-    "title": "(WHAT IS THE)LOVE & POP?",
-    "year": 2009,
+    "album_title": "(WHAT IS THE)LOVE & POP?",
     "type": "album",
-    "songs": [
-      "Stairway Generation",
-      "SOSOS",
-      "changes",
-      "神々LOOKS YOU",
-      "LOVE LETTER FROM HEART BEAT",
-      "ホワイトワイライト",
-      "BREEEEZE GIRL",
-      "LOVE MATHEMATICS",
-      "SIMAITAI",
-      "海になりたい part.2",
-      "レモンスカッシュ感覚",
-      "ラブ&ポップ"
-    ]
+    "release_date": "2009-09-02",
+    "note": "3rdアルバム。",
+    "tracks": [
+      {
+        "title": "Stairway Generation",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=rVPoIlCpllU"
+          }
+        ]
+      },
+      {
+        "title": "SOSOS",
+        "external_links": []
+      },
+      {
+        "title": "changes",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=G9eShsO_q50"
+          }
+        ]
+      },
+      {
+        "title": "神々LOOKS YOU",
+        "external_links": []
+      },
+      {
+        "title": "LOVE LETTER FROM HEART BEAT",
+        "external_links": []
+      },
+      {
+        "title": "ホワイトワイライト",
+        "external_links": []
+      },
+      {
+        "title": "BREEEEZE GIRL",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=Pno3nts_ZIE"
+          }
+        ]
+      },
+      {
+        "title": "LOVE MATHEMATICS",
+        "external_links": []
+      },
+      {
+        "title": "SIMAITAI",
+        "external_links": []
+      },
+      {
+        "title": "海になりたい part.2",
+        "external_links": []
+      },
+      {
+        "title": "レモンスカッシュ感覚",
+        "external_links": []
+      },
+      {
+        "title": "ラブ&ポップ",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "kimino_me_2010",
+    "album_title": "きみの目 feat. 山口一郎",
+    "type": "digital",
+    "release_date": "2010-06-23",
+    "note": "配信シングル。サカナクション山口一郎とのコラボ。",
+    "tracks": [
+      {
+        "title": "きみの目 feat. 山口一郎 (サカナクション)",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "kuchibiru_2010",
+    "album_title": "クチビル・ディテクティヴ",
+    "type": "digital",
+    "release_date": "2010-07-21",
+    "note": "配信シングル。",
+    "tracks": [
+      {
+        "title": "クチビル・ディテクティヴ",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "transfer_girl_2010",
+    "album_title": "Transfer Girl",
+    "type": "digital",
+    "release_date": "2010-08-25",
+    "note": "配信シングル。",
+    "tracks": [
+      {
+        "title": "Transfer Girl",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "juujika_2010",
+    "album_title": "十字架You and I",
+    "type": "digital",
+    "release_date": "2010-09-15",
+    "note": "配信シングル。",
+    "tracks": [
+      {
+        "title": "十字架You and I",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=S82_EnCCGCc"
+          }
+        ]
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
   },
   {
     "id": "cypress_2010",
-    "title": "CYPRESS GIRLS",
-    "year": 2010,
+    "album_title": "CYPRESS GIRLS",
     "type": "mini",
-    "songs": [
-      "十字架You and I",
-      "BAND GIRL'S SPIRAL DAYS",
-      "Shine On You Cypress Girl",
-      "beautiful wall",
-      "kamiawanai",
-      "kimino-me",
-      "檸檬タージュ",
-      "Project Blue"
-    ]
+    "release_date": "2010-09-29",
+    "note": "3.5thアルバム。セルフプロデュース・コンセプトアルバム。",
+    "tracks": [
+      {
+        "title": "十字架You and I",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=S82_EnCCGCc"
+          }
+        ]
+      },
+      {
+        "title": "BAND GIRL'S SPIRAL DAYS",
+        "external_links": []
+      },
+      {
+        "title": "Shine On You Cypress Girl",
+        "external_links": []
+      },
+      {
+        "title": "beautiful wall",
+        "external_links": []
+      },
+      {
+        "title": "kamiawanai",
+        "external_links": []
+      },
+      {
+        "title": "kimino-me",
+        "external_links": []
+      },
+      {
+        "title": "檸檬タージュ",
+        "external_links": []
+      },
+      {
+        "title": "Project Blue",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
   },
   {
     "id": "detective_2010",
-    "title": "DETECTIVE BOYS",
-    "year": 2010,
+    "album_title": "DETECTIVE BOYS",
     "type": "mini",
-    "songs": [
-      "クチビル・ディテクティヴ",
-      "Transfer Girl",
-      "BOYFRIEN℃",
-      "LOVESICK",
-      "WHITE ROOM",
-      "星がほしい",
-      "歌ってるんだBaby.",
-      "東京"
-    ]
+    "release_date": "2010-09-29",
+    "note": "3.5thアルバム。セルフプロデュース・コンセプトアルバム。",
+    "tracks": [
+      {
+        "title": "クチビル・ディテクティヴ",
+        "external_links": []
+      },
+      {
+        "title": "Transfer Girl",
+        "external_links": []
+      },
+      {
+        "title": "BOYFRIEN℃",
+        "external_links": []
+      },
+      {
+        "title": "LOVESICK",
+        "external_links": []
+      },
+      {
+        "title": "WHITE ROOM",
+        "external_links": []
+      },
+      {
+        "title": "星がほしい",
+        "external_links": []
+      },
+      {
+        "title": "歌ってるんだBaby.",
+        "external_links": []
+      },
+      {
+        "title": "東京",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "yoakemae_venue_2011",
+    "album_title": "yoakemae-no-yoakemae",
+    "type": "single",
+    "release_date": "2011-04-07",
+    "note": "会場限定シングル。10周年ツアー中に配布・販売。",
+    "tracks": [
+      {
+        "title": "yoakemae-no-yoakemae",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "yoakemae_2011",
+    "album_title": "yoakemae",
+    "type": "single",
+    "release_date": "2011-06-29",
+    "note": "12thシングル。",
+    "tracks": [
+      {
+        "title": "yoakemae",
+        "external_links": []
+      },
+      {
+        "title": "school zone",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "short_hair_2011",
+    "album_title": "short hair",
+    "type": "single",
+    "release_date": "2011-08-31",
+    "note": "13thシングル。",
+    "tracks": [
+      {
+        "title": "short hair",
+        "external_links": []
+      },
+      {
+        "title": "転校生",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "tabibito_2011",
+    "album_title": "Tabibito In The Dark / スローモーションをもう一度 part.2",
+    "type": "single",
+    "release_date": "2011-10-05",
+    "note": "14thシングル。ダブルA面。",
+    "tracks": [
+      {
+        "title": "Tabibito In The Dark",
+        "external_links": []
+      },
+      {
+        "title": "スローモーションをもう一度 part.2",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
   },
   {
     "id": "shinkokyuu_2011",
-    "title": "新呼吸",
-    "year": 2011,
+    "album_title": "新呼吸",
     "type": "album",
-    "songs": [
-      "深朝",
-      "ダビングデイズ",
-      "school zone",
-      "転校生",
-      "スローモーションをもう一度",
-      "short hair",
-      "Tabibito In The Dark",
-      "ヒカリナ",
-      "夜空1/2",
-      "kodoku no synthesizer",
-      "yoakemae",
-      "新呼吸"
-    ]
+    "release_date": "2011-11-09",
+    "note": "4thアルバム。結成10周年記念作。",
+    "tracks": [
+      {
+        "title": "深朝",
+        "external_links": []
+      },
+      {
+        "title": "ダビングデイズ",
+        "external_links": []
+      },
+      {
+        "title": "school zone",
+        "external_links": []
+      },
+      {
+        "title": "転校生",
+        "external_links": []
+      },
+      {
+        "title": "スローモーションをもう一度",
+        "external_links": []
+      },
+      {
+        "title": "short hair",
+        "external_links": []
+      },
+      {
+        "title": "Tabibito In The Dark",
+        "external_links": []
+      },
+      {
+        "title": "ヒカリナ",
+        "external_links": []
+      },
+      {
+        "title": "夜空1/2",
+        "external_links": []
+      },
+      {
+        "title": "kodoku no synthesizer",
+        "external_links": []
+      },
+      {
+        "title": "yoakemae",
+        "external_links": []
+      },
+      {
+        "title": "新呼吸",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "hatsukoi_2012",
+    "album_title": "初恋",
+    "type": "mini",
+    "release_date": "2012-07-11",
+    "note": "2ndミニアルバム。映画『図書館戦争 革命のつばさ』主題歌。",
+    "tracks": [
+      {
+        "title": "初恋",
+        "external_links": []
+      },
+      {
+        "title": "若者のゆくえ",
+        "external_links": []
+      },
+      {
+        "title": "USER UNKNOWN",
+        "external_links": []
+      },
+      {
+        "title": "メタモルフォーゼ真っ最中",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "perfect_blue_2013",
+    "album_title": "PERFECT BLUE",
+    "type": "single",
+    "release_date": "2013-02-13",
+    "note": "15thシングル。『バンドBのベスト』と同時リリース。",
+    "tracks": [
+      {
+        "title": "PERFECT BLUE",
+        "external_links": []
+      },
+      {
+        "title": "UNDER THE STAR LIGHT",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "the_cut_2013",
+    "album_title": "THE CUT",
+    "type": "mini",
+    "release_date": "2013-06-26",
+    "note": "3rdミニアルバム。",
+    "tracks": [
+      {
+        "title": "The Cut feat. RHYMESTER",
+        "external_links": []
+      },
+      {
+        "title": "ストレンジダンサー",
+        "external_links": []
+      },
+      {
+        "title": "恋する感覚 feat. 花澤香菜",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/THE_CUT",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "senkou_2013",
+    "album_title": "senkou_hanabi",
+    "type": "digital",
+    "release_date": "2013-07-24",
+    "note": "配信シングル。",
+    "tracks": [
+      {
+        "title": "senkou_hanabi",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "fanfare_2013",
+    "album_title": "ファンファーレがきこえる / senkou_hanabi",
+    "type": "single",
+    "release_date": "2013-11-27",
+    "note": "16thシングル。ダブルA面。",
+    "tracks": [
+      {
+        "title": "ファンファーレがきこえる",
+        "external_links": []
+      },
+      {
+        "title": "senkou_hanabi",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
   },
   {
     "id": "29sai_2014",
-    "title": "二十九歳",
-    "year": 2014,
+    "album_title": "二十九歳",
     "type": "album",
-    "songs": [
-      "何才",
-      "アンビバレントダンサー",
-      "ファンファーレがきこえる",
-      "Ghost Town",
-      "yellow",
-      "そんなに好きじゃなかった",
-      "The Cut feat. RHYMESTER",
-      "ERAい人",
-      "方舟",
-      "The End",
-      "スクランブル",
-      "UNDER THE STAR LIGHT",
-      "PERFECT BLUE",
-      "光蘚",
-      "魔王",
-      "カナリア"
-    ]
+    "release_date": "2014-06-04",
+    "note": "5thアルバム。オリコン最高8位。",
+    "tracks": [
+      {
+        "title": "何才",
+        "external_links": []
+      },
+      {
+        "title": "アンビバレントダンサー",
+        "external_links": []
+      },
+      {
+        "title": "ファンファーレがきこえる",
+        "external_links": []
+      },
+      {
+        "title": "Ghost Town",
+        "external_links": []
+      },
+      {
+        "title": "yellow",
+        "external_links": []
+      },
+      {
+        "title": "そんなに好きじゃなかった",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=LSyBWgl1uFk"
+          }
+        ]
+      },
+      {
+        "title": "The Cut feat. RHYMESTER",
+        "external_links": []
+      },
+      {
+        "title": "ERAい人",
+        "external_links": []
+      },
+      {
+        "title": "方舟",
+        "external_links": []
+      },
+      {
+        "title": "The End",
+        "external_links": []
+      },
+      {
+        "title": "スクランブル",
+        "external_links": []
+      },
+      {
+        "title": "UNDER THE STAR LIGHT",
+        "external_links": []
+      },
+      {
+        "title": "PERFECT BLUE",
+        "external_links": []
+      },
+      {
+        "title": "光蘚",
+        "external_links": []
+      },
+      {
+        "title": "魔王",
+        "external_links": []
+      },
+      {
+        "title": "カナリア",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "sore_part1_2015",
+    "album_title": "「それって、for 誰?」part.1",
+    "type": "single",
+    "release_date": "2015-08-05",
+    "note": "17thシングル。3ヶ月連続リリース第1弾。",
+    "tracks": [
+      {
+        "title": "「それって、for 誰?」part.1",
+        "external_links": []
+      },
+      {
+        "title": "こぼさないでShadow",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "bunkasai_2015",
+    "album_title": "文化祭の夜",
+    "type": "single",
+    "release_date": "2015-09-02",
+    "note": "18thシングル。3ヶ月連続リリース第2弾。",
+    "tracks": [
+      {
+        "title": "文化祭の夜",
+        "external_links": []
+      },
+      {
+        "title": "美しいのさ",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "fushigi_2015",
+    "album_title": "不思議な夜",
+    "type": "single",
+    "release_date": "2015-10-07",
+    "note": "19thシングル。3ヶ月連続リリース第3弾。",
+    "tracks": [
+      {
+        "title": "不思議な夜",
+        "external_links": []
+      },
+      {
+        "title": "どうしよう",
+        "external_links": [],
+        "note": "カップリング"
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
   },
   {
     "id": "c2_2015",
-    "title": "C2",
-    "year": 2015,
+    "album_title": "C2",
     "type": "album",
-    "songs": [
-      "「それって、for 誰?」part.1",
-      "こぼさないでShadow",
-      "美しいのさ",
-      "曖してる",
-      "文化祭の夜",
-      "レインメーカー",
-      "どうしよう",
-      "カシカ",
-      "ホーリーロンリーマウンテン",
-      "HUMAN",
-      "不思議な夜",
-      "「それって、for 誰?」part.2"
-    ]
+    "release_date": "2015-11-11",
+    "note": "6thアルバム。結成日(11/11)リリース。",
+    "tracks": [
+      {
+        "title": "「それって、for 誰?」part.1",
+        "external_links": []
+      },
+      {
+        "title": "こぼさないでShadow",
+        "external_links": []
+      },
+      {
+        "title": "美しいのさ",
+        "external_links": []
+      },
+      {
+        "title": "曖してる",
+        "external_links": []
+      },
+      {
+        "title": "文化祭の夜",
+        "external_links": []
+      },
+      {
+        "title": "レインメーカー",
+        "external_links": []
+      },
+      {
+        "title": "どうしよう",
+        "external_links": []
+      },
+      {
+        "title": "カシカ",
+        "external_links": []
+      },
+      {
+        "title": "ホーリーロンリーマウンテン",
+        "external_links": []
+      },
+      {
+        "title": "HUMAN",
+        "external_links": []
+      },
+      {
+        "title": "不思議な夜",
+        "external_links": []
+      },
+      {
+        "title": "「それって、for 誰?」part.2",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
   },
   {
     "id": "kougen_2017",
-    "title": "光源",
-    "year": 2017,
+    "album_title": "光源",
     "type": "album",
-    "songs": [
-      "すべては君のせいで",
-      "逆バタフライ・エフェクト",
-      "Low way",
-      "(LIKE A)TRANSFER GIRL",
-      "寛解",
-      "SHINE",
-      "リアリティーズ",
-      "Darling"
-    ]
+    "release_date": "2017-04-12",
+    "note": "7thアルバム。3人体制初アルバム。オリコン最高7位。",
+    "tracks": [
+      {
+        "title": "すべては君のせいで",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=er800teuY4U"
+          }
+        ]
+      },
+      {
+        "title": "逆バタフライ・エフェクト",
+        "external_links": []
+      },
+      {
+        "title": "Low way",
+        "external_links": []
+      },
+      {
+        "title": "(LIKE A)TRANSFER GIRL",
+        "external_links": []
+      },
+      {
+        "title": "寛解",
+        "external_links": []
+      },
+      {
+        "title": "SHINE",
+        "external_links": []
+      },
+      {
+        "title": "リアリティーズ",
+        "external_links": []
+      },
+      {
+        "title": "Darling",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "kimi_nonfiction_2017",
+    "album_title": "君はノンフィクション",
+    "type": "digital",
+    "release_date": "2017-01-25",
+    "note": "デジタルシングル。テレビ東京系ドラマ主題歌。",
+    "tracks": [
+      {
+        "title": "君はノンフィクション",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "polaris_ep_2019",
+    "album_title": "ポラリス",
+    "type": "ep",
+    "release_date": "2019-01-30",
+    "note": "1st EP (DGP RECORDS設立後初音源)。",
+    "tracks": [
+      {
+        "title": "ポラリス",
+        "external_links": []
+      },
+      {
+        "title": "Flame",
+        "external_links": []
+      },
+      {
+        "title": "L.I.L",
+        "external_links": []
+      },
+      {
+        "title": "いまは僕の目を見て",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=eDdFPRwzwPE"
+          }
+        ]
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "grape_ep_2019",
+    "album_title": "Grape",
+    "type": "ep",
+    "release_date": "2019-09-15",
+    "note": "2nd EP。Guitar!Drum!Bass!Tourの会場でのみCD盤販売。",
+    "tracks": [
+      {
+        "title": "Grape Juice",
+        "external_links": []
+      },
+      {
+        "title": "Summer Melt",
+        "external_links": []
+      },
+      {
+        "title": "PARK",
+        "external_links": []
+      },
+      {
+        "title": "試される",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
   },
   {
     "id": "c3_2020",
-    "title": "C3",
-    "year": 2020,
+    "album_title": "C3",
     "type": "album",
-    "songs": [
-      "試される",
-      "いまは僕の目を見て",
-      "Flame",
-      "Summer Melt",
-      "L.I.L",
-      "EIGHT BEAT詩",
-      "セプテンバー・ステップス",
-      "PARK",
-      "Grape Juice",
-      "ポラリス",
-      "Cross Words",
-      "風来"
-    ]
+    "release_date": "2020-01-22",
+    "note": "8thアルバム。DGP RECORDS移籍後初作品。",
+    "tracks": [
+      {
+        "title": "試される",
+        "external_links": []
+      },
+      {
+        "title": "いまは僕の目を見て",
+        "external_links": [
+          {
+            "label": "MV (YouTube)",
+            "url": "https://www.youtube.com/watch?v=eDdFPRwzwPE"
+          }
+        ]
+      },
+      {
+        "title": "Flame",
+        "external_links": []
+      },
+      {
+        "title": "Summer Melt",
+        "external_links": []
+      },
+      {
+        "title": "L.I.L",
+        "external_links": []
+      },
+      {
+        "title": "EIGHT BEAT詩",
+        "external_links": []
+      },
+      {
+        "title": "セプテンバー・ステップス",
+        "external_links": []
+      },
+      {
+        "title": "PARK",
+        "external_links": []
+      },
+      {
+        "title": "Grape Juice",
+        "external_links": []
+      },
+      {
+        "title": "ポラリス",
+        "external_links": []
+      },
+      {
+        "title": "Cross Words",
+        "external_links": []
+      },
+      {
+        "title": "風来",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "drive_digital_2021",
+    "album_title": "ドライブ",
+    "type": "digital",
+    "release_date": "2021-01-11",
+    "note": "デジタルシングル。",
+    "tracks": [
+      {
+        "title": "ドライブ",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/DIARY_KEY",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "syuuu_2021",
+    "album_title": "SYUUU / ドライブ",
+    "type": "single",
+    "release_date": "2021-03-24",
+    "note": "20thシングル。5000枚限定マキシシングル。",
+    "tracks": [
+      {
+        "title": "SYUUU",
+        "external_links": []
+      },
+      {
+        "title": "ドライブ",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/DIARY_KEY",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "poolsider_2021",
+    "album_title": "プールサイダー",
+    "type": "digital",
+    "release_date": "2021-06-30",
+    "note": "配信シングル。",
+    "tracks": [
+      {
+        "title": "プールサイダー",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/DIARY_KEY",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "diary_key_2021",
+    "album_title": "DIARY KEY",
+    "type": "album",
+    "release_date": "2021-10-27",
+    "note": "9thアルバム。結成20周年・メジャーデビュー15周年記念作。",
+    "tracks": [
+      {
+        "title": "DIARY KEY",
+        "external_links": []
+      },
+      {
+        "title": "プールサイダー",
+        "external_links": []
+      },
+      {
+        "title": "動くベロ",
+        "external_links": []
+      },
+      {
+        "title": "SYUUU",
+        "external_links": []
+      },
+      {
+        "title": "Henshin",
+        "external_links": []
+      },
+      {
+        "title": "A HAPPY NEW YEAR",
+        "external_links": []
+      },
+      {
+        "title": "悪い夏",
+        "external_links": []
+      },
+      {
+        "title": "_touch",
+        "external_links": []
+      },
+      {
+        "title": "生活PRISM feat. valknee",
+        "external_links": []
+      },
+      {
+        "title": "海へ",
+        "external_links": []
+      },
+      {
+        "title": "ドライブ (album mix)",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/DIARY_KEY",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "umi_part3_2022",
+    "album_title": "海になりたい part.3",
+    "type": "digital",
+    "release_date": "2022-10-12",
+    "note": "デジタルシングル。",
+    "tracks": [
+      {
+        "title": "海になりたい part.3",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "endless_etude_2023",
+    "album_title": "Endless Etude",
+    "type": "digital",
+    "release_date": "2023-06-28",
+    "note": "配信シングル。",
+    "tracks": [
+      {
+        "title": "Endless Etude",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
   },
   {
     "id": "tenshi_2024",
-    "title": "天使だったじゃないか",
-    "year": 2024,
+    "album_title": "天使だったじゃないか",
     "type": "mini",
-    "songs": [
-      "ランドリー",
-      "_FREE_",
-      "Thousands Chords Wonders",
-      "Late Show",
-      "夕日、刺さる部屋",
-      "Power (Pop) of Love"
-    ]
+    "release_date": "2024-02-28",
+    "note": "4thミニアルバム。",
+    "tracks": [
+      {
+        "title": "ランドリー",
+        "external_links": []
+      },
+      {
+        "title": "_FREE_",
+        "external_links": []
+      },
+      {
+        "title": "Thousands Chords Wonders",
+        "external_links": []
+      },
+      {
+        "title": "Late Show",
+        "external_links": []
+      },
+      {
+        "title": "夕日、刺さる部屋",
+        "external_links": []
+      },
+      {
+        "title": "Power (Pop) of Love",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "tobu_tori_2024",
+    "album_title": "tobu_tori_",
+    "type": "digital",
+    "release_date": "2024-12-18",
+    "note": "配信シングル。",
+    "tracks": [
+      {
+        "title": "tobu_tori_",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
+  },
+  {
+    "id": "natsu_no_sabu_2025",
+    "album_title": "夏の細部",
+    "type": "digital",
+    "release_date": "2025-08-06",
+    "note": "配信シングル。",
+    "tracks": [
+      {
+        "title": "夏の細部",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
   },
   {
     "id": "lyrical_2026",
-    "title": "Lyrical Tattoo",
-    "year": 2026,
+    "album_title": "Lyrical Tattoo",
     "type": "mini",
-    "songs": [
-      "Lyrical Tattoo",
-      "caramel dog",
-      "TIME SHIFT GIRL",
-      "Remains",
-      "夏の細部",
-      "BLUE、たる",
-      "(The rise of) Offline Souls"
-    ]
-  },
-  {
-    "id": "singles",
-    "title": "シングル・その他",
-    "year": null,
-    "type": "singles",
-    "songs": [
-      "夕方ジェネレーション",
-      "Boy Meets Girl",
-      "ELECTRIC SUMMER",
-      "真夏の条件",
-      "LOVE MATHEMATICS",
-      "yoakemae",
-      "short hair",
-      "senkou_hanabi",
-      "ドライブ",
-      "PERFECT BLUE",
-      "海になりたい part.3",
-      "初恋",
-      "若者のゆくえ",
-      "君はノンフィクション",
-      "USER UNKNOWN",
-      "メタモルフォーゼ真っ最中",
-      "ヘヴンズドアー・ガールズ",
-      "GIRL FRIEND",
-      "夕日、刺さる部屋",
-      "ポラリス",
-      "PARK",
-      "Flame",
-      "Summer Melt",
-      "Grape Juice",
-      "セプテンバー・ステップス",
-      "EIGHT BEAT詩"
-    ]
+    "release_date": "2026-01-28",
+    "note": "5thミニアルバム。結成25周年・メジャーデビュー20周年イヤー作品。",
+    "tracks": [
+      {
+        "title": "Lyrical Tattoo",
+        "external_links": []
+      },
+      {
+        "title": "caramel dog",
+        "external_links": []
+      },
+      {
+        "title": "TIME SHIFT GIRL",
+        "external_links": []
+      },
+      {
+        "title": "Remains",
+        "external_links": []
+      },
+      {
+        "title": "夏の細部",
+        "external_links": []
+      },
+      {
+        "title": "BLUE、たる",
+        "external_links": []
+      },
+      {
+        "title": "(The rise of) Offline Souls",
+        "external_links": []
+      }
+    ],
+    "source_url": "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+    "source_label": "Wikipedia"
   }
 ]
