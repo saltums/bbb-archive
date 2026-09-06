@@ -161,6 +161,22 @@
                            ]
     },
     {
+        "id":  "3",
+        "date":  "2006-04-12",
+        "date_precision":  "day",
+        "type":  "milestone",
+        "importance":  "major",
+        "title":  "メジャーデビュー『GIRL FRIEND』",
+        "description":  "東芝EMI(Capitol Music)より1stミニ・アルバム『GIRL FRIEND』でメジャーデビュー。",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia「Base Ball Bear」",
+        "embed":  {
+                      "provider":  "spotify",
+                      "kind":  "track",
+                      "id":  "6h0Dyd4lX9tHc5OVljLDk9"
+                  }
+    },
+    {
         "id":  148,
         "date":  "2006-04-12",
         "date_precision":  "day",
@@ -178,20 +194,21 @@
                            ]
     },
     {
-        "id":  "3",
-        "date":  "2006-04-12",
-        "date_precision":  "day",
-        "type":  "milestone",
-        "importance":  "major",
-        "title":  "メジャーデビュー『GIRL FRIEND』",
-        "description":  "東芝EMI(Capitol Music)より1stミニ・アルバム『GIRL FRIEND』でメジャーデビュー。",
-        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」",
-        "embed":  {
-                      "provider":  "spotify",
-                      "kind":  "track",
-                      "id":  "6h0Dyd4lX9tHc5OVljLDk9"
-                  }
+        "source_url":  "https://ja.wikipedia.org/wiki/STAND_BY_ME_(Base_Ball_Bear%E3%81%AE%E6%9B%B2)",
+        "id":  602,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "東京",
+        "tour":  "THE \"GIRL FRIEND\" SHOW",
+        "title":  "THE \"GIRL FRIEND\" SHOW @ 下北沢CLUB Que",
+        "type":  "live",
+        "description":  "メジャーデビュー後初期のライブ「THE \"GIRL FRIEND\" SHOW」。このライブの音源がSTAND BY ME シングルのB面に収録された。",
+        "venue":  "下北沢CLUB Que",
+        "importance":  "normal",
+        "date":  "2006-05-20",
+        "date_precision":  "day"
     },
     {
         "id":  "31",
@@ -309,6 +326,91 @@
                                    "label":  "YouTube Music"
                                }
                            ]
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  580,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "千葉",
+        "tour":  "THE \"STAND BY ME・I・DO\" SHOW",
+        "title":  "THE \"STAND BY ME・I・DO\" SHOW @ 千葉LOOK",
+        "type":  "live",
+        "description":  "初のワンマンツアー「THE \"STAND BY ME・I・DO\" SHOW」千葉公演",
+        "venue":  "千葉LOOK",
+        "importance":  "normal",
+        "date":  "2006-10-20",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  581,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "名古屋",
+        "tour":  "THE \"STAND BY ME・I・DO\" SHOW",
+        "title":  "THE \"STAND BY ME・I・DO\" SHOW @ 名古屋アポロシアター",
+        "type":  "live",
+        "description":  "初のワンマンツアー「THE \"STAND BY ME・I・DO\" SHOW」名古屋公演",
+        "venue":  "名古屋アポロシアター",
+        "importance":  "normal",
+        "date":  "2006-11-10",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  582,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "大阪",
+        "tour":  "THE \"STAND BY ME・I・DO\" SHOW",
+        "title":  "THE \"STAND BY ME・I・DO\" SHOW @ 大阪MUSE",
+        "type":  "live",
+        "description":  "初のワンマンツアー「THE \"STAND BY ME・I・DO\" SHOW」大阪公演",
+        "venue":  "大阪MUSE",
+        "importance":  "normal",
+        "date":  "2006-11-11",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  583,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "福岡",
+        "tour":  "THE \"STAND BY ME・I・DO\" SHOW",
+        "title":  "THE \"STAND BY ME・I・DO\" SHOW @ 福岡DRUM SON",
+        "type":  "live",
+        "description":  "初のワンマンツアー「THE \"STAND BY ME・I・DO\" SHOW」福岡公演",
+        "venue":  "福岡DRUM SON",
+        "importance":  "normal",
+        "date":  "2006-11-17",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  584,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "東京",
+        "tour":  "THE \"STAND BY ME・I・DO\" SHOW",
+        "title":  "THE \"STAND BY ME・I・DO\" SHOW @ 渋谷CLUB QUATTRO（ツアーファイナル）",
+        "type":  "live",
+        "description":  "初のワンマンツアー「THE \"STAND BY ME・I・DO\" SHOW」ツアーファイナル・東京公演",
+        "venue":  "渋谷CLUB QUATTRO",
+        "importance":  "normal",
+        "date":  "2006-11-18",
+        "date_precision":  "day"
     },
     {
         "id":  "4",
@@ -720,6 +822,176 @@
         "date_confidence":  "estimated"
     },
     {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  585,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "横浜",
+        "tour":  "若若男女サマーツアー\u002707",
+        "title":  "若若男女サマーツアー\u002707 @ 横浜BLITZ",
+        "type":  "live",
+        "description":  "chatmonchyとSchnorkelとの合同サマーツアー第2回・横浜公演",
+        "venue":  "横浜BLITZ",
+        "importance":  "normal",
+        "date":  "2007-08-20",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  586,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "名古屋",
+        "tour":  "若若男女サマーツアー\u002707",
+        "title":  "若若男女サマーツアー\u002707 @ 名古屋DIAMOND HALL",
+        "type":  "live",
+        "description":  "chatmonchyとSchnorkelとの合同サマーツアー第2回・名古屋公演",
+        "venue":  "名古屋DIAMOND HALL",
+        "importance":  "normal",
+        "date":  "2007-08-21",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  587,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "東京",
+        "tour":  "若若男女サマーツアー\u002707",
+        "title":  "若若男女サマーツアー\u002707 @ 新木場STUDIO COAST",
+        "type":  "live",
+        "description":  "chatmonchyとSchnorkelとの合同サマーツアー第2回・東京公演",
+        "venue":  "新木場STUDIO COAST",
+        "importance":  "normal",
+        "date":  "2007-08-23",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  588,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "福岡",
+        "tour":  "若若男女サマーツアー\u002707",
+        "title":  "若若男女サマーツアー\u002707 @ 福岡DRUM LOGOS",
+        "type":  "live",
+        "description":  "chatmonchyとSchnorkelとの合同サマーツアー第2回・福岡公演",
+        "venue":  "福岡DRUM LOGOS",
+        "importance":  "normal",
+        "date":  "2007-08-28",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  589,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "大阪",
+        "tour":  "若若男女サマーツアー\u002707",
+        "title":  "若若男女サマーツアー\u002707 @ なんばHatch（ツアーファイナル）",
+        "type":  "live",
+        "description":  "chatmonchyとSchnorkelとの合同サマーツアー第2回ファイナル・大阪公演",
+        "venue":  "なんばHatch",
+        "importance":  "normal",
+        "date":  "2007-08-30",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://rockinon.com/news/detail/979",
+        "id":  590,
+        "external_links":  [
+
+                           ],
+        "source_label":  "rockinon.com",
+        "city":  "金沢",
+        "tour":  "TOUR\u002707「B-POP HIGH SCHOOL TOUR」",
+        "title":  "TOUR\u002707「B-POP HIGH SCHOOL TOUR」@ 金沢AZホール（ツアー初日）",
+        "type":  "live",
+        "description":  "全18公演ツアー「B-POP HIGH SCHOOL TOUR」ツアー初日・金沢公演",
+        "venue":  "金沢AZホール",
+        "importance":  "normal",
+        "date":  "2007-09-18",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  592,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "広島",
+        "tour":  "TOUR\u002707「B-POP HIGH SCHOOL TOUR」",
+        "title":  "TOUR\u002707「B-POP HIGH SCHOOL TOUR」@ 広島NAMIKI JUNCTION",
+        "type":  "live",
+        "description":  "全18公演ツアー「B-POP HIGH SCHOOL TOUR」広島公演",
+        "venue":  "広島NAMIKI JUNCTION",
+        "importance":  "normal",
+        "date":  "2007-10-05",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  593,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "福岡",
+        "tour":  "TOUR\u002707「B-POP HIGH SCHOOL TOUR」",
+        "title":  "TOUR\u002707「B-POP HIGH SCHOOL TOUR」@ 福岡DRUM LOGOS",
+        "type":  "live",
+        "description":  "全18公演ツアー「B-POP HIGH SCHOOL TOUR」福岡公演",
+        "venue":  "福岡DRUM LOGOS",
+        "importance":  "normal",
+        "date":  "2007-10-06",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  601,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "東京",
+        "tour":  "TOUR\u002707「B-POP HIGH SCHOOL TOUR」",
+        "title":  "TOUR\u002707「B-POP HIGH SCHOOL TOUR」@ 渋谷SHIBUYA-AX（1日目）",
+        "type":  "live",
+        "description":  "全18公演ツアー「B-POP HIGH SCHOOL TOUR」ファイナル2DAYS 1日目・渋谷SHIBUYA-AX公演",
+        "venue":  "渋谷SHIBUYA-AX",
+        "importance":  "normal",
+        "date":  "2007-10-23",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://rockinon.com/news/detail/979",
+        "id":  591,
+        "external_links":  [
+
+                           ],
+        "source_label":  "rockinon.com",
+        "city":  "東京",
+        "tour":  "TOUR\u002707「B-POP HIGH SCHOOL TOUR」",
+        "title":  "TOUR\u002707「B-POP HIGH SCHOOL TOUR」@ 渋谷SHIBUYA-AX（ツアーファイナル）",
+        "type":  "live",
+        "description":  "全18公演ツアー「B-POP HIGH SCHOOL TOUR」ツアーファイナル・東京公演（渋谷SHIBUYA-AX 2days目）",
+        "venue":  "渋谷SHIBUYA-AX",
+        "importance":  "normal",
+        "date":  "2007-10-24",
+        "date_precision":  "day"
+    },
+    {
         "id":  "36",
         "date":  "2007-10-31",
         "date_precision":  "day",
@@ -785,6 +1057,57 @@
                            ]
     },
     {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  603,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "広島",
+        "tour":  "\u002708 Spring Tour「17才からやってますツアー」",
+        "title":  "\u002708 Spring Tour「17才からやってますツアー」@ 広島CLUB QUATTRO",
+        "type":  "live",
+        "description":  "全17公演ツアー「17才からやってますツアー」広島公演",
+        "venue":  "広島CLUB QUATTRO",
+        "importance":  "normal",
+        "date":  "2008-03-30",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  604,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "名古屋",
+        "tour":  "\u002708 Spring Tour「17才からやってますツアー」",
+        "title":  "\u002708 Spring Tour「17才からやってますツアー」@ 名古屋DIAMOND HALL",
+        "type":  "live",
+        "description":  "全17公演ツアー「17才からやってますツアー」名古屋公演",
+        "venue":  "名古屋DIAMOND HALL",
+        "importance":  "normal",
+        "date":  "2008-04-09",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://nobu01.livedoor.blog/archives/51251630.html",
+        "id":  600,
+        "external_links":  [
+
+                           ],
+        "source_label":  "ライブレポ",
+        "city":  "東京",
+        "tour":  "\u002708 Spring Tour「17才からやってますツアー」",
+        "title":  "\u002708 Spring Tour「17才からやってますツアー」@ Zepp Tokyo（ツアーファイナル）",
+        "type":  "live",
+        "description":  "全17公演ツアー「17才からやってますツアー」第17公演・ツアーファイナル。約2時間41分、21曲。",
+        "venue":  "Zepp Tokyo",
+        "importance":  "normal",
+        "date":  "2008-04-12",
+        "date_precision":  "day"
+    },
+    {
         "id":  "37",
         "date":  "2008-05-08",
         "date_precision":  "day",
@@ -822,6 +1145,23 @@
         "source_label":  "BARKS「2008年ブレイク最右翼、Base Ball BearがMステ初出演」"
     },
     {
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "id":  598,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "大阪",
+        "tour":  "若若男女サマーツアー\u002708",
+        "title":  "若若男女サマーツアー\u002708 @ Zepp Osaka",
+        "type":  "live",
+        "description":  "chatmonchyとSchnorkelとの合同サマーツアー第3回（最終回）・大阪公演",
+        "venue":  "Zepp Osaka",
+        "importance":  "normal",
+        "date":  "2008-07-14",
+        "date_precision":  "month"
+    },
+    {
         "id":  "128",
         "date":  "2008-07-16",
         "date_precision":  "day",
@@ -831,6 +1171,23 @@
         "description":  "チャットモンチー・シュノーケルとの合同夏ツアー3年目のJCB HALLファイナル。各バンドが互いの楽曲をカバーする企画や、全員参加のm-flo「Summer Time Love」セッションが話題に。",
         "source_url":  "https://rockinon.com/live/detail/4517",
         "source_label":  "rockinon.com「若若男女サマーツアー\u002708 @ JCB HALL 2008.07.16」"
+    },
+    {
+        "source_url":  "https://rockinon.com/live/detail/4517",
+        "id":  599,
+        "external_links":  [
+
+                           ],
+        "source_label":  "rockinon.com",
+        "city":  "札幌",
+        "tour":  "若若男女サマーツアー\u002708",
+        "title":  "若若男女サマーツアー\u002708 @ Zepp Sapporo",
+        "type":  "live",
+        "description":  "chatmonchyとSchnorkelとの合同サマーツアー第3回（最終回）・札幌公演",
+        "venue":  "Zepp Sapporo",
+        "importance":  "normal",
+        "date":  "2008-07-17",
+        "date_precision":  "month"
     },
     {
         "id":  "84",
@@ -881,6 +1238,74 @@
         "city":  "東京"
     },
     {
+        "source_url":  "https://rockinon.com/live/detail/6420",
+        "id":  594,
+        "external_links":  [
+
+                           ],
+        "source_label":  "rockinon.com",
+        "city":  "東京",
+        "tour":  null,
+        "title":  "渋谷C.C.Lemonホール 2Days 2日目『一日，一日「僕らの２日間演奏」』",
+        "type":  "live",
+        "description":  "『一日，一日「僕らの２日間演奏」』2日目。翌年の武道館公演へ向けた重要公演。",
+        "venue":  "渋谷C.C.Lemonホール",
+        "importance":  "normal",
+        "date":  "2008-09-20",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://tower.jp/article/news/2008/08/21/100014879",
+        "id":  595,
+        "external_links":  [
+
+                           ],
+        "source_label":  "TOWER RECORDS",
+        "city":  "北海道",
+        "tour":  "「学園祭からやってますツアー」",
+        "title":  "「学園祭からやってますツアー」@ 北海道薬科大学（北薬祭）",
+        "type":  "live",
+        "description":  "バンド結成のルーツである学園祭に戻る「学園祭からやってますツアー」北海道公演",
+        "venue":  "北海道薬科大学",
+        "importance":  "normal",
+        "date":  "2008-10-12",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://tower.jp/article/news/2008/08/21/100014879",
+        "id":  596,
+        "external_links":  [
+
+                           ],
+        "source_label":  "TOWER RECORDS",
+        "city":  "東京",
+        "tour":  "「学園祭からやってますツアー」",
+        "title":  "「学園祭からやってますツアー」@ 高千穂大学（高千穂祭）",
+        "type":  "live",
+        "description":  "バンド結成のルーツである学園祭に戻る「学園祭からやってますツアー」東京公演",
+        "venue":  "高千穂大学",
+        "importance":  "normal",
+        "date":  "2008-10-18",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://tower.jp/article/news/2008/08/21/100014879",
+        "id":  597,
+        "external_links":  [
+
+                           ],
+        "source_label":  "TOWER RECORDS",
+        "city":  "倉敷",
+        "tour":  "「学園祭からやってますツアー」",
+        "title":  "「学園祭からやってますツアー」@ 倉敷芸術科学大学（芸科祭）",
+        "type":  "live",
+        "description":  "バンド結成のルーツである学園祭に戻る「学園祭からやってますツアー」岡山公演",
+        "venue":  "倉敷芸術科学大学",
+        "importance":  "normal",
+        "date":  "2008-10-25",
+        "date_precision":  "day"
+    },
+    {
         "id":  "39",
         "date":  "2009-01-07",
         "date_precision":  "day",
@@ -902,23 +1327,6 @@
                            ]
     },
     {
-        "id":  "86",
-        "date":  "2009-03-05",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "minor",
-        "title":  "ツアー『LIVE MATHEMATICS TOUR 09』(全32公演)",
-        "description":  "バンド史上最長となる32箇所32公演(2009年3月5日〜5月23日)。3/5千葉LOOK→3/6横浜BAYSIS→3/11静岡Sunash→3/14京都磔磔→3/15神戸VARIT→3/17高知X-Pt→3/18松山SALONKITY→3/20大分T.O.P.S→3/22鹿児島CAPARVO HALL→3/24熊本Be-9→3/26長崎Be-7→3/28周南TIKI-TA→3/31高松DIME→4/1徳島JITTERBUG→4/3岡山CRAZYMAMA KINGDOM→4/5浜松窓枠→4/12三重CLUB CHAOS→4/14奈良NEVER LAND→4/15滋賀U★STONE→4/17富山Soul Power→4/19新潟LOTS→4/25宇都宮HEAVEN\u0027S ROCK→4/26高崎CLUB FLEEZ→4/29郡山HIP SHOT Japan→4/30水戸LIGHT HOUSE→5/7甲府KAZOO HALL→5/9金沢EIGHT HALL→5/10長野LIVE HOUSE J→5/15青森QUARTER→5/16秋田Club SWINDLE→5/17盛岡CLUB Change WAVE→5/23広島CLUB QUATTRO",
-        "source_url":  "https://www.barks.jp/news/?id=1000042469",
-        "source_label":  "BARKS「Base Ball Bearのツアーにゲスト・アーティスト4組決定」",
-        "external_links":  [
-                               {
-                                   "label":  "LiveFansでセットリストを探す",
-                                   "url":  "https://www.livefans.jp/artists/3066"
-                               }
-                           ]
-    },
-    {
         "id":  203,
         "date":  "2009-03-05",
         "date_precision":  "day",
@@ -933,6 +1341,23 @@
         "source_label":  "BARKS",
         "external_links":  [
 
+                           ]
+    },
+    {
+        "id":  "86",
+        "date":  "2009-03-05",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "ツアー『LIVE MATHEMATICS TOUR 09』(全32公演)",
+        "description":  "バンド史上最長となる32箇所32公演(2009年3月5日〜5月23日)。3/5千葉LOOK→3/6横浜BAYSIS→3/11静岡Sunash→3/14京都磔磔→3/15神戸VARIT→3/17高知X-Pt→3/18松山SALONKITY→3/20大分T.O.P.S→3/22鹿児島CAPARVO HALL→3/24熊本Be-9→3/26長崎Be-7→3/28周南TIKI-TA→3/31高松DIME→4/1徳島JITTERBUG→4/3岡山CRAZYMAMA KINGDOM→4/5浜松窓枠→4/12三重CLUB CHAOS→4/14奈良NEVER LAND→4/15滋賀U★STONE→4/17富山Soul Power→4/19新潟LOTS→4/25宇都宮HEAVEN\u0027S ROCK→4/26高崎CLUB FLEEZ→4/29郡山HIP SHOT Japan→4/30水戸LIGHT HOUSE→5/7甲府KAZOO HALL→5/9金沢EIGHT HALL→5/10長野LIVE HOUSE J→5/15青森QUARTER→5/16秋田Club SWINDLE→5/17盛岡CLUB Change WAVE→5/23広島CLUB QUATTRO",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS「Base Ball Bearのツアーにゲスト・アーティスト4組決定」",
+        "external_links":  [
+                               {
+                                   "label":  "LiveFansでセットリストを探す",
+                                   "url":  "https://www.livefans.jp/artists/3066"
+                               }
                            ]
     },
     {
@@ -1896,6 +2321,23 @@
                            ]
     },
     {
+        "id":  "30",
+        "date":  "2010-09-29",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "major",
+        "title":  "3.5thアルバム『CYPRESS GIRLS』",
+        "description":  "初のセルフプロデュース・コンセプトアルバム。同日発売の『DETECTIVE BOYS』と対をなす作品。小出祐介いわく「これまでの音源では説明できなかった部分」を見せるための2作。チャットモンチーのAcco、サカナクションの山口一郎、iLL、Ryohuら豪華ゲストが参加。",
+        "source_url":  "https://ja.wikipedia.org/wiki/CYPRESS_GIRLS",
+        "source_label":  "Wikipedia「CYPRESS GIRLS」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20CYPRESS%20GIRLS",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
+    },
+    {
         "id":  "61",
         "date":  "2010-09-29",
         "date_precision":  "day",
@@ -1913,19 +2355,19 @@
                            ]
     },
     {
-        "id":  "30",
-        "date":  "2010-09-29",
+        "id":  "140",
+        "date":  "2010-10-22",
         "date_precision":  "day",
-        "type":  "release",
-        "importance":  "major",
-        "title":  "3.5thアルバム『CYPRESS GIRLS』",
-        "description":  "初のセルフプロデュース・コンセプトアルバム。同日発売の『DETECTIVE BOYS』と対をなす作品。小出祐介いわく「これまでの音源では説明できなかった部分」を見せるための2作。チャットモンチーのAcco、サカナクションの山口一郎、iLL、Ryohuら豪華ゲストが参加。",
-        "source_url":  "https://ja.wikipedia.org/wiki/CYPRESS_GIRLS",
-        "source_label":  "Wikipedia「CYPRESS GIRLS」",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "ツアー『(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演)",
+        "description":  "3.5thアルバム『CYPRESS GIRLS』『DETECTIVE BOYS』(2010/9/29同時発売)のリリースツアー。10/22福岡DRUM LOGOS→10/23山口・周南TIKI-TA→10/26神戸VARIT→10/28〜10/29大阪・梅田AKASO(2Days)→11/2福島・郡山Hip Shot Japan→11/3仙台darwin→11/8京都磔磔(追加公演)→11/10〜11/11名古屋CLUB QUATTRO(2Days)→11/13福井CHOP→11/14富山SOUL POWER→11/16恵比寿LIQUIDROOM(追加公演)→11/19新木場STUDIO COAST(ファイナル)。",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "Base Ball Bear公式サイト「TOUR 2010」",
         "external_links":  [
                                {
-                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20CYPRESS%20GIRLS",
-                                   "label":  "YouTube Music"
+                                   "label":  "LiveFansでセットリストを探す",
+                                   "url":  "https://www.livefans.jp/artists/3066"
                                }
                            ]
     },
@@ -1944,23 +2386,6 @@
         "source_label":  "公式サイト",
         "external_links":  [
 
-                           ]
-    },
-    {
-        "id":  "140",
-        "date":  "2010-10-22",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "minor",
-        "title":  "ツアー『(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演)",
-        "description":  "3.5thアルバム『CYPRESS GIRLS』『DETECTIVE BOYS』(2010/9/29同時発売)のリリースツアー。10/22福岡DRUM LOGOS→10/23山口・周南TIKI-TA→10/26神戸VARIT→10/28〜10/29大阪・梅田AKASO(2Days)→11/2福島・郡山Hip Shot Japan→11/3仙台darwin→11/8京都磔磔(追加公演)→11/10〜11/11名古屋CLUB QUATTRO(2Days)→11/13福井CHOP→11/14富山SOUL POWER→11/16恵比寿LIQUIDROOM(追加公演)→11/19新木場STUDIO COAST(ファイナル)。",
-        "source_url":  "https://www.baseballbear.com/tour_10.html",
-        "source_label":  "Base Ball Bear公式サイト「TOUR 2010」",
-        "external_links":  [
-                               {
-                                   "label":  "LiveFansでセットリストを探す",
-                                   "url":  "https://www.livefans.jp/artists/3066"
-                               }
                            ]
     },
     {
@@ -2203,23 +2628,6 @@
         "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』"
     },
     {
-        "id":  515,
-        "date":  "2011-04-07",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』 @ 清水JAMJAMJAM（静岡・清水）",
-        "description":  "『Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』』(全32公演) のツアー初日 — 清水JAMJAMJAM（元々3/17下北沢GARAGE予定だったが震災のため延期し改めてツアー初日として開催）",
-        "venue":  "清水JAMJAMJAM",
-        "city":  "清水（静岡）",
-        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
-        "source_url":  "https://rockinon.com/news/detail/53610",
-        "source_label":  "rockinon.com「SAYONARA-NOSTALGIA TOURのSHIBUYA-AX公演ライブ配信告知」",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  156,
         "date":  "2011-04-07",
         "date_precision":  "day",
@@ -2234,6 +2642,23 @@
                                    "url":  "https://music.youtube.com/search?q=Base+Ball+Bear+yoakemae-no-yoakemae",
                                    "label":  "YouTube Music"
                                }
+                           ]
+    },
+    {
+        "id":  515,
+        "date":  "2011-04-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』 @ 清水JAMJAMJAM（静岡・清水）",
+        "description":  "『Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』』(全32公演) のツアー初日 — 清水JAMJAMJAM（元々3/17下北沢GARAGE予定だったが震災のため延期し改めてツアー初日として開催）",
+        "venue":  "清水JAMJAMJAM",
+        "city":  "清水（静岡）",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "source_url":  "https://rockinon.com/news/detail/53610",
+        "source_label":  "rockinon.com「SAYONARA-NOSTALGIA TOURのSHIBUYA-AX公演ライブ配信告知」",
+        "external_links":  [
+
                            ]
     },
     {
@@ -2813,23 +3238,6 @@
                            ]
     },
     {
-        "id":  532,
-        "date":  "2011-10-01",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "Tabibito In The Dark TOUR @ 青森Quarter",
-        "description":  "Tabibito In The Dark TOUR（東北ツアー）",
-        "venue":  "青森Quarter",
-        "city":  "青森",
-        "tour":  "Tabibito In The Dark TOUR",
-        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "143",
         "date":  "2011-10-01",
         "date_precision":  "day",
@@ -2844,6 +3252,23 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
+                           ]
+    },
+    {
+        "id":  532,
+        "date":  "2011-10-01",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tabibito In The Dark TOUR @ 青森Quarter",
+        "description":  "Tabibito In The Dark TOUR（東北ツアー）",
+        "venue":  "青森Quarter",
+        "city":  "青森",
+        "tour":  "Tabibito In The Dark TOUR",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia",
+        "external_links":  [
+
                            ]
     },
     {
@@ -3663,23 +4088,6 @@
                            ]
     },
     {
-        "id":  392,
-        "date":  "2013-04-04",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "バンドBのゆくえツアー @ なんばHatch（大阪）",
-        "description":  "『バンドBのゆくえツアー』(全8公演) — なんばHatch",
-        "venue":  "なんばHatch",
-        "city":  "大阪",
-        "tour":  "バンドBのゆくえツアー",
-        "source_url":  "https://www.universal-music.co.jp/base-ball-bear/news/2013-01-08-02/",
-        "source_label":  "Universal Music Japan",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "91",
         "date":  "2013-04-04",
         "date_precision":  "day",
@@ -3696,6 +4104,23 @@
                                }
                            ],
         "tour":  "バンドBのゆくえツアー"
+    },
+    {
+        "id":  392,
+        "date":  "2013-04-04",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのゆくえツアー @ なんばHatch（大阪）",
+        "description":  "『バンドBのゆくえツアー』(全8公演) — なんばHatch",
+        "venue":  "なんばHatch",
+        "city":  "大阪",
+        "tour":  "バンドBのゆくえツアー",
+        "source_url":  "https://www.universal-music.co.jp/base-ball-bear/news/2013-01-08-02/",
+        "source_label":  "Universal Music Japan",
+        "external_links":  [
+
+                           ]
     },
     {
         "id":  393,
@@ -4003,20 +4428,6 @@
                            ]
     },
     {
-        "id":  146,
-        "date":  "2014-06-04",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "minor",
-        "title":  "「二十九歳」発売記念 ニコニコ生放送「ベボベオビデマンド」5夜連続出演",
-        "description":  "6/4〜6/8の5夜連続でニコニコ生放送に出演。「ベボベオビデマンド」と銘打たれた発売週スペシャル企画。プレミアム限定コーナーも設けられた。6/5(木)は西川貴教のコラボ番組「西川貴教のイエノミ!!」にも出演。",
-        "source_url":  "https://ja.wikipedia.org/wiki/%E4%BA%8C%E5%8D%81%E4%B9%9D%E6%AD%B3",
-        "source_label":  "Wikipedia",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "11",
         "date":  "2014-06-04",
         "date_precision":  "day",
@@ -4040,6 +4451,20 @@
                                    "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E4%BA%8C%E5%8D%81%E4%B9%9D%E6%AD%B3",
                                    "label":  "YouTube Music"
                                }
+                           ]
+    },
+    {
+        "id":  146,
+        "date":  "2014-06-04",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "「二十九歳」発売記念 ニコニコ生放送「ベボベオビデマンド」5夜連続出演",
+        "description":  "6/4〜6/8の5夜連続でニコニコ生放送に出演。「ベボベオビデマンド」と銘打たれた発売週スペシャル企画。プレミアム限定コーナーも設けられた。6/5(木)は西川貴教のコラボ番組「西川貴教のイエノミ!!」にも出演。",
+        "source_url":  "https://ja.wikipedia.org/wiki/%E4%BA%8C%E5%8D%81%E4%B9%9D%E6%AD%B3",
+        "source_label":  "Wikipedia",
+        "external_links":  [
+
                            ]
     },
     {
@@ -4477,23 +4902,6 @@
                            ]
     },
     {
-        "id":  452,
-        "date":  "2015-03-07",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "ツアー『Base Ball Bear Tour「二十九歳＋一」』開幕(全15公演)",
-        "description":  "二十九歳ツアーで回れなかった地域を巡る追加ツアー 全15公演",
-        "venue":  null,
-        "city":  null,
-        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
-        "source_url":  "https://natalie.mu/music/news/132515",
-        "source_label":  "音楽ナタリー",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  437,
         "date":  "2015-03-07",
         "date_precision":  "day",
@@ -4503,6 +4911,23 @@
         "description":  "『Base Ball Bear Tour「二十九歳＋一」』(全15公演) — Club SWINDLE",
         "venue":  "Club SWINDLE",
         "city":  "秋田",
+        "tour":  "Base Ball Bear Tour「二十九歳＋一」",
+        "source_url":  "https://natalie.mu/music/news/132515",
+        "source_label":  "音楽ナタリー",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  452,
+        "date":  "2015-03-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "ツアー『Base Ball Bear Tour「二十九歳＋一」』開幕(全15公演)",
+        "description":  "二十九歳ツアーで回れなかった地域を巡る追加ツアー 全15公演",
+        "venue":  null,
+        "city":  null,
         "tour":  "Base Ball Bear Tour「二十九歳＋一」",
         "source_url":  "https://natalie.mu/music/news/132515",
         "source_label":  "音楽ナタリー",
@@ -5322,23 +5747,6 @@
         "source_label":  "ORICON NEWS「Base Ball Bearギター湯浅将平が脱退 2月中旬から直接連絡つかず」"
     },
     {
-        "id":  482,
-        "date":  "2016-03-05",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "LIVE BY THE C2 @ 仙台darwin（仙台）",
-        "description":  "『LIVE BY THE C2』(全8公演) — 仙台darwin",
-        "venue":  "仙台darwin",
-        "city":  "仙台",
-        "tour":  "LIVE BY THE C2",
-        "source_url":  "https://ja.wikipedia.org/wiki/C2_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
-        "source_label":  "C2 - Wikipedia",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "98",
         "date":  "2016-03-05",
         "date_precision":  "day",
@@ -5353,6 +5761,23 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/groups/76580"
                                }
+                           ]
+    },
+    {
+        "id":  482,
+        "date":  "2016-03-05",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE BY THE C2 @ 仙台darwin（仙台）",
+        "description":  "『LIVE BY THE C2』(全8公演) — 仙台darwin",
+        "venue":  "仙台darwin",
+        "city":  "仙台",
+        "tour":  "LIVE BY THE C2",
+        "source_url":  "https://ja.wikipedia.org/wiki/C2_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+        "source_label":  "C2 - Wikipedia",
+        "external_links":  [
+
                            ]
     },
     {
@@ -5507,23 +5932,6 @@
                            ]
     },
     {
-        "id":  264,
-        "date":  "2016-11-11",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "バンドBのすべて @ 下北沢GARAGE（東京）",
-        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 下北沢GARAGE",
-        "venue":  "下北沢GARAGE",
-        "city":  "東京",
-        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
-        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
-        "source_label":  "SKREAM!",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "99",
         "date":  "2016-11-11",
         "date_precision":  "day",
@@ -5538,6 +5946,23 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
+                           ]
+    },
+    {
+        "id":  264,
+        "date":  "2016-11-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "バンドBのすべて @ 下北沢GARAGE（東京）",
+        "description":  "『Base Ball Bear Tour「バンドBのすべて 2016-2017」』(全36公演) — 下北沢GARAGE",
+        "venue":  "下北沢GARAGE",
+        "city":  "東京",
+        "tour":  "Base Ball Bear Tour「バンドBのすべて 2016-2017」",
+        "source_url":  "https://skream.jp/news/2016/07/bbb_band-b-tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
                            ]
     },
     {
@@ -6727,23 +7152,6 @@
         "date_confidence":  "estimated"
     },
     {
-        "id":  355,
-        "date":  "2018-05-18",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "LIVE IN LIVE (3人体制) @ 名古屋CLUB QUATTRO（名古屋）",
-        "description":  "Base Ball Bear Tour『LIVE IN LIVE』(全8公演、3人体制) — 名古屋CLUB QUATTRO",
-        "venue":  "名古屋CLUB QUATTRO",
-        "city":  "名古屋",
-        "tour":  "Base Ball Bear Tour「LIVE IN LIVE」",
-        "source_url":  "https://www.baseballbear.com/special/liveinlive/",
-        "source_label":  "公式サイト",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "110",
         "date":  "2018-05-18",
         "date_precision":  "day",
@@ -6760,6 +7168,23 @@
                                }
                            ],
         "tour":  "Base Ball Bear Tour「LIVE IN LIVE」"
+    },
+    {
+        "id":  355,
+        "date":  "2018-05-18",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE (3人体制) @ 名古屋CLUB QUATTRO（名古屋）",
+        "description":  "Base Ball Bear Tour『LIVE IN LIVE』(全8公演、3人体制) — 名古屋CLUB QUATTRO",
+        "venue":  "名古屋CLUB QUATTRO",
+        "city":  "名古屋",
+        "tour":  "Base Ball Bear Tour「LIVE IN LIVE」",
+        "source_url":  "https://www.baseballbear.com/special/liveinlive/",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
     },
     {
         "id":  356,
@@ -7346,6 +7771,23 @@
         "source_label":  "ROCK IN JAPAN FESTIVAL 出演歴"
     },
     {
+        "id":  "58",
+        "date":  "2019-09-15",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "major",
+        "title":  "2nd EP『Grape』",
+        "description":  "",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia「Base Ball Bear」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20Grape%20EP",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
+    },
+    {
         "id":  "59",
         "date":  "2019-09-15",
         "date_precision":  "day",
@@ -7364,23 +7806,6 @@
         "venue":  "日比谷野外大音楽堂",
         "city":  "東京",
         "tour":  "Guitar！Drum！Bass！Tour (2019)"
-    },
-    {
-        "id":  "58",
-        "date":  "2019-09-15",
-        "date_precision":  "day",
-        "type":  "release",
-        "importance":  "major",
-        "title":  "2nd EP『Grape』",
-        "description":  "",
-        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」",
-        "external_links":  [
-                               {
-                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20Grape%20EP",
-                                   "label":  "YouTube Music"
-                               }
-                           ]
     },
     {
         "id":  466,
@@ -7923,23 +8348,6 @@
                            ]
     },
     {
-        "id":  346,
-        "date":  "2021-11-11",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "DIARY KEY Tour @ 中野サンプラザ（東京）",
-        "description":  "Base Ball Bear TOUR『DIARY KEY』(全9公演) — 中野サンプラザ",
-        "venue":  "中野サンプラザ",
-        "city":  "東京",
-        "tour":  "Base Ball Bear TOUR「DIARY KEY」",
-        "source_url":  "https://skream.jp/news/2021/09/base_ball_bear_diary_key_tour.php",
-        "source_label":  "SKREAM!",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "102",
         "date":  "2021-11-11",
         "date_precision":  "day",
@@ -7956,6 +8364,23 @@
                                }
                            ],
         "tour":  "Base Ball Bear TOUR「DIARY KEY」"
+    },
+    {
+        "id":  346,
+        "date":  "2021-11-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "DIARY KEY Tour @ 中野サンプラザ（東京）",
+        "description":  "Base Ball Bear TOUR『DIARY KEY』(全9公演) — 中野サンプラザ",
+        "venue":  "中野サンプラザ",
+        "city":  "東京",
+        "tour":  "Base Ball Bear TOUR「DIARY KEY」",
+        "source_url":  "https://skream.jp/news/2021/09/base_ball_bear_diary_key_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
     },
     {
         "id":  347,
@@ -8094,6 +8519,23 @@
                            ]
     },
     {
+        "id":  383,
+        "date":  "2022-02-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE〜I HUB YOU (Take) 2〜 @ Zepp Nagoya（名古屋）",
+        "description":  "対バンツアー(2022) — with the telephones",
+        "venue":  "Zepp Nagoya",
+        "city":  "名古屋",
+        "tour":  "LIVE IN LIVE〜I HUB YOU (Take) 2〜",
+        "source_url":  "https://skream.jp/news/2022/01/base_ball_bear_live_in_live_i_hub_you_take_2.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
         "id":  "76",
         "date":  "2022-02-15",
         "date_precision":  "day",
@@ -8110,23 +8552,6 @@
                                }
                            ],
         "tour":  "LIVE IN LIVE〜I HUB YOU (Take) 2〜"
-    },
-    {
-        "id":  383,
-        "date":  "2022-02-15",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "LIVE IN LIVE〜I HUB YOU (Take) 2〜 @ Zepp Nagoya（名古屋）",
-        "description":  "対バンツアー(2022) — with the telephones",
-        "venue":  "Zepp Nagoya",
-        "city":  "名古屋",
-        "tour":  "LIVE IN LIVE〜I HUB YOU (Take) 2〜",
-        "source_url":  "https://skream.jp/news/2022/01/base_ball_bear_live_in_live_i_hub_you_take_2.php",
-        "source_label":  "SKREAM!",
-        "external_links":  [
-
-                           ]
     },
     {
         "id":  194,
@@ -8246,23 +8671,6 @@
                            ]
     },
     {
-        "id":  386,
-        "date":  "2022-08-24",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "LIVE IN LIVE〜I HUB YOU 3〜 @ Zepp Fukuoka（福岡）",
-        "description":  "対バンツアー(2022年8月) — with フレデリック",
-        "venue":  "Zepp Fukuoka",
-        "city":  "福岡",
-        "tour":  "LIVE IN LIVE〜I HUB YOU 3〜",
-        "source_url":  "https://skream.jp/news/2022/06/base_ball_bear_live_in_live_i_hub_you_3.php",
-        "source_label":  "SKREAM!",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  196,
         "date":  "2022-08-24",
         "date_precision":  "day",
@@ -8275,6 +8683,23 @@
         "tour":  "",
         "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
         "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  386,
+        "date":  "2022-08-24",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE〜I HUB YOU 3〜 @ Zepp Fukuoka（福岡）",
+        "description":  "対バンツアー(2022年8月) — with フレデリック",
+        "venue":  "Zepp Fukuoka",
+        "city":  "福岡",
+        "tour":  "LIVE IN LIVE〜I HUB YOU 3〜",
+        "source_url":  "https://skream.jp/news/2022/06/base_ball_bear_live_in_live_i_hub_you_3.php",
+        "source_label":  "SKREAM!",
         "external_links":  [
 
                            ]
@@ -8759,6 +9184,23 @@
                            ]
     },
     {
+        "id":  329,
+        "date":  "2024-03-06",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "天使だったじゃないか TOUR @ 千葉LOOK（千葉）",
+        "description":  "『天使だったじゃないか』TOUR(全17公演) — 千葉LOOK",
+        "venue":  "千葉LOOK",
+        "city":  "千葉",
+        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
+        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
         "id":  "79",
         "date":  "2024-03-06",
         "date_precision":  "day",
@@ -8775,23 +9217,6 @@
                                }
                            ],
         "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR"
-    },
-    {
-        "id":  329,
-        "date":  "2024-03-06",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "天使だったじゃないか TOUR @ 千葉LOOK（千葉）",
-        "description":  "『天使だったじゃないか』TOUR(全17公演) — 千葉LOOK",
-        "venue":  "千葉LOOK",
-        "city":  "千葉",
-        "tour":  "Base Ball Bear 『天使だったじゃないか』TOUR",
-        "source_url":  "https://skream.jp/news/2024/01/base_ball_bear_mini_album.php",
-        "source_label":  "SKREAM!",
-        "external_links":  [
-
-                           ]
     },
     {
         "id":  330,
@@ -9188,23 +9613,6 @@
                            ]
     },
     {
-        "id":  390,
-        "date":  "2025-05-22",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "LIVE IN LIVE ～C2 to C3～ @ 渋谷CLUB QUATTRO（東京）",
-        "description":  "C2リリース10周年特別企画 — 渋谷CLUB QUATTRO",
-        "venue":  "渋谷CLUB QUATTRO",
-        "city":  "東京",
-        "tour":  "LIVE IN LIVE ～C2 to C3～",
-        "source_url":  "https://skream.jp/news/2025/03/base_ball_bear_live_in_live_c2_to_c3.php",
-        "source_label":  "SKREAM!",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "116",
         "date":  "2025-05-22",
         "date_precision":  "day",
@@ -9221,6 +9629,23 @@
                                }
                            ],
         "tour":  "LIVE IN LIVE ～C2 to C3～"
+    },
+    {
+        "id":  390,
+        "date":  "2025-05-22",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE ～C2 to C3～ @ 渋谷CLUB QUATTRO（東京）",
+        "description":  "C2リリース10周年特別企画 — 渋谷CLUB QUATTRO",
+        "venue":  "渋谷CLUB QUATTRO",
+        "city":  "東京",
+        "tour":  "LIVE IN LIVE ～C2 to C3～",
+        "source_url":  "https://skream.jp/news/2025/03/base_ball_bear_live_in_live_c2_to_c3.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
     },
     {
         "id":  391,
@@ -9727,5 +10152,209 @@
         "description":  "EX THEATER ROPPONGI(東京)。TenTwenty、山内総一郎(フジファブリック)との3マンイベント。16:00開場/17:00開演。",
         "source_url":  "https://www.sma.co.jp/s/sma/news/detail/114052",
         "source_label":  "Sony Music Artists「ロックアンセム2026 EX出演決定」"
+    },
+    {
+        "source_url":  "https://www.cdjournal.com/news/base-ball-bear/18357",
+        "id":  613,
+        "external_links":  [
+
+                           ],
+        "source_label":  "CDJournal",
+        "city":  "鹿児島",
+        "tour":  "\u002708 Spring Tour「17才からやってますツアー」",
+        "title":  "\u002708 Spring Tour「17才からやってますツアー」@ 鹿児島CAPARVO HALL",
+        "type":  "live",
+        "description":  "「17才からやってますツアー」鹿児島公演",
+        "venue":  "鹿児島CAPARVO HALL",
+        "importance":  "normal",
+        "date":  "2008-04-04",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://www.cdjournal.com/news/base-ball-bear/18357",
+        "id":  612,
+        "external_links":  [
+
+                           ],
+        "source_label":  "CDJournal",
+        "city":  "高松",
+        "tour":  "\u002708 Spring Tour「17才からやってますツアー」",
+        "title":  "\u002708 Spring Tour「17才からやってますツアー」@ 高松DIME",
+        "type":  "live",
+        "description":  "「17才からやってますツアー」高松公演",
+        "venue":  "高松DIME",
+        "importance":  "normal",
+        "date":  "2008-04-02",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://www.cdjournal.com/news/base-ball-bear/18357",
+        "id":  611,
+        "external_links":  [
+
+                           ],
+        "source_label":  "CDJournal",
+        "city":  "水戸",
+        "tour":  "\u002708 Spring Tour「17才からやってますツアー」",
+        "title":  "\u002708 Spring Tour「17才からやってますツアー」@ 水戸LIGHT HOUSE",
+        "type":  "live",
+        "description":  "「17才からやってますツアー」水戸公演",
+        "venue":  "水戸LIGHT HOUSE",
+        "importance":  "normal",
+        "date":  "2008-03-28",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://www.cdjournal.com/news/base-ball-bear/18357",
+        "id":  616,
+        "external_links":  [
+
+                           ],
+        "source_label":  "CDJournal",
+        "city":  "大阪",
+        "tour":  "\u002708 Spring Tour「17才からやってますツアー」",
+        "title":  "\u002708 Spring Tour「17才からやってますツアー」@ なんばHatch（大阪）",
+        "type":  "live",
+        "description":  "「17才からやってますツアー」大阪公演",
+        "venue":  "なんばHatch",
+        "importance":  "normal",
+        "date":  "2008-04-11",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://www.cdjournal.com/news/base-ball-bear/18357",
+        "id":  615,
+        "external_links":  [
+
+                           ],
+        "source_label":  "CDJournal",
+        "city":  "静岡",
+        "tour":  "\u002708 Spring Tour「17才からやってますツアー」",
+        "title":  "\u002708 Spring Tour「17才からやってますツアー」@ 静岡Sunash",
+        "type":  "live",
+        "description":  "「17才からやってますツアー」静岡公演",
+        "venue":  "静岡Sunash",
+        "importance":  "normal",
+        "date":  "2008-04-08",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://www.cdjournal.com/news/base-ball-bear/18357",
+        "id":  614,
+        "external_links":  [
+
+                           ],
+        "source_label":  "CDJournal",
+        "city":  "福岡",
+        "tour":  "\u002708 Spring Tour「17才からやってますツアー」",
+        "title":  "\u002708 Spring Tour「17才からやってますツアー」@ 福岡DRUM LOGOS",
+        "type":  "live",
+        "description":  "「17才からやってますツアー」福岡公演",
+        "venue":  "福岡DRUM LOGOS",
+        "importance":  "normal",
+        "date":  "2008-04-06",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://www.cdjournal.com/news/base-ball-bear/18357",
+        "id":  607,
+        "external_links":  [
+
+                           ],
+        "source_label":  "CDJournal",
+        "city":  "金沢",
+        "tour":  "\u002708 Spring Tour「17才からやってますツアー」",
+        "title":  "\u002708 Spring Tour「17才からやってますツアー」@ 金沢EIGHT HALL",
+        "type":  "live",
+        "description":  "「17才からやってますツアー」金沢公演",
+        "venue":  "金沢EIGHT HALL",
+        "importance":  "normal",
+        "date":  "2008-03-22",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://www.cdjournal.com/news/base-ball-bear/18357",
+        "id":  606,
+        "external_links":  [
+
+                           ],
+        "source_label":  "CDJournal",
+        "city":  "青森",
+        "tour":  "\u002708 Spring Tour「17才からやってますツアー」",
+        "title":  "\u002708 Spring Tour「17才からやってますツアー」@ 青森QUARTER",
+        "type":  "live",
+        "description":  "「17才からやってますツアー」青森公演",
+        "venue":  "青森QUARTER",
+        "importance":  "normal",
+        "date":  "2008-03-20",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://www.cdjournal.com/news/base-ball-bear/18357",
+        "id":  605,
+        "external_links":  [
+
+                           ],
+        "source_label":  "CDJournal",
+        "city":  "仙台",
+        "tour":  "\u002708 Spring Tour「17才からやってますツアー」",
+        "title":  "\u002708 Spring Tour「17才からやってますツアー」@ 仙台CLUB JUNK BOX（ツアー初日）",
+        "type":  "live",
+        "description":  "全ツアー「17才からやってますツアー」仙台公演・ツアー初日",
+        "venue":  "仙台CLUB JUNK BOX",
+        "importance":  "normal",
+        "date":  "2008-03-16",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://www.cdjournal.com/news/base-ball-bear/18357",
+        "id":  610,
+        "external_links":  [
+
+                           ],
+        "source_label":  "CDJournal",
+        "city":  "宇都宮",
+        "tour":  "\u002708 Spring Tour「17才からやってますツアー」",
+        "title":  "\u002708 Spring Tour「17才からやってますツアー」@ 宇都宮HEAVEN\u0027S ROCK",
+        "type":  "live",
+        "description":  "「17才からやってますツアー」宇都宮公演",
+        "venue":  "宇都宮HEAVEN\u0027S ROCK",
+        "importance":  "normal",
+        "date":  "2008-03-27",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://www.cdjournal.com/news/base-ball-bear/18357",
+        "id":  609,
+        "external_links":  [
+
+                           ],
+        "source_label":  "CDJournal",
+        "city":  "高崎",
+        "tour":  "\u002708 Spring Tour「17才からやってますツアー」",
+        "title":  "\u002708 Spring Tour「17才からやってますツアー」@ 高崎CLUB FLEEZ",
+        "type":  "live",
+        "description":  "「17才からやってますツアー」高崎公演",
+        "venue":  "高崎CLUB FLEEZ",
+        "importance":  "normal",
+        "date":  "2008-03-26",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://www.cdjournal.com/news/base-ball-bear/18357",
+        "id":  608,
+        "external_links":  [
+
+                           ],
+        "source_label":  "CDJournal",
+        "city":  "京都",
+        "tour":  "\u002708 Spring Tour「17才からやってますツアー」",
+        "title":  "\u002708 Spring Tour「17才からやってますツアー」@ 京都磔磔",
+        "type":  "live",
+        "description":  "「17才からやってますツアー」京都公演",
+        "venue":  "京都磔磔",
+        "importance":  "normal",
+        "date":  "2008-03-24",
+        "date_precision":  "day"
     }
 ]
