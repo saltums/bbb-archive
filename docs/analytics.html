@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ライブ分析 | BBB Chronicle</title>
+<meta name="description" content="Base Ball Bearのライブ公演を都市・都道府県・ツアー・年別に集計した分析ページ。">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+/* ─── analytics-specific ─── */
+.an-kpi-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 960px;
+  margin: 0 auto 28px;
+  padding: 0 1.5rem;
+}
+.an-kpi {
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+.an-kpi__label {
+  font-size: .625rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--ink-dim);
+  margin-bottom: 6px;
+}
+.an-kpi__value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+.an-kpi__sub {
+  font-size: .6875rem;
+  color: var(--ink-dim);
+  margin-top: 4px;
+}
+
+.an-filters {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto 24px;
+  padding: 0 1.5rem;
+}
+.an-filter-label {
+  font-size: .625rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--ink-dim);
+  white-space: nowrap;
+}
+.an-filters select {
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: .8125rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  appearance: none;
+  cursor: pointer;
+  min-width: 90px;
+  max-width: 200px;
+}
+.an-filters select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.an-spacer { flex: 1; }
+.an-toggle {
+  display: flex;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.an-toggle-btn {
+  background: var(--bg-raised);
+  border: none;
+  color: var(--ink-dim);
+  font-family: var(--font);
+  font-size: .75rem;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: background .12s, color .12s;
+}
+.an-toggle-btn.on { background: var(--accent); color: #fff; }
+.an-toggle-btn:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+.an-chart-row {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 16px;
+  max-width: 960px;
+  margin: 0 auto 24px;
+  padding: 0 1.5rem;
+}
+.an-panel {
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+.an-panel__title {
+  font-size: .625rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--ink-dim);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.an-panel__title::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.an-chart-box { position: relative; height: 260px; }
+
+.an-table-wrap {
+  max-width: 960px;
+  margin: 0 auto 48px;
+  padding: 0 1.5rem;
+}
+.an-table-panel {
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.an-table-head {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.an-table-head__label {
+  font-size: .625rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--ink-dim);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.an-table-head__label::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+.an-table-head__count {
+  margin-left: auto;
+  font-size: .75rem;
+  color: var(--ink-dim);
+  font-variant-numeric: tabular-nums;
+}
+.an-tscroll { overflow-x: auto; }
+.an-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .8125rem;
+}
+.an-table th {
+  padding: 9px 16px;
+  text-align: left;
+  font-size: .6rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--ink-dim);
+  border-bottom: 1px solid var(--line);
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  background: var(--bg);
+}
+.an-table th:hover { color: var(--ink); }
+.an-table th.sorted { color: var(--accent); }
+.an-table td {
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--line);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  color: var(--ink);
+}
+.an-table tr:last-child td { border-bottom: none; }
+.an-table tr:hover td { background: var(--bg); }
+.an-mono { font-feature-settings: "tnum"; }
+.an-dim { color: var(--ink-dim); }
+.an-bar { display: inline-block; height: 3px; background: var(--accent); border-radius: 2px; opacity: .5; vertical-align: middle; }
+.an-msg { padding: 40px; text-align: center; color: var(--ink-dim); font-size: .8125rem; }
+
+@media (max-width: 720px) {
+  .an-kpi-row { grid-template-columns: repeat(2, 1fr); }
+  .an-chart-row { grid-template-columns: 1fr; }
+  .an-kpi__value { font-size: 1.35rem; }
+}
+</style>
+</head>
+<body>
+  <div class="nav-menu">
+    <button class="nav-hamburger" id="navToggle" aria-label="リンク一覧を開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-dropdown" id="navDropdown" aria-label="ページリンク" hidden>
+      <a href="https://www.baseballbear.com/" target="_blank" rel="noopener" class="nav-menu-item">
+        <span class="nav-menu-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+        <span class="nav-menu-item__label">公式サイト</span>
+      </a>
+      <a href="https://open.spotify.com/artist/3RkPaFeTMrHIsB5HMEUdNt" target="_blank" rel="noopener" class="nav-menu-item nav-menu-item--spotify">
+        <span class="nav-menu-item__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></span>
+        <span class="nav-menu-item__label">Spotify</span>
+      </a>
+      <a href="https://www.youtube.com/channel/UCT6xcaNMEM6t7sEFUNLI9sQ" target="_blank" rel="noopener" class="nav-menu-item nav-menu-item--youtube">
+        <span class="nav-menu-item__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></span>
+        <span class="nav-menu-item__label">YouTube</span>
+      </a>
+      <a href="https://www.livefans.jp/artists/3066" target="_blank" rel="noopener" class="nav-menu-item">
+        <span class="nav-menu-item__icon nav-menu-item__icon--emoji">🎫</span>
+        <span class="nav-menu-item__label">LiveFans</span>
+      </a>
+      <hr class="nav-dropdown__divider">
+      <a href="index.html" class="nav-menu-item">
+        <span class="nav-menu-item__icon nav-menu-item__icon--emoji">📅</span>
+        <span class="nav-menu-item__label">年表</span>
+      </a>
+      <a href="tours.html" class="nav-menu-item">
+        <span class="nav-menu-item__icon nav-menu-item__icon--emoji">🗓️</span>
+        <span class="nav-menu-item__label">ツアー / ライブ</span>
+      </a>
+      <a href="analytics.html" class="nav-menu-item">
+        <span class="nav-menu-item__icon nav-menu-item__icon--emoji">📊</span>
+        <span class="nav-menu-item__label">ライブ分析</span>
+      </a>
+      <a href="setlists.html" class="nav-menu-item">
+        <span class="nav-menu-item__icon nav-menu-item__icon--emoji">🎵</span>
+        <span class="nav-menu-item__label">セットリスト統計</span>
+      </a>
+      <a href="setlist-creator.html" class="nav-menu-item">
+        <span class="nav-menu-item__icon nav-menu-item__icon--emoji">✏️</span>
+        <span class="nav-menu-item__label">セトリメーカー</span>
+      </a>
+      <a href="updates.html" class="nav-menu-item">
+        <span class="nav-menu-item__icon nav-menu-item__icon--emoji">🆕</span>
+        <span class="nav-menu-item__label">最新情報</span>
+      </a>
+      <a href="songs.html" class="nav-menu-item">
+        <span class="nav-menu-item__icon nav-menu-item__icon--emoji">🎸</span>
+        <span class="nav-menu-item__label">楽曲一覧</span>
+      </a>
+    </nav>
+  </div>
+
+  <header class="page-header">
+    <div class="page-header__inner">
+      <p class="eyebrow">LIVE ANALYTICS</p>
+      <h1 class="title">ライブ<span class="title__sub">分析</span></h1>
+      <p class="lead">公演数・都市・ツアーをデータで見る。都道府県別集計、年別推移、ツアー別一覧。</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="an-kpi-row">
+      <div class="an-kpi"><div class="an-kpi__label">公演数</div><div class="an-kpi__value" id="kpiShows">—</div><div class="an-kpi__sub">全ライブ</div></div>
+      <div class="an-kpi"><div class="an-kpi__label">ツアー</div><div class="an-kpi__value" id="kpiTours">—</div><div class="an-kpi__sub">ツアー・企画</div></div>
+      <div class="an-kpi"><div class="an-kpi__label">都市</div><div class="an-kpi__value" id="kpiCities">—</div><div class="an-kpi__sub">公演都市数</div></div>
+      <div class="an-kpi"><div class="an-kpi__label">活動期間</div><div class="an-kpi__value" id="kpiPeriod">—</div><div class="an-kpi__sub">年</div></div>
+    </div>
+
+    <div class="an-filters">
+      <span class="an-filter-label">絞り込み</span>
+      <select id="fYear"><option value="">全年</option></select>
+      <select id="fTour"><option value="">全ツアー</option></select>
+      <select id="fCity"><option value="">全都市</option></select>
+      <span class="an-spacer"></span>
+      <span class="an-filter-label">地域</span>
+      <div class="an-toggle">
+        <button class="an-toggle-btn on" id="btnCity" onclick="setLocView('city')">都市</button>
+        <button class="an-toggle-btn" id="btnPref" onclick="setLocView('pref')">都道府県</button>
+      </div>
+    </div>
+
+    <div class="an-chart-row">
+      <div class="an-panel">
+        <div class="an-panel__title" id="locTitle">都市別公演数（上位20）</div>
+        <div class="an-chart-box"><canvas id="locChart"></canvas></div>
+      </div>
+      <div class="an-panel">
+        <div class="an-panel__title">年別公演数</div>
+        <div class="an-chart-box"><canvas id="yearChart"></canvas></div>
+      </div>
+    </div>
+
+    <div class="an-table-wrap">
+      <div class="an-table-panel">
+        <div class="an-table-head">
+          <span class="an-table-head__label">ツアー別一覧</span>
+          <span class="an-table-head__count" id="tourCount"></span>
+        </div>
+        <div class="an-tscroll">
+          <table class="an-table">
+            <thead><tr>
+              <th onclick="sortBy('name')">ツアー名 <span id="s-name"></span></th>
+              <th onclick="sortBy('shows')" class="sorted">公演数 <span id="s-shows">↓</span></th>
+              <th onclick="sortBy('cities')">都市数 <span id="s-cities"></span></th>
+              <th onclick="sortBy('start')">開始 <span id="s-start"></span></th>
+              <th onclick="sortBy('end')">終了 <span id="s-end"></span></th>
+              <th style="min-width:80px"></th>
+            </tr></thead>
+            <tbody id="tourBody"><tr><td colspan="6" class="an-msg">データ読み込み中…</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="supabase-config.js"></script>
+  <script src="analytics.js"></script>
+</body>
+</html>
