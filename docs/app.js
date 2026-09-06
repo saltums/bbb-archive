@@ -259,8 +259,27 @@
     majorOnlyToggle.addEventListener("change", () => render(allEvents));
   }
 
+  async function fetchEvents() {
+    const cfg = window.SUPABASE_CONFIG;
+    if (cfg && cfg.url && cfg.anonKey) {
+      // Supabase REST API — fetch all events ordered by date
+      const url = `${cfg.url}/rest/v1/timeline_events?select=*&order=date.asc&limit=2000`;
+      const res = await fetch(url, {
+        headers: {
+          apikey: cfg.anonKey,
+          Authorization: `Bearer ${cfg.anonKey}`,
+        },
+      });
+      if (!res.ok) throw new Error(`Supabase ${res.status}`);
+      return res.json();
+    }
+    // Fallback: static JSON
+    const res = await fetch("data/timeline.json", { cache: "no-store" });
+    return res.ok ? res.json() : [];
+  }
+
   Promise.all([
-    fetch("data/timeline.json", { cache: "no-store" }).then((res) => (res.ok ? res.json() : [])),
+    fetchEvents(),
     fetch("data/sentiment-manual.json", { cache: "no-store" }).then((res) => (res.ok ? res.json() : [])).catch(() => []),
   ])
     .then(([events, sentiment]) => {

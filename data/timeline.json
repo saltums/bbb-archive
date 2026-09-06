@@ -17,18 +17,6 @@
                            ]
     },
     {
-        "id":  149,
-        "date":  "2002-07-01",
-        "date_precision":  "month",
-        "date_confidence":  "estimated",
-        "type":  "release",
-        "importance":  "minor",
-        "title":  "自主制作デモ「前 -front-」「後 -back-」",
-        "description":  "高校在学中に自主制作・自費録音した最初期のデモCD。「前 -front-」「後 -back-」の2作を連続制作。ライブ会場で手売り。",
-        "source_url":  "https://www.generasia.com/wiki/Base_Ball_Bear",
-        "source_label":  "generasia"
-    },
-    {
         "id":  "62",
         "date":  "2002-07-01",
         "date_precision":  "year",
@@ -39,6 +27,18 @@
         "source_url":  "https://ticketjam.jp/magazine/music/japan-rock/18877",
         "source_label":  "TicketJam「Base Ball Bear こだわりのギターロックを鳴らす3人組の経歴やオススメ曲は…？」",
         "date_confidence":  "estimated"
+    },
+    {
+        "id":  149,
+        "date":  "2002-07-01",
+        "date_precision":  "month",
+        "date_confidence":  "estimated",
+        "type":  "release",
+        "importance":  "minor",
+        "title":  "自主制作デモ「前 -front-」「後 -back-」",
+        "description":  "高校在学中に自主制作・自費録音した最初期のデモCD。「前 -front-」「後 -back-」の2作を連続制作。ライブ会場で手売り。",
+        "source_url":  "https://www.generasia.com/wiki/Base_Ball_Bear",
+        "source_label":  "generasia"
     },
     {
         "id":  150,
@@ -161,22 +161,6 @@
                            ]
     },
     {
-        "id":  "3",
-        "date":  "2006-04-12",
-        "date_precision":  "day",
-        "type":  "milestone",
-        "importance":  "major",
-        "title":  "メジャーデビュー『GIRL FRIEND』",
-        "description":  "東芝EMI(Capitol Music)より1stミニ・アルバム『GIRL FRIEND』でメジャーデビュー。",
-        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」",
-        "embed":  {
-                      "provider":  "spotify",
-                      "kind":  "track",
-                      "id":  "6h0Dyd4lX9tHc5OVljLDk9"
-                  }
-    },
-    {
         "id":  148,
         "date":  "2006-04-12",
         "date_precision":  "day",
@@ -192,6 +176,22 @@
                                    "label":  "YouTube Music"
                                }
                            ]
+    },
+    {
+        "id":  "3",
+        "date":  "2006-04-12",
+        "date_precision":  "day",
+        "type":  "milestone",
+        "importance":  "major",
+        "title":  "メジャーデビュー『GIRL FRIEND』",
+        "description":  "東芝EMI(Capitol Music)より1stミニ・アルバム『GIRL FRIEND』でメジャーデビュー。",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia「Base Ball Bear」",
+        "embed":  {
+                      "provider":  "spotify",
+                      "kind":  "track",
+                      "id":  "6h0Dyd4lX9tHc5OVljLDk9"
+                  }
     },
     {
         "id":  "31",
@@ -902,23 +902,6 @@
                            ]
     },
     {
-        "id":  203,
-        "date":  "2009-03-05",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "LIVE MATHEMATICS TOUR 09 @ 千葉LOOK（千葉）",
-        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 千葉LOOK",
-        "venue":  "千葉LOOK",
-        "city":  "千葉",
-        "tour":  "LIVE MATHEMATICS TOUR 09",
-        "source_url":  "https://www.barks.jp/news/?id=1000042469",
-        "source_label":  "BARKS",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "86",
         "date":  "2009-03-05",
         "date_precision":  "day",
@@ -933,6 +916,23 @@
                                    "label":  "LiveFansでセットリストを探す",
                                    "url":  "https://www.livefans.jp/artists/3066"
                                }
+                           ]
+    },
+    {
+        "id":  203,
+        "date":  "2009-03-05",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 千葉LOOK（千葉）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 千葉LOOK",
+        "venue":  "千葉LOOK",
+        "city":  "千葉",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
                            ]
     },
     {
@@ -1225,6 +1225,23 @@
                            ]
     },
     {
+        "id":  221,
+        "date":  "2009-04-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE MATHEMATICS TOUR 09 @ 滋賀U★STONE（彦根）",
+        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 滋賀U★STONE",
+        "venue":  "滋賀U★STONE",
+        "city":  "彦根",
+        "tour":  "LIVE MATHEMATICS TOUR 09",
+        "source_url":  "https://www.barks.jp/news/?id=1000042469",
+        "source_label":  "BARKS",
+        "external_links":  [
+
+                           ]
+    },
+    {
         "id":  "40",
         "date":  "2009-04-15",
         "date_precision":  "day",
@@ -1243,23 +1260,6 @@
                                    "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E7%A5%9E%E3%80%85LOOKS%20YOU",
                                    "label":  "YouTube Music"
                                }
-                           ]
-    },
-    {
-        "id":  221,
-        "date":  "2009-04-15",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "LIVE MATHEMATICS TOUR 09 @ 滋賀U★STONE（彦根）",
-        "description":  "『LIVE MATHEMATICS TOUR 09』(全32公演) — 滋賀U★STONE",
-        "venue":  "滋賀U★STONE",
-        "city":  "彦根",
-        "tour":  "LIVE MATHEMATICS TOUR 09",
-        "source_url":  "https://www.barks.jp/news/?id=1000042469",
-        "source_label":  "BARKS",
-        "external_links":  [
-
                            ]
     },
     {
@@ -1433,6 +1433,17 @@
                            ]
     },
     {
+        "id":  "41",
+        "date":  "2009-05-16",
+        "date_precision":  "day",
+        "type":  "milestone",
+        "importance":  "minor",
+        "title":  "『ミュージックステーション』初出演",
+        "description":  "「changes」を披露。",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia「Base Ball Bear」"
+    },
+    {
         "id":  232,
         "date":  "2009-05-16",
         "date_precision":  "day",
@@ -1448,17 +1459,6 @@
         "external_links":  [
 
                            ]
-    },
-    {
-        "id":  "41",
-        "date":  "2009-05-16",
-        "date_precision":  "day",
-        "type":  "milestone",
-        "importance":  "minor",
-        "title":  "『ミュージックステーション』初出演",
-        "description":  "「changes」を披露。",
-        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」"
     },
     {
         "id":  233,
@@ -1588,6 +1588,23 @@
                            ]
     },
     {
+        "id":  185,
+        "date":  "2009-10-31",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Zeppyramid tour @ Zepp Sapporo（札幌）",
+        "description":  "3rdアルバムリリースツアー。全5公演のZeppシリーズ。",
+        "venue":  "Zepp Sapporo",
+        "city":  "札幌",
+        "tour":  "Zeppyramid tour",
+        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
+        "source_label":  "setlist.fm",
+        "external_links":  [
+
+                           ]
+    },
+    {
         "id":  "87",
         "date_precision":  "month",
         "type":  "live",
@@ -1605,23 +1622,6 @@
                            ],
         "tour":  "Zeppyramid tour",
         "date":  "2009-10-31"
-    },
-    {
-        "id":  185,
-        "date":  "2009-10-31",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "minor",
-        "title":  "Zeppyramid tour @ Zepp Sapporo（札幌）",
-        "description":  "3rdアルバムリリースツアー。全5公演のZeppシリーズ。",
-        "venue":  "Zepp Sapporo",
-        "city":  "札幌",
-        "tour":  "Zeppyramid tour",
-        "source_url":  "https://www.setlist.fm/setlists/base-ball-bear-63d7ae93.html",
-        "source_label":  "setlist.fm",
-        "external_links":  [
-
-                           ]
     },
     {
         "id":  186,
@@ -1896,23 +1896,6 @@
                            ]
     },
     {
-        "id":  "30",
-        "date":  "2010-09-29",
-        "date_precision":  "day",
-        "type":  "release",
-        "importance":  "major",
-        "title":  "3.5thアルバム『CYPRESS GIRLS』",
-        "description":  "初のセルフプロデュース・コンセプトアルバム。同日発売の『DETECTIVE BOYS』と対をなす作品。小出祐介いわく「これまでの音源では説明できなかった部分」を見せるための2作。チャットモンチーのAcco、サカナクションの山口一郎、iLL、Ryohuら豪華ゲストが参加。",
-        "source_url":  "https://ja.wikipedia.org/wiki/CYPRESS_GIRLS",
-        "source_label":  "Wikipedia「CYPRESS GIRLS」",
-        "external_links":  [
-                               {
-                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20CYPRESS%20GIRLS",
-                                   "label":  "YouTube Music"
-                               }
-                           ]
-    },
-    {
         "id":  "61",
         "date":  "2010-09-29",
         "date_precision":  "day",
@@ -1930,19 +1913,19 @@
                            ]
     },
     {
-        "id":  "140",
-        "date":  "2010-10-22",
+        "id":  "30",
+        "date":  "2010-09-29",
         "date_precision":  "day",
-        "type":  "live",
-        "importance":  "minor",
-        "title":  "ツアー『(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演)",
-        "description":  "3.5thアルバム『CYPRESS GIRLS』『DETECTIVE BOYS』(2010/9/29同時発売)のリリースツアー。10/22福岡DRUM LOGOS→10/23山口・周南TIKI-TA→10/26神戸VARIT→10/28〜10/29大阪・梅田AKASO(2Days)→11/2福島・郡山Hip Shot Japan→11/3仙台darwin→11/8京都磔磔(追加公演)→11/10〜11/11名古屋CLUB QUATTRO(2Days)→11/13福井CHOP→11/14富山SOUL POWER→11/16恵比寿LIQUIDROOM(追加公演)→11/19新木場STUDIO COAST(ファイナル)。",
-        "source_url":  "https://www.baseballbear.com/tour_10.html",
-        "source_label":  "Base Ball Bear公式サイト「TOUR 2010」",
+        "type":  "release",
+        "importance":  "major",
+        "title":  "3.5thアルバム『CYPRESS GIRLS』",
+        "description":  "初のセルフプロデュース・コンセプトアルバム。同日発売の『DETECTIVE BOYS』と対をなす作品。小出祐介いわく「これまでの音源では説明できなかった部分」を見せるための2作。チャットモンチーのAcco、サカナクションの山口一郎、iLL、Ryohuら豪華ゲストが参加。",
+        "source_url":  "https://ja.wikipedia.org/wiki/CYPRESS_GIRLS",
+        "source_label":  "Wikipedia「CYPRESS GIRLS」",
         "external_links":  [
                                {
-                                   "label":  "LiveFansでセットリストを探す",
-                                   "url":  "https://www.livefans.jp/artists/3066"
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20CYPRESS%20GIRLS",
+                                   "label":  "YouTube Music"
                                }
                            ]
     },
@@ -1961,6 +1944,23 @@
         "source_label":  "公式サイト",
         "external_links":  [
 
+                           ]
+    },
+    {
+        "id":  "140",
+        "date":  "2010-10-22",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "ツアー『(Shine On You)Cypress Girls \u0026 Detective Boys』(全14公演)",
+        "description":  "3.5thアルバム『CYPRESS GIRLS』『DETECTIVE BOYS』(2010/9/29同時発売)のリリースツアー。10/22福岡DRUM LOGOS→10/23山口・周南TIKI-TA→10/26神戸VARIT→10/28〜10/29大阪・梅田AKASO(2Days)→11/2福島・郡山Hip Shot Japan→11/3仙台darwin→11/8京都磔磔(追加公演)→11/10〜11/11名古屋CLUB QUATTRO(2Days)→11/13福井CHOP→11/14富山SOUL POWER→11/16恵比寿LIQUIDROOM(追加公演)→11/19新木場STUDIO COAST(ファイナル)。",
+        "source_url":  "https://www.baseballbear.com/tour_10.html",
+        "source_label":  "Base Ball Bear公式サイト「TOUR 2010」",
+        "external_links":  [
+                               {
+                                   "label":  "LiveFansでセットリストを探す",
+                                   "url":  "https://www.livefans.jp/artists/3066"
+                               }
                            ]
     },
     {
@@ -2203,6 +2203,23 @@
         "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』"
     },
     {
+        "id":  515,
+        "date":  "2011-04-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』 @ 清水JAMJAMJAM（静岡・清水）",
+        "description":  "『Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』』(全32公演) のツアー初日 — 清水JAMJAMJAM（元々3/17下北沢GARAGE予定だったが震災のため延期し改めてツアー初日として開催）",
+        "venue":  "清水JAMJAMJAM",
+        "city":  "清水（静岡）",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "source_url":  "https://rockinon.com/news/detail/53610",
+        "source_label":  "rockinon.com「SAYONARA-NOSTALGIA TOURのSHIBUYA-AX公演ライブ配信告知」",
+        "external_links":  [
+
+                           ]
+    },
+    {
         "id":  156,
         "date":  "2011-04-07",
         "date_precision":  "day",
@@ -2220,21 +2237,242 @@
                            ]
     },
     {
-        "id":  515,
-        "date":  "2011-04-07",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』 @ 清水JAMJAMJAM（静岡・清水）",
-        "description":  "『Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』』(全32公演) のツアー初日 — 清水JAMJAMJAM（元々3/17下北沢GARAGE予定だったが震災のため延期し改めてツアー初日として開催）",
-        "venue":  "清水JAMJAMJAM",
-        "city":  "清水（静岡）",
-        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
-        "source_url":  "https://rockinon.com/news/detail/53610",
-        "source_label":  "rockinon.com「SAYONARA-NOSTALGIA TOURのSHIBUYA-AX公演ライブ配信告知」",
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  556,
         "external_links":  [
 
-                           ]
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "岐阜",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 岐阜CLUB ROOTS",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 岐阜公演",
+        "venue":  "岐阜CLUB ROOTS",
+        "importance":  "normal",
+        "date":  "2011-04-09",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  557,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "四日市",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 四日市CLUB CHAOS",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 四日市公演",
+        "venue":  "四日市CLUB CHAOS",
+        "importance":  "normal",
+        "date":  "2011-04-10",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  558,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "京都",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 京都磔磔",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 京都公演",
+        "venue":  "京都磔磔",
+        "importance":  "normal",
+        "date":  "2011-04-20",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  559,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "和歌山",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 和歌山CLUB GATE",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 和歌山公演",
+        "venue":  "和歌山CLUB GATE",
+        "importance":  "normal",
+        "date":  "2011-04-21",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  560,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "神戸",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 神戸太陽と虎",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 神戸公演",
+        "venue":  "神戸太陽と虎",
+        "importance":  "normal",
+        "date":  "2011-04-23",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  561,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "大阪",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 梅田AKASO",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 大阪公演",
+        "venue":  "梅田AKASO",
+        "importance":  "normal",
+        "date":  "2011-04-24",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  562,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "横浜",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 横浜BLITZ",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 横浜公演",
+        "venue":  "横浜BLITZ",
+        "importance":  "normal",
+        "date":  "2011-05-06",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  563,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "さいたま",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ HEAVEN\u0027S ROCK さいたま新都心VJ-3",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR さいたま公演",
+        "venue":  "HEAVEN\u0027S ROCK さいたま新都心VJ-3",
+        "importance":  "normal",
+        "date":  "2011-05-07",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  564,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "長野",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 長野LIVE HOUSE J",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 長野公演",
+        "venue":  "長野LIVE HOUSE J",
+        "importance":  "normal",
+        "date":  "2011-05-11",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  565,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "金沢",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 金沢AZ",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 金沢公演",
+        "venue":  "金沢AZ",
+        "importance":  "normal",
+        "date":  "2011-05-13",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  566,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "福井",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 福井CHOP",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 福井公演",
+        "venue":  "福井CHOP",
+        "importance":  "normal",
+        "date":  "2011-05-14",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  567,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "札幌",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 札幌PENNY LANE 24",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 札幌公演",
+        "venue":  "札幌PENNY LANE 24",
+        "importance":  "normal",
+        "date":  "2011-05-20",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  568,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "帯広",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 帯広REST",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 帯広公演",
+        "venue":  "帯広REST",
+        "importance":  "normal",
+        "date":  "2011-05-22",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  569,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "北見",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 北見ONION HALL",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 北見公演",
+        "venue":  "北見ONION HALL",
+        "importance":  "normal",
+        "date":  "2011-05-23",
+        "date_precision":  "day"
     },
     {
         "id":  453,
@@ -2269,6 +2507,176 @@
         "external_links":  [
 
                            ]
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  570,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "米子",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 米子AZTiC laughs",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 米子公演",
+        "venue":  "米子AZTiC laughs",
+        "importance":  "normal",
+        "date":  "2011-06-02",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  571,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "岡山",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 岡山CRAZYMAMA KINGDOM",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 岡山公演",
+        "venue":  "岡山CRAZYMAMA KINGDOM",
+        "importance":  "normal",
+        "date":  "2011-06-03",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  572,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "高松",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 高松DIME",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 高松公演",
+        "venue":  "高松DIME",
+        "importance":  "normal",
+        "date":  "2011-06-05",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  573,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "松山",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 松山SALONKITTY",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 松山公演",
+        "venue":  "松山SALONKITTY",
+        "importance":  "normal",
+        "date":  "2011-06-07",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  574,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "鹿児島",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 鹿児島SR HALL",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 鹿児島公演",
+        "venue":  "鹿児島SR HALL",
+        "importance":  "normal",
+        "date":  "2011-06-09",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  575,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "宮崎",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 宮崎SR-BOX",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 宮崎公演",
+        "venue":  "宮崎SR-BOX",
+        "importance":  "normal",
+        "date":  "2011-06-11",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  576,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "熊本",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 熊本DRUM Be-9 V2",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 熊本公演",
+        "venue":  "熊本DRUM Be-9 V2",
+        "importance":  "normal",
+        "date":  "2011-06-12",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  577,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "周南",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 周南TIKI-TA",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 周南公演",
+        "venue":  "周南TIKI-TA",
+        "importance":  "normal",
+        "date":  "2011-06-14",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  578,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "富山",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 富山MAIRO",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 富山公演",
+        "venue":  "富山MAIRO",
+        "importance":  "normal",
+        "date":  "2011-06-17",
+        "date_precision":  "day"
+    },
+    {
+        "source_url":  "https://ja.wikipedia.org/wiki/SAYONARA-NOSTALGIA",
+        "id":  579,
+        "external_links":  [
+
+                           ],
+        "source_label":  "Wikipedia",
+        "city":  "新潟",
+        "tour":  "Base Ball Bear 10th Anniversary 『SAYONARA-NOSTALGIA TOUR』",
+        "title":  "SAYONARA-NOSTALGIA TOUR @ 新潟LOTS",
+        "type":  "live",
+        "description":  "SAYONARA-NOSTALGIA TOUR 新潟公演",
+        "venue":  "新潟LOTS",
+        "importance":  "normal",
+        "date":  "2011-06-18",
+        "date_precision":  "day"
     },
     {
         "id":  455,
@@ -2982,23 +3390,6 @@
                            ]
     },
     {
-        "id":  461,
-        "date":  "2012-07-11",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "major",
-        "title":  "TOUR 新呼吸 @ SHIBUYA-AX（東京）",
-        "description":  "『TOUR 新呼吸』(全19公演) — SHIBUYA-AX",
-        "venue":  "SHIBUYA-AX",
-        "city":  "東京",
-        "tour":  "TOUR 新呼吸",
-        "source_url":  "https://skream.jp/news/2012/07/_base_ball_bearshibuyaax.php",
-        "source_label":  "SKREAM!",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "74",
         "date":  "2012-07-11",
         "date_precision":  "day",
@@ -3013,6 +3404,23 @@
                                    "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E5%88%9D%E6%81%8B",
                                    "label":  "YouTube Music"
                                }
+                           ]
+    },
+    {
+        "id":  461,
+        "date":  "2012-07-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "major",
+        "title":  "TOUR 新呼吸 @ SHIBUYA-AX（東京）",
+        "description":  "『TOUR 新呼吸』(全19公演) — SHIBUYA-AX",
+        "venue":  "SHIBUYA-AX",
+        "city":  "東京",
+        "tour":  "TOUR 新呼吸",
+        "source_url":  "https://skream.jp/news/2012/07/_base_ball_bearshibuyaax.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
                            ]
     },
     {
@@ -3046,6 +3454,74 @@
         "tour":  "TOUR 新呼吸 take2"
     },
     {
+        "id":  547,
+        "date":  "2012-10-19",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 take2 @ 岐阜CLUB ROOTS",
+        "description":  "TOUR 新呼吸 take2",
+        "venue":  "岐阜CLUB ROOTS",
+        "city":  "岐阜",
+        "tour":  "TOUR 新呼吸 take2",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  548,
+        "date":  "2012-10-20",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 take2 @ 静岡SOUND SHOWER ark",
+        "description":  "TOUR 新呼吸 take2",
+        "venue":  "静岡SOUND SHOWER ark",
+        "city":  "静岡",
+        "tour":  "TOUR 新呼吸 take2",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  549,
+        "date":  "2012-11-02",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 take2 @ 神戸VARIT.",
+        "description":  "TOUR 新呼吸 take2",
+        "venue":  "神戸VARIT.",
+        "city":  "神戸",
+        "tour":  "TOUR 新呼吸 take2",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  550,
+        "date":  "2012-11-04",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 take2 @ 高知X-pt.",
+        "description":  "TOUR 新呼吸 take2",
+        "venue":  "高知X-pt.",
+        "city":  "高知",
+        "tour":  "TOUR 新呼吸 take2",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia",
+        "external_links":  [
+
+                           ]
+    },
+    {
         "id":  516,
         "date":  "2012-11-10",
         "date_precision":  "day",
@@ -3055,9 +3531,60 @@
         "description":  "『Base Ball Bear TOUR 新呼吸 take2』— 佐賀GEILS",
         "venue":  "佐賀GEILS",
         "city":  "佐賀",
-        "tour":  "Base Ball Bear TOUR 新呼吸 take2",
+        "tour":  "TOUR 新呼吸 take2",
         "source_url":  "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%91%BC%E5%90%B8",
         "source_label":  "Wikipedia「新呼吸」",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  551,
+        "date":  "2012-11-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 take2 @ 熊本DRUM Be-9 V2",
+        "description":  "TOUR 新呼吸 take2",
+        "venue":  "熊本DRUM Be-9 V2",
+        "city":  "熊本",
+        "tour":  "TOUR 新呼吸 take2",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  552,
+        "date":  "2012-11-13",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 take2 @ 松江AZTiC canova",
+        "description":  "TOUR 新呼吸 take2",
+        "venue":  "松江AZTiC canova",
+        "city":  "松江",
+        "tour":  "TOUR 新呼吸 take2",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  553,
+        "date":  "2012-11-16",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 take2 @ 新木場STUDIO COAST",
+        "description":  "TOUR 新呼吸 take2 ファイナル",
+        "venue":  "新木場STUDIO COAST",
+        "city":  "東京",
+        "tour":  "TOUR 新呼吸 take2",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia",
         "external_links":  [
 
                            ]
@@ -3072,9 +3599,43 @@
         "description":  "『Base Ball Bear TOUR 新呼吸 take2』— 滋賀U☆STONE",
         "venue":  "滋賀U☆STONE",
         "city":  "大津（滋賀）",
-        "tour":  "Base Ball Bear TOUR 新呼吸 take2",
+        "tour":  "TOUR 新呼吸 take2",
         "source_url":  "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%91%BC%E5%90%B8",
         "source_label":  "Wikipedia「新呼吸」",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  554,
+        "date":  "2012-11-24",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 take2 @ 福井CHOP",
+        "description":  "TOUR 新呼吸 take2",
+        "venue":  "福井CHOP",
+        "city":  "福井",
+        "tour":  "TOUR 新呼吸 take2",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia",
+        "external_links":  [
+
+                           ]
+    },
+    {
+        "id":  555,
+        "date":  "2012-12-07",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "TOUR 新呼吸 take2 @ 横浜BAYSIS",
+        "description":  "TOUR 新呼吸 take2",
+        "venue":  "横浜BAYSIS",
+        "city":  "横浜",
+        "tour":  "TOUR 新呼吸 take2",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia",
         "external_links":  [
 
                            ]
@@ -3442,6 +4003,20 @@
                            ]
     },
     {
+        "id":  146,
+        "date":  "2014-06-04",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "「二十九歳」発売記念 ニコニコ生放送「ベボベオビデマンド」5夜連続出演",
+        "description":  "6/4〜6/8の5夜連続でニコニコ生放送に出演。「ベボベオビデマンド」と銘打たれた発売週スペシャル企画。プレミアム限定コーナーも設けられた。6/5(木)は西川貴教のコラボ番組「西川貴教のイエノミ!!」にも出演。",
+        "source_url":  "https://ja.wikipedia.org/wiki/%E4%BA%8C%E5%8D%81%E4%B9%9D%E6%AD%B3",
+        "source_label":  "Wikipedia",
+        "external_links":  [
+
+                           ]
+    },
+    {
         "id":  "11",
         "date":  "2014-06-04",
         "date_precision":  "day",
@@ -3465,20 +4040,6 @@
                                    "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20%E4%BA%8C%E5%8D%81%E4%B9%9D%E6%AD%B3",
                                    "label":  "YouTube Music"
                                }
-                           ]
-    },
-    {
-        "id":  146,
-        "date":  "2014-06-04",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "minor",
-        "title":  "「二十九歳」発売記念 ニコニコ生放送「ベボベオビデマンド」5夜連続出演",
-        "description":  "6/4〜6/8の5夜連続でニコニコ生放送に出演。「ベボベオビデマンド」と銘打たれた発売週スペシャル企画。プレミアム限定コーナーも設けられた。6/5(木)は西川貴教のコラボ番組「西川貴教のイエノミ!!」にも出演。",
-        "source_url":  "https://ja.wikipedia.org/wiki/%E4%BA%8C%E5%8D%81%E4%B9%9D%E6%AD%B3",
-        "source_label":  "Wikipedia",
-        "external_links":  [
-
                            ]
     },
     {
@@ -4553,23 +5114,6 @@
                            ]
     },
     {
-        "id":  416,
-        "date":  "2015-11-01",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "Base Ball Bear Tour「三十一歳」 @ 名古屋DIAMOND HALL（名古屋）",
-        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — 名古屋DIAMOND HALL",
-        "venue":  "名古屋DIAMOND HALL",
-        "city":  "名古屋",
-        "tour":  "Base Ball Bear Tour「三十一歳」",
-        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
-        "source_label":  "SKREAM!",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "97",
         "date":  "2015-11-01",
         "date_precision":  "month",
@@ -4586,6 +5130,23 @@
                                }
                            ],
         "tour":  "Base Ball Bear Tour「三十一歳」"
+    },
+    {
+        "id":  416,
+        "date":  "2015-11-01",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Base Ball Bear Tour「三十一歳」 @ 名古屋DIAMOND HALL（名古屋）",
+        "description":  "『Base Ball Bear Tour「三十一歳」』(全25公演) — 名古屋DIAMOND HALL",
+        "venue":  "名古屋DIAMOND HALL",
+        "city":  "名古屋",
+        "tour":  "Base Ball Bear Tour「三十一歳」",
+        "source_url":  "https://skream.jp/news/2015/06/base_ball_bear_extreme-single.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
     },
     {
         "id":  417,
@@ -5612,23 +6173,6 @@
         "source_label":  "VIVA LA ROCK 2017 Flash Report"
     },
     {
-        "id":  235,
-        "date":  "2017-06-11",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "Tour 光源 @ 浜松窓枠（浜松）",
-        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 浜松窓枠",
-        "venue":  "浜松窓枠",
-        "city":  "浜松",
-        "tour":  "Base Ball Bear Tour「光源」",
-        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
-        "source_label":  "SKREAM!",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "100",
         "date":  "2017-06-11",
         "date_precision":  "day",
@@ -5645,6 +6189,23 @@
                                }
                            ],
         "tour":  "Base Ball Bear Tour「光源」"
+    },
+    {
+        "id":  235,
+        "date":  "2017-06-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Tour 光源 @ 浜松窓枠（浜松）",
+        "description":  "『Base Ball Bear Tour「光源」』(全30公演) — 浜松窓枠",
+        "venue":  "浜松窓枠",
+        "city":  "浜松",
+        "tour":  "Base Ball Bear Tour「光源」",
+        "source_url":  "https://skream.jp/news/2017/03/bbb_kogen_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
     },
     {
         "id":  236,
@@ -6166,6 +6727,23 @@
         "date_confidence":  "estimated"
     },
     {
+        "id":  355,
+        "date":  "2018-05-18",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE (3人体制) @ 名古屋CLUB QUATTRO（名古屋）",
+        "description":  "Base Ball Bear Tour『LIVE IN LIVE』(全8公演、3人体制) — 名古屋CLUB QUATTRO",
+        "venue":  "名古屋CLUB QUATTRO",
+        "city":  "名古屋",
+        "tour":  "Base Ball Bear Tour「LIVE IN LIVE」",
+        "source_url":  "https://www.baseballbear.com/special/liveinlive/",
+        "source_label":  "公式サイト",
+        "external_links":  [
+
+                           ]
+    },
+    {
         "id":  "110",
         "date":  "2018-05-18",
         "date_precision":  "day",
@@ -6182,23 +6760,6 @@
                                }
                            ],
         "tour":  "Base Ball Bear Tour「LIVE IN LIVE」"
-    },
-    {
-        "id":  355,
-        "date":  "2018-05-18",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "LIVE IN LIVE (3人体制) @ 名古屋CLUB QUATTRO（名古屋）",
-        "description":  "Base Ball Bear Tour『LIVE IN LIVE』(全8公演、3人体制) — 名古屋CLUB QUATTRO",
-        "venue":  "名古屋CLUB QUATTRO",
-        "city":  "名古屋",
-        "tour":  "Base Ball Bear Tour「LIVE IN LIVE」",
-        "source_url":  "https://www.baseballbear.com/special/liveinlive/",
-        "source_label":  "公式サイト",
-        "external_links":  [
-
-                           ]
     },
     {
         "id":  356,
@@ -6785,23 +7346,6 @@
         "source_label":  "ROCK IN JAPAN FESTIVAL 出演歴"
     },
     {
-        "id":  "58",
-        "date":  "2019-09-15",
-        "date_precision":  "day",
-        "type":  "release",
-        "importance":  "major",
-        "title":  "2nd EP『Grape』",
-        "description":  "",
-        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
-        "source_label":  "Wikipedia「Base Ball Bear」",
-        "external_links":  [
-                               {
-                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20Grape%20EP",
-                                   "label":  "YouTube Music"
-                               }
-                           ]
-    },
-    {
         "id":  "59",
         "date":  "2019-09-15",
         "date_precision":  "day",
@@ -6820,6 +7364,23 @@
         "venue":  "日比谷野外大音楽堂",
         "city":  "東京",
         "tour":  "Guitar！Drum！Bass！Tour (2019)"
+    },
+    {
+        "id":  "58",
+        "date":  "2019-09-15",
+        "date_precision":  "day",
+        "type":  "release",
+        "importance":  "major",
+        "title":  "2nd EP『Grape』",
+        "description":  "",
+        "source_url":  "https://ja.wikipedia.org/wiki/Base_Ball_Bear",
+        "source_label":  "Wikipedia「Base Ball Bear」",
+        "external_links":  [
+                               {
+                                   "url":  "https://music.youtube.com/search?q=Base%20Ball%20Bear%20Grape%20EP",
+                                   "label":  "YouTube Music"
+                               }
+                           ]
     },
     {
         "id":  466,
@@ -7273,23 +7834,6 @@
                            ]
     },
     {
-        "id":  388,
-        "date":  "2021-09-06",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "LIVE IN LIVE 2021 @ 恵比寿LIQUIDROOM（東京）",
-        "description":  "コロナ禍明け初の有観客ワンマン(2021) — 恵比寿LIQUIDROOM",
-        "venue":  "恵比寿LIQUIDROOM",
-        "city":  "東京",
-        "tour":  "LIVE IN LIVE 2021 (有観客)",
-        "source_url":  "https://skream.jp/news/2021/06/base_ball_bear_live_in_live.php",
-        "source_label":  "SKREAM!",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "138",
         "date":  "2021-09-06",
         "date_precision":  "day",
@@ -7306,6 +7850,23 @@
                                }
                            ],
         "tour":  "LIVE IN LIVE 2021 (有観客)"
+    },
+    {
+        "id":  388,
+        "date":  "2021-09-06",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE 2021 @ 恵比寿LIQUIDROOM（東京）",
+        "description":  "コロナ禍明け初の有観客ワンマン(2021) — 恵比寿LIQUIDROOM",
+        "venue":  "恵比寿LIQUIDROOM",
+        "city":  "東京",
+        "tour":  "LIVE IN LIVE 2021 (有観客)",
+        "source_url":  "https://skream.jp/news/2021/06/base_ball_bear_live_in_live.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
     },
     {
         "id":  389,
@@ -7362,6 +7923,23 @@
                            ]
     },
     {
+        "id":  346,
+        "date":  "2021-11-11",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "DIARY KEY Tour @ 中野サンプラザ（東京）",
+        "description":  "Base Ball Bear TOUR『DIARY KEY』(全9公演) — 中野サンプラザ",
+        "venue":  "中野サンプラザ",
+        "city":  "東京",
+        "tour":  "Base Ball Bear TOUR「DIARY KEY」",
+        "source_url":  "https://skream.jp/news/2021/09/base_ball_bear_diary_key_tour.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
         "id":  "102",
         "date":  "2021-11-11",
         "date_precision":  "day",
@@ -7378,23 +7956,6 @@
                                }
                            ],
         "tour":  "Base Ball Bear TOUR「DIARY KEY」"
-    },
-    {
-        "id":  346,
-        "date":  "2021-11-11",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "DIARY KEY Tour @ 中野サンプラザ（東京）",
-        "description":  "Base Ball Bear TOUR『DIARY KEY』(全9公演) — 中野サンプラザ",
-        "venue":  "中野サンプラザ",
-        "city":  "東京",
-        "tour":  "Base Ball Bear TOUR「DIARY KEY」",
-        "source_url":  "https://skream.jp/news/2021/09/base_ball_bear_diary_key_tour.php",
-        "source_label":  "SKREAM!",
-        "external_links":  [
-
-                           ]
     },
     {
         "id":  347,
@@ -7650,23 +8211,6 @@
         "city":  "東京"
     },
     {
-        "id":  385,
-        "date":  "2022-08-01",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "LIVE IN LIVE〜I HUB YOU 3〜 @ Zepp Nagoya（名古屋）",
-        "description":  "対バンツアー(2022年8月) — with Creepy Nuts",
-        "venue":  "Zepp Nagoya",
-        "city":  "名古屋",
-        "tour":  "LIVE IN LIVE〜I HUB YOU 3〜",
-        "source_url":  "https://skream.jp/news/2022/06/base_ball_bear_live_in_live_i_hub_you_3.php",
-        "source_label":  "SKREAM!",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "77",
         "date":  "2022-08-01",
         "date_precision":  "day",
@@ -7683,6 +8227,23 @@
                                }
                            ],
         "tour":  "LIVE IN LIVE〜I HUB YOU 3〜"
+    },
+    {
+        "id":  385,
+        "date":  "2022-08-01",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE〜I HUB YOU 3〜 @ Zepp Nagoya（名古屋）",
+        "description":  "対バンツアー(2022年8月) — with Creepy Nuts",
+        "venue":  "Zepp Nagoya",
+        "city":  "名古屋",
+        "tour":  "LIVE IN LIVE〜I HUB YOU 3〜",
+        "source_url":  "https://skream.jp/news/2022/06/base_ball_bear_live_in_live_i_hub_you_3.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
     },
     {
         "id":  386,
@@ -7773,23 +8334,6 @@
         "city":  "東京"
     },
     {
-        "id":  314,
-        "date":  "2023-02-03",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ 千葉LOOK（千葉）",
-        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — 千葉LOOK",
-        "venue":  "千葉LOOK",
-        "city":  "千葉",
-        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
-        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
-        "source_label":  "SKREAM!",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "78",
         "date":  "2023-02-03",
         "date_precision":  "day",
@@ -7806,6 +8350,23 @@
                                }
                            ],
         "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!"
+    },
+    {
+        "id":  314,
+        "date":  "2023-02-03",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "Guitar!x2 Drum!x2 Bass!x2 Tour @ 千葉LOOK（千葉）",
+        "description":  "『Guitar! Guitar! Drum! Drum! Bass! Bass!』(全15公演) — 千葉LOOK",
+        "venue":  "千葉LOOK",
+        "city":  "千葉",
+        "tour":  "Guitar! Guitar! Drum! Drum! Bass! Bass!",
+        "source_url":  "https://skream.jp/news/2023/01/base_ball_bear_tour_schedule.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
     },
     {
         "id":  315,
@@ -8627,6 +9188,23 @@
                            ]
     },
     {
+        "id":  390,
+        "date":  "2025-05-22",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "normal",
+        "title":  "LIVE IN LIVE ～C2 to C3～ @ 渋谷CLUB QUATTRO（東京）",
+        "description":  "C2リリース10周年特別企画 — 渋谷CLUB QUATTRO",
+        "venue":  "渋谷CLUB QUATTRO",
+        "city":  "東京",
+        "tour":  "LIVE IN LIVE ～C2 to C3～",
+        "source_url":  "https://skream.jp/news/2025/03/base_ball_bear_live_in_live_c2_to_c3.php",
+        "source_label":  "SKREAM!",
+        "external_links":  [
+
+                           ]
+    },
+    {
         "id":  "116",
         "date":  "2025-05-22",
         "date_precision":  "day",
@@ -8643,23 +9221,6 @@
                                }
                            ],
         "tour":  "LIVE IN LIVE ～C2 to C3～"
-    },
-    {
-        "id":  390,
-        "date":  "2025-05-22",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "normal",
-        "title":  "LIVE IN LIVE ～C2 to C3～ @ 渋谷CLUB QUATTRO（東京）",
-        "description":  "C2リリース10周年特別企画 — 渋谷CLUB QUATTRO",
-        "venue":  "渋谷CLUB QUATTRO",
-        "city":  "東京",
-        "tour":  "LIVE IN LIVE ～C2 to C3～",
-        "source_url":  "https://skream.jp/news/2025/03/base_ball_bear_live_in_live_c2_to_c3.php",
-        "source_label":  "SKREAM!",
-        "external_links":  [
-
-                           ]
     },
     {
         "id":  391,
@@ -8772,23 +9333,6 @@
                            ]
     },
     {
-        "id":  166,
-        "date":  "2026-02-15",
-        "date_precision":  "day",
-        "type":  "live",
-        "importance":  "minor",
-        "title":  "Tour Lyrical Tattoo @ THE BOTTOM LINE(愛知)",
-        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: THE BOTTOM LINE（愛知）。",
-        "venue":  "THE BOTTOM LINE",
-        "city":  "愛知",
-        "tour":  "Tour Lyrical Tattoo",
-        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
-        "source_label":  "encore",
-        "external_links":  [
-
-                           ]
-    },
-    {
         "id":  "29",
         "date":  "2026-02-15",
         "date_precision":  "day",
@@ -8805,6 +9349,23 @@
                                }
                            ],
         "tour":  "Tour Lyrical Tattoo"
+    },
+    {
+        "id":  166,
+        "date":  "2026-02-15",
+        "date_precision":  "day",
+        "type":  "live",
+        "importance":  "minor",
+        "title":  "Tour Lyrical Tattoo @ THE BOTTOM LINE(愛知)",
+        "description":  "Base Ball Bear Tour Lyrical Tattoo 全国ツアー。会場: THE BOTTOM LINE（愛知）。",
+        "venue":  "THE BOTTOM LINE",
+        "city":  "愛知",
+        "tour":  "Tour Lyrical Tattoo",
+        "source_url":  "https://e.usen.com/news/news-release/base-ball-bear-lyrical-tattoo.html",
+        "source_label":  "encore",
+        "external_links":  [
+
+                           ]
     },
     {
         "id":  167,
