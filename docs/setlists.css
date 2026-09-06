@@ -220,16 +220,22 @@
 
 .song-type-tag {
   display: inline-block;
-  margin-left: 0.4rem;
-  padding: 0.1rem 0.5rem;
+  padding: 0.1rem 0.55rem;
   border-radius: 999px;
   background: var(--bg);
   border: 1px solid var(--line);
   font-size: 0.68rem;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--ink-dim);
-  vertical-align: middle;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
+.song-type-tag--album   { background: rgba(99,102,241,0.1);  color: #6366f1; border-color: rgba(99,102,241,0.3); }
+.song-type-tag--mini    { background: rgba(168,85,247,0.1);  color: #a855f7; border-color: rgba(168,85,247,0.3); }
+.song-type-tag--ep      { background: rgba(236,72,153,0.1);  color: #ec4899; border-color: rgba(236,72,153,0.3); }
+.song-type-tag--single  { background: rgba(239,68,68,0.1);   color: #ef4444; border-color: rgba(239,68,68,0.3); }
+.song-type-tag--digital { background: rgba(20,184,166,0.1);  color: #14b8a6; border-color: rgba(20,184,166,0.3); }
+.song-type-tag--indie   { background: rgba(245,158,11,0.1);  color: #f59e0b; border-color: rgba(245,158,11,0.3); }
 
 .sl-empty {
   color: var(--ink-dim);
@@ -241,11 +247,46 @@
 }
 
 /* --- 楽曲一覧ページ専用 --- */
+.sl-show--release .sl-show__head {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.sl-show__title {
+  font-weight: 600;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .song-filter-bar {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin: 0 0 1rem;
+  margin: 0 0 1.25rem;
+}
+
+.filter-btn {
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg-raised);
+  color: var(--ink-dim);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.12s, background 0.12s, border-color 0.12s;
+  white-space: nowrap;
+}
+.filter-btn:hover { color: var(--ink); }
+.filter-btn--active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
 }
 
 .sl-track-list {

@@ -86,7 +86,7 @@
       const typeLabel = TYPE_LABEL[release.type] || release.type;
       const year = release.release_date ? release.release_date.slice(0, 4) : "";
       const card = document.createElement("article");
-      card.className = "sl-show";
+      card.className = "sl-show sl-show--release";
 
       const hasAnyLinks = release.tracks.some(
         (t) => typeof t !== "string" && t.external_links && t.external_links.length > 0
@@ -94,11 +94,8 @@
 
       card.innerHTML = `
         <div class="sl-show__head">
-          <span class="sl-show__date">
-            ${release.album_title}
-            <span class="song-type-tag">${typeLabel}</span>
-            ${hasAnyLinks ? '<span class="tl-link-badge" title="リンクあり">🔗</span>' : ""}
-          </span>
+          <span class="sl-show__title">${release.album_title}${hasAnyLinks ? ' <span class="tl-link-badge" title="リンクあり">🔗</span>' : ""}</span>
+          <span class="song-type-tag song-type-tag--${release.type}">${typeLabel}</span>
           <span class="sl-show__venue">${year}</span>
         </div>
         <div class="sl-show__body">
