@@ -23,6 +23,7 @@
     release: "リリース",
     live: "ライブ",
     milestone: "できごと",
+    attended: "行った",
   };
 
   const list = document.getElementById("timelineList");
@@ -43,6 +44,56 @@
 
   let sentimentByEventId = new Map();
   let allEvents = [];
+
+  // --- 行った管理 (localStorage) ---
+  const ATTENDED_KEY = "bbb_attended";
+
+  function loadAttended() {
+    try { return new Set(JSON.parse(localStorage.getItem(ATTENDED_KEY) || "null") || []); }
+    catch { return new Set(); }
+  }
+
+  function saveAttended(set) {
+    try { localStorage.setItem(ATTENDED_KEY, JSON.stringify([...set])); } catch {}
+  }
+
+  function initAttended(events) {
+    // 初回のみ ev.attended===true のエントリを localStorage に種まき
+    if (localStorage.getItem(ATTENDED_KEY) === null) {
+      const seeded = (events || []).filter((ev) => ev.attended === true).map((ev) => String(ev.id));
+      saveAttended(new Set(seeded));
+    }
+    return loadAttended();
+  }
+
+  let attendedIds = new Set();
+
+  function isAttended(id) { return attendedIds.has(String(id)); }
+
+  function toggleAttended(id, btn) {
+    const sid = String(id);
+    attendedIds.has(sid) ? attendedIds.delete(sid) : attendedIds.add(sid);
+    saveAttended(attendedIds);
+    updateAttendedBtn(btn, attendedIds.has(sid));
+    // "行った" フィルター中なら再描画
+    if (activeFilter === "attended") render(allEvents);
+  }
+
+  function updateAttendedBtn(btn, attended) {
+    btn.classList.toggle("is-attended", attended);
+    btn.textContent = attended ? "★" : "☆";
+    btn.title = attended ? "行った（タップで取り消し）" : "行った？";
+  }
+
+  function makeAttendedBtn(id) {
+    const btn = document.createElement("button");
+    btn.className = "tl-attended-btn" + (isAttended(id) ? " is-attended" : "");
+    btn.textContent = isAttended(id) ? "★" : "☆";
+    btn.title = isAttended(id) ? "行った（タップで取り消し）" : "行った？";
+    btn.setAttribute("aria-label", "行った公演としてマーク");
+    btn.addEventListener("click", (e) => { e.stopPropagation(); toggleAttended(id, btn); });
+    return btn;
+  }
 
   // --- 吹き出し管理 ---
   let activeBubble = null;
@@ -218,6 +269,8 @@
       wrap.appendChild(bubbleBtn);
     }
 
+    if (ev.type === "live") wrap.appendChild(makeAttendedBtn(ev.id));
+
     list.appendChild(wrap);
   }
 
@@ -279,6 +332,7 @@
         showWrap.appendChild(bb);
       }
 
+      showWrap.appendChild(makeAttendedBtn(ev.id));
       showsList.appendChild(showWrap);
     });
 
@@ -303,7 +357,9 @@
 
     const typeFiltered = activeFilter === "all"
       ? events
-      : events.filter((ev) => ev.type === activeFilter);
+      : activeFilter === "attended"
+        ? events.filter((ev) => ev.type === "live" && isAttended(ev.id))
+        : events.filter((ev) => ev.type === activeFilter);
     const filtered = majorOnlyToggle && majorOnlyToggle.checked
       ? typeFiltered.filter((ev) => ev.importance === "major")
       : typeFiltered;
@@ -389,6 +445,7 @@
     .then(([events, sentiment]) => {
       sentimentByEventId = new Map((sentiment || []).map((s) => [String(s.event_id), s]));
       allEvents = events || [];
+      attendedIds = initAttended(allEvents);
       render(allEvents);
     })
     .catch((err) => {

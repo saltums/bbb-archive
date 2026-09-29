@@ -346,3 +346,32 @@
 .sl-track-item--linked .sl-track-title {
   color: var(--ink);
 }
+
+/* --- 行ったボタン --- */
+.tl-attended-btn {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.35rem 0.3rem;
+  color: var(--ink-dim);
+  opacity: 0.4;
+  transition: opacity 0.15s, color 0.15s;
+}
+.tl-attended-btn:hover {
+  opacity: 0.8;
+}
+.tl-attended-btn.is-attended {
+  color: var(--accent);
+  opacity: 1;
+}
+
+.filter-btn--attended {
+  border-color: var(--accent) !important;
+}
+.filter-btn--attended.filter-btn--active {
+  background: var(--accent);
+  color: #fff;
+}
