@@ -94,7 +94,7 @@ APIキーは https://console.cloud.google.com/ でプロジェクトを作成し
 
 Base Ball Bear の 5ch スレッド(本スレ vol.1〜現行、関連スレ、ほかの板の単発スレ)を手元に保存し、SQLite で検索する道具です。**投稿の本文はこのリポジトリにも公開サイトにも載せません**(`data/5ch-archive/` は `.gitignore` 済み)。ここにあるのは収集と検索のスクリプトだけです。
 
-- `update-5ch-archive.bat`: 現行スレの新しい書き込みを取り込み、次スレが立っていればそれも取って、データベースを作り直す
+- `update-5ch-archive.bat`: 現行スレの新しい書き込みを取り込み、次スレが立っていればそれも取って、データベースを作り直す。生HTMLは非公開リポジトリ `saltums/bbb-5ch-archive`(`data/5ch-archive` に置く)へバックアップする
 - `open-5ch-search.bat`: 検索画面を開く(`http://127.0.0.1:8770/`、このパソコンの中だけで動く)
 - `scripts/fetch_5ch_archive.py`: 前スレ・過去スレ一覧をたどって生HTMLを `data/5ch-archive/raw/` に保存(4秒間隔)。初回は引数なしで全スレを取得
 - `scripts/build_5ch_db.py`: 生HTMLから `data/5ch-archive/bbb5ch.sqlite` を作り直す
