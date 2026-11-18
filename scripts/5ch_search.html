@@ -9,6 +9,7 @@
 :root {
   --bg: #f1f4f8; --panel: #ffffff; --sunk: #e8edf3; --ink: #17202b; --dim: #5d6a7a; --faint: #8a96a6;
   --line: #d8dfe8; --accent: #1463d8; --accent-ink: #ffffff; --accent-soft: #e3eefc;
+  --pos: #1f8a5b; --pos-soft: #dff3e9; --neg: #c8463a; --neg-soft: #fbe5e2; --mix: #c58a12; --mix-soft: #fbf0d6; --neu: #8f9aaa; --neu-soft: #edf0f4;
   --bar: #b4c6de; --name: #1c7a45; --mark: #ffe27a; --mark-ink: #2a2100; --star: #d08a00; --song: #7a3ec2; --song-soft: #f0e8fb;
   --shadow: 0 6px 24px rgba(23, 32, 43, 0.14);
 }
@@ -16,6 +17,7 @@
   :root:not([data-theme="light"]) {
     --bg: #0f141b; --panel: #171e28; --sunk: #1f2834; --ink: #e5eaf1; --dim: #97a3b4; --faint: #6c7889;
     --line: #2a3441; --accent: #6ea8ff; --accent-ink: #0b1626; --accent-soft: #1b2c47;
+    --pos: #4cc48b; --pos-soft: #17352a; --neg: #f07b6e; --neg-soft: #3d1f1c; --mix: #e7b84f; --mix-soft: #3a2f14; --neu: #8793a4; --neu-soft: #232c38;
     --bar: #34455c; --name: #62c68c; --mark: #6a5800; --mark-ink: #fff3c2; --star: #f0b54a; --song: #c19cf2; --song-soft: #2a2140;
     --shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
   }
@@ -23,7 +25,8 @@
 :root[data-theme="dark"] {
   --bg: #0f141b; --panel: #171e28; --sunk: #1f2834; --ink: #e5eaf1; --dim: #97a3b4; --faint: #6c7889;
   --line: #2a3441; --accent: #6ea8ff; --accent-ink: #0b1626; --accent-soft: #1b2c47;
-  --bar: #34455c; --name: #62c68c; --mark: #6a5800; --mark-ink: #fff3c2; --star: #f0b54a; --song: #c19cf2; --song-soft: #2a2140;
+  --pos: #4cc48b; --pos-soft: #17352a; --neg: #f07b6e; --neg-soft: #3d1f1c; --mix: #e7b84f; --mix-soft: #3a2f14; --neu: #8793a4; --neu-soft: #232c38;
+    --bar: #34455c; --name: #62c68c; --mark: #6a5800; --mark-ink: #fff3c2; --star: #f0b54a; --song: #c19cf2; --song-soft: #2a2140;
   --shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
 }
 * { box-sizing: border-box; }
@@ -203,6 +206,65 @@ tr:last-child td { border-bottom: none; }
 .pop { position: absolute; z-index: 40; width: min(34rem, calc(100vw - 2rem)); max-height: 60vh; overflow: auto; background: var(--panel);
   border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); }
 .pop .post { padding: 0.6rem 0.8rem; }
+/* ---- 作品ページ ---- */
+.work-hero { padding: 1.2rem 1.3rem 1.1rem; }
+.eyebrow { margin: 0; font-size: 0.72rem; letter-spacing: 0.08em; color: var(--faint); }
+.work-hero h1 { margin: 0.15rem 0 0.1rem; font-size: clamp(1.7rem, 4vw, 2.4rem); line-height: 1.2; letter-spacing: 0.01em; }
+.work-meta { margin: 0 0 0.7rem; color: var(--dim); font-size: 0.86rem; font-variant-numeric: tabular-nums; }
+.work-overview { margin: 0.8rem 0 0.9rem; max-width: 46em; line-height: 1.9; }
+.tracks { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.tracks .chip { font-size: 0.78rem; }
+.stance { display: flex; height: 10px; border-radius: 999px; overflow: hidden; background: var(--sunk); gap: 2px; }
+.stance i { display: block; height: 100%; }
+.stance .pos { background: var(--pos); } .stance .neg { background: var(--neg); }
+.stance .mixed { background: var(--mix); } .stance .neutral { background: var(--neu); }
+.stance--sm { height: 6px; }
+.legend { display: flex; flex-wrap: wrap; gap: 0.2rem 1rem; margin-top: 0.4rem; font-size: 0.76rem; color: var(--dim); font-variant-numeric: tabular-nums; }
+.legend span::before { content: ""; display: inline-block; width: 0.6rem; height: 0.6rem; border-radius: 2px; margin-right: 0.3rem; vertical-align: -0.02rem; background: var(--c); }
+.note { margin: 0.7rem 0 0; font-size: 0.74rem; color: var(--faint); line-height: 1.6; max-width: 52em; }
+.sec-title { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.2rem 1rem; margin: 1.6rem 0 0.6rem; }
+.sec-title h2 { margin: 0; font-size: 1.05rem; }
+.sec-title span { font-size: 0.78rem; color: var(--faint); }
+.phases { list-style: none; margin: 0; padding: 0.3rem 1rem; display: grid; }
+.phases li { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 0.2rem 1rem; padding: 0.7rem 0; border-bottom: 1px solid var(--line); }
+.phases li:last-child { border-bottom: none; }
+.phases time { font-size: 0.78rem; color: var(--accent); font-weight: 700; font-variant-numeric: tabular-nums; padding-top: 0.1rem; }
+.phases b { display: block; font-size: 0.95rem; }
+.phases p { margin: 0.1rem 0 0; color: var(--dim); font-size: 0.88rem; }
+@media (max-width: 600px) { .phases li { grid-template-columns: 1fr; } }
+.mentions { padding: 0.8rem 1rem 0.6rem; border-top: 1px solid var(--line); }
+.mentions .bars { height: 70px; }
+.mentions .bar-col { cursor: default; }
+.topics { display: grid; gap: 0.9rem; }
+.topic { padding: 1rem 1.1rem 0; scroll-margin-top: 9rem; overflow: hidden; }
+.topic__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.8rem; }
+.topic__head h3 { margin: 0; font-size: 1.05rem; }
+.topic__num { color: var(--faint); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+.tag { font-size: 0.72rem; border-radius: 999px; padding: 0.05rem 0.55rem; background: var(--sunk); color: var(--dim); white-space: nowrap; }
+.topic > .stance { margin: 0.55rem 0 0.2rem; max-width: 22rem; }
+.topic__summary { margin: 0.45rem 0 0.7rem; line-height: 1.85; }
+.quotes { margin: 0 -1.1rem; border-top: 1px solid var(--line); }
+.quote { padding: 0.65rem 1.1rem 0.7rem; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 3.6rem minmax(0, 1fr); gap: 0 0.7rem; }
+.quotes > .quote:last-child, .quotes > div:last-child > .quote { border-bottom: none; }
+.quote .badge { align-self: start; margin-top: 0.15rem; text-align: center; font-size: 0.7rem; font-weight: 700; border-radius: 6px; padding: 0.1rem 0; }
+.badge.pos { color: var(--pos); background: var(--pos-soft); } .badge.neg { color: var(--neg); background: var(--neg-soft); }
+.badge.mixed { color: var(--mix); background: var(--mix-soft); } .badge.neutral { color: var(--neu); background: var(--neu-soft); }
+.quote .body { margin-top: 0.1rem; }
+.quote .body.clip { max-height: 8.6em; }
+.quote .ph { font-size: 0.74rem; }
+.more-quotes { display: block; width: 100%; padding: 0.6rem; border: none; border-top: 1px solid var(--line); background: none; color: var(--accent); font-size: 0.84rem; }
+.more-quotes:hover { background: var(--sunk); }
+.toc { display: grid; gap: 0.15rem; }
+.toc button { display: grid; grid-template-columns: 1.6rem minmax(0, 1fr); gap: 0.2rem 0.4rem; align-items: center; border: none; background: none; text-align: left; padding: 0.4rem 0.4rem; border-radius: 8px; font-size: 0.84rem; color: var(--ink); }
+.toc button:hover { background: var(--sunk); }
+.toc em { font-style: normal; color: var(--faint); font-size: 0.74rem; font-variant-numeric: tabular-nums; }
+.toc .stance { grid-column: 2; }
+.work-cards { display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); }
+.work-card { display: block; padding: 1rem 1.1rem; color: var(--ink); }
+.work-card:hover { text-decoration: none; border-color: var(--accent); }
+.work-card h2 { margin: 0.1rem 0 0.5rem; font-size: 1.5rem; }
+.work-card p.ov { margin: 0.6rem 0 0.7rem; color: var(--dim); font-size: 0.86rem; line-height: 1.75; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.work-todo { padding: 1rem 1.1rem; color: var(--dim); font-size: 0.86rem; border-style: dashed; }
 @media (prefers-reduced-motion: no-preference) { .bar-col i { transition: background 0.12s; } }
 </style>
 </head>
@@ -219,6 +281,7 @@ tr:last-child td { border-bottom: none; }
       </div>
       <div class="tabs">
         <button type="button" data-tab="search" aria-pressed="true">さがす</button>
+        <button type="button" data-tab="works" aria-pressed="false">作品</button>
         <button type="button" data-tab="threads" aria-pressed="false">スレ一覧</button>
         <button type="button" data-tab="marks" aria-pressed="false">しおり</button>
       </div>
@@ -365,7 +428,7 @@ tr:last-child td { border-bottom: none; }
   function setTab(name) {
     document.querySelectorAll(".tabs button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.tab === name)));
     $("filters").hidden = name !== "search";
-    $("layout").classList.toggle("wide", name === "threads" || name === "marks");
+    $("layout").classList.toggle("wide", name === "threads" || name === "marks" || name === "works");
   }
   function go(p, replace) {
     const h = "#" + p.toString();
@@ -579,12 +642,105 @@ tr:last-child td { border-bottom: none; }
       : `<div class="panel empty">書き込みの右上の ☆ を押すと、ここに集まります。</div>`);
   }
 
+  // ---- 作品（AIによる要約） ----
+  const STANCE = { pos: "好意的", mixed: "両面", neutral: "中立", neg: "否定的" };
+  const STANCE_ORDER = ["pos", "mixed", "neutral", "neg"];
+  function stanceBar(st, small) {
+    const label = STANCE_ORDER.map((k) => `${STANCE[k]} ${st[k] || 0}件`).join("、");
+    return `<div class="stance${small ? " stance--sm" : ""}" role="img" aria-label="${label}">${
+      STANCE_ORDER.filter((k) => st[k]).map((k) => `<i class="${k}" style="flex:${st[k]}" title="${STANCE[k]} ${st[k]}件"></i>`).join("")}</div>`;
+  }
+  function stanceLegend(st) {
+    const vars = { pos: "--pos", mixed: "--mix", neutral: "--neu", neg: "--neg" };
+    return `<div class="legend">${STANCE_ORDER.filter((k) => st[k])
+      .map((k) => `<span style="--c: var(${vars[k]})">${STANCE[k]} ${st[k]}</span>`).join("")}</div>`;
+  }
+
+  async function viewWorks() {
+    setTab("works");
+    cur = null;
+    $("head").innerHTML = ""; $("rail").innerHTML = "";
+    const my = ++seq;
+    const data = await api("/api/works");
+    if (my !== seq) return;
+    $("main").innerHTML = `<div class="sec-title" style="margin-top:0"><h2>作品ごとの受け止められ方</h2><span>スレの書き込みを AI が読んでまとめたものです</span></div>
+      <div class="work-cards">${data.works.map((w) => `<a class="panel work-card" href="#work=${encodeURIComponent(w.id)}">
+        <p class="eyebrow">${esc(w.label)}・${esc(w.release_date.replace(/-/g, "."))}</p>
+        <h2>『${esc(w.title)}』</h2>
+        ${stanceBar(w.stance)}${stanceLegend(w.stance)}
+        <p class="ov">${esc(w.overview)}</p>
+        <span class="hint">論点 ${w.topics}・言及 ${fmt(w.mentions)}件</span></a>`).join("")}
+        <div class="panel work-todo">ほかの作品はまだまとめていません。</div></div>`;
+    window.scrollTo(0, 0);
+  }
+
+  function quoteHtml(p) {
+    const t = threads.get(p.thread_key);
+    const when = p.posted_at ? p.posted_at.slice(0, 10) : "日付なし";
+    const long = p.body.split("\n").length > 6 || p.body.length > 260;
+    return `<div class="quote"><span class="badge ${p.stance}">${STANCE[p.stance]}</span><div>
+      <div class="ph"><a class="where" href="#thread=${p.thread_key}&no=${p.no}" title="${esc(t ? t.title : "")}">${esc(t ? shortLabel(t) : p.thread_key)}</a>
+        <a class="no mono" href="#thread=${p.thread_key}&no=${p.no}" title="スレッドのこの位置を開く">${p.no}</a><time class="mono">${esc(when)}</time></div>
+      <div class="body${long ? " clip" : ""}">${decorate(p.body, [], p.thread_key)}</div>
+      ${long ? `<button class="link-btn" data-act="unclip" style="font-size:0.78rem">全文を表示</button>` : ""}</div></div>`;
+  }
+
+  async function viewWork(id) {
+    setTab("works");
+    $("layout").classList.remove("wide");
+    cur = null;
+    const my = ++seq;
+    const data = await api("/api/work?id=" + encodeURIComponent(id));
+    if (my !== seq) return;
+    const w = data.work;
+    if (!w) { $("head").innerHTML = ""; $("rail").innerHTML = ""; $("main").innerHTML = `<div class="panel empty">この作品はまだまとめていません。</div>`; return; }
+    const total = w.mentions_by_year.reduce((a, [, n]) => a + n, 0);
+    $("head").innerHTML = `<div class="panel work-hero">
+      <button class="link-btn" data-act="goworks" style="font-size:0.8rem">← 作品一覧</button>
+      <p class="eyebrow" style="margin-top:0.6rem">作品の受け止められ方 ・ AI による要約</p>
+      <h1>『${esc(w.album_title)}』</h1>
+      <p class="work-meta">${esc(w.label)}・${esc(w.release_date.replace(/-/g, "."))} 発売・スレでの言及 ${fmt(total)} 件</p>
+      <div class="tracks">${w.tracks.map((t) => `<button class="chip" data-act="term" data-term="${esc(t)}" title="この曲名で探す">${esc(t)}</button>`).join("")}</div>
+      <p class="work-overview">${esc(w.overview)}</p>
+      ${stanceBar(w.stance)}${stanceLegend(w.stance)}
+      <p class="note">${esc(w.method)}</p></div>`;
+
+    const maxY = Math.max(1, ...w.mentions_by_year.map(([, n]) => n));
+    const byY = new Map(w.mentions_by_year);
+    let cols = "";
+    for (let y = +w.release_date.slice(0, 4); y <= span[1]; y++) {
+      const n = byY.get(String(y)) || 0;
+      cols += `<div class="bar-col${n ? "" : " zero"}" title="${y}年 ${n}件"><b style="opacity:1">${n || ""}</b><i style="height:${n ? Math.max(3, Math.round(n / maxY * 46)) : 2}px"></i>'${String(y).slice(2)}</div>`;
+    }
+
+    let html = `<div class="sec-title" style="margin-top:0.2rem"><h2>評価の流れ</h2><span>${w.phases.length} つの時期</span></div>
+      <div class="panel"><ol class="phases">${w.phases.map((ph) => `<li><time>${esc(ph.period)}</time><div><b>${esc(ph.title)}</b><p>${esc(ph.text)}</p></div></li>`).join("")}</ol>
+      <div class="mentions"><p class="hint" style="margin:0 0 0.3rem">『${esc(w.album_title)}』に触れた書き込みの数（年ごと）</p><div class="bars">${cols}</div></div></div>
+      <div class="sec-title"><h2>論点</h2><span>代表的な書き込みは、元のスレから原文のまま引いています</span></div><div class="topics">`;
+    w.topics.forEach((t, i) => {
+      const shown = 3, rest = t.posts.length - shown;
+      html += `<section class="panel topic" id="topic${i}">
+        <div class="topic__head"><span class="topic__num">${String(i + 1).padStart(2, "0")}</span><h3>${esc(t.title)}</h3><span class="tag">${esc(t.stance_note)}</span></div>
+        ${stanceBar(t.stance, true)}
+        <p class="topic__summary">${esc(t.summary)}</p>
+        <div class="quotes">${t.posts.map((p, j) => (j < shown ? quoteHtml(p) : `<div hidden data-more="${i}">${quoteHtml(p)}</div>`)).join("")}
+        ${rest > 0 ? `<button class="more-quotes" data-act="morequotes" data-topic="${i}">ほかの書き込み ${rest} 件を表示</button>` : ""}</div></section>`;
+    });
+    $("main").innerHTML = html + `</div>`;
+    setRail(`<div class="sect"><h2>論点の一覧</h2><div class="toc">${w.topics.map((t, i) =>
+      `<button data-act="totopic" data-topic="${i}"><em>${String(i + 1).padStart(2, "0")}</em><span>${esc(t.title)}</span>${stanceBar(t.stance, true)}</button>`).join("")}</div></div>
+      <div class="sect"><h2>読み方</h2><p class="hint" style="margin:0">帯の色は、各論点で挙げた書き込みが好意的か否定的かの内訳です。スレ全体を数えたものではありません。書き込みの番号を押すと、元のスレッドのその位置が開きます。収録曲の名前を押すと、その曲名で検索します。</p></div>`, "論点の一覧");
+    window.scrollTo(0, 0);
+  }
+
   function route() {
     hidePop();
     const raw = location.hash.replace(/^#/, "");
     const P = params();
     if (raw === "threads") return viewThreads();
     if (raw === "marks") return viewMarks();
+    if (raw === "works") return viewWorks();
+    if (P.get("work")) return viewWork(P.get("work"));
     if (isThreadView(P)) return viewThread(P);
     return viewSearch(P);
   }
@@ -712,6 +868,9 @@ tr:last-child td { border-bottom: none; }
       else go(new URLSearchParams({ thread: el.dataset.key, uid: el.dataset.uid, order: "old" }));
     } else if (act === "tuid") { cur.filter.uid = el.dataset.uid; renderThreadPosts(); window.scrollTo(0, 0); }
     else if (act === "tuid-clear") { cur.filter.uid = ""; renderThreadPosts(); }
+    else if (act === "goworks") location.hash = "#works";
+    else if (act === "totopic") document.getElementById("topic" + el.dataset.topic).scrollIntoView({ behavior: "smooth", block: "start" });
+    else if (act === "morequotes") { document.querySelectorAll(`[data-more="${el.dataset.topic}"]`).forEach((x) => { x.hidden = false; }); el.remove(); }
     else if (act === "back") { if (lastSearch) location.hash = lastSearch; else go(new URLSearchParams()); }
     else if (act === "unclip") { el.closest(".post").querySelector(".body").classList.remove("clip"); el.remove(); }
     else if (act === "mark" || act === "unmark") {

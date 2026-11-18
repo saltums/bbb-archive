@@ -13,6 +13,8 @@ from bbb_terms import Extractor, norm  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = os.path.join(ROOT, "data", "5ch-archive", "bbb5ch.sqlite")
+WORKS = os.path.join(ROOT, "data", "5ch-archive", "works")
+SONGS = os.path.join(ROOT, "data", "songs.json")
 PAGE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "5ch_search.html")
 PORT = int(os.environ.get("PORT") or (sys.argv[1] if len(sys.argv) > 1 else 8770))
 sys.stdout.reconfigure(encoding="utf-8")
@@ -204,7 +206,64 @@ def some_posts(q):
     return {"posts": [dict(r) for r in rows]}
 
 
-ROUTES = {"/api/search": search, "/api/suggest": suggest, "/api/thread": thread, "/api/posts": some_posts,
+def load_works():
+    out = {}
+    if os.path.isdir(WORKS):
+        for name in sorted(os.listdir(WORKS)):
+            if name.endswith(".json"):
+                w = json.load(open(os.path.join(WORKS, name), encoding="utf-8"))
+                out[w["id"]] = w
+    return out
+
+
+def tracks_of(album_title):
+    if not os.path.exists(SONGS):
+        return []
+    for r in json.load(open(SONGS, encoding="utf-8")):
+        if r.get("album_title") == album_title:
+            return [t["title"] if isinstance(t, dict) else t for t in r.get("tracks", [])]
+    return []
+
+
+def stance_counts(refs):
+    c = collections.Counter(ref[2] for ref in refs)
+    return {k: c.get(k, 0) for k in ("pos", "mixed", "neutral", "neg")}
+
+
+def works(q):
+    items = []
+    for w in load_works().values():
+        refs = [r for t in w["topics"] for r in t["refs"]]
+        items.append({"id": w["id"], "title": w["album_title"], "label": w.get("label", ""),
+                      "release_date": w.get("release_date", ""), "overview": w.get("overview", ""),
+                      "topics": len(w["topics"]), "stance": stance_counts(refs),
+                      "mentions": sum(n for _, n in w.get("mentions_by_year", []))})
+    items.sort(key=lambda x: x["release_date"])
+    return {"works": items}
+
+
+def work(q):
+    w = load_works().get(first(q, "id"))
+    if not w:
+        return {"work": None}
+    con = db()
+    for t in w["topics"]:
+        posts = []
+        for key, no, stance in t["refs"]:
+            r = con.execute(f"""SELECT {POST_COLS}, t.title, t.vol, t.kind, t.board FROM posts p
+                                JOIN threads t ON t.key = p.thread_key WHERE p.thread_key = ? AND p.no = ?""",
+                            (key, no)).fetchone()
+            if r:
+                posts.append(dict(r, stance=stance))
+        t["posts"] = posts
+        t["stance"] = stance_counts(t["refs"])
+    con.close()
+    w["tracks"] = tracks_of(w["album_title"])
+    w["stance"] = stance_counts([r for t in w["topics"] for r in t["refs"]])
+    return {"work": w}
+
+
+ROUTES = {"/api/works": works, "/api/work": work, "/api/search": search, "/api/suggest": suggest, "/api/thread": thread, "/api/posts": some_posts,
           "/api/threads": lambda q: threads(), "/api/home": lambda q: home()}
 
 
