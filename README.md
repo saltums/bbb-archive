@@ -90,6 +90,18 @@ APIキーは https://console.cloud.google.com/ でプロジェクトを作成し
 
 編集後は `.\scripts\Sync-Docs.ps1` を実行してください(未入力の空エントリは自動的に除外されます)。
 
+## 5chスレッドの手元アーカイブ(非公開)
+
+Base Ball Bear の 5ch スレッド(本スレ vol.1〜現行、関連スレ、ほかの板の単発スレ)を手元に保存し、SQLite で検索する道具です。**投稿の本文はこのリポジトリにも公開サイトにも載せません**(`data/5ch-archive/` は `.gitignore` 済み)。ここにあるのは収集と検索のスクリプトだけです。
+
+- `update-5ch-archive.bat`: 現行スレの新しい書き込みを取り込み、次スレが立っていればそれも取って、データベースを作り直す
+- `open-5ch-search.bat`: 検索画面を開く(`http://127.0.0.1:8770/`、このパソコンの中だけで動く)
+- `scripts/fetch_5ch_archive.py`: 前スレ・過去スレ一覧をたどって生HTMLを `data/5ch-archive/raw/` に保存(4秒間隔)。初回は引数なしで全スレを取得
+- `scripts/build_5ch_db.py`: 生HTMLから `data/5ch-archive/bbb5ch.sqlite` を作り直す
+- `scripts/serve_5ch_search.py` + `scripts/5ch_search.html`: 検索画面
+
+取得元は 5ch 本家(現行は `mevius.5ch.io`、過去分は公式の過去ログ `kako.5ch.io`、無いものだけ `toro.2ch.sc`)。`.dat` ファイルと、robots.txt で AI からの取得を禁止しているミラー(kyodemo.net など)は使いません。
+
 ## 楽曲一覧
 
 `docs/songs.html`。バンド本体のWikipedia記事には収録曲リストが無いため、**専用記事がある作品(アルバム・シングル)のみ**`data/songs.json`に手動でまとめています(2026-07-26時点で26作品、のべ153曲。カップリング曲・カラオケ版等も含む)。インディーズ時代唯一のミニアルバム『夕方ジェネレーション』・シングル『YUME is VISION』も収録済み。専用記事が無い作品は未収録です。`type`フィールドは`album`/`single`/`ep`(省略時は`album`扱い)。新しい作品にWikipedia専用記事ができ次第、同じ形式で追記してください。

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ベボベスレ過去ログ</title>
+<style>
+:root {
+  --bg: #f4f3ef; --panel: #fffefb; --ink: #23221f; --dim: #6f6c63; --line: #dddad0;
+  --accent: #b3402a; --accent-soft: #f4dcd4; --mark: #ffe58a; --link: #1d5f8a; --bar: #cfc9b8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1a18; --panel: #252421; --ink: #e9e6dd; --dim: #9d998c; --line: #3a3833;
+    --accent: #ef7d63; --accent-soft: #4a2a22; --mark: #6b5a12; --link: #7fbde6; --bar: #4a473f;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 15px/1.7 "Hiragino Sans", "Yu Gothic UI", "Meiryo", system-ui, sans-serif; }
+a { color: var(--link); }
+header { padding: 1.4rem 1.25rem 0.6rem; max-width: 980px; margin: 0 auto; }
+h1 { margin: 0; font-size: 1.35rem; letter-spacing: 0.02em; }
+.stats { margin: 0.15rem 0 0; color: var(--dim); font-size: 0.82rem; font-variant-numeric: tabular-nums; }
+main { max-width: 980px; margin: 0 auto; padding: 0 1.25rem 4rem; }
+form { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: end; padding: 0.9rem; margin-top: 0.6rem;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
+label { display: flex; flex-direction: column; gap: 0.15rem; font-size: 0.72rem; color: var(--dim); }
+label.grow { flex: 1 1 16rem; }
+input, select, button { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line);
+  border-radius: 6px; padding: 0.4rem 0.6rem; min-height: 2.3rem; }
+input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+button { cursor: pointer; }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; padding-inline: 1.1rem; }
+.tabs { display: flex; gap: 0.4rem; margin: 1rem 0 0.6rem; }
+.tabs button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.years { display: flex; align-items: flex-end; gap: 3px; height: 92px; padding: 0.5rem 0.6rem 0; overflow-x: auto;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
+.year { flex: 0 1 34px; min-width: 22px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%;
+  background: none; border: none; padding: 0; min-height: 0; font-size: 0.62rem; color: var(--dim); font-variant-numeric: tabular-nums; }
+.year i { display: block; width: 100%; background: var(--bar); border-radius: 3px 3px 0 0; min-height: 2px; }
+.year:hover i, .year.on i { background: var(--accent); }
+.summary { margin: 0.8rem 0 0.4rem; color: var(--dim); font-size: 0.85rem; }
+.summary b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.post { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 0.7rem 0.9rem; margin: 0.5rem 0; }
+.post.target { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+.meta { display: flex; flex-wrap: wrap; gap: 0.2rem 0.7rem; font-size: 0.76rem; color: var(--dim); font-variant-numeric: tabular-nums; }
+.meta .no { color: var(--accent); font-weight: 700; }
+.meta button { all: unset; cursor: pointer; color: var(--link); }
+.meta button:hover { text-decoration: underline; }
+.body { white-space: pre-wrap; overflow-wrap: anywhere; margin-top: 0.35rem; }
+.body.clip { max-height: 15.5em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 80%, transparent); mask-image: linear-gradient(#000 80%, transparent); }
+.more { all: unset; cursor: pointer; color: var(--link); font-size: 0.8rem; }
+mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1px; }
+.pager { display: flex; gap: 0.5rem; align-items: center; justify-content: center; margin: 1.2rem 0; color: var(--dim); font-size: 0.85rem; }
+table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; font-size: 0.86rem; }
+.tablewrap { overflow-x: auto; }
+th, td { padding: 0.4rem 0.7rem; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td.title { white-space: normal; min-width: 14rem; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+tr:last-child td { border-bottom: none; }
+.threadhead { margin: 1rem 0 0.4rem; }
+.threadhead h2 { margin: 0; font-size: 1.1rem; }
+.empty { padding: 2rem; text-align: center; color: var(--dim); border: 1px dashed var(--line); border-radius: 10px; margin-top: 0.8rem; }
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<header>
+  <h1>ベボベスレ過去ログ</h1>
+  <p class="stats" id="stats">読み込み中…</p>
+</header>
+<main>
+  <form id="form">
+    <label class="grow">ことば（空白で区切ると全部を含む投稿）
+      <input id="q" type="search" placeholder="例: 野音 セトリ" autocomplete="off">
+    </label>
+    <label>いつから<input id="from" type="date"></label>
+    <label>いつまで<input id="to" type="date"></label>
+    <label>範囲
+      <select id="kind">
+        <option value="">すべて</option>
+        <option value="main">本スレだけ</option>
+        <option value="related">関連スレだけ</option>
+        <option value="other">ほかの板の単発スレだけ</option>
+      </select>
+    </label>
+    <label>並び順
+      <select id="order"><option value="new">新しい順</option><option value="old">古い順</option></select>
+    </label>
+    <button class="primary" type="submit">探す</button>
+    <button type="button" id="reset">条件を消す</button>
+  </form>
+
+  <div class="tabs">
+    <button type="button" id="tabSearch" aria-pressed="true">検索結果</button>
+    <button type="button" id="tabThreads" aria-pressed="false">スレッド一覧</button>
+  </div>
+
+  <section id="viewSearch">
+    <div class="years" id="years" aria-label="年ごとの件数"></div>
+    <p class="summary" id="summary"></p>
+    <div id="results"></div>
+    <div class="pager" id="pager"></div>
+  </section>
+
+  <section id="viewThreads" hidden>
+    <div class="tablewrap"><table>
+      <thead><tr><th>種類</th><th>タイトル</th><th>期間</th><th class="num">投稿</th><th>板</th></tr></thead>
+      <tbody id="threadRows"></tbody>
+    </table></div>
+  </section>
+
+  <section id="viewThread" hidden>
+    <div class="threadhead">
+      <button type="button" id="back">← 戻る</button>
+      <h2 id="threadTitle"></h2>
+      <p class="stats" id="threadInfo"></p>
+    </div>
+    <div id="threadPosts"></div>
+  </section>
+</main>
+
+<script>
+(function () {
+  "use strict";
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const fmt = (n) => Number(n).toLocaleString("ja-JP");
+  const api = (path) => fetch(path, { cache: "no-store" }).then((r) => r.json());
+  let lastSearchHash = "";
+  const known = new Set();
+  const KIND = { main: "本スレ", related: "関連スレ", other: "ほかの板" };
+  const BOARD = {
+    musicjg: "邦楽グループ", minor: "インディーズ", musicj: "邦楽", mjsaloon: "邦楽サロン", compose: "楽器・作曲",
+    uwasa: "噂話", karaok: "カラオケ", news4vip: "ニュー速VIP", livejupiter: "なんJ", morningcoffee: "モ娘（狼）",
+    mnewsplus: "芸スポ速報+", musicnews: "音楽ニュース", news: "ニュース速報", poverty: "嫌儲", nanmin: "難民",
+    livetx: "実況（テレ東）", liventv: "実況（日テレ）", wildplus: "ニュース実況+"
+  };
+  const boardName = (b) => BOARD[b] || b;
+  // 重複スレの再利用で、題名の番号と実際の順番が違うスレには実質の番号を添える
+  function threadLabel(t) {
+    if (t.kind !== "main") return t.title;
+    const inTitle = (t.title.normalize("NFKC").match(/vol\.?\s*(\d+)/i) || [])[1];
+    return inTitle && Number(inTitle) !== t.vol ? `${t.title}（実質 vol.${t.vol}）` : t.title;
+  }
+
+  function decorate(text, terms, threadKey) {
+    let html = esc(text);
+    html = html.replace(/(h?ttps?:\/\/[^\s<>"'　]+)/g, (m) => {
+      const url = m.startsWith("ttp") ? "h" + m : m;
+      // 手元にあるスレへのリンクは、外へ出ずにアーカイブ内で開く
+      const t = url.match(/read\.cgi\/[a-z0-9]+\/(\d{9,10})(?:\/(\d{1,4}))?/);
+      if (t && known.has(t[1])) return `<a href="#thread=${t[1]}${t[2] ? "&no=" + t[2] : ""}" title="アーカイブ内で開く">${m}</a>`;
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer">${m}</a>`;
+    });
+    if (threadKey) {
+      html = html.replace(/&gt;&gt;(\d{1,4})/g, (m, no) => `<a href="#thread=${threadKey}&no=${no}">${m}</a>`);
+    }
+    (terms || []).filter(Boolean).forEach((t) => {
+      const pat = esc(t).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      html = html.replace(new RegExp(`(${pat})(?![^<]*>)`, "gi"), "<mark>$1</mark>");
+    });
+    return html;
+  }
+
+  function postCard(p, opts) {
+    const o = opts || {};
+    const key = o.threadKey || p.thread_key;
+    const el = document.createElement("article");
+    el.className = "post";
+    el.id = o.inThread ? "p" + p.no : "";
+    const where = o.inThread ? "" : `<a href="#thread=${key}&no=${p.no}">${esc(p.kind === "main" ? "vol." + p.vol : p.title)}</a>${p.kind === "main" ? "" : `<span>${esc(boardName(p.board))}</span>`}`;
+    const uid = p.uid ? `<button type="button" data-uid="${esc(p.uid)}" title="このIDの投稿だけ表示">ID:${esc(p.uid)}</button>` : "";
+    el.innerHTML = `
+      <div class="meta">
+        ${where}<span class="no">${p.no}</span><span>${esc(p.name)}</span>
+        ${p.mail ? `<span>[${esc(p.mail)}]</span>` : ""}
+        <span>${esc(p.posted_at || (/\d/.test(p.date_raw || "") ? p.date_raw : "日付なし"))}</span>${uid}
+      </div>
+      <div class="body">${decorate(p.body, o.terms, key)}</div>`;
+    const body = el.querySelector(".body");
+    if (!o.inThread && p.body.split("\n").length > 9) {
+      body.classList.add("clip");
+      const more = document.createElement("button");
+      more.className = "more"; more.type = "button"; more.textContent = "全文を表示";
+      more.addEventListener("click", () => { body.classList.remove("clip"); more.remove(); });
+      el.appendChild(more);
+    }
+    const idBtn = el.querySelector("[data-uid]");
+    if (idBtn) idBtn.addEventListener("click", () => {
+      location.hash = "#" + new URLSearchParams({ thread: key, uid: p.uid, order: "old" }).toString();
+    });
+    return el;
+  }
+
+  function show(view) {
+    ["viewSearch", "viewThreads", "viewThread"].forEach((v) => { $(v).hidden = v !== view; });
+    $("tabSearch").setAttribute("aria-pressed", String(view === "viewSearch"));
+    $("tabThreads").setAttribute("aria-pressed", String(view === "viewThreads"));
+  }
+
+  function formToHash() {
+    const p = new URLSearchParams();
+    [["q", $("q").value.trim()], ["from", $("from").value], ["to", $("to").value], ["kind", $("kind").value]].forEach(([k, v]) => { if (v) p.set(k, v); });
+    if ($("order").value === "old") p.set("order", "old");
+    return "#" + p.toString();
+  }
+
+  async function runSearch(params) {
+    show("viewSearch");
+    $("q").value = params.get("q") || "";
+    $("from").value = params.get("from") || "";
+    $("to").value = params.get("to") || "";
+    $("order").value = params.get("order") || "new";
+    $("kind").value = params.get("kind") || "";
+    const data = await api("/api/search?" + params.toString());
+    if (data.error) { $("results").innerHTML = `<p class="empty">${esc(data.error)}</p>`; return; }
+
+    const max = Math.max(1, ...data.years.map((y) => y[1]));
+    $("years").innerHTML = "";
+    if (data.nodate > 0) {
+      // 元の過去ログで日付が失われた投稿（ほぼ vol.1 の 2003年12月〜2005年1月）
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "year" + (params.get("nodate") ? " on" : "");
+      b.title = `日付なし ${fmt(data.nodate)}件（ほぼ2003年12月〜2005年1月の vol.1）`;
+      b.innerHTML = `<span>${data.nodate}</span><i style="height:${Math.max(3, Math.round((data.nodate / Math.max(1, data.nodate, ...data.years.map((y) => y[1]))) * 46))}px"></i>'03-04`;
+      b.style.flexBasis = "44px";
+      b.addEventListener("click", () => {
+        const p = new URLSearchParams(params); p.delete("page"); p.delete("from"); p.delete("to");
+        p.set("nodate", "1"); p.set("order", "old");
+        location.hash = "#" + p.toString();
+      });
+      $("years").appendChild(b);
+    }
+    data.years.forEach(([y, n]) => {
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "year"; b.title = `${y}年 ${fmt(n)}件`;
+      b.innerHTML = `<span>${n >= 1000 ? Math.round(n / 100) / 10 + "k" : n}</span><i style="height:${Math.max(3, Math.round((n / max) * 46))}px"></i>'${y.slice(2)}`;
+      b.addEventListener("click", () => {
+        const p = new URLSearchParams(params); p.delete("page"); p.delete("nodate");
+        p.set("from", `${y}-01-01`); p.set("to", `${y}-12-31`);
+        location.hash = "#" + p.toString();
+      });
+      $("years").appendChild(b);
+    });
+    $("years").hidden = data.years.length === 0 && !data.nodate;
+
+    const extra = [];
+    if (params.get("nodate")) extra.push("日付なしの投稿のみ（ほぼ2003年12月〜2005年1月）");
+    if (params.get("uid")) extra.push(`ID:${esc(params.get("uid"))} のみ`);
+    if (params.get("thread") && !params.get("no")) extra.push("このスレッド内");
+    $("summary").innerHTML = `<b>${fmt(data.total)}</b> 件${extra.length ? "（" + extra.join("・") + "）" : ""}`;
+
+    $("results").innerHTML = "";
+    if (data.total === 0) $("results").innerHTML = '<p class="empty">当てはまる投稿はありません。ことばを短くするか、期間を広げてみてください。</p>';
+    data.posts.forEach((p) => $("results").appendChild(postCard(p, { terms: data.terms })));
+
+    const pages = Math.ceil(data.total / data.page_size);
+    $("pager").innerHTML = "";
+    if (pages > 1) {
+      const go = (n, label) => {
+        const b = document.createElement("button");
+        b.type = "button"; b.textContent = label; b.disabled = n < 1 || n > pages;
+        b.addEventListener("click", () => { const p = new URLSearchParams(params); p.set("page", n); location.hash = "#" + p.toString(); window.scrollTo(0, 0); });
+        return b;
+      };
+      $("pager").append(go(data.page - 1, "← 前"), `${data.page} / ${fmt(pages)}`, go(data.page + 1, "次 →"));
+    }
+  }
+
+  async function runThread(params) {
+    show("viewThread");
+    const data = await api("/api/thread?key=" + encodeURIComponent(params.get("thread")));
+    const t = data.thread;
+    if (!t) { $("threadTitle").textContent = "スレッドが見つかりません"; $("threadPosts").innerHTML = ""; return; }
+    $("threadTitle").textContent = threadLabel(t);
+    $("threadInfo").innerHTML = `${esc(KIND[t.kind] || "")}・${esc(boardName(t.board))}・${esc(t.first_at || "")} 〜 ${esc(t.last_at || "")}・${fmt(t.post_count)} 件・取得元 <a href="${esc(t.source)}" target="_blank" rel="noopener noreferrer">${esc(t.source)}</a>`;
+    const box = $("threadPosts");
+    box.innerHTML = "";
+    const frag = document.createDocumentFragment();
+    data.posts.forEach((p) => frag.appendChild(postCard(p, { inThread: true, threadKey: t.key })));
+    box.appendChild(frag);
+    const target = document.getElementById("p" + params.get("no"));
+    if (target) { target.classList.add("target"); target.scrollIntoView({ block: "center" }); } else { window.scrollTo(0, 0); }
+  }
+
+  async function runThreads() {
+    show("viewThreads");
+    const data = await api("/api/threads");
+    $("threadRows").innerHTML = data.threads.map((t) => `
+      <tr><td>${esc(KIND[t.kind] || "")}</td>
+      <td class="title"><a href="#thread=${t.key}">${esc(threadLabel(t))}</a></td>
+      <td>${esc((t.first_at || "").slice(0, 10))} 〜 ${esc((t.last_at || "").slice(0, 10))}</td>
+      <td class="num">${fmt(t.post_count)}</td><td>${esc(boardName(t.board))}</td></tr>`).join("");
+  }
+
+  function route() {
+    const hash = location.hash.replace(/^#/, "");
+    const params = new URLSearchParams(hash);
+    if (hash === "threads") return runThreads();
+    if (params.get("thread") && !params.get("uid") && !params.get("q")) return runThread(params);
+    lastSearchHash = location.hash;
+    return runSearch(params);
+  }
+
+  $("form").addEventListener("submit", (e) => { e.preventDefault(); location.hash = formToHash(); });
+  $("reset").addEventListener("click", () => { location.hash = "#"; });
+  $("tabSearch").addEventListener("click", () => { location.hash = lastSearchHash || "#"; });
+  $("tabThreads").addEventListener("click", () => { location.hash = "#threads"; });
+  $("back").addEventListener("click", () => { history.length > 1 ? history.back() : (location.hash = lastSearchHash || "#"); });
+  window.addEventListener("hashchange", route);
+
+  api("/api/threads").then((d) => {
+    d.threads.forEach((t) => known.add(t.key));
+    const n = (k) => d.threads.filter((t) => t.kind === k).length;
+    $("stats").textContent = `スレッド ${fmt(d.threads.length)} 本（本スレ ${n("main")}・関連 ${n("related")}・ほかの板 ${n("other")}）・投稿 ${fmt(d.posts)} 件・${(d.first || "").slice(0, 10)} 〜 ${(d.last || "").slice(0, 10)}・このパソコンの中だけで動いています`;
+    route();
+  });
+})();
+</script>
+</body>
+</html>
