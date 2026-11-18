@@ -98,7 +98,8 @@ Base Ball Bear の 5ch スレッド(本スレ vol.1〜現行、関連スレ、�
 - `open-5ch-search.bat`: 検索画面を開く(`http://127.0.0.1:8770/`、このパソコンの中だけで動く)
 - `scripts/fetch_5ch_archive.py`: 前スレ・過去スレ一覧をたどって生HTMLを `data/5ch-archive/raw/` に保存(4秒間隔)。初回は引数なしで全スレを取得
 - `scripts/build_5ch_db.py`: 生HTMLから `data/5ch-archive/bbb5ch.sqlite` を作り直す
-- `scripts/serve_5ch_search.py` + `scripts/5ch_search.html`: 検索画面
+- `scripts/serve_5ch_search.py` + `scripts/5ch_search.html`: 検索画面。入力しながらの検索と候補、年・月ごとの件数グラフ、関連ワード、多く出てくるスレ、前後の書き込みの展開、`>>123` の吹き出し、返信の一覧、IDでの絞り込み、しおり
+- `scripts/bbb_terms.py`: 関連ワード用に本文から語を取り出す部品。曲名・作品名は `data/songs.json`、メンバー名は辞書で拾い、それ以外はカタカナ・漢字・英字のかたまりを1語として数える(形態素解析は使わない)
 
 取得元は 5ch 本家(現行は `mevius.5ch.io`、過去分は公式の過去ログ `kako.5ch.io`、無いものだけ `toro.2ch.sc`)。`.dat` ファイルと、robots.txt で AI からの取得を禁止しているミラー(kyodemo.net など)は使いません。
 

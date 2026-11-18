@@ -5,9 +5,11 @@
   python scripts/build_5ch_db.py
 """
 import html as htmllib
-import datetime, json, os, re, sqlite3, sys, unicodedata
+import collections, datetime, json, os, re, sqlite3, sys, unicodedata
 
 sys.stdout.reconfigure(encoding="utf-8")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from bbb_terms import Extractor  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "data", "5ch-archive")
@@ -145,6 +147,7 @@ def main():
     CREATE INDEX posts_thread ON posts(thread_key, no);
     CREATE INDEX posts_at ON posts(posted_at);
     CREATE INDEX posts_uid ON posts(uid);
+    CREATE TABLE terms(key TEXT PRIMARY KEY, display TEXT, kind TEXT, df INTEGER);
     CREATE VIRTUAL TABLE posts_fts USING fts5(body, content='posts', content_rowid='id', tokenize='trigram');
     """)
     total = 0
@@ -185,12 +188,28 @@ def main():
             [(key, p["no"], p["name"], p["mail"], p["date_raw"], p["posted_at"], p["uid"], p["body"]) for p in posts])
         total += len(posts)
     con.execute("INSERT INTO posts_fts(rowid, body) SELECT id, body FROM posts")
+
+    # 関連ワード用に、語ごとの「出てくる投稿の数」を数えておく
+    ex = Extractor()
+    df, surfaces = collections.Counter(), {}
+    for (body,) in con.execute("SELECT body FROM posts"):
+        for key, surface in ex.terms(body).items():
+            df[key] += 1
+            surfaces.setdefault(key, collections.Counter())[surface] += 1
+    rows = []
+    for key, n in df.items():
+        entry = ex.dictionary.get(key)
+        if entry:
+            rows.append((key, entry[0], entry[1], n))
+        elif n >= 5:
+            rows.append((key, surfaces[key].most_common(1)[0][0], "word", n))
+    con.executemany("INSERT INTO terms VALUES(?,?,?,?)", rows)
     con.commit()
     con.execute("VACUUM")
     n_threads = con.execute("SELECT COUNT(*) FROM threads").fetchone()[0]
     span = con.execute("SELECT MIN(posted_at), MAX(posted_at) FROM posts").fetchone()
     con.close()
-    print(f"スレッド {n_threads} 本 / 投稿 {total} 件 / 期間 {span[0]} 〜 {span[1]}")
+    print(f"スレッド {n_threads} 本 / 投稿 {total} 件 / 期間 {span[0]} 〜 {span[1]} / ことば {len(rows)} 語")
     print(f"DB: {DB} ({os.path.getsize(DB) / 1024 / 1024:.1f} MB)")
     if problems:
         print("\n要確認:")

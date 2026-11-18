@@ -5,121 +5,249 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ベボベスレ過去ログ</title>
 <style>
+/* 色は「夏の青」を軸に、名前の緑は昔の2ちゃんねるの配色から */
 :root {
-  --bg: #f4f3ef; --panel: #fffefb; --ink: #23221f; --dim: #6f6c63; --line: #dddad0;
-  --accent: #b3402a; --accent-soft: #f4dcd4; --mark: #ffe58a; --link: #1d5f8a; --bar: #cfc9b8;
+  --bg: #f1f4f8; --panel: #ffffff; --sunk: #e8edf3; --ink: #17202b; --dim: #5d6a7a; --faint: #8a96a6;
+  --line: #d8dfe8; --accent: #1463d8; --accent-ink: #ffffff; --accent-soft: #e3eefc;
+  --bar: #b4c6de; --name: #1c7a45; --mark: #ffe27a; --mark-ink: #2a2100; --star: #d08a00; --song: #7a3ec2; --song-soft: #f0e8fb;
+  --shadow: 0 6px 24px rgba(23, 32, 43, 0.14);
 }
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #1b1a18; --panel: #252421; --ink: #e9e6dd; --dim: #9d998c; --line: #3a3833;
-    --accent: #ef7d63; --accent-soft: #4a2a22; --mark: #6b5a12; --link: #7fbde6; --bar: #4a473f;
+  :root:not([data-theme="light"]) {
+    --bg: #0f141b; --panel: #171e28; --sunk: #1f2834; --ink: #e5eaf1; --dim: #97a3b4; --faint: #6c7889;
+    --line: #2a3441; --accent: #6ea8ff; --accent-ink: #0b1626; --accent-soft: #1b2c47;
+    --bar: #34455c; --name: #62c68c; --mark: #6a5800; --mark-ink: #fff3c2; --star: #f0b54a; --song: #c19cf2; --song-soft: #2a2140;
+    --shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
   }
 }
+:root[data-theme="dark"] {
+  --bg: #0f141b; --panel: #171e28; --sunk: #1f2834; --ink: #e5eaf1; --dim: #97a3b4; --faint: #6c7889;
+  --line: #2a3441; --accent: #6ea8ff; --accent-ink: #0b1626; --accent-soft: #1b2c47;
+  --bar: #34455c; --name: #62c68c; --mark: #6a5800; --mark-ink: #fff3c2; --star: #f0b54a; --song: #c19cf2; --song-soft: #2a2140;
+  --shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+}
 * { box-sizing: border-box; }
+html { scroll-padding-top: 9.5rem; }
 body { margin: 0; background: var(--bg); color: var(--ink);
-  font: 15px/1.7 "Hiragino Sans", "Yu Gothic UI", "Meiryo", system-ui, sans-serif; }
-a { color: var(--link); }
-header { padding: 1.4rem 1.25rem 0.6rem; max-width: 980px; margin: 0 auto; }
-h1 { margin: 0; font-size: 1.35rem; letter-spacing: 0.02em; }
-.stats { margin: 0.15rem 0 0; color: var(--dim); font-size: 0.82rem; font-variant-numeric: tabular-nums; }
-main { max-width: 980px; margin: 0 auto; padding: 0 1.25rem 4rem; }
-form { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: end; padding: 0.9rem; margin-top: 0.6rem;
-  background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
-label { display: flex; flex-direction: column; gap: 0.15rem; font-size: 0.72rem; color: var(--dim); }
-label.grow { flex: 1 1 16rem; }
-input, select, button { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line);
-  border-radius: 6px; padding: 0.4rem 0.6rem; min-height: 2.3rem; }
-input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  font: 15px/1.75 "BIZ UDPGothic", "Yu Gothic UI", "Hiragino Sans", "Meiryo", system-ui, sans-serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button, input, select { font: inherit; color: inherit; }
 button { cursor: pointer; }
-button.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; padding-inline: 1.1rem; }
-.tabs { display: flex; gap: 0.4rem; margin: 1rem 0 0.6rem; }
-.tabs button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-.years { display: flex; align-items: flex-end; gap: 3px; height: 92px; padding: 0.5rem 0.6rem 0; overflow-x: auto;
-  background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
-.year { flex: 0 1 34px; min-width: 22px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%;
-  background: none; border: none; padding: 0; min-height: 0; font-size: 0.62rem; color: var(--dim); font-variant-numeric: tabular-nums; }
-.year i { display: block; width: 100%; background: var(--bar); border-radius: 3px 3px 0 0; min-height: 2px; }
-.year:hover i, .year.on i { background: var(--accent); }
-.summary { margin: 0.8rem 0 0.4rem; color: var(--dim); font-size: 0.85rem; }
-.summary b { color: var(--ink); font-variant-numeric: tabular-nums; }
-.post { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 0.7rem 0.9rem; margin: 0.5rem 0; }
-.post.target { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
-.meta { display: flex; flex-wrap: wrap; gap: 0.2rem 0.7rem; font-size: 0.76rem; color: var(--dim); font-variant-numeric: tabular-nums; }
-.meta .no { color: var(--accent); font-weight: 700; }
-.meta button { all: unset; cursor: pointer; color: var(--link); }
-.meta button:hover { text-decoration: underline; }
-.body { white-space: pre-wrap; overflow-wrap: anywhere; margin-top: 0.35rem; }
-.body.clip { max-height: 15.5em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 80%, transparent); mask-image: linear-gradient(#000 80%, transparent); }
-.more { all: unset; cursor: pointer; color: var(--link); font-size: 0.8rem; }
-mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1px; }
-.pager { display: flex; gap: 0.5rem; align-items: center; justify-content: center; margin: 1.2rem 0; color: var(--dim); font-size: 0.85rem; }
-table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; font-size: 0.86rem; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.mono { font-family: "Cascadia Mono", "Consolas", "BIZ UDGothic", monospace; font-variant-numeric: tabular-nums; }
+[hidden] { display: none !important; }
+
+/* ---- 上の操作バー ---- */
+.bar { position: sticky; top: 0; z-index: 20; background: var(--panel); border-bottom: 1px solid var(--line); }
+.bar__in { max-width: 1240px; margin: 0 auto; padding: 0.7rem 1.25rem 0.6rem; display: grid; gap: 0.55rem; }
+.bar__top { display: flex; gap: 0.9rem; align-items: center; flex-wrap: wrap; }
+.brand { font-weight: 700; font-size: 1.05rem; letter-spacing: 0.02em; color: var(--ink); white-space: nowrap; }
+.brand:hover { text-decoration: none; }
+.brand small { display: block; font-weight: 400; font-size: 0.68rem; color: var(--faint); letter-spacing: 0; line-height: 1.3; }
+.find { position: relative; flex: 1 1 22rem; min-width: 14rem; }
+.find input { width: 100%; height: 2.7rem; padding: 0 2.4rem 0 2.5rem; background: var(--bg); border: 1.5px solid var(--line);
+  border-radius: 999px; font-size: 1rem; }
+.find input:focus { border-color: var(--accent); outline: none; background: var(--panel); }
+.find::before { content: ""; position: absolute; left: 0.95rem; top: 50%; width: 0.72rem; height: 0.72rem; margin-top: -0.5rem;
+  border: 2px solid var(--faint); border-radius: 50%; }
+.find::after { content: ""; position: absolute; left: 1.72rem; top: 50%; width: 0.4rem; height: 2px; margin-top: 0.3rem;
+  background: var(--faint); transform: rotate(45deg); }
+.find__clear { position: absolute; right: 0.45rem; top: 50%; transform: translateY(-50%); width: 1.9rem; height: 1.9rem;
+  border: none; background: none; color: var(--faint); font-size: 1.1rem; border-radius: 50%; }
+.find__clear:hover { background: var(--sunk); color: var(--ink); }
+.find kbd { position: absolute; right: 0.9rem; top: 50%; transform: translateY(-50%); font: 0.68rem/1 inherit; color: var(--faint);
+  border: 1px solid var(--line); border-radius: 4px; padding: 0.2rem 0.4rem; pointer-events: none; }
+.find input:focus ~ kbd, .find input:not(:placeholder-shown) ~ kbd { display: none; }
+.suggest { position: absolute; left: 0; right: 0; top: calc(100% + 6px); background: var(--panel); border: 1px solid var(--line);
+  border-radius: 12px; box-shadow: var(--shadow); padding: 0.35rem; z-index: 30; max-height: 22rem; overflow: auto; }
+.suggest h4 { margin: 0.3rem 0.6rem 0.2rem; font-size: 0.7rem; font-weight: 400; color: var(--faint); }
+.suggest button { display: flex; width: 100%; gap: 0.6rem; align-items: baseline; padding: 0.4rem 0.6rem; border: none;
+  background: none; border-radius: 8px; text-align: left; }
+.suggest button.on, .suggest button:hover { background: var(--accent-soft); }
+.suggest .n { margin-left: auto; color: var(--faint); font-size: 0.75rem; }
+.tabs { display: flex; gap: 0.2rem; background: var(--sunk); border-radius: 999px; padding: 0.2rem; }
+.tabs button { border: none; background: none; padding: 0.35rem 0.85rem; border-radius: 999px; color: var(--dim); font-size: 0.86rem; white-space: nowrap; }
+.tabs button[aria-pressed="true"] { background: var(--panel); color: var(--ink); font-weight: 700; box-shadow: 0 1px 2px rgba(0,0,0,0.12); }
+.icon-btn { display: inline-block; border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 0.35rem 0.75rem;
+  font-size: 0.8rem; color: var(--dim); white-space: nowrap; }
+.filters { display: flex; gap: 0.5rem 0.9rem; align-items: center; flex-wrap: wrap; font-size: 0.84rem; color: var(--dim); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button { border: none; background: var(--panel); padding: 0.28rem 0.7rem; color: var(--dim); border-right: 1px solid var(--line); }
+.seg button:last-child { border-right: none; }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); font-weight: 700; }
+.filters input[type="date"] { height: 1.95rem; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); padding: 0 0.4rem; }
+.pill { display: inline-flex; align-items: center; gap: 0.3rem; background: var(--accent-soft); color: var(--accent); border-radius: 999px;
+  padding: 0.12rem 0.3rem 0.12rem 0.7rem; font-size: 0.8rem; }
+.pill button { border: none; background: none; color: inherit; width: 1.3rem; height: 1.3rem; border-radius: 50%; line-height: 1; padding: 0; }
+.pill button:hover { background: var(--accent); color: var(--accent-ink); }
+.link-btn { border: none; background: none; color: var(--accent); padding: 0; font-size: inherit; }
+.link-btn:hover { text-decoration: underline; }
+
+/* ---- 本体の配置 ---- */
+.layout { max-width: 1240px; margin: 0 auto; padding: 1rem 1.25rem 5rem; display: grid; gap: 1rem;
+  grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "rail" "main"; }
+.head { grid-area: head; min-width: 0; }
+.rail { grid-area: rail; min-width: 0; }
+.main { grid-area: main; min-width: 0; }
+.head:empty, .rail:empty { display: none; }
+@media (min-width: 1080px) {
+  .layout { grid-template-columns: minmax(0, 1fr) 330px; grid-template-areas: "head rail" "main rail"; align-items: start; }
+  .rail { position: sticky; top: 8.4rem; max-height: calc(100vh - 9.4rem); overflow: auto; }
+  .layout.wide { grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "main"; }
+}
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
+/* 狭い画面では右の欄をたたんでおき、上のバーも固定しない */
+.rail summary { padding: 0.65rem 1rem; font-size: 0.86rem; color: var(--accent); cursor: pointer; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rail details[open] > summary { border-bottom: 1px solid var(--line); }
+@media (min-width: 1080px) { .rail summary { display: none; } }
+@media (max-width: 719px) {
+  .bar { position: static; }
+  html { scroll-padding-top: 1rem; }
+  .bar__in, .layout { padding-left: 0.8rem; padding-right: 0.8rem; }
+  .brand { white-space: normal; }
+}
+.sect { padding: 0.85rem 1rem; border-bottom: 1px solid var(--line); }
+.sect:last-child { border-bottom: none; }
+.sect h2 { margin: 0 0 0.5rem; font-size: 0.8rem; font-weight: 700; color: var(--dim); letter-spacing: 0.04em; }
+.sect h3 { margin: 0.7rem 0 0.35rem; font-size: 0.72rem; font-weight: 400; color: var(--faint); }
+.hint { margin: 0 0 0.5rem; font-size: 0.74rem; color: var(--faint); line-height: 1.5; }
+
+/* ---- 件数のグラフ ---- */
+.chart { padding: 0.8rem 1rem 0.6rem; }
+.chart__top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 0.5rem; }
+.chart__top h2 { margin: 0; font-size: 0.8rem; color: var(--dim); letter-spacing: 0.04em; }
+.bars { display: flex; align-items: flex-end; gap: 3px; height: 96px; overflow-x: auto; }
+.bar-col { flex: 1 1 0; min-width: 20px; max-width: 46px; height: 100%; display: flex; flex-direction: column; justify-content: flex-end;
+  align-items: center; border: none; background: none; padding: 0; font-size: 0.64rem; color: var(--faint); font-variant-numeric: tabular-nums; }
+.bar-col i { display: block; width: 100%; min-height: 2px; background: var(--bar); border-radius: 3px 3px 0 0; }
+.bar-col.zero i { background: var(--line); }
+.bar-col b { font-weight: 400; margin-bottom: 2px; opacity: 0; white-space: nowrap; }
+.bar-col:not(:disabled):hover i, .bar-col.on i { background: var(--accent); }
+.bar-col:disabled { cursor: default; }
+.bar-col:hover b, .bar-col.on b { opacity: 1; color: var(--ink); }
+.bar-col.on { color: var(--accent); font-weight: 700; }
+
+/* ---- ことばのチップ ---- */
+.chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.chip { border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 0.16rem 0.65rem; font-size: 0.82rem;
+  display: inline-flex; gap: 0.35rem; align-items: baseline; max-width: 100%; }
+.chip:hover { border-color: var(--accent); color: var(--accent); }
+.chip small { color: var(--faint); font-size: 0.68rem; font-variant-numeric: tabular-nums; }
+.chip--song { background: var(--song-soft); border-color: transparent; color: var(--song); }
+.chip--song::before { content: "♪"; font-size: 0.75rem; }
+.chip--song:hover { border-color: var(--song); color: var(--song); }
+.chip--member { font-weight: 700; }
+.rows { display: grid; gap: 0.3rem; }
+.row-btn { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.6rem; align-items: center; border: none; background: none;
+  padding: 0.25rem 0.4rem; border-radius: 8px; text-align: left; font-size: 0.84rem; position: relative; color: var(--ink); }
+.row-btn:hover { background: var(--sunk); text-decoration: none; }
+.row-btn span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row-btn em { font-style: normal; color: var(--faint); font-size: 0.75rem; font-variant-numeric: tabular-nums; }
+.row-btn u { position: absolute; left: 0; bottom: 0; height: 2px; background: var(--accent); border-radius: 2px; text-decoration: none; opacity: 0.55; }
+dl.facts { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 0.15rem 0.9rem; font-size: 0.84rem; }
+dl.facts dt { color: var(--faint); }
+dl.facts dd { margin: 0; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+
+/* ---- 書き込み ---- */
+.summary { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; align-items: baseline; margin: 0 0 0.6rem; color: var(--dim); font-size: 0.88rem; }
+.summary strong { font-size: 1.35rem; color: var(--ink); font-variant-numeric: tabular-nums; }
+.post { padding: 0.75rem 1rem 0.8rem; border-bottom: 1px solid var(--line); position: relative; }
+.panel > .post:last-child, .pop > .post:last-child { border-bottom: none; }
+.post.target { background: var(--accent-soft); box-shadow: inset 3px 0 0 var(--accent); }
+.post.ctx { background: var(--sunk); padding-left: 1.6rem; }
+.post.ctx .body { color: var(--dim); }
+.ph { display: flex; flex-wrap: wrap; gap: 0.1rem 0.7rem; align-items: baseline; font-size: 0.78rem; color: var(--dim); }
+.ph .where { font-weight: 700; display: inline-block; max-width: min(100%, 26em); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: bottom; }
+.ph .board { color: var(--faint); }
+.ph .no { font-weight: 700; color: var(--accent); min-width: 1.6em; }
+.ph .name { color: var(--name); }
+.ph .uid { border: none; background: none; padding: 0; color: var(--dim); }
+.ph .uid:hover { color: var(--accent); text-decoration: underline; }
+.ph .uid.busy { color: var(--star); font-weight: 700; }
+.ph .rep { border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 0 0.5rem; font-size: 0.72rem; color: var(--accent); }
+.ph .rep:hover { background: var(--accent-soft); }
+.ph .star { margin-left: auto; border: none; background: none; color: var(--faint); font-size: 1rem; line-height: 1; padding: 0.1rem 0.2rem; }
+.ph .star[aria-pressed="true"] { color: var(--star); }
+.body { white-space: pre-wrap; overflow-wrap: anywhere; margin-top: 0.2rem; }
+.body.clip { max-height: 13.5em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 75%, transparent); mask-image: linear-gradient(#000 75%, transparent); }
+.pf { display: flex; gap: 1rem; margin-top: 0.35rem; font-size: 0.78rem; }
+mark { background: var(--mark); color: var(--mark-ink); border-radius: 3px; padding: 0 1px; }
+.replies { margin: 0.5rem 0 0 0.6rem; border-left: 2px solid var(--line); }
+.replies .post { padding: 0.45rem 0.8rem; border-bottom: none; }
+.empty { padding: 2.2rem 1rem; text-align: center; color: var(--dim); }
+.pager { display: flex; gap: 0.6rem; align-items: center; justify-content: center; margin: 1.1rem 0; color: var(--dim); font-size: 0.86rem; font-variant-numeric: tabular-nums; }
+.pager button { border: 1px solid var(--line); background: var(--panel); border-radius: 8px; padding: 0.35rem 0.9rem; }
+.pager button:disabled { opacity: 0.4; cursor: default; }
+
+/* ---- スレ表示 ---- */
+.thead { padding: 0.9rem 1rem; }
+.thead h1 { margin: 0.2rem 0 0.1rem; font-size: 1.25rem; line-height: 1.4; text-wrap: balance; }
+.thead p { margin: 0; font-size: 0.8rem; color: var(--dim); overflow-wrap: anywhere; }
+.tnav { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-top: 0.7rem; }
+.tnav input { flex: 1 1 12rem; height: 2.1rem; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); padding: 0 0.7rem; }
+.tnav .icon-btn[disabled] { opacity: 0.4; cursor: default; }
+
+/* ---- 一覧の表 ---- */
 .tablewrap { overflow-x: auto; }
-th, td { padding: 0.4rem 0.7rem; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
-td.title { white-space: normal; min-width: 14rem; }
+table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+th, td { padding: 0.45rem 0.8rem; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { font-size: 0.74rem; color: var(--faint); font-weight: 400; }
+td.title { white-space: normal; min-width: 15rem; }
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 tr:last-child td { border-bottom: none; }
-.threadhead { margin: 1rem 0 0.4rem; }
-.threadhead h2 { margin: 0; font-size: 1.1rem; }
-.empty { padding: 2rem; text-align: center; color: var(--dim); border: 1px dashed var(--line); border-radius: 10px; margin-top: 0.8rem; }
-[hidden] { display: none !important; }
+.kind { font-size: 0.72rem; border-radius: 4px; padding: 0.05rem 0.4rem; background: var(--sunk); color: var(--dim); white-space: nowrap; }
+.kind--main { background: var(--accent-soft); color: var(--accent); }
+
+/* ---- >>123 の吹き出し ---- */
+.pop { position: absolute; z-index: 40; width: min(34rem, calc(100vw - 2rem)); max-height: 60vh; overflow: auto; background: var(--panel);
+  border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); }
+.pop .post { padding: 0.6rem 0.8rem; }
+@media (prefers-reduced-motion: no-preference) { .bar-col i { transition: background 0.12s; } }
 </style>
 </head>
 <body>
-<header>
-  <h1>ベボベスレ過去ログ</h1>
-  <p class="stats" id="stats">読み込み中…</p>
-</header>
-<main>
-  <form id="form">
-    <label class="grow">ことば（空白で区切ると全部を含む投稿）
-      <input id="q" type="search" placeholder="例: 野音 セトリ" autocomplete="off">
-    </label>
-    <label>いつから<input id="from" type="date"></label>
-    <label>いつまで<input id="to" type="date"></label>
-    <label>範囲
-      <select id="kind">
-        <option value="">すべて</option>
-        <option value="main">本スレだけ</option>
-        <option value="related">関連スレだけ</option>
-        <option value="other">ほかの板の単発スレだけ</option>
-      </select>
-    </label>
-    <label>並び順
-      <select id="order"><option value="new">新しい順</option><option value="old">古い順</option></select>
-    </label>
-    <button class="primary" type="submit">探す</button>
-    <button type="button" id="reset">条件を消す</button>
-  </form>
-
-  <div class="tabs">
-    <button type="button" id="tabSearch" aria-pressed="true">検索結果</button>
-    <button type="button" id="tabThreads" aria-pressed="false">スレッド一覧</button>
-  </div>
-
-  <section id="viewSearch">
-    <div class="years" id="years" aria-label="年ごとの件数"></div>
-    <p class="summary" id="summary"></p>
-    <div id="results"></div>
-    <div class="pager" id="pager"></div>
-  </section>
-
-  <section id="viewThreads" hidden>
-    <div class="tablewrap"><table>
-      <thead><tr><th>種類</th><th>タイトル</th><th>期間</th><th class="num">投稿</th><th>板</th></tr></thead>
-      <tbody id="threadRows"></tbody>
-    </table></div>
-  </section>
-
-  <section id="viewThread" hidden>
-    <div class="threadhead">
-      <button type="button" id="back">← 戻る</button>
-      <h2 id="threadTitle"></h2>
-      <p class="stats" id="threadInfo"></p>
+<div class="bar">
+  <div class="bar__in">
+    <div class="bar__top">
+      <a class="brand" href="#">ベボベスレ過去ログ<small id="stats">読み込み中…</small></a>
+      <div class="find">
+        <input id="q" type="text" placeholder="ことばで探す（空白で区切ると、全部を含む書き込み）" autocomplete="off" spellcheck="false" aria-label="検索することば">
+        <kbd>/</kbd>
+        <button class="find__clear" id="qClear" type="button" aria-label="入力を消す" hidden>×</button>
+        <div class="suggest" id="suggest" hidden></div>
+      </div>
+      <div class="tabs">
+        <button type="button" data-tab="search" aria-pressed="true">さがす</button>
+        <button type="button" data-tab="threads" aria-pressed="false">スレ一覧</button>
+        <button type="button" data-tab="marks" aria-pressed="false">しおり</button>
+      </div>
+      <button class="icon-btn" id="theme" type="button" title="明るさを切り替える">明るさ: 自動</button>
     </div>
-    <div id="threadPosts"></div>
-  </section>
-</main>
+    <div class="filters" id="filters">
+      <div class="seg" id="kindSeg" role="group" aria-label="範囲">
+        <button type="button" data-kind="" aria-pressed="true">すべて</button>
+        <button type="button" data-kind="main" aria-pressed="false">本スレ</button>
+        <button type="button" data-kind="related" aria-pressed="false">関連スレ</button>
+        <button type="button" data-kind="other" aria-pressed="false">ほかの板</button>
+      </div>
+      <label>期間 <input id="from" type="date" aria-label="いつから"> 〜 <input id="to" type="date" aria-label="いつまで"></label>
+      <div class="seg" id="orderSeg" role="group" aria-label="並び順">
+        <button type="button" data-order="new" aria-pressed="true">新しい順</button>
+        <button type="button" data-order="old" aria-pressed="false">古い順</button>
+      </div>
+      <span id="pills"></span>
+      <button class="link-btn" id="reset" type="button" hidden>条件をすべて消す</button>
+    </div>
+  </div>
+</div>
+
+<div class="layout" id="layout">
+  <div class="head" id="head"></div>
+  <aside class="rail" id="rail"></aside>
+  <main class="main" id="main"></main>
+</div>
+<div class="pop" id="pop" hidden></div>
 
 <script>
 (function () {
@@ -128,8 +256,7 @@ tr:last-child td { border-bottom: none; }
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const fmt = (n) => Number(n).toLocaleString("ja-JP");
   const api = (path) => fetch(path, { cache: "no-store" }).then((r) => r.json());
-  let lastSearchHash = "";
-  const known = new Set();
+  const params = () => new URLSearchParams(location.hash.replace(/^#/, ""));
   const KIND = { main: "本スレ", related: "関連スレ", other: "ほかの板" };
   const BOARD = {
     musicjg: "邦楽グループ", minor: "インディーズ", musicj: "邦楽", mjsaloon: "邦楽サロン", compose: "楽器・作曲",
@@ -138,25 +265,63 @@ tr:last-child td { border-bottom: none; }
     livetx: "実況（テレ東）", liventv: "実況（日テレ）", wildplus: "ニュース実況+"
   };
   const boardName = (b) => BOARD[b] || b;
-  // 重複スレの再利用で、題名の番号と実際の順番が違うスレには実質の番号を添える
+  const threads = new Map();          // スレッドキー → スレの情報
+  let seq = 0;                        // 古い応答を捨てるための通し番号
+  let cur = null;                     // いま開いているスレ {thread, posts, byNo, replies, uidCount, filter}
+  let lastSearch = "";
+  let composing = false;
+  const wide = window.matchMedia("(min-width: 1080px)");
+  function setRail(inner, label) {
+    $("rail").innerHTML = inner ? `<details class="panel"${wide.matches ? " open" : ""}><summary>${esc(label)}</summary>${inner}</details>` : "";
+  }
+  let span = [2005, 2026];           // グラフに並べる年の範囲（読み込み時にデータから決める）
+
+  // ---- このブラウザの中だけに置くもの（しおり・探した履歴・明るさ） ----
+  const store = {
+    get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+  };
+  const marks = () => store.get("bbb5ch_marks", []);
+  const isMarked = (key, no) => marks().some((m) => m.key === key && m.no === no);
+  function toggleMark(key, no, label, p) {
+    const list = marks();
+    const i = list.findIndex((m) => m.key === key && m.no === no);
+    if (i >= 0) list.splice(i, 1);
+    else list.unshift({ key, no, label, at: p.posted_at || "", name: p.name, text: p.body.slice(0, 400) });
+    store.set("bbb5ch_marks", list);
+    return i < 0;
+  }
+  function remember(q) {
+    q = q.trim();
+    if (!q) return;
+    store.set("bbb5ch_history", [q, ...store.get("bbb5ch_history", []).filter((x) => x !== q)].slice(0, 12));
+  }
+  function applyTheme() {
+    const t = store.get("bbb5ch_theme", "auto");
+    if (t === "auto") document.documentElement.removeAttribute("data-theme");
+    else document.documentElement.setAttribute("data-theme", t);
+    $("theme").textContent = "明るさ: " + ({ auto: "自動", light: "明るい", dark: "暗い" }[t]);
+  }
+
+  // ---- 表示の部品 ----
   function threadLabel(t) {
+    if (!t) return "";
     if (t.kind !== "main") return t.title;
     const inTitle = (t.title.normalize("NFKC").match(/vol\.?\s*(\d+)/i) || [])[1];
     return inTitle && Number(inTitle) !== t.vol ? `${t.title}（実質 vol.${t.vol}）` : t.title;
   }
+  const shortLabel = (t) => (t.kind === "main" ? "vol." + t.vol : t.title);
 
-  function decorate(text, terms, threadKey) {
+  function decorate(text, terms, key) {
     let html = esc(text);
     html = html.replace(/(h?ttps?:\/\/[^\s<>"'　]+)/g, (m) => {
       const url = m.startsWith("ttp") ? "h" + m : m;
-      // 手元にあるスレへのリンクは、外へ出ずにアーカイブ内で開く
       const t = url.match(/read\.cgi\/[a-z0-9]+\/(\d{9,10})(?:\/(\d{1,4}))?/);
-      if (t && known.has(t[1])) return `<a href="#thread=${t[1]}${t[2] ? "&no=" + t[2] : ""}" title="アーカイブ内で開く">${m}</a>`;
+      if (t && threads.has(t[1])) return `<a href="#thread=${t[1]}${t[2] ? "&no=" + t[2] : ""}" title="手元のアーカイブで開く">${m}</a>`;
       return `<a href="${url}" target="_blank" rel="noopener noreferrer">${m}</a>`;
     });
-    if (threadKey) {
-      html = html.replace(/&gt;&gt;(\d{1,4})/g, (m, no) => `<a href="#thread=${threadKey}&no=${no}">${m}</a>`);
-    }
+    html = html.replace(/&gt;&gt;(\d{1,4})(?:-(\d{1,4}))?/g, (m, a, b) =>
+      `<a href="#thread=${key}&no=${a}" data-ref="${key}:${a}:${b || a}">${m}</a>`);
     (terms || []).filter(Boolean).forEach((t) => {
       const pat = esc(t).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
       html = html.replace(new RegExp(`(${pat})(?![^<]*>)`, "gi"), "<mark>$1</mark>");
@@ -164,157 +329,473 @@ tr:last-child td { border-bottom: none; }
     return html;
   }
 
-  function postCard(p, opts) {
-    const o = opts || {};
-    const key = o.threadKey || p.thread_key;
-    const el = document.createElement("article");
-    el.className = "post";
-    el.id = o.inThread ? "p" + p.no : "";
-    const where = o.inThread ? "" : `<a href="#thread=${key}&no=${p.no}">${esc(p.kind === "main" ? "vol." + p.vol : p.title)}</a>${p.kind === "main" ? "" : `<span>${esc(boardName(p.board))}</span>`}`;
-    const uid = p.uid ? `<button type="button" data-uid="${esc(p.uid)}" title="このIDの投稿だけ表示">ID:${esc(p.uid)}</button>` : "";
-    el.innerHTML = `
-      <div class="meta">
-        ${where}<span class="no">${p.no}</span><span>${esc(p.name)}</span>
-        ${p.mail ? `<span>[${esc(p.mail)}]</span>` : ""}
-        <span>${esc(p.posted_at || (/\d/.test(p.date_raw || "") ? p.date_raw : "日付なし"))}</span>${uid}
-      </div>
-      <div class="body">${decorate(p.body, o.terms, key)}</div>`;
-    const body = el.querySelector(".body");
-    if (!o.inThread && p.body.split("\n").length > 9) {
-      body.classList.add("clip");
-      const more = document.createElement("button");
-      more.className = "more"; more.type = "button"; more.textContent = "全文を表示";
-      more.addEventListener("click", () => { body.classList.remove("clip"); more.remove(); });
-      el.appendChild(more);
+  // o: key / terms(強調する語) / where(スレ名を出す) / tools(前後を見る) / ctx(前後の書き込みとして薄く) / plain(吹き出し用) / id
+  function postHtml(p, o) {
+    const key = o.key || p.thread_key;
+    const t = threads.get(key);
+    const inThread = cur && cur.thread.key === key && !o.where;
+    const when = p.posted_at ? p.posted_at.slice(0, 16) : (/\d/.test(p.date_raw || "") ? p.date_raw : "日付なし");
+    const where = o.where && t
+      ? `<a class="where" href="#thread=${key}&no=${p.no}" title="${esc(t.title)}">${esc(shortLabel(t))}</a>${t.kind === "main" ? "" : `<span class="board">${esc(boardName(t.board))}</span>`}` : "";
+    let uid = "";
+    if (p.uid) {
+      const n = inThread ? cur.uidCount.get(p.uid) : 0;
+      uid = `<button class="uid mono${n >= 5 ? " busy" : ""}" data-act="uid" data-key="${key}" data-uid="${esc(p.uid)}" title="このIDの書き込みだけ表示">ID:${esc(p.uid)}${n > 1 ? ` (${n})` : ""}</button>`;
     }
-    const idBtn = el.querySelector("[data-uid]");
-    if (idBtn) idBtn.addEventListener("click", () => {
-      location.hash = "#" + new URLSearchParams({ thread: key, uid: p.uid, order: "old" }).toString();
-    });
-    return el;
+    const reps = inThread && !o.plain ? (cur.replies.get(p.no) || []) : [];
+    const rep = reps.length ? `<button class="rep" data-act="replies" data-no="${p.no}">返信 ${reps.length}</button>` : "";
+    const star = o.plain ? "" : `<button class="star" data-act="mark" data-key="${key}" data-no="${p.no}" aria-pressed="${isMarked(key, p.no)}" title="しおりに入れる／外す">${isMarked(key, p.no) ? "★" : "☆"}</button>`;
+    const long = o.tools && p.body.split("\n").length > 9;
+    const tools = o.tools ? `<div class="pf">
+        ${long ? `<button class="link-btn" data-act="unclip">全文を表示</button>` : ""}
+        <button class="link-btn" data-act="ctx" data-key="${key}" data-no="${p.no}">前後を見る</button>
+        <a href="#thread=${key}&no=${p.no}">スレッドで開く</a></div>` : "";
+    return `<article class="post${o.ctx ? " ctx" : ""}" ${o.id ? `id="p${p.no}"` : ""} data-key="${key}" data-no="${p.no}">
+      <div class="ph">${where}<a class="no mono" href="#thread=${key}&no=${p.no}">${p.no}</a>
+        <span class="name">${esc(p.name)}</span>${p.mail && p.mail !== "sage" ? `<span>[${esc(p.mail)}]</span>` : ""}
+        <time class="mono" title="${esc(p.date_raw || "")}">${esc(when)}</time>${uid}${rep}${star}</div>
+      <div class="body${long ? " clip" : ""}">${decorate(p.body, o.terms, key)}</div>${tools}</article>`;
   }
 
-  function show(view) {
-    ["viewSearch", "viewThreads", "viewThread"].forEach((v) => { $(v).hidden = v !== view; });
-    $("tabSearch").setAttribute("aria-pressed", String(view === "viewSearch"));
-    $("tabThreads").setAttribute("aria-pressed", String(view === "viewThreads"));
+  function chips(items) {
+    return `<div class="chips">${items.map((x) =>
+      `<button class="chip ${x.k === "song" || x.k === "album" ? "chip--song" : x.k === "member" ? "chip--member" : ""}" data-act="term" data-term="${esc(x.t)}">${esc(x.t)}${x.n != null ? `<small>${fmt(x.n)}</small>` : ""}</button>`).join("")}</div>`;
   }
 
-  function formToHash() {
-    const p = new URLSearchParams();
-    [["q", $("q").value.trim()], ["from", $("from").value], ["to", $("to").value], ["kind", $("kind").value]].forEach(([k, v]) => { if (v) p.set(k, v); });
-    if ($("order").value === "old") p.set("order", "old");
-    return "#" + p.toString();
+  function setTab(name) {
+    document.querySelectorAll(".tabs button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.tab === name)));
+    $("filters").hidden = name !== "search";
+    $("layout").classList.toggle("wide", name === "threads" || name === "marks");
+  }
+  function go(p, replace) {
+    const h = "#" + p.toString();
+    if (replace) { history.replaceState(null, "", h); route(); }
+    else if (location.hash === h || (h === "#" && !location.hash)) route();
+    else location.hash = h;
+  }
+  const isThreadView = (P) => P.get("thread") && !P.get("q") && !P.get("uid") && !P.get("in");
+
+  // ---- さがす ----
+  function syncControls(P) {
+    if (document.activeElement !== $("q")) $("q").value = P.get("q") || "";
+    $("qClear").hidden = !$("q").value;
+    $("from").value = P.get("from") || "";
+    $("to").value = P.get("to") || "";
+    document.querySelectorAll("#kindSeg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.kind === (P.get("kind") || ""))));
+    document.querySelectorAll("#orderSeg button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.order === (P.get("order") || "new"))));
+    const pills = [];
+    if (P.get("thread")) pills.push(["thread,in", "スレ内: " + shortLabel(threads.get(P.get("thread")) || { kind: "", title: P.get("thread") })]);
+    if (P.get("uid")) pills.push(["uid", "ID:" + P.get("uid")]);
+    if (P.get("nodate")) pills.push(["nodate", "日付なしの書き込み"]);
+    $("pills").innerHTML = pills.map(([k, label]) => `<span class="pill">${esc(label)}<button data-act="unpill" data-param="${k}" aria-label="この条件を外す">×</button></span>`).join(" ");
+    $("reset").hidden = ![...P.keys()].some((k) => k !== "order");
   }
 
-  async function runSearch(params) {
-    show("viewSearch");
-    $("q").value = params.get("q") || "";
-    $("from").value = params.get("from") || "";
-    $("to").value = params.get("to") || "";
-    $("order").value = params.get("order") || "new";
-    $("kind").value = params.get("kind") || "";
-    const data = await api("/api/search?" + params.toString());
-    if (data.error) { $("results").innerHTML = `<p class="empty">${esc(data.error)}</p>`; return; }
-
-    const max = Math.max(1, ...data.years.map((y) => y[1]));
-    $("years").innerHTML = "";
-    if (data.nodate > 0) {
-      // 元の過去ログで日付が失われた投稿（ほぼ vol.1 の 2003年12月〜2005年1月）
-      const b = document.createElement("button");
-      b.type = "button"; b.className = "year" + (params.get("nodate") ? " on" : "");
-      b.title = `日付なし ${fmt(data.nodate)}件（ほぼ2003年12月〜2005年1月の vol.1）`;
-      b.innerHTML = `<span>${data.nodate}</span><i style="height:${Math.max(3, Math.round((data.nodate / Math.max(1, data.nodate, ...data.years.map((y) => y[1]))) * 46))}px"></i>'03-04`;
-      b.style.flexBasis = "44px";
-      b.addEventListener("click", () => {
-        const p = new URLSearchParams(params); p.delete("page"); p.delete("from"); p.delete("to");
-        p.set("nodate", "1"); p.set("order", "old");
-        location.hash = "#" + p.toString();
-      });
-      $("years").appendChild(b);
+  function chartHtml(data, P) {
+    const from = P.get("from") || "", to = P.get("to") || "";
+    const year = from.slice(0, 4);
+    const monthly = data.months.length > 0 && year === to.slice(0, 4);
+    const month = monthly && from.slice(5, 7) === to.slice(5, 7) && from.slice(8) === "01" ? from.slice(5, 7) : "";
+    let cols = "";
+    if (monthly) {
+      const byM = new Map(data.months);
+      const max = Math.max(1, ...data.months.map((m) => m[1]));
+      for (let m = 1; m <= 12; m++) {
+        const mm = String(m).padStart(2, "0"), n = byM.get(mm) || 0;
+        cols += `<button class="bar-col${month === mm ? " on" : ""}" data-act="month" data-year="${year}" data-month="${mm}" title="${year}年${m}月 ${fmt(n)}件"><b>${n || ""}</b><i style="height:${n ? Math.max(3, Math.round(n / max * 62)) : 2}px"></i>${m}月</button>`;
+      }
+    } else {
+      const max = Math.max(1, data.nodate, ...data.years.map((y) => y[1]));
+      const h = (n) => Math.max(3, Math.round(n / max * 62));
+      if (data.nodate > 0) cols += `<button class="bar-col${P.get("nodate") ? " on" : ""}" data-act="nodate" title="日付なし ${fmt(data.nodate)}件（ほぼ2003年12月〜2005年1月の vol.1）"><b>${data.nodate}</b><i style="height:${h(data.nodate)}px"></i>'03-4</button>`;
+      const byY = new Map(data.years);
+      if (data.years.length) {
+        for (let yy = span[0]; yy <= span[1]; yy++) {
+          const y = String(yy), n = byY.get(y) || 0;
+          cols += `<button class="bar-col${n ? "" : " zero"}" data-act="year" data-year="${y}" title="${y}年 ${fmt(n)}件" ${n ? "" : "disabled"}><b>${n >= 1000 ? (n / 1000).toFixed(1) + "k" : n || ""}</b><i style="height:${n ? h(n) : 2}px"></i>'${y.slice(2)}</button>`;
+        }
+      }
     }
-    data.years.forEach(([y, n]) => {
-      const b = document.createElement("button");
-      b.type = "button"; b.className = "year"; b.title = `${y}年 ${fmt(n)}件`;
-      b.innerHTML = `<span>${n >= 1000 ? Math.round(n / 100) / 10 + "k" : n}</span><i style="height:${Math.max(3, Math.round((n / max) * 46))}px"></i>'${y.slice(2)}`;
-      b.addEventListener("click", () => {
-        const p = new URLSearchParams(params); p.delete("page"); p.delete("nodate");
-        p.set("from", `${y}-01-01`); p.set("to", `${y}-12-31`);
-        location.hash = "#" + p.toString();
-      });
-      $("years").appendChild(b);
-    });
-    $("years").hidden = data.years.length === 0 && !data.nodate;
+    if (!cols) return "";
+    return `<div class="panel chart"><div class="chart__top"><h2>${monthly ? year + "年の月ごと" : "年ごとの件数"}</h2>
+      ${monthly ? `<button class="link-btn" data-act="allyears">← 全期間に戻す</button>` : `<span class="hint" style="margin:0">棒を押すとその年に絞れます</span>`}</div>
+      <div class="bars">${cols}</div></div>`;
+  }
 
-    const extra = [];
-    if (params.get("nodate")) extra.push("日付なしの投稿のみ（ほぼ2003年12月〜2005年1月）");
-    if (params.get("uid")) extra.push(`ID:${esc(params.get("uid"))} のみ`);
-    if (params.get("thread") && !params.get("no")) extra.push("このスレッド内");
-    $("summary").innerHTML = `<b>${fmt(data.total)}</b> 件${extra.length ? "（" + extra.join("・") + "）" : ""}`;
+  async function viewSearch(P) {
+    setTab("search");
+    cur = null;
+    lastSearch = location.hash;
+    syncControls(P);
+    const my = ++seq;
+    const data = await api("/api/search?" + P.toString());
+    if (my !== seq) return;
+    if (data.error) { $("head").innerHTML = ""; $("rail").innerHTML = ""; $("main").innerHTML = `<div class="panel empty">${esc(data.error)}</div>`; return; }
+    const narrowed = !!data.related;
+    $("head").innerHTML = chartHtml(data, P);
 
-    $("results").innerHTML = "";
-    if (data.total === 0) $("results").innerHTML = '<p class="empty">当てはまる投稿はありません。ことばを短くするか、期間を広げてみてください。</p>';
-    data.posts.forEach((p) => $("results").appendChild(postCard(p, { terms: data.terms })));
+    // 右の欄: 絞っているときは関連ワードと多く出てくるスレ、絞っていないときは入口になる言葉
+    let rail = "";
+    if (narrowed) {
+      const rel = data.related;
+      rail += `<div class="sect"><h2>関連ワード</h2>`;
+      if (rel.songs.length || rel.words.length) {
+        rail += `<p class="hint">この条件の書き込みに、ふだんより目立って多く出てくる言葉です。押すと絞り込み、Shift を押しながらだとその言葉だけで探します。</p>`;
+        if (rel.songs.length) rail += `<h3>曲・作品</h3>${chips(rel.songs)}`;
+        if (rel.words.length) rail += `<h3>ことば</h3>${chips(rel.words)}`;
+      } else rail += `<p class="hint">件数が少ないため、目立つ言葉は見つかりませんでした。</p>`;
+      rail += `</div>`;
+      if (data.top_threads.length > 1 && !P.get("thread")) {
+        const max = data.top_threads[0].n;
+        rail += `<div class="sect"><h2>多く出てくるスレ</h2><div class="rows">${data.top_threads.map((t) =>
+          `<button class="row-btn" data-act="inthread" data-key="${t.key}" title="このスレの中だけに絞る"><span>${esc(shortLabel(t))}</span><em>${fmt(t.n)}件</em><u style="width:${Math.round(t.n / max * 100)}%"></u></button>`).join("")}</div></div>`;
+      }
+    } else {
+      const home = await api("/api/home");
+      if (my !== seq) return;
+      const hist = store.get("bbb5ch_history", []);
+      if (hist.length) rail += `<div class="sect"><h2>最近さがした言葉</h2><div class="chips">${hist.map((h) => `<button class="chip" data-act="hist" data-q="${esc(h)}">${esc(h)}</button>`).join("")}</div></div>`;
+      rail += `<div class="sect"><h2>メンバー</h2>${chips(home.members)}</div>`;
+      rail += `<div class="sect"><h2>よく話題になる曲</h2><p class="hint">数字は、その曲名が出てくる書き込みの数です。</p>${chips(home.songs)}</div>`;
+      rail += `<div class="sect"><h2>作品</h2>${chips(home.albums)}</div>`;
+    }
+    const teaser = narrowed
+      ? [...data.related.songs, ...data.related.words].slice(0, 4).map((x) => x.t).join("・")
+      : "";
+    setRail(rail, narrowed ? (teaser ? `関連ワード: ${teaser} ほか` : "関連ワードと、多く出てくるスレ") : "メンバー・よく話題になる曲から探す");
 
     const pages = Math.ceil(data.total / data.page_size);
-    $("pager").innerHTML = "";
-    if (pages > 1) {
-      const go = (n, label) => {
-        const b = document.createElement("button");
-        b.type = "button"; b.textContent = label; b.disabled = n < 1 || n > pages;
-        b.addEventListener("click", () => { const p = new URLSearchParams(params); p.set("page", n); location.hash = "#" + p.toString(); window.scrollTo(0, 0); });
-        return b;
-      };
-      $("pager").append(go(data.page - 1, "← 前"), `${data.page} / ${fmt(pages)}`, go(data.page + 1, "次 →"));
+    const what = data.terms.length ? `「${esc(data.terms.join(" "))}」を含む書き込み` : narrowed ? "条件に当てはまる書き込み" : "すべての書き込み";
+    let html = `<p class="summary"><strong>${fmt(data.total)}</strong><span>件・${what}</span>${pages > 1 ? `<span>${data.page} / ${fmt(pages)} ページ</span>` : ""}</p>`;
+    html += data.total === 0
+      ? `<div class="panel empty">当てはまる書き込みはありません。ことばを短くするか、期間や範囲を広げてみてください。</div>`
+      : `<div class="panel">${data.posts.map((p) => postHtml(p, { where: true, tools: true, terms: data.terms })).join("")}</div>`;
+    if (pages > 1) html += `<div class="pager"><button data-act="page" data-page="${data.page - 1}" ${data.page <= 1 ? "disabled" : ""}>← 前へ</button>
+      <span>${data.page} / ${fmt(pages)}</span><button data-act="page" data-page="${data.page + 1}" ${data.page >= pages ? "disabled" : ""}>次へ →</button></div>`;
+    $("main").innerHTML = html;
+  }
+
+  // ---- スレッド表示 ----
+  function renderThreadPosts() {
+    const f = cur.filter;
+    const words = f.text.trim().split(/[\s　]+/).filter(Boolean);
+    const low = words.map((w) => w.toLowerCase());
+    const shown = cur.posts.filter((p) => (!f.uid || p.uid === f.uid) && low.every((w) => p.body.toLowerCase().includes(w)));
+    $("tcount").innerHTML = f.uid || words.length
+      ? `${fmt(shown.length)} / ${fmt(cur.posts.length)} 件を表示${f.uid ? ` <span class="pill">ID:${esc(f.uid)}<button data-act="tuid-clear" aria-label="IDの絞り込みを外す">×</button></span>` : ""}`
+      : "";
+    $("tposts").innerHTML = shown.length
+      ? shown.map((p) => postHtml(p, { key: cur.thread.key, id: true, terms: words })).join("")
+      : `<div class="empty">このスレには当てはまる書き込みがありません。</div>`;
+  }
+
+  async function viewThread(P) {
+    setTab("");
+    const key = P.get("thread");
+    if (!cur || cur.thread.key !== key) {
+      const my = ++seq;
+      const data = await api("/api/thread?key=" + encodeURIComponent(key));
+      if (my !== seq) return;
+      if (!data.thread) { $("head").innerHTML = ""; $("rail").innerHTML = ""; $("main").innerHTML = `<div class="panel empty">このスレッドは手元にありません。</div>`; return; }
+      const t = data.thread;
+      const replies = new Map(), uidCount = new Map();
+      data.posts.forEach((p) => {
+        if (p.uid) uidCount.set(p.uid, (uidCount.get(p.uid) || 0) + 1);
+        const seen = new Set();
+        for (const m of p.body.matchAll(/>>(\d{1,4})(?:-(\d{1,4}))?/g)) {
+          const a = +m[1], b = Math.min(+(m[2] || m[1]), a + 20);
+          for (let n = a; n <= b; n++) {
+            if (n >= p.no || seen.has(n)) continue;
+            seen.add(n);
+            if (!replies.has(n)) replies.set(n, []);
+            replies.get(n).push(p.no);
+          }
+        }
+      });
+      cur = { thread: t, posts: data.posts, byNo: new Map(data.posts.map((p) => [p.no, p])), replies, uidCount, filter: { text: "", uid: "" } };
+
+      const nav = (x, label) => x ? `<a class="icon-btn" href="#thread=${x.key}">${label}</a>` : `<button class="icon-btn" disabled>${label}</button>`;
+      $("head").innerHTML = `<div class="panel thead">
+        <button class="link-btn" data-act="back">← 検索にもどる</button>
+        <h1>${esc(threadLabel(t))}</h1>
+        <p><span class="kind kind--${t.kind}">${KIND[t.kind]}</span> ${esc(boardName(t.board))}・${esc((t.first_at || "").slice(0, 10))} 〜 ${esc((t.last_at || "").slice(0, 10))}・${fmt(t.post_count)} 件</p>
+        <div class="tnav">${t.kind === "main" ? nav(data.prev, "← 前のスレ") + nav(data.next, "次のスレ →") : ""}
+          <input id="tfilter" type="text" placeholder="このスレの中を絞り込む" autocomplete="off" aria-label="このスレの中を絞り込む">
+          <span class="hint" id="tcount" style="margin:0"></span></div></div>`;
+
+      const hot = [...replies.entries()].sort((a, b) => b[1].length - a[1].length).slice(0, 6).filter((x) => x[1].length >= 2);
+      const busy = [...uidCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6).filter((x) => x[1] >= 3);
+      setRail(`
+        <div class="sect"><h2>このスレについて</h2><dl class="facts">
+          <dt>期間</dt><dd>${esc((t.first_at || "").slice(0, 10))} 〜 ${esc((t.last_at || "").slice(0, 10))}</dd>
+          <dt>書き込み</dt><dd>${fmt(t.post_count)} 件</dd>
+          ${uidCount.size ? `<dt>書いた人</dt><dd>のべ ${fmt(uidCount.size)} ID</dd>` : ""}
+          <dt>取得元</dt><dd><a href="${esc(t.source)}" target="_blank" rel="noopener noreferrer">${esc((t.source || "").replace(/^https?:\/\//, "").split("/")[0])}</a></dd></dl></div>
+        ${hot.length ? `<div class="sect"><h2>返信の多い書き込み</h2><div class="rows">${hot.map(([no, r]) =>
+          `<a class="row-btn" href="#thread=${t.key}&no=${no}" data-ref="${t.key}:${no}:${no}"><span><b class="mono">${no}</b> ${esc((cur.byNo.get(no) || { body: "" }).body.replace(/\s+/g, " ").slice(0, 28))}</span><em>返信 ${r.length}</em></a>`).join("")}</div></div>` : ""}
+        ${busy.length ? `<div class="sect"><h2>書き込みの多いID</h2><div class="rows">${busy.map(([u, n]) =>
+          `<button class="row-btn" data-act="tuid" data-uid="${esc(u)}" title="このIDの書き込みだけ表示"><span class="mono">ID:${esc(u)}</span><em>${n} 件</em></button>`).join("")}</div></div>` : ""}`, "このスレについて・返信の多い書き込み");
+      $("main").innerHTML = `<div class="panel" id="tposts"></div>`;
+      renderThreadPosts();
     }
+    document.querySelectorAll(".post.target").forEach((el) => el.classList.remove("target"));
+    const no = P.get("no");
+    if (no && !document.getElementById("p" + no) && (cur.filter.uid || cur.filter.text)) {
+      // 絞り込み中で見えていない番号へ飛ぶときは、絞り込みを外す
+      cur.filter = { text: "", uid: "" };
+      if ($("tfilter")) $("tfilter").value = "";
+      renderThreadPosts();
+    }
+    const target = document.getElementById("p" + no);
+    if (target) { target.classList.add("target"); target.scrollIntoView({ block: "center" }); }
+    else if (!no) window.scrollTo(0, 0);
   }
 
-  async function runThread(params) {
-    show("viewThread");
-    const data = await api("/api/thread?key=" + encodeURIComponent(params.get("thread")));
-    const t = data.thread;
-    if (!t) { $("threadTitle").textContent = "スレッドが見つかりません"; $("threadPosts").innerHTML = ""; return; }
-    $("threadTitle").textContent = threadLabel(t);
-    $("threadInfo").innerHTML = `${esc(KIND[t.kind] || "")}・${esc(boardName(t.board))}・${esc(t.first_at || "")} 〜 ${esc(t.last_at || "")}・${fmt(t.post_count)} 件・取得元 <a href="${esc(t.source)}" target="_blank" rel="noopener noreferrer">${esc(t.source)}</a>`;
-    const box = $("threadPosts");
-    box.innerHTML = "";
-    const frag = document.createDocumentFragment();
-    data.posts.forEach((p) => frag.appendChild(postCard(p, { inThread: true, threadKey: t.key })));
-    box.appendChild(frag);
-    const target = document.getElementById("p" + params.get("no"));
-    if (target) { target.classList.add("target"); target.scrollIntoView({ block: "center" }); } else { window.scrollTo(0, 0); }
-  }
-
-  async function runThreads() {
-    show("viewThreads");
-    const data = await api("/api/threads");
-    $("threadRows").innerHTML = data.threads.map((t) => `
-      <tr><td>${esc(KIND[t.kind] || "")}</td>
+  // ---- スレ一覧・しおり ----
+  function viewThreads() {
+    setTab("threads");
+    cur = null;
+    $("head").innerHTML = ""; $("rail").innerHTML = "";
+    const rows = [...threads.values()].map((t) => `<tr>
+      <td><span class="kind kind--${t.kind}">${KIND[t.kind]}</span></td>
       <td class="title"><a href="#thread=${t.key}">${esc(threadLabel(t))}</a></td>
-      <td>${esc((t.first_at || "").slice(0, 10))} 〜 ${esc((t.last_at || "").slice(0, 10))}</td>
+      <td class="mono">${esc((t.first_at || "").slice(0, 10))} 〜 ${esc((t.last_at || "").slice(0, 10))}</td>
       <td class="num">${fmt(t.post_count)}</td><td>${esc(boardName(t.board))}</td></tr>`).join("");
+    $("main").innerHTML = `<div class="panel tablewrap"><table>
+      <thead><tr><th>種類</th><th>題名</th><th>期間</th><th class="num">書き込み</th><th>板</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    window.scrollTo(0, 0);
+  }
+  function viewMarks() {
+    setTab("marks");
+    cur = null;
+    $("head").innerHTML = ""; $("rail").innerHTML = "";
+    const list = marks();
+    $("main").innerHTML = `<p class="summary"><strong>${list.length}</strong><span>件のしおり（このブラウザの中だけに保存されています）</span></p>` + (list.length
+      ? `<div class="panel">${list.map((m) => `<article class="post"><div class="ph">
+          <a class="where" href="#thread=${m.key}&no=${m.no}">${esc(m.label)}</a><span class="no mono">${m.no}</span>
+          <span class="name">${esc(m.name)}</span><time class="mono">${esc((m.at || "").slice(0, 16))}</time>
+          <button class="star" data-act="unmark" data-key="${m.key}" data-no="${m.no}" aria-pressed="true" title="しおりから外す">★</button></div>
+          <div class="body">${esc(m.text)}</div></article>`).join("")}</div>`
+      : `<div class="panel empty">書き込みの右上の ☆ を押すと、ここに集まります。</div>`);
   }
 
   function route() {
-    const hash = location.hash.replace(/^#/, "");
-    const params = new URLSearchParams(hash);
-    if (hash === "threads") return runThreads();
-    if (params.get("thread") && !params.get("uid") && !params.get("q")) return runThread(params);
-    lastSearchHash = location.hash;
-    return runSearch(params);
+    hidePop();
+    const raw = location.hash.replace(/^#/, "");
+    const P = params();
+    if (raw === "threads") return viewThreads();
+    if (raw === "marks") return viewMarks();
+    if (isThreadView(P)) return viewThread(P);
+    return viewSearch(P);
   }
 
-  $("form").addEventListener("submit", (e) => { e.preventDefault(); location.hash = formToHash(); });
-  $("reset").addEventListener("click", () => { location.hash = "#"; });
-  $("tabSearch").addEventListener("click", () => { location.hash = lastSearchHash || "#"; });
-  $("tabThreads").addEventListener("click", () => { location.hash = "#threads"; });
-  $("back").addEventListener("click", () => { history.length > 1 ? history.back() : (location.hash = lastSearchHash || "#"); });
-  window.addEventListener("hashchange", route);
+  // ---- 入力と候補 ----
+  function searchFromInput(replace) {
+    const raw = location.hash.replace(/^#/, "");
+    const P = params();
+    const next = raw === "threads" || raw === "marks" || isThreadView(P) ? new URLSearchParams() : P;
+    const v = $("q").value.trim();
+    if (v) next.set("q", v); else next.delete("q");
+    next.delete("page");
+    go(next, replace);
+  }
+  let typing = null, sugIndex = -1;
+  async function showSuggest() {
+    const box = $("suggest"), v = $("q").value;
+    let html = "";
+    if (!v.trim()) {
+      const hist = store.get("bbb5ch_history", []);
+      if (hist.length) html = `<h4>最近さがした言葉</h4>` + hist.slice(0, 6).map((h) => `<button type="button" data-fill="${esc(h)}" data-whole="1">${esc(h)}</button>`).join("");
+    } else if (!/[\s　]$/.test(v)) {
+      const data = await api("/api/suggest?q=" + encodeURIComponent(v));
+      if ($("q").value !== v) return;
+      if (data.items.length) html = `<h4>続きの候補</h4>` + data.items.map((x) =>
+        `<button type="button" data-fill="${esc(x.t)}"><span class="${x.k === "song" || x.k === "album" ? "chip chip--song" : ""}">${esc(x.t)}</span><span class="n">${fmt(x.n)}件</span></button>`).join("");
+    }
+    sugIndex = -1;
+    box.innerHTML = html;
+    box.hidden = !html || document.activeElement !== $("q");
+  }
+  function fill(text, whole) {
+    const parts = $("q").value.split(/[\s　]+/);
+    parts[parts.length - 1] = text;
+    $("q").value = whole ? text : parts.join(" ");
+    $("suggest").hidden = true;
+    remember($("q").value);
+    searchFromInput(false);
+  }
+  $("q").addEventListener("compositionstart", () => { composing = true; });
+  $("q").addEventListener("compositionend", () => { composing = false; $("q").dispatchEvent(new Event("input")); });
+  $("q").addEventListener("input", () => {
+    $("qClear").hidden = !$("q").value;
+    if (composing) return;           // 日本語の変換中は探さない
+    clearTimeout(typing);
+    typing = setTimeout(() => { searchFromInput(true); showSuggest(); }, 280);
+  });
+  $("q").addEventListener("focus", showSuggest);
+  $("q").addEventListener("blur", () => setTimeout(() => { $("suggest").hidden = true; }, 160));
+  $("q").addEventListener("keydown", (e) => {
+    if (e.isComposing || composing) return;
+    const items = [...$("suggest").querySelectorAll("button")];
+    if ((e.key === "ArrowDown" || e.key === "ArrowUp") && items.length && !$("suggest").hidden) {
+      e.preventDefault();
+      const step = e.key === "ArrowDown" ? 1 : -1;
+      sugIndex = sugIndex + step < -1 ? items.length - 1 : sugIndex + step >= items.length ? -1 : sugIndex + step;
+      items.forEach((b, i) => b.classList.toggle("on", i === sugIndex));
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      clearTimeout(typing);
+      if (sugIndex >= 0 && items[sugIndex]) return fill(items[sugIndex].dataset.fill, items[sugIndex].dataset.whole);
+      $("suggest").hidden = true;
+      remember($("q").value);
+      searchFromInput(false);
+    } else if (e.key === "Escape") { $("suggest").hidden = true; $("q").blur(); }
+  });
+  $("suggest").addEventListener("mousedown", (e) => {
+    const b = e.target.closest("button[data-fill]");
+    if (b) { e.preventDefault(); fill(b.dataset.fill, b.dataset.whole); }
+  });
+  $("qClear").addEventListener("click", () => { $("q").value = ""; $("qClear").hidden = true; searchFromInput(false); $("q").focus(); });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "/" && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { e.preventDefault(); $("q").focus(); $("q").select(); }
+    if (e.key === "Escape") hidePop();
+  });
 
+  // ---- 条件の操作 ----
+  function setParam(changes, drop) {
+    const P = params();
+    (drop || []).forEach((k) => P.delete(k));
+    Object.entries(changes).forEach(([k, v]) => { if (v) P.set(k, v); else P.delete(k); });
+    P.delete("page");
+    go(P);
+  }
+  document.querySelectorAll("#kindSeg button").forEach((b) => b.addEventListener("click", () => setParam({ kind: b.dataset.kind })));
+  document.querySelectorAll("#orderSeg button").forEach((b) => b.addEventListener("click", () => setParam({ order: b.dataset.order === "old" ? "old" : "" })));
+  $("from").addEventListener("change", () => setParam({ from: $("from").value }, ["nodate"]));
+  $("to").addEventListener("change", () => setParam({ to: $("to").value }, ["nodate"]));
+  $("reset").addEventListener("click", () => { $("q").value = ""; go(new URLSearchParams()); });
+  document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => {
+    const want = b.dataset.tab === "search" ? (lastSearch || "#") : "#" + b.dataset.tab;
+    if (location.hash === want || (want === "#" && !location.hash)) route(); else location.hash = want;
+  }));
+  $("theme").addEventListener("click", () => {
+    const order = ["auto", "light", "dark"];
+    store.set("bbb5ch_theme", order[(order.indexOf(store.get("bbb5ch_theme", "auto")) + 1) % 3]);
+    applyTheme();
+  });
+
+  // ---- 画面の中のボタン（まとめて受ける） ----
+  document.addEventListener("click", async (e) => {
+    const el = e.target.closest("[data-act]");
+    if (!el) return;
+    const act = el.dataset.act, P = params();
+    if (act === "term" || act === "hist") {
+      const now = (P.get("q") || "").trim();
+      const word = act === "hist" ? el.dataset.q : el.dataset.term;
+      const alone = act === "hist" || e.shiftKey || !now;
+      const q = alone ? word : now + " " + word;
+      $("q").value = q;
+      remember(q);
+      if (act === "hist" || e.shiftKey) go(new URLSearchParams({ q })); else setParam({ q });
+      window.scrollTo(0, 0);
+    } else if (act === "year") setParam({ from: el.dataset.year + "-01-01", to: el.dataset.year + "-12-31" }, ["nodate"]);
+    else if (act === "month") {
+      const y = el.dataset.year, m = el.dataset.month, last = new Date(+y, +m, 0).getDate();
+      setParam({ from: `${y}-${m}-01`, to: `${y}-${m}-${String(last).padStart(2, "0")}` }, ["nodate"]);
+    } else if (act === "allyears") setParam({}, ["from", "to"]);
+    else if (act === "nodate") setParam({ nodate: "1", order: "old" }, ["from", "to"]);
+    else if (act === "page") { P.set("page", el.dataset.page); go(P); window.scrollTo(0, 0); }
+    else if (act === "unpill") setParam({}, el.dataset.param.split(","));
+    else if (act === "inthread") setParam({ thread: el.dataset.key, in: "1" });
+    else if (act === "uid") {
+      if (cur && cur.thread.key === el.dataset.key) { cur.filter.uid = el.dataset.uid; renderThreadPosts(); window.scrollTo(0, 0); }
+      else go(new URLSearchParams({ thread: el.dataset.key, uid: el.dataset.uid, order: "old" }));
+    } else if (act === "tuid") { cur.filter.uid = el.dataset.uid; renderThreadPosts(); window.scrollTo(0, 0); }
+    else if (act === "tuid-clear") { cur.filter.uid = ""; renderThreadPosts(); }
+    else if (act === "back") { if (lastSearch) location.hash = lastSearch; else go(new URLSearchParams()); }
+    else if (act === "unclip") { el.closest(".post").querySelector(".body").classList.remove("clip"); el.remove(); }
+    else if (act === "mark" || act === "unmark") {
+      const key = el.dataset.key, no = +el.dataset.no;
+      let p = cur && cur.thread.key === key ? cur.byNo.get(no) : null;
+      if (!p && act === "mark") p = (await api(`/api/posts?key=${key}&from=${no}`)).posts[0];
+      const on = toggleMark(key, no, shortLabel(threads.get(key) || { kind: "", title: key }), p || { body: "", name: "" });
+      if (act === "unmark") return viewMarks();
+      el.setAttribute("aria-pressed", String(on));
+      el.textContent = on ? "★" : "☆";
+    } else if (act === "replies") {
+      const post = el.closest(".post"), open = post.querySelector(":scope > .replies");
+      if (open) return open.remove();
+      const box = document.createElement("div");
+      box.className = "replies";
+      box.innerHTML = (cur.replies.get(+el.dataset.no) || []).map((n) => postHtml(cur.byNo.get(n), { key: cur.thread.key, plain: true })).join("");
+      post.appendChild(box);
+    } else if (act === "ctx") {
+      // 前後の書き込みを、その場に広げる／たたむ
+      const post = el.closest(".post"), key = el.dataset.key, no = +el.dataset.no, tag = `${key}:${no}`;
+      if (post.dataset.ctx) {
+        document.querySelectorAll(`[data-ctx-of="${tag}"]`).forEach((x) => x.remove());
+        delete post.dataset.ctx;
+        el.textContent = "前後を見る";
+        return;
+      }
+      const data = await api(`/api/posts?key=${key}&from=${Math.max(1, no - 3)}&to=${no + 3}`);
+      const wrap = (list) => {
+        const d = document.createElement("div");
+        d.dataset.ctxOf = tag;
+        d.innerHTML = list.map((p) => postHtml(p, { key, ctx: true, plain: true })).join("");
+        return d;
+      };
+      post.before(wrap(data.posts.filter((p) => p.no < no)));
+      post.after(wrap(data.posts.filter((p) => p.no > no)));
+      post.dataset.ctx = "1";
+      el.textContent = "前後をたたむ";
+    }
+  });
+  document.addEventListener("input", (e) => {
+    if (e.target.id === "tfilter" && cur) { cur.filter.text = e.target.value; renderThreadPosts(); }
+  });
+
+  // ---- >>123 にマウスを乗せると、その書き込みを吹き出しで見せる ----
+  let popTimer = null;
+  const cache = new Map();
+  function hidePop() { $("pop").hidden = true; }
+  async function showPop(a) {
+    const [key, from, to] = a.dataset.ref.split(":");
+    const lo = +from, hi = Math.min(+to, lo + 9);
+    let posts;
+    if (cur && cur.thread.key === key) posts = cur.posts.filter((p) => p.no >= lo && p.no <= hi);
+    else {
+      const id = `${key}:${lo}:${hi}`;
+      if (!cache.has(id)) cache.set(id, api(`/api/posts?key=${key}&from=${lo}&to=${hi}`).then((d) => d.posts));
+      posts = await cache.get(id);
+    }
+    if (!posts.length || !a.isConnected) return;
+    const pop = $("pop");
+    pop.innerHTML = posts.map((p) => postHtml(p, { key, plain: true })).join("");
+    pop.hidden = false;
+    const r = a.getBoundingClientRect();
+    const left = Math.max(12, Math.min(r.left, document.documentElement.clientWidth - pop.offsetWidth - 12));
+    const below = r.bottom + pop.offsetHeight + 12 < window.innerHeight || r.top < pop.offsetHeight + 12;
+    pop.style.left = left + window.scrollX + "px";
+    pop.style.top = (below ? r.bottom + 6 : r.top - pop.offsetHeight - 6) + window.scrollY + "px";
+  }
+  document.addEventListener("mouseover", (e) => {
+    const a = e.target.closest("a[data-ref]");
+    if (a) { clearTimeout(popTimer); popTimer = setTimeout(() => showPop(a), 140); }
+    else if (e.target.closest("#pop")) clearTimeout(popTimer);
+  });
+  document.addEventListener("mouseout", (e) => {
+    if (e.target.closest("a[data-ref]") || e.target.closest("#pop")) { clearTimeout(popTimer); popTimer = setTimeout(hidePop, 260); }
+  });
+
+  // ---- はじまり ----
+  applyTheme();
+  window.addEventListener("hashchange", route);
   api("/api/threads").then((d) => {
-    d.threads.forEach((t) => known.add(t.key));
+    d.threads.forEach((t) => threads.set(t.key, t));
     const n = (k) => d.threads.filter((t) => t.kind === k).length;
-    $("stats").textContent = `スレッド ${fmt(d.threads.length)} 本（本スレ ${n("main")}・関連 ${n("related")}・ほかの板 ${n("other")}）・投稿 ${fmt(d.posts)} 件・${(d.first || "").slice(0, 10)} 〜 ${(d.last || "").slice(0, 10)}・このパソコンの中だけで動いています`;
+    span = [2005, +(d.last || "2026").slice(0, 4)];
+    $("stats").textContent = `${(d.first || "").slice(0, 4)}〜${(d.last || "").slice(0, 4)}年・${fmt(d.threads.length)}スレ（本スレ${n("main")}）・${fmt(d.posts)}件`;
     route();
   });
 })();
