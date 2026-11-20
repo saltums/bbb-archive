@@ -263,7 +263,77 @@ def work(q):
     return {"work": w}
 
 
-ROUTES = {"/api/works": works, "/api/work": work, "/api/search": search, "/api/suggest": suggest, "/api/thread": thread, "/api/posts": some_posts,
+BLOG_DB = os.path.join(ROOT, "data", "blog-archive", "blogs.sqlite")
+DIARY_PAGE = 30
+
+
+def blog_db():
+    con = sqlite3.connect(f"file:{BLOG_DB}?mode=ro", uri=True)
+    con.row_factory = sqlite3.Row
+    return con
+
+
+def diary(q):
+    """取り戻した日記・ブログの記事を絞り込んで返す。"""
+    if not os.path.exists(BLOG_DB):
+        return {"missing": True}
+    where, args = ["e.kind = 'blog'"], []
+    for name, col in (("author", "e.author"), ("source", "e.source")):
+        v = first(q, name)
+        if v == "-":
+            where.append(f"({col} IS NULL OR {col} = '')")
+        elif v:
+            where.append(f"{col} = ?")
+            args.append(v)
+    terms = [t for t in re.split(r"[\s　]+", first(q, "q")) if t]
+    long_terms = [t for t in terms if len(t) >= 3]
+    if long_terms:
+        where.append("e.id IN (SELECT rowid FROM entries_fts WHERE entries_fts MATCH ?)")
+        args.append(" AND ".join('"' + t.replace('"', '""') + '"' for t in long_terms))
+    for t in terms:
+        if len(t) < 3:
+            where.append("(e.body LIKE ? ESCAPE '\\' OR e.title LIKE ? ESCAPE '\\')")
+            args += ["%" + like_escape(t) + "%"] * 2
+    if first(q, "from"):
+        where.append("e.date >= ?")
+        args.append(first(q, "from"))
+    if first(q, "to"):
+        where.append("e.date <= ?")
+        args.append(first(q, "to"))
+    cond = " AND ".join(where)
+    order = "DESC" if first(q, "order") == "new" else "ASC"
+    page = max(1, int(first(q, "page") or 1))
+    con = blog_db()
+    total = con.execute(f"SELECT COUNT(*) FROM entries e WHERE {cond}", args).fetchone()[0]
+    rows = con.execute(f"""SELECT e.id, e.source, e.author, e.date, e.time, e.title, e.body, e.url, e.series, e.wayback_ts
+                           FROM entries e WHERE {cond} ORDER BY e.date {order}, e.id {order} LIMIT ? OFFSET ?""",
+                       args + [DIARY_PAGE, (page - 1) * DIARY_PAGE]).fetchall()
+    years = con.execute(f"""SELECT substr(e.date,1,4) y, COALESCE(NULLIF(e.author,''),'-') a, COUNT(*) n
+                            FROM entries e WHERE {cond} GROUP BY y, a ORDER BY y""", args).fetchall()
+    base = con.execute("""SELECT s.id, s.label, s.author, s.pages, COUNT(e.id) n, MIN(e.date) a, MAX(e.date) b
+                          FROM sources s LEFT JOIN entries e ON e.source = s.id AND e.kind = 'blog'
+                          GROUP BY s.id ORDER BY MIN(e.date)""").fetchall()
+    authors = con.execute("""SELECT COALESCE(NULLIF(author,''),'-') a, COUNT(*) n FROM entries WHERE kind='blog'
+                             GROUP BY a ORDER BY n DESC""").fetchall()
+    con.close()
+    return {"total": total, "page": page, "page_size": DIARY_PAGE, "terms": terms,
+            "entries": [dict(r) for r in rows], "years": [list(r) for r in years],
+            "sources": [dict(r) for r in base], "authors": [list(r) for r in authors]}
+
+
+def day_count(q):
+    """日記の日付ごとに、同じ日の 5ch の書き込み数（「この日のスレを見る」用）。dates=2004-12-01,2004-12-02"""
+    dates = [d for d in first(q, "dates").split(",") if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d)][:100]
+    con = db()
+    out = {}
+    for d in dates:
+        out[d] = con.execute("SELECT COUNT(*) FROM posts WHERE posted_at BETWEEN ? AND ?",
+                             (d + " 00:00:00", d + " 23:59:59")).fetchone()[0]
+    con.close()
+    return {"counts": out}
+
+
+ROUTES = {"/api/diary": diary, "/api/daycount": day_count, "/api/works": works, "/api/work": work, "/api/search": search, "/api/suggest": suggest, "/api/thread": thread, "/api/posts": some_posts,
           "/api/threads": lambda q: threads(), "/api/home": lambda q: home()}
 
 

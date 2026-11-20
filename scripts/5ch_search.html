@@ -9,6 +9,7 @@
 :root {
   --bg: #f1f4f8; --panel: #ffffff; --sunk: #e8edf3; --ink: #17202b; --dim: #5d6a7a; --faint: #8a96a6;
   --line: #d8dfe8; --accent: #1463d8; --accent-ink: #ffffff; --accent-soft: #e3eefc;
+  --m-koide: #1f5fbf; --m-sekine: #c2417a; --m-yuasa: #2f8a4a; --m-hori: #c96a12; --m-none: #7d8794;
   --pos: #1f8a5b; --pos-soft: #dff3e9; --neg: #c8463a; --neg-soft: #fbe5e2; --mix: #c58a12; --mix-soft: #fbf0d6; --neu: #8f9aaa; --neu-soft: #edf0f4;
   --bar: #b4c6de; --name: #1c7a45; --mark: #ffe27a; --mark-ink: #2a2100; --star: #d08a00; --song: #7a3ec2; --song-soft: #f0e8fb;
   --shadow: 0 6px 24px rgba(23, 32, 43, 0.14);
@@ -17,6 +18,7 @@
   :root:not([data-theme="light"]) {
     --bg: #0f141b; --panel: #171e28; --sunk: #1f2834; --ink: #e5eaf1; --dim: #97a3b4; --faint: #6c7889;
     --line: #2a3441; --accent: #6ea8ff; --accent-ink: #0b1626; --accent-soft: #1b2c47;
+    --m-koide: #79a9f5; --m-sekine: #f08cb7; --m-yuasa: #6fcf8d; --m-hori: #f2a65a; --m-none: #9aa4b2;
     --pos: #4cc48b; --pos-soft: #17352a; --neg: #f07b6e; --neg-soft: #3d1f1c; --mix: #e7b84f; --mix-soft: #3a2f14; --neu: #8793a4; --neu-soft: #232c38;
     --bar: #34455c; --name: #62c68c; --mark: #6a5800; --mark-ink: #fff3c2; --star: #f0b54a; --song: #c19cf2; --song-soft: #2a2140;
     --shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
@@ -25,7 +27,8 @@
 :root[data-theme="dark"] {
   --bg: #0f141b; --panel: #171e28; --sunk: #1f2834; --ink: #e5eaf1; --dim: #97a3b4; --faint: #6c7889;
   --line: #2a3441; --accent: #6ea8ff; --accent-ink: #0b1626; --accent-soft: #1b2c47;
-  --pos: #4cc48b; --pos-soft: #17352a; --neg: #f07b6e; --neg-soft: #3d1f1c; --mix: #e7b84f; --mix-soft: #3a2f14; --neu: #8793a4; --neu-soft: #232c38;
+  --m-koide: #79a9f5; --m-sekine: #f08cb7; --m-yuasa: #6fcf8d; --m-hori: #f2a65a; --m-none: #9aa4b2;
+    --pos: #4cc48b; --pos-soft: #17352a; --neg: #f07b6e; --neg-soft: #3d1f1c; --mix: #e7b84f; --mix-soft: #3a2f14; --neu: #8793a4; --neu-soft: #232c38;
     --bar: #34455c; --name: #62c68c; --mark: #6a5800; --mark-ink: #fff3c2; --star: #f0b54a; --song: #c19cf2; --song-soft: #2a2140;
   --shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
 }
@@ -265,6 +268,42 @@ tr:last-child td { border-bottom: none; }
 .work-card h2 { margin: 0.1rem 0 0.5rem; font-size: 1.5rem; }
 .work-card p.ov { margin: 0.6rem 0 0.7rem; color: var(--dim); font-size: 0.86rem; line-height: 1.75; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
 .work-todo { padding: 1rem 1.1rem; color: var(--dim); font-size: 0.86rem; border-style: dashed; }
+/* ---- 日記 ---- */
+.diary-hero { padding: 1.2rem 1.3rem 1rem; }
+.diary-hero h1 { margin: 0.15rem 0 0.2rem; font-size: clamp(1.5rem, 3.4vw, 2.1rem); line-height: 1.25; }
+.diary-hero .lead { margin: 0 0 0.9rem; color: var(--dim); font-size: 0.88rem; max-width: 52em; line-height: 1.75; }
+.who { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.8rem; }
+.who button { display: inline-flex; align-items: center; gap: 0.45rem; border: 1px solid var(--line); background: var(--panel);
+  border-radius: 999px; padding: 0.3rem 0.85rem 0.3rem 0.5rem; font-size: 0.86rem; }
+.who button i { width: 0.75rem; height: 0.75rem; border-radius: 50%; background: var(--c); }
+.who button small { color: var(--faint); font-variant-numeric: tabular-nums; }
+.who button[aria-pressed="true"] { border-color: var(--c); box-shadow: inset 0 0 0 1px var(--c); font-weight: 700; }
+.diary-tools { display: flex; flex-wrap: wrap; gap: 0.5rem 0.8rem; align-items: center; font-size: 0.84rem; color: var(--dim); }
+.diary-tools input[type="text"] { flex: 1 1 14rem; height: 2.2rem; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); padding: 0 0.7rem; }
+.diary-tools input[type="date"], .diary-tools select { height: 2rem; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); padding: 0 0.4rem; }
+.stack { display: flex; flex-direction: column-reverse; width: 100%; border-radius: 3px 3px 0 0; overflow: hidden; }
+.stack i { display: block; width: 100%; min-height: 0; border-radius: 0; }
+.diary-list { display: grid; gap: 0.7rem; }
+.entry { display: grid; grid-template-columns: 5.2rem minmax(0, 1fr); gap: 0 1rem; padding: 1rem 1.1rem; border-left: 4px solid var(--c); }
+.entry__date { text-align: center; padding-top: 0.15rem; font-variant-numeric: tabular-nums; }
+.entry__date b { display: block; font-size: 2rem; line-height: 1; letter-spacing: -0.02em; }
+.entry__date span { display: block; font-size: 0.74rem; color: var(--dim); margin-top: 0.25rem; }
+.entry__date em { display: block; font-style: normal; font-size: 0.7rem; color: var(--faint); }
+.entry__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.6rem; }
+.entry__who { font-size: 0.74rem; font-weight: 700; color: var(--c); }
+.entry__series { font-size: 0.74rem; color: var(--faint); }
+.entry__title { margin: 0.1rem 0 0.35rem; font-size: 1.02rem; }
+.entry .body { line-height: 1.85; }
+.entry .body.clip { max-height: 21em; }
+.entry__foot { display: flex; flex-wrap: wrap; gap: 0.2rem 1rem; margin-top: 0.5rem; font-size: 0.74rem; color: var(--faint); }
+.entry__foot a, .entry__foot button { font-size: 0.74rem; }
+@media (max-width: 600px) { .entry { grid-template-columns: 1fr; } .entry__date { text-align: left; display: flex; gap: 0.5rem; align-items: baseline; } .entry__date b { font-size: 1.4rem; } }
+.src-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.1rem 0.6rem; border: none; background: none; text-align: left;
+  padding: 0.4rem 0.45rem; border-radius: 8px; font-size: 0.84rem; color: var(--ink); width: 100%; }
+.src-row:hover { background: var(--sunk); }
+.src-row[aria-pressed="true"] { background: var(--accent-soft); }
+.src-row em { font-style: normal; color: var(--faint); font-size: 0.74rem; font-variant-numeric: tabular-nums; }
+.src-row small { grid-column: 1 / -1; color: var(--faint); font-size: 0.72rem; font-variant-numeric: tabular-nums; }
 @media (prefers-reduced-motion: no-preference) { .bar-col i { transition: background 0.12s; } }
 </style>
 </head>
@@ -282,6 +321,7 @@ tr:last-child td { border-bottom: none; }
       <div class="tabs">
         <button type="button" data-tab="search" aria-pressed="true">さがす</button>
         <button type="button" data-tab="works" aria-pressed="false">作品</button>
+        <button type="button" data-tab="diary" aria-pressed="false">日記</button>
         <button type="button" data-tab="threads" aria-pressed="false">スレ一覧</button>
         <button type="button" data-tab="marks" aria-pressed="false">しおり</button>
       </div>
@@ -429,6 +469,7 @@ tr:last-child td { border-bottom: none; }
     document.querySelectorAll(".tabs button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.tab === name)));
     $("filters").hidden = name !== "search";
     $("layout").classList.toggle("wide", name === "threads" || name === "marks" || name === "works");
+    $("filters").hidden = name !== "search";
   }
   function go(p, replace) {
     const h = "#" + p.toString();
@@ -733,6 +774,126 @@ tr:last-child td { border-bottom: none; }
     window.scrollTo(0, 0);
   }
 
+  // ---- 日記（Internet Archive から取り戻したメンバーの日記・ブログ） ----
+  const MEMBER = {
+    "小出祐介": { short: "小出", c: "--m-koide" }, "関根史織": { short: "関根", c: "--m-sekine" },
+    "湯浅将平": { short: "湯浅", c: "--m-yuasa" }, "堀之内大介": { short: "堀之内", c: "--m-hori" },
+    "-": { short: "書き手不明・スタッフ", c: "--m-none" },
+  };
+  const member = (a) => MEMBER[a || "-"] || MEMBER["-"];
+  const WEEK = "日月火水木金土";
+  const diaryParams = () => new URLSearchParams(location.hash.replace(/^#diary&?/, ""));
+  function goDiary(changes, keepPage) {
+    const P = diaryParams();
+    Object.entries(changes).forEach(([k, v]) => { if (v) P.set(k, v); else P.delete(k); });
+    if (!keepPage) P.delete("page");
+    const h = "#diary" + (P.toString() ? "&" + P.toString() : "");
+    if (location.hash === h) route(); else location.hash = h;
+  }
+
+  function entryHtml(e) {
+    const m = member(e.author);
+    const [y, mo, d] = e.date.split("-");
+    const wd = WEEK[new Date(+y, +mo - 1, +d).getDay()];
+    const long = e.body.split("\n").length > 14 || e.body.length > 700;
+    const saved = e.wayback_ts ? `${e.wayback_ts.slice(0, 4)}.${e.wayback_ts.slice(4, 6)}.${e.wayback_ts.slice(6, 8)}` : "";
+    const where = (e.url || "").replace(/^https?:\/\//, "").replace(/:80(?=\/)/, "");
+    return `<article class="panel entry" style="--c: var(${m.c})">
+      <div class="entry__date"><b>${+d}</b><span>${y}.${mo}（${wd}）</span>${e.time ? `<em>${esc(e.time)}</em>` : ""}</div>
+      <div>
+        <div class="entry__head"><span class="entry__who">${esc(m.short)}</span>${e.series ? `<span class="entry__series">${esc(e.series)}</span>` : ""}</div>
+        ${e.title ? `<h3 class="entry__title">${esc(e.title)}</h3>` : ""}
+        <div class="body${long ? " clip" : ""}">${esc(e.body)}</div>
+        ${long ? `<button class="link-btn" data-act="unclip" style="font-size:0.8rem;margin-top:0.3rem">続きを読む</button>` : ""}
+        <div class="entry__foot">
+          <a href="#from=${e.date}&to=${e.date}&order=old" title="同じ日の5chの書き込みを見る" data-day="${e.date}" hidden>この日のスレを見る</a>
+          <span title="${esc(where)}">${esc(sourceLabel(e.source))}</span>
+          ${saved ? `<span>Internet Archive ${saved} 保存分</span>` : ""}
+        </div>
+      </div></article>`;
+  }
+  let diarySources = {};
+  const sourceLabel = (id) => (diarySources[id] || {}).label || id;
+
+  async function viewDiary() {
+    setTab("diary");
+    $("layout").classList.remove("wide");
+    cur = null;
+    const P = diaryParams();
+    const typingInDiary = document.activeElement && document.activeElement.id === "dq";
+    const my = ++seq;
+    const data = await api("/api/diary?" + P.toString());
+    if (my !== seq) return;
+    if (data.missing) {
+      $("head").innerHTML = ""; $("rail").innerHTML = "";
+      $("main").innerHTML = `<div class="panel empty">日記のデータベースがまだありません。scripts/build_blog_db.py を実行してください。</div>`;
+      return;
+    }
+    data.sources.forEach((x) => { diarySources[x.id] = x; });
+    const authorNow = P.get("author") || "";
+    const allCount = data.authors.reduce((a, [, n]) => a + n, 0);
+    const whoBtns = [`<button type="button" data-act="dauthor" data-author="" aria-pressed="${!authorNow}" style="--c: var(--accent)"><i></i>みんな<small>${fmt(allCount)}</small></button>`]
+      .concat(data.authors.map(([a, n]) => `<button type="button" data-act="dauthor" data-author="${esc(a)}" aria-pressed="${authorNow === a}" style="--c: var(${member(a).c})"><i></i>${esc(member(a).short)}<small>${fmt(n)}</small></button>`));
+    const srcOpts = `<option value="">すべての置き場所</option>` + data.sources.filter((x) => x.n).map((x) =>
+      `<option value="${esc(x.id)}" ${P.get("source") === x.id ? "selected" : ""}>${esc(x.label)}（${x.n}）</option>`).join("");
+
+    // 年ごとの記事数（書いた人で色分け）
+    const byYear = new Map();
+    data.years.forEach(([y, a, n]) => { if (!byYear.has(y)) byYear.set(y, []); byYear.get(y).push([a, n]); });
+    const ys = [...byYear.keys()].map(Number);
+    let cols = "";
+    if (ys.length) {
+      const max = Math.max(...[...byYear.values()].map((v) => v.reduce((t, [, n]) => t + n, 0)));
+      for (let y = Math.min(...ys); y <= Math.max(...ys); y++) {
+        const parts = byYear.get(String(y)) || [], n = parts.reduce((t, [, k]) => t + k, 0);
+        const h = n ? Math.max(3, Math.round(n / max * 62)) : 2;
+        cols += `<button class="bar-col${n ? "" : " zero"}" data-act="dyear" data-year="${y}" title="${y}年 ${n}件" ${n ? "" : "disabled"}><b>${n || ""}</b>
+          <span class="stack" style="height:${h}px">${parts.map(([a, k]) => `<i style="flex:${k};background:var(${member(a).c})"></i>`).join("")}</span>'${String(y).slice(2)}</button>`;
+      }
+    }
+    $("head").innerHTML = `<div class="panel diary-hero">
+      <p class="eyebrow">いまは読めない日記・ブログ ・ Internet Archive の保存分から取り戻したもの</p>
+      <h1>メンバーの日記</h1>
+      <p class="lead">小出さんの旧ホームページの「小出AIMAI日記」「曖昧Diary」、公式サイトの小出日記、2007〜2008年のメンバー4人のブログ、2008年からの「ボクブロ」など。保存されていた分だけなので、抜けている日があります。</p>
+      <div class="who">${whoBtns.join("")}</div>
+      <div class="diary-tools">
+        <input id="dq" type="text" placeholder="日記の中を探す" value="${esc(P.get("q") || "")}" autocomplete="off">
+        <select id="dsource" aria-label="置き場所">${srcOpts}</select>
+        <label>期間 <input id="dfrom" type="date" value="${esc(P.get("from") || "")}"> 〜 <input id="dto" type="date" value="${esc(P.get("to") || "")}"></label>
+        <div class="seg"><button type="button" data-act="dorder" data-order="" aria-pressed="${P.get("order") !== "new"}">古い順</button><button type="button" data-act="dorder" data-order="new" aria-pressed="${P.get("order") === "new"}">新しい順</button></div>
+        ${[...P.keys()].length ? `<button class="link-btn" data-act="dreset">条件を消す</button>` : ""}
+      </div></div>
+      ${cols ? `<div class="panel chart" style="margin-top:1rem"><div class="chart__top"><h2>年ごとの記事数</h2><span class="hint" style="margin:0">色は書いた人。棒を押すとその年に絞れます</span></div><div class="bars">${cols}</div></div>` : ""}`;
+
+    if (typingInDiary) {
+      const box = $("dq");
+      box.focus();
+      box.setSelectionRange(box.value.length, box.value.length);
+    }
+    const pages = Math.ceil(data.total / data.page_size);
+    let html = `<p class="summary"><strong>${fmt(data.total)}</strong><span>件の記事</span>${pages > 1 ? `<span>${data.page} / ${fmt(pages)} ページ</span>` : ""}</p>`;
+    html += data.total ? `<div class="diary-list">${data.entries.map(entryHtml).join("")}</div>` : `<div class="panel empty">当てはまる記事はありません。</div>`;
+    if (pages > 1) html += `<div class="pager"><button data-act="dpage" data-page="${data.page - 1}" ${data.page <= 1 ? "disabled" : ""}>← 前へ</button>
+      <span>${data.page} / ${fmt(pages)}</span><button data-act="dpage" data-page="${data.page + 1}" ${data.page >= pages ? "disabled" : ""}>次へ →</button></div>`;
+    $("main").innerHTML = html;
+    if (data.terms.length) $("main").querySelectorAll(".entry .body, .entry__title").forEach((el) => { el.innerHTML = decorate(el.textContent, data.terms, ""); });
+    // 同じ日に 5ch の書き込みがあるときだけ「この日のスレを見る」を件数付きで出す
+    const days = [...new Set(data.entries.map((e) => e.date))];
+    if (days.length) api("/api/daycount?dates=" + days.join(",")).then((r) => {
+      if (my !== seq) return;
+      document.querySelectorAll("a[data-day]").forEach((a) => {
+        const n = r.counts[a.dataset.day] || 0;
+        if (n) { a.hidden = false; a.textContent = `この日のスレを見る（${fmt(n)}件）`; }
+      });
+    });
+
+    setRail(`<div class="sect"><h2>置き場所</h2><div class="rows">${data.sources.filter((x) => x.n).map((x) =>
+      `<button class="src-row" data-act="dsrc" data-source="${esc(x.id)}" aria-pressed="${P.get("source") === x.id}"><span>${esc(x.label)}</span><em>${fmt(x.n)}件</em>
+        <small>${esc((x.a || "").slice(0, 7))} 〜 ${esc((x.b || "").slice(0, 7))}・保存ページ ${fmt(x.pages)}</small></button>`).join("")}</div></div>
+      <div class="sect"><h2>取り戻し方</h2><p class="hint" style="margin:0">Internet Archive に保存されていたページを1枚ずつ取り、日付ごとに記事を切り出しました。年が書かれていない日記は、連載の前後の回から年を補っています。保存されなかった日の分はありません。</p></div>`, "置き場所");
+    window.scrollTo(0, 0);
+  }
+
   function route() {
     hidePop();
     const raw = location.hash.replace(/^#/, "");
@@ -740,6 +901,7 @@ tr:last-child td { border-bottom: none; }
     if (raw === "threads") return viewThreads();
     if (raw === "marks") return viewMarks();
     if (raw === "works") return viewWorks();
+    if (raw === "diary" || raw.startsWith("diary&")) return viewDiary();
     if (P.get("work")) return viewWork(P.get("work"));
     if (isThreadView(P)) return viewThread(P);
     return viewSearch(P);
@@ -869,6 +1031,12 @@ tr:last-child td { border-bottom: none; }
     } else if (act === "tuid") { cur.filter.uid = el.dataset.uid; renderThreadPosts(); window.scrollTo(0, 0); }
     else if (act === "tuid-clear") { cur.filter.uid = ""; renderThreadPosts(); }
     else if (act === "goworks") location.hash = "#works";
+    else if (act === "dauthor") goDiary({ author: el.dataset.author });
+    else if (act === "dsrc") goDiary({ source: diaryParams().get("source") === el.dataset.source ? "" : el.dataset.source });
+    else if (act === "dyear") goDiary({ from: el.dataset.year + "-01-01", to: el.dataset.year + "-12-31" });
+    else if (act === "dorder") goDiary({ order: el.dataset.order });
+    else if (act === "dpage") { goDiary({ page: el.dataset.page }, true); window.scrollTo(0, 0); }
+    else if (act === "dreset") location.hash = "#diary";
     else if (act === "totopic") document.getElementById("topic" + el.dataset.topic).scrollIntoView({ behavior: "smooth", block: "start" });
     else if (act === "morequotes") { document.querySelectorAll(`[data-more="${el.dataset.topic}"]`).forEach((x) => { x.hidden = false; }); el.remove(); }
     else if (act === "back") { if (lastSearch) location.hash = lastSearch; else go(new URLSearchParams()); }
@@ -910,7 +1078,17 @@ tr:last-child td { border-bottom: none; }
       el.textContent = "前後をたたむ";
     }
   });
+  let dTyping = null;
+  document.addEventListener("change", (e) => {
+    if (e.target.id === "dsource") goDiary({ source: e.target.value });
+    if (e.target.id === "dfrom") goDiary({ from: e.target.value });
+    if (e.target.id === "dto") goDiary({ to: e.target.value });
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.target.id === "dq" && e.key === "Enter" && !e.isComposing) { clearTimeout(dTyping); goDiary({ q: e.target.value.trim() }); }
+  });
   document.addEventListener("input", (e) => {
+    if (e.target.id === "dq" && !e.isComposing) { clearTimeout(dTyping); dTyping = setTimeout(() => goDiary({ q: e.target.value.trim() }), 500); }
     if (e.target.id === "tfilter" && cur) { cur.filter.text = e.target.value; renderThreadPosts(); }
   });
 
