@@ -233,6 +233,9 @@ DEFAULTS = {
     "jfn": ("ラジオ", "JFN 番組ブログ"),
 }
 
+# 記事に書いた人が書かれていない置き場所の、書いた人（本文の名乗りで確かめたもの）
+AUTHOR_DEFAULT = {"livedoor": "堀之内大介"}
+
 # ---- 旧ホームページ（www.venus.dti.ne.jp/~seiryu/）の分類 ----
 # (ファイル名, カテゴリー, 連載の名前, 書いた人, 種類)  連載の名前が空なら見出しから作る。種類 diary は日ごとに切る
 SEIRYU = [
@@ -259,7 +262,9 @@ HEAD_RANGE = re.compile(r"[(（](\d{1,2})月(\d{1,2})日")
 
 
 def seiryu_name(url):
-    return re.sub(r"^.*?~seiryu/?", "", url.replace("%7E", "~").replace("%7e", "~")).split("?")[0]
+    u = url.replace("%7E", "~").replace("%7e", "~")
+    u = re.sub(r"^.*?~seiryu/?", "", u) if "~seiryu" in u else re.sub(r"^https?://[^/]+/?", "", u)
+    return u.split("?")[0]
 
 
 def heading_of(page):
@@ -312,31 +317,118 @@ def parse_seiryu(url, page, ts):
     return [entry], meta
 
 
+# ---- 公式サイト・レーベル・tumblr のページの分類（URL で決める） ----
+# (置き場所の正規表現, URL の正規表現, カテゴリー, 連載の名前, 書いた人, 読み方)  読み方 skip は取り込まない
+PAGE_RULES = [
+    (r"^official", r"cgi-bin/diary", "日記", "公式サイトの小出日記", "小出祐介", "cgi"),
+    (r"^official", r"cgi-bin/hamripo|/ham/", "スタッフ", "ハムリポ（マネージャー）", "", "cgi"),
+    (r"^official", r"epad|/bbs/|upgrade_flash|/movie/", "", "", "", "skip"),   # 掲示板・旧HPの写し・Flash
+    (r"^official", r"/news/", "お知らせ", "ニュース", "", "page"),
+    (r"^official", r"/artist/profile/", "", "", "", "skip"),   # 事務所(SMA)のページの写し。robots の方針どおり取り込まない
+    (r"^official", r"/live/", "ライブ", "ライブ情報", "", "page"),
+    (r"^official", r"/dis(c|co)/|/album/", "作品", "ディスコグラフィー", "", "page"),
+    (r"^official", r"/bio/", "プロフィール", "バイオグラフィー", "", "page"),
+    (r"^official", r"/goods/|/shop/", "グッズ", "グッズ", "", "page"),
+    (r"^official", r"/media/", "メディア", "メディア出演", "", "page"),
+    (r"^official", r"/sp/", "特設ページ", "特設ページ", "", "page"),
+    (r"^official", r".", "トップページ", "トップページ", "", "page"),
+    (r"^universal", r"wp-json|xmlrpc|oembed|/discography|/page/\d|/news/?$|/news/(cat|page)/", "", "", "", "skip"),
+    (r"^universal", r"/news/", "お知らせ", "ニュース", "", "page"),
+    (r"^universal", r"/products/", "作品", "商品ページ", "", "page"),
+    (r"^universal", r"/biography", "プロフィール", "バイオグラフィー", "", "page"),
+    (r"^universal", r".", "トップページ", "トップページ", "", "page"),
+    (r"^emi", r"variety/backnumber", "連載", "バラエティ（バックナンバー）", "", "page"),
+    (r"^emi", r"about_band_b", "作品", "小冊子「バンドBについて」", "", "page"),
+    (r"^emi", r"about_album_c|c_archive", "作品", "『C』特設ページ", "", "page"),
+    (r"^emi", r"girlfriend|standbyme|electricsummer", "作品", "作品の特設ページ", "", "page"),
+    (r"^emi", r"profile|artistinfo", "プロフィール", "プロフィール", "", "page"),
+    (r"^emi", r"liveinfo", "ライブ", "ライブ情報", "", "page"),
+    (r"^emi", r"sstv", "メディア", "SSTV", "", "page"),
+    (r"^emi", r"comment", "お知らせ", "コメント", "", "page"),
+    (r"^emi", r"bloger", "その他", "その他のページ", "", "page"),
+    (r"^emi", r".", "トップページ", "トップページ", "", "page"),
+    (r"^tumblr", r"/post/\d+", "写真", "ライブ写真（tumblr）", "", "tumblr"),
+    (r"^tumblr", r".", "", "", "", "skip"),
+    (r"^jfn", r"\.xml$", "", "", "", "skip"),
+]
+TITLE_TAIL = re.compile(r"\s*[-|｜/]\s*(UNIVERSAL MUSIC JAPAN|Base Ball Bear.*|BaseBallBear.*|ベースボールベアー.*)$")
+MAIN_BLOCK = re.compile(r'<(?:div|article|section)[^>]+class="(?:[^"]*\b)?(newsArticle|main-editor-content|disco-main|oneInfo|infoDet|post)\b[^"]*"', re.I)
+
+
+def page_rule(source, url):
+    return next((r for r in PAGE_RULES if re.search(r[0], source) and re.search(r[1], url)), None)
+
+
+def page_title(page):
+    t = re.search(r"<title>(.*?)</title>", page, re.S | re.I)
+    s = unicodedata.normalize("NFKC", htmllib.unescape(t.group(1))).strip() if t else ""
+    for _ in range(2):
+        s = TITLE_TAIL.sub("", s).strip()
+    return s
+
+
+def parse_page(url, page, ts):
+    """お知らせ・作品・プロフィールなどのページを1件に。本文は記事部分があればそこだけ、無ければ body 全体。"""
+    body = re.search(r"<body[^>]*>(.*)</body>", page, re.S | re.I)
+    raw_html = body.group(1) if body else page
+    m = MAIN_BLOCK.search(raw_html)
+    if m:
+        raw_html = raw_html[m.start():]
+        raw_html = re.split(r'<(?:div|footer)[^>]+(?:class|id)="(?:footer|footerWrap|local-footer|notes|social)', raw_html)[0]
+    txt = tidy_lines(unicodedata.normalize("NFKC", text_of(raw_html)).replace("ご使用のブラウザはJavascriptに対応していません", ""))
+    if len(re.sub(r"\s|［画像］", "", txt)) < 20 or "ページが見つかりません" in txt:
+        return []
+    d = re.search(r"/(20\d\d)/(\d\d)/(\d\d)/?$", url) or re.search(r"/(20\d\d)-(\d\d)-(\d\d)", url)
+    date, approx = (iso(*d.groups()), False) if d else (f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}", True)
+    return [{"date": date, "time": "", "title": page_title(page), "body": txt, "url": "", "author": "", "approx": approx}]
+
+
+def parse_tumblr(url, page, ts):
+    t = page_title(page)
+    title = t.split(",", 1)[1].strip() if "," in t else t
+    m = re.search(r'<div class="post[^"]*">(.*?)<div class="(?:notecontainer|notes|footer)', page, re.S)
+    txt = tidy_lines(text_of(m.group(1))) if m else ""
+    txt = re.sub(r"Posted .*? ago|\d+ notes", "", txt).strip()
+    d = re.search(r"(20\d\d)(\d\d)(\d\d)", title)
+    date, approx = (iso(*d.groups()), False) if d else (f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}", True)
+    if title and title not in txt:
+        txt = (title + "\n" + txt).strip()
+    return [{"date": date, "time": "", "title": title, "body": txt or "［画像］", "url": "", "author": "", "approx": approx}]
+
+
 def parse(source, url, page, ts=""):
     if source in PARSERS:
+        if source == "jfn" and re.search(r"\.xml$", url):
+            return [], "blog"
         return PARSERS[source](page), "blog"
-    if source.startswith("official") and re.search(r"cgi-bin/(diary|hamripo)", url):
-        return parse_cgi_diary(page), "blog"
-    if source.startswith("official") and "epad" in url:
-        return [], "bbs"
     if source.startswith("playlog"):
         return parse_playlog(page, ts), "blog"
     if source == "seiryu":
         entries, meta = parse_seiryu(url, page, ts)
         return entries, ("blog" if meta and meta["category"] == "日記" else "page")
+    rule = page_rule(source, url)
+    if rule:
+        _, _, category, series, author, mode = rule
+        if mode == "skip":
+            return [], "page"
+        entries = parse_cgi_diary(page) if mode == "cgi" else parse_tumblr(url, page, ts) if mode == "tumblr" else parse_page(url, page, ts)
+        for e in entries:
+            e.update({"category": category, "series": series})
+            e["author"] = e.get("author") or author
+        return entries, ("blog" if mode == "cgi" else "page")
     return parse_dated_text(page, ts), "page"
 
 
+PLAYLOG_ENTRY = re.compile(r'<div class="title-area(?:-single)?">(.*?)</div>\s*<div class="article">(.*?)</div>\s*<div class="posted">\s*'
+                           r'(\d{4})-(\d\d)-(\d\d)\s+(\d\d:\d\d)', re.S)
+
+
 def parse_playlog(page, ts=""):
-    """playlog の記事ページ（形式は取得後に確かめて、合わなければ日付区切りで拾う）。"""
-    m = re.search(r'<div class="entry[^"]*"[^>]*>(.*?)<div class="entry-footer', page, re.S)
-    if m:
-        d = DATE_JP.search(m.group(1)) or DATE_JP.search(page)
-        t = re.search(r"<h\d[^>]*>(.*?)</h\d>", m.group(1), re.S)
-        if d:
-            return [{"date": iso(*d.groups()), "time": "", "title": text_of(t.group(1)) if t else "",
-                     "body": text_of(m.group(1)[t.end():] if t else m.group(1)), "url": "", "author": ""}]
-    return parse_dated_text(page, ts)
+    """playlog の記事（1件のページも、月ごとのページも同じ形: 題名 → 本文 → 投稿日時）。見つからないページは捨てる。"""
+    if "ページが見つかりません" in page:
+        return []
+    return [{"date": iso(y, mo, d), "time": hm, "title": text_of(t), "body": text_of(b), "url": "", "author": ""}
+            for t, b, y, mo, d, hm in PLAYLOG_ENTRY.findall(page)]
 
 
 # ---- 見せるためのまとめ（元のページから、歌詞・セットリスト・作品を1件ずつに分ける） ----
@@ -502,11 +594,20 @@ def main():
         if not path or not os.path.exists(path):
             continue
         page = decode(open(path, "rb").read())
+        if re.search(r"baseballbear\.(com|net)(:\d+)?/aimaidiary", p["url"]):
+            # 公式サイトに移された曖昧Diary は旧ホームページの続き（第13回〜）。同じ連載として旧ホームページ側にまとめる
+            p = dict(p, source="seiryu", moved=True)
+        elif p["source"] == "official-net":
+            # baseballbear.net は .com と同じ公式サイト（ドメインが変わっただけ）。同じ日記が二重にならないよう .com にまとめる
+            p = dict(p, source="official-com")
         entries, kind = parse(p["source"], p["url"], page, p["ts"])
         pages[p["source"]] += 1
         parsed.append({"p": p, "kind": kind, "entries": entries, "ts": p["ts"],
                        "series": entries[0].get("series", "") if entries else "",
                        "part": entries[0].get("part", "") if entries else ""})
+    # 公式サイトの写しのうち、旧ホームページにも残っている回は捨てる（日付の付け方が崩れるため）
+    own = {(x["series"], x["part"]) for x in parsed if x["p"]["source"] == "seiryu" and not x["p"].get("moved")}
+    parsed = [x for x in parsed if not (x["p"].get("moved") and (x["series"], x["part"]) in own)]
     fix_series_years([x for x in parsed if x["p"]["source"] == "seiryu"])
     # 古い保存から順に入れ、同じ中身（トップページの同じ版など）は最初の1つだけ残す
     parsed.sort(key=lambda x: x["ts"])
@@ -525,7 +626,7 @@ def main():
             if h in seen:
                 continue
             seen.add(h)
-            author = e.get("author") or src.get("author", "")
+            author = e.get("author") or AUTHOR_DEFAULT.get(p["source"]) or src.get("author", "")
             con.execute("""INSERT INTO entries(source,author,date,time,title,body,url,page_url,wayback_ts,kind,series,approx,category,part,heading)
                            VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                         (p["source"], author, e["date"], e.get("time", ""), e.get("title", ""), body, e.get("url") or p["url"], p["url"],

@@ -364,6 +364,20 @@ tr:last-child td { border-bottom: none; }
 .r-nav .mid { align-self: center; color: var(--faint); font-size: 0.76rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .r-nav span.void { visibility: hidden; }
 /* ---- まとめ（歌詞・セットリスト・作品） ---- */
+.dtl { display: grid; gap: 0.15rem; }
+.dtl__axis, .dtl__row { display: grid; grid-template-columns: minmax(8rem, 15rem) minmax(0, 1fr) 3.5rem; gap: 0.75rem; align-items: center; }
+.dtl__axis { font-size: 0.72rem; color: var(--faint); margin-bottom: 0.2rem; }
+.dtl__years { position: relative; height: 1.1em; }
+.dtl__years span { position: absolute; transform: translateX(-50%); font-variant-numeric: tabular-nums; }
+.dtl__row { padding: 0.35rem 0.4rem; border-radius: 6px; color: inherit; text-decoration: none; }
+.dtl__row:hover, .dtl__row:focus-visible { background: color-mix(in srgb, var(--accent) 8%, transparent); }
+.dtl__name { min-width: 0; line-height: 1.35; }
+.dtl__name b { display: block; font-weight: 600; font-size: 0.88rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dtl__name small { color: var(--faint); font-size: 0.72rem; }
+.dtl__track { position: relative; height: 0.7rem; border-radius: 4px; background: color-mix(in srgb, var(--line) 45%, transparent); }
+.dtl__track i { position: absolute; top: 0; bottom: 0; border-radius: 4px; background: var(--c, var(--accent)); min-width: 5px; }
+.dtl__n { text-align: right; font-size: 0.78rem; color: var(--dim); font-variant-numeric: tabular-nums; }
+@media (max-width: 640px) { .dtl__axis, .dtl__row { grid-template-columns: minmax(0, 7rem) minmax(0, 1fr) 2.6rem; gap: 0.5rem; } }
 .coll-cards { display: grid; gap: 0.7rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); }
 .coll-card { display: block; padding: 1rem 1.1rem; color: var(--ink); border-left: 4px solid var(--accent); }
 .coll-card:hover { text-decoration: none; border-color: var(--accent); background: var(--accent-soft); }
@@ -869,6 +883,7 @@ tr:last-child td { border-bottom: none; }
     "小出祐介": { short: "小出", c: "--m-koide" }, "関根史織": { short: "関根", c: "--m-sekine" },
     "湯浅将平": { short: "湯浅", c: "--m-yuasa" }, "堀之内大介": { short: "堀之内", c: "--m-hori" },
     "-": { short: "書き手不明・スタッフ", c: "--m-none" },
+    "メンバー全員": { short: "メンバー全員", c: "--accent" },
   };
   const member = (a) => MEMBER[a || "-"] || MEMBER["-"];
   const WEEK = "日月火水木金土";
@@ -995,6 +1010,8 @@ tr:last-child td { border-bottom: none; }
   const ymd = (d) => (d || "").replace(/-/g, ".");
   const period = (a, b) => (a || "").slice(0, 7).replace("-", ".") + (b && b.slice(0, 7) !== (a || "").slice(0, 7) ? " – " + b.slice(0, 7).replace("-", ".") : "");
   let oaTreeCache = null;
+  // 狭い画面では目次をたたんでおく（広い画面では右に常に出す）
+  const oaNav = (inner) => `<details class="panel"${wide.matches ? " open" : ""}><summary>公式アーカイブの目次</summary><nav>${inner}</nav></details>`;
 
   function treeHtml(tree, cur) {
     const ready = tree.sources.filter((x) => x.ready), pending = tree.sources.filter((x) => !x.ready);
@@ -1031,8 +1048,8 @@ tr:last-child td { border-bottom: none; }
     const curSel = { s: P.get("s"), r: P.get("r"), doc: P.get("doc"), c: P.get("c") };
     if (curSel.doc) return viewOADoc(curSel.doc, tree, my);
     if (P.get("item")) return viewOAItem(P.get("item"), tree, my);
-    if (curSel.c) { $("rail").innerHTML = `<nav class="panel">${treeHtml(tree, curSel)}</nav>`; return viewOAItems(curSel.c, my); }
-    $("rail").innerHTML = `<nav class="panel">${treeHtml(tree, curSel)}</nav>`;
+    if (curSel.c) { $("rail").innerHTML = oaNav(treeHtml(tree, curSel)); return viewOAItems(curSel.c, my); }
+    $("rail").innerHTML = oaNav(treeHtml(tree, curSel));
     const src = tree.sources.find((x) => x.id === curSel.s);
     if (src && curSel.r) return viewOASeries(src, curSel.r, my);
     if (src) return viewOASource(src);
@@ -1040,10 +1057,31 @@ tr:last-child td { border-bottom: none; }
     const ready = tree.sources.filter((x) => x.ready);
     $("head").innerHTML = `<div class="panel lib-hero"><p class="eyebrow">Internet Archive の保存分から取り戻したもの</p>
       <h1>公式アーカイブ</h1>
-      <p class="lead">公式に発表されていた日記・お知らせ・作品やライブの情報などを、置き場所ごとに「カテゴリー › 連載 › 日付順」で並べています。いまは小出さんの旧ホームページの整理が済んでいます。ほかの置き場所は取得と整理の途中です。</p></div>`;
+      <p class="lead">公式に発表されていた日記・お知らせ・作品やライブの情報などを、置き場所ごとに「カテゴリー › 連載 › 日付順」で並べています。いまも Internet Archive からの取得が続いていて、取れた分から順に増えていきます。</p></div>`;
+    // 日記・ブログを置き場所をまたいで年代順に（帯の長さ＝書かれていた期間）
+    const DIARY_CATS = ["日記", "ブログ", "スタッフ", "ラジオ"];
+    const dser = [];
+    ready.forEach((s) => s.categories.filter((c) => DIARY_CATS.includes(c.name)).forEach((c) => c.series.forEach((x) => { if (x.a) dser.push({ s, x }); })));
+    dser.sort((p, q) => p.x.a.localeCompare(q.x.a));
+    let dtlHtml = "";
+    if (dser.length) {
+      const y0 = +dser[0].x.a.slice(0, 4), y1 = Math.max(...dser.map((d) => +d.x.b.slice(0, 4))) + 1;
+      const pos = (d) => ((+d.slice(0, 4) + (+d.slice(5, 7) - 1) / 12 - y0) / (y1 - y0) * 100).toFixed(2);
+      const ticks = [];
+      for (let y = y0; y <= y1; y += (y1 - y0 > 10 ? 2 : 1)) ticks.push(`<span style="left:${pos(y + "-01")}%">${y}</span>`);
+      dtlHtml = `<section class="cat-sec"><h2>日記・ブログを年代順に<small>置き場所をまたいで、書かれていた期間を帯で表示</small></h2>
+        <div class="panel dtl"><div class="dtl__axis"><span></span><div class="dtl__years">${ticks.join("")}</div><span></span></div>
+        ${dser.map(({ s, x }) => {
+          const m = member(x.author);
+          return `<a class="dtl__row" href="${oaHref({ s: s.id, r: x.series })}" style="--c: var(${x.author === "-" ? "--accent" : m.c})">
+            <span class="dtl__name"><b>${esc(x.series)}</b><small>${x.author !== "-" ? esc(m.short) + "・" : ""}${esc(srcName(s))}</small></span>
+            <span class="dtl__track"><i style="left:${pos(x.a)}%;width:${Math.max(0.6, pos(x.b) - pos(x.a) + 100 / (y1 - y0) / 12)}%"></i></span>
+            <span class="dtl__n">${fmt(x.n)}</span></a>`;
+        }).join("")}</div></section>`;
+    }
     const collHtml = (tree.collections || []).length ? `<section class="cat-sec"><h2>まとめ<small>元のページから、1件ずつ読みやすく整えたもの</small></h2>
       <div class="coll-cards">${tree.collections.map((c) => `<a class="panel coll-card" href="${oaHref({ c: c.kind })}"><b>${esc(c.label)}</b><span>${c.n} ${c.kind === "lyric" ? "曲" : c.kind === "setlist" ? "公演" : "作品"}</span></a>`).join("")}</div></section>` : "";
-    $("main").innerHTML = collHtml + ready.map((s) => `<section class="cat-sec"><h2><a href="${oaHref({ s: s.id })}">${esc(srcName(s))}</a><small>${period(s.a, s.b)}・${fmt(s.n)} 件</small></h2>
+    $("main").innerHTML = collHtml + dtlHtml + ready.map((s) => `<section class="cat-sec"><h2><a href="${oaHref({ s: s.id })}">${esc(srcName(s))}</a><small>${period(s.a, s.b)}・${fmt(s.n)} 件</small></h2>
       <div class="ser-cards">${s.categories.map((c) => `<a class="panel ser-card" href="${oaHref({ s: s.id, r: c.series[0].series })}">
         <p class="who" style="color:var(--dim)">${esc(c.name)}</p><h3>${esc(c.series.map((x) => x.series).join("・"))}</h3>
         <p>${fmt(c.series.reduce((t, x) => t + x.n, 0))} 件</p></a>`).join("")}</div></section>`).join("");
@@ -1132,7 +1170,7 @@ tr:last-child td { border-bottom: none; }
     const d = data.doc;
     if (!d) { $("main").innerHTML = `<div class="panel empty">この記事は見つかりません。</div>`; return; }
     const src = tree.sources.find((x) => x.id === d.source) || { id: d.source, label: data.source_label };
-    $("rail").innerHTML = `<nav class="panel">${treeHtml(tree, { s: d.source, r: d.series })}</nav>`;
+    $("rail").innerHTML = oaNav(treeHtml(tree, { s: d.source, r: d.series }));
     const [y, mo, dd] = d.date.split("-");
     const wd = WEEK[new Date(+y, +mo - 1, +dd).getDay()];
     const m = member(d.author);
@@ -1218,7 +1256,7 @@ tr:last-child td { border-bottom: none; }
     if (my !== seq) return;
     const it = data.item;
     if (!it) { $("main").innerHTML = `<div class="panel empty">見つかりません。</div>`; return; }
-    $("rail").innerHTML = `<nav class="panel">${treeHtml(tree, { c: it.kind })}</nav>`;
+    $("rail").innerHTML = oaNav(treeHtml(tree, { c: it.kind }));
     const label = { lyric: "歌詞", setlist: "セットリスト", release: "作品" }[it.kind];
     $("head").innerHTML = `<div class="crumbs" style="margin:0.2rem 0 0"><a href="#oa">公式アーカイブ</a><span>まとめ</span><span><a href="${oaHref({ c: it.kind })}">${label}</a></span></div>`;
     const songList = (songs) => {

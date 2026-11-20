@@ -322,9 +322,10 @@ def diary(q):
 
 
 # 整理が済んで、確認してもらえる置き場所（ほかは取得・整理の途中）
-OA_READY = {"seiryu"}
-CATEGORY_ORDER = ["日記", "ブログ", "メンバーのコーナー", "歌詞", "トップページ", "お知らせ", "ライブ", "ライブ・リリースの告知",
-                  "作品", "ラジオ", "その他"]
+OA_READY = {"seiryu", "official-com", "official-net", "playlog-koide", "playlog-sekine", "playlog-syohei", "playlog-hori",
+            "livedoor", "bokuburo", "jfn", "universal", "emi", "emi2", "tumblr"}
+CATEGORY_ORDER = ["日記", "ブログ", "スタッフ", "メンバーのコーナー", "連載", "ラジオ", "歌詞", "お知らせ", "ライブ",
+                  "ライブ・リリースの告知", "作品", "プロフィール", "メディア", "写真", "グッズ", "特設ページ", "トップページ", "その他"]
 
 
 def part_num(part):
@@ -339,7 +340,8 @@ def oa_tree(q):
     con = blog_db()
     srcs = [dict(r) for r in con.execute("""SELECT s.id, s.label, s.prefix, COUNT(e.id) n, MIN(e.date) a, MAX(e.date) b
         FROM sources s JOIN entries e ON e.source = s.id GROUP BY s.id ORDER BY MIN(e.date)""")]
-    rows = con.execute("""SELECT source, category, series, COALESCE(NULLIF(author,''),'-') author, COUNT(*) n,
+    rows = con.execute("""SELECT source, category, series,
+        CASE WHEN COUNT(DISTINCT NULLIF(author,'')) > 1 THEN 'メンバー全員' ELSE COALESCE(MAX(NULLIF(author,'')),'-') END author, COUNT(*) n,
         MIN(date) a, MAX(date) b, SUM(approx) approx, GROUP_CONCAT(DISTINCT part) parts
         FROM entries GROUP BY source, category, series""").fetchall()
     con.close()
