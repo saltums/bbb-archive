@@ -339,6 +339,133 @@ def parse_playlog(page, ts=""):
     return parse_dated_text(page, ts)
 
 
+# ---- 見せるためのまとめ（元のページから、歌詞・セットリスト・作品を1件ずつに分ける） ----
+
+def song_key(title):
+    """曲名の表記ゆれをならす（「かげない2人」「かげない二人」、全角半角、記号、括弧の注記）。"""
+    t = unicodedata.normalize("NFKC", title).lower()
+    t = re.sub(r"[(（\[【].*?[)）\]】]", "", t)
+    t = t.replace("二", "2").replace("・", "").replace("’", "'")
+    return re.sub(r"[\s\-_:!！?？☆.,、。'\"~〜]", "", t)
+
+
+def derive_lyrics(entry):
+    """「曲名   作詞・作曲 小出祐介」の行で1曲ずつに切る。"""
+    out, cur = [], None
+    for ln in entry["body"].split("\n"):
+        m = re.match(r"^(.+?)\s*(作詞(?:・作曲)?|作曲)\s*[:：]?\s*(.+)$", ln.strip())
+        if m and len(m.group(1)) <= 40:
+            if cur:
+                out.append(cur)
+            cur = {"title": m.group(1).strip(), "sub": f"{m.group(2)} {m.group(3).strip()}", "lines": []}
+        elif cur is not None:
+            if ln.strip() in ("[画像]", "戻る"):
+                continue
+            cur["lines"].append(ln)
+    if cur:
+        out.append(cur)
+    return [{"kind": "lyric", "title": x["title"], "sub": x["sub"], "date": "", "body": "\n".join(x["lines"]).strip(),
+             "songs": []} for x in out if "\n".join(x["lines"]).strip()]
+
+
+def derive_setlists(entry):
+    """「2004年12月3日(金) 新宿ロフトでのライブセット!!」で公演ごとに切り、曲を順に並べる。"""
+    out, cur = [], None
+    last = None   # 直前の公演の (年, 月)。一覧は新しい順なので、年の無い行は月が増えたら前の年
+    for ln in entry["body"].split("\n"):
+        s = ln.strip()
+        m = re.match(r"^(?:((?:19|20)\d\d)年)?(\d{1,2})月(\d{1,2})日\s*(?:[(（][^)）]*[)）])?\s*(.*?)(?:での|にて)?ライブ(?:セット)?(?:リスト)?[!！]*\s*$", s)
+        if m and (m.group(1) or last):
+            month, day = int(m.group(2)), int(m.group(3))
+            year = int(m.group(1)) if m.group(1) else (last[0] - 1 if month > last[1] else last[0])
+            last = (year, month)
+            if cur:
+                out.append(cur)
+            venue, notes = m.group(4).strip(" 　"), []
+            part = re.match(r"^[-‐−ー]?\s*(昼|夜)\s*(.*)$", venue)
+            if part:
+                venue, notes = part.group(2), [f"{part.group(1)}の部"]
+            cur = {"date": iso(year, month, day), "venue": venue, "notes": notes, "songs": []}
+            continue
+        if cur is None or not s or s in ("[画像]", "戻る"):
+            continue
+        sm = re.match(r"^(Ec|EC|En|EN|アンコール)?\s*(\d*)\s*[.．:]\s*(.+)$", s)
+        if sm and (sm.group(1) or sm.group(2)):
+            cur["songs"].append({"no": ("アンコール" + (sm.group(2) or "")) if sm.group(1) else sm.group(2), "title": sm.group(3).strip(),
+                                 "encore": bool(sm.group(1))})
+        elif "[画像]" not in s and "戻る" not in s:
+            cur["notes"].append(s.strip("~〜【】 "))
+    if cur:
+        out.append(cur)
+    return [{"kind": "setlist", "title": x["venue"] or "（会場不明）", "sub": "・".join(x["notes"]), "date": x["date"],
+             "body": "\n".join(f'{s["no"]}. {s["title"]}' for s in x["songs"]), "songs": x["songs"]} for x in out if x["songs"]]
+
+
+def derive_releases(entry):
+    """上の年表（いつ・何を・どこで）と、下の【作品名】収録曲 を合わせて、作品ごとにする。"""
+    body = entry["body"]
+    # 年表の部分: 「2002年7月  デモ音源第一弾『前-front-』『後-back-』(CD-R)」に続く説明の行
+    head, _, detail = body.partition("【")
+    timeline = []
+    for chunk in re.split(r"\n(?=(?:19|20)\d\d年\d{1,2}月)", "\n" + head):
+        chunk = chunk.strip()
+        m = re.match(r"^((?:19|20)\d\d)年(\d{1,2})月(?:(\d{1,2})日)?\s*(.*)$", chunk, re.S)
+        if m:
+            text = re.sub(r"\s*\n\s*", " ", m.group(4)).replace("[画像]", "").strip()
+            date = f"{int(m.group(1)):04d}-{int(m.group(2)):02d}" + (f"-{int(m.group(3)):02d}" if m.group(3) else "")
+            timeline.append({"date": date, "text": text})
+    out = []
+    for block in ("【" + detail).split("【")[1:]:
+        name, _, rest = block.partition("】")
+        name = re.sub(r"\s*\n\s*", " ", name).strip()
+        tracks, notes = [], []
+        for ln in rest.split("\n"):
+            s = ln.strip()
+            tm = re.match(r"^(\d+)\s*[.．]\s*(.+)$", s)
+            if tm:
+                tracks.append({"no": tm.group(1), "title": tm.group(2).strip(), "encore": False})
+            elif s and s not in ("[画像]", "収録曲", "戻る") and not s.startswith("『"):
+                notes.append(s)
+        # 年表から、この作品の発売時期と説明を探す。「デモ音源第七弾」「1stシングル」のような種類の名前で突き合わせる
+        def flat(x):
+            return re.sub(r"\s", "", x)
+        kind_name = flat(name.split("『")[0])
+        when = next((t for t in timeline if kind_name and kind_name in flat(t["text"])), None)
+        out.append({"kind": "release", "title": name, "sub": when["text"] if when else "", "date": when["date"] if when else "",
+                    "body": "\n".join(f'{t["no"]}. {t["title"]}' for t in tracks) + ("\n\n" + "\n".join(notes) if notes else ""),
+                    "songs": tracks})
+    return out
+
+
+DERIVE = {("seiryu", "歌詞掲載"): derive_lyrics, ("seiryu", "セットリスト"): derive_setlists,
+          ("seiryu", "ディスコグラフィー"): derive_releases}
+
+
+def build_items(con):
+    """元のページ（entries）から、見せるための items を作る。出典の記事 id を必ず残す。"""
+    con.executescript("""
+    CREATE TABLE items(id INTEGER PRIMARY KEY, kind TEXT, title TEXT, sub TEXT, date TEXT, body TEXT, songs TEXT,
+      song_key TEXT, source_entry INTEGER, source TEXT, position INTEGER);
+    CREATE INDEX items_kind ON items(kind, date);
+    """)
+    rows = con.execute("SELECT id, source, series, body, wayback_ts, url FROM entries ORDER BY wayback_ts").fetchall()
+    seen = set()
+    for eid, source, series, body, ts, url in rows:
+        fn = DERIVE.get((source, series))
+        if not fn:
+            continue
+        for pos, it in enumerate(fn({"body": body})):
+            key = (it["kind"], song_key(it["title"]) if it["kind"] == "lyric" else it["title"], it["date"])
+            if key in seen:
+                continue
+            seen.add(key)
+            con.execute("INSERT INTO items(kind,title,sub,date,body,songs,song_key,source_entry,source,position) VALUES(?,?,?,?,?,?,?,?,?,?)",
+                        (it["kind"], it["title"], it["sub"], it["date"], it["body"], json.dumps(it["songs"], ensure_ascii=False),
+                         song_key(it["title"]) if it["kind"] == "lyric" else "", eid, source, pos))
+    for kind, n in con.execute("SELECT kind, COUNT(*) FROM items GROUP BY kind"):
+        print(f"  まとめ {kind}: {n} 件")
+
+
 def main():
     man = json.load(open(os.path.join(OUT, "manifest.json"), encoding="utf-8"))
     sources = man.get("sources", {})
@@ -397,6 +524,7 @@ def main():
     for sid, s in sources.items():
         con.execute("INSERT INTO sources VALUES(?,?,?,?,?,?)", (sid, s["label"], s["author"], s["prefix"], pages[sid], count[sid]))
     con.execute("INSERT INTO entries_fts(rowid, title, body) SELECT id, title, body FROM entries")
+    build_items(con)
     con.commit()
     total = con.execute("SELECT COUNT(*), MIN(date), MAX(date) FROM entries").fetchone()
     print(f"記事 {total[0]} 件 / {total[1]} 〜 {total[2]}")

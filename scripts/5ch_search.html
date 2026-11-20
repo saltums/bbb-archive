@@ -363,6 +363,36 @@ tr:last-child td { border-bottom: none; }
 .r-nav .next { text-align: right; }
 .r-nav .mid { align-self: center; color: var(--faint); font-size: 0.76rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .r-nav span.void { visibility: hidden; }
+/* ---- まとめ（歌詞・セットリスト・作品） ---- */
+.coll-cards { display: grid; gap: 0.7rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); }
+.coll-card { display: block; padding: 1rem 1.1rem; color: var(--ink); border-left: 4px solid var(--accent); }
+.coll-card:hover { text-decoration: none; border-color: var(--accent); background: var(--accent-soft); }
+.coll-card b { display: block; font-size: 1.15rem; }
+.coll-card span { font-size: 0.8rem; color: var(--dim); }
+.it-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.1rem 0.9rem; align-items: baseline; padding: 0.6rem 1rem; color: var(--ink); border-bottom: 1px solid var(--line); }
+.it-row:last-child { border-bottom: none; }
+.it-row:hover { background: var(--accent-soft); text-decoration: none; }
+.it-row .t { font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.it-row .t time { font-weight: 400; color: var(--dim); margin-right: 0.7rem; font-variant-numeric: tabular-nums; }
+.it-row .s { grid-column: 1; font-size: 0.78rem; color: var(--faint); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.it-row em { grid-row: 1 / span 2; grid-column: 2; align-self: center; font-style: normal; font-size: 0.74rem; color: var(--dim); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.badge-soft { display: inline-block; font-size: 0.7rem; border-radius: 999px; padding: 0 0.5rem; background: var(--sunk); color: var(--dim); margin-left: 0.3rem; font-weight: 400; }
+.item-grid { display: grid; gap: 1rem; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 900px) { .item-grid { grid-template-columns: minmax(0, 1fr) 17rem; align-items: start; } }
+.lyric { white-space: pre-wrap; font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "BIZ UDPMincho", "Noto Serif JP", serif; font-size: 1.04rem; line-height: 2.1; margin-top: 1.2rem; }
+.songs { list-style: none; margin: 1rem 0 0; padding: 0; counter-reset: none; }
+.songs li { display: grid; grid-template-columns: 2.6rem minmax(0, 1fr) auto; gap: 0.6rem; align-items: baseline; padding: 0.5rem 0; border-bottom: 1px solid var(--line); }
+.songs li:last-child { border-bottom: none; }
+.songs .no { color: var(--faint); font-variant-numeric: tabular-nums; text-align: right; font-size: 0.85rem; }
+.songs .ttl { font-size: 1.02rem; }
+.songs .meta2 { font-size: 0.72rem; color: var(--faint); white-space: nowrap; }
+.songs .enc { margin-top: 0.8rem; padding-top: 0.6rem; border-top: 2px solid var(--line); font-size: 0.74rem; color: var(--dim); display: block; grid-template-columns: none; }
+.side { padding: 0.9rem 1rem; }
+.side h3 { margin: 0 0 0.4rem; font-size: 0.78rem; color: var(--dim); }
+.side ul { list-style: none; margin: 0 0 0.9rem; padding: 0; font-size: 0.84rem; }
+.side li { padding: 0.18rem 0; font-variant-numeric: tabular-nums; }
+.source-box { margin-top: 1.4rem; padding: 0.8rem 1rem; border: 1px dashed var(--line); border-radius: 10px; font-size: 0.8rem; color: var(--dim); line-height: 1.7; }
+.source-box b { color: var(--ink); }
 @media (prefers-reduced-motion: no-preference) { .bar-col i { transition: background 0.12s; } }
 </style>
 </head>
@@ -968,7 +998,12 @@ tr:last-child td { border-bottom: none; }
 
   function treeHtml(tree, cur) {
     const ready = tree.sources.filter((x) => x.ready), pending = tree.sources.filter((x) => !x.ready);
-    let h = `<div class="tree"><a href="#oa" class="${!cur.s && !cur.doc ? "on" : ""}">公式アーカイブのトップ</a>`;
+    let h = `<div class="tree"><a href="#oa" class="${!cur.s && !cur.doc && !cur.c ? "on" : ""}">公式アーカイブのトップ</a>`;
+    if ((tree.collections || []).length) {
+      h += `<h2>まとめ（見やすく整えたもの）</h2>` + tree.collections.map((c) =>
+        `<a class="ser ${cur.c === c.kind ? "on" : ""}" href="${oaHref({ c: c.kind })}"><span>${esc(c.label)}</span><em>${c.n}</em></a>`).join("");
+      h += `<h2>元のページ（出典）</h2>`;
+    }
     ready.forEach((s) => {
       h += `<a class="src ${cur.s === s.id && !cur.r ? "on" : ""}" href="${oaHref({ s: s.id })}">${esc(srcName(s))}</a>`;
       s.categories.forEach((c) => {
@@ -993,8 +1028,10 @@ tr:last-child td { border-bottom: none; }
     if (my !== seq) return;
     const tree = oaTreeCache;
     if (tree.missing) { $("main").innerHTML = `<div class="panel empty">アーカイブのデータベースがまだありません。</div>`; return; }
-    const curSel = { s: P.get("s"), r: P.get("r"), doc: P.get("doc") };
+    const curSel = { s: P.get("s"), r: P.get("r"), doc: P.get("doc"), c: P.get("c") };
     if (curSel.doc) return viewOADoc(curSel.doc, tree, my);
+    if (P.get("item")) return viewOAItem(P.get("item"), tree, my);
+    if (curSel.c) { $("rail").innerHTML = `<nav class="panel">${treeHtml(tree, curSel)}</nav>`; return viewOAItems(curSel.c, my); }
     $("rail").innerHTML = `<nav class="panel">${treeHtml(tree, curSel)}</nav>`;
     const src = tree.sources.find((x) => x.id === curSel.s);
     if (src && curSel.r) return viewOASeries(src, curSel.r, my);
@@ -1004,7 +1041,9 @@ tr:last-child td { border-bottom: none; }
     $("head").innerHTML = `<div class="panel lib-hero"><p class="eyebrow">Internet Archive の保存分から取り戻したもの</p>
       <h1>公式アーカイブ</h1>
       <p class="lead">公式に発表されていた日記・お知らせ・作品やライブの情報などを、置き場所ごとに「カテゴリー › 連載 › 日付順」で並べています。いまは小出さんの旧ホームページの整理が済んでいます。ほかの置き場所は取得と整理の途中です。</p></div>`;
-    $("main").innerHTML = ready.map((s) => `<section class="cat-sec"><h2><a href="${oaHref({ s: s.id })}">${esc(srcName(s))}</a><small>${period(s.a, s.b)}・${fmt(s.n)} 件</small></h2>
+    const collHtml = (tree.collections || []).length ? `<section class="cat-sec"><h2>まとめ<small>元のページから、1件ずつ読みやすく整えたもの</small></h2>
+      <div class="coll-cards">${tree.collections.map((c) => `<a class="panel coll-card" href="${oaHref({ c: c.kind })}"><b>${esc(c.label)}</b><span>${c.n} ${c.kind === "lyric" ? "曲" : c.kind === "setlist" ? "公演" : "作品"}</span></a>`).join("")}</div></section>` : "";
+    $("main").innerHTML = collHtml + ready.map((s) => `<section class="cat-sec"><h2><a href="${oaHref({ s: s.id })}">${esc(srcName(s))}</a><small>${period(s.a, s.b)}・${fmt(s.n)} 件</small></h2>
       <div class="ser-cards">${s.categories.map((c) => `<a class="panel ser-card" href="${oaHref({ s: s.id, r: c.series[0].series })}">
         <p class="who" style="color:var(--dim)">${esc(c.name)}</p><h3>${esc(c.series.map((x) => x.series).join("・"))}</h3>
         <p>${fmt(c.series.reduce((t, x) => t + x.n, 0))} 件</p></a>`).join("")}</div></section>`).join("");
@@ -1113,6 +1152,103 @@ tr:last-child td { border-bottom: none; }
       const a = document.querySelector("a[data-day]"), n = r.counts[d.date] || 0;
       if (a && n) { a.hidden = false; a.textContent = `この日のスレを見る（${fmt(n)}件）`; }
     });
+    window.scrollTo(0, 0);
+  }
+
+  // ---- まとめ: 歌詞（曲名一覧 → 歌詞）・セットリスト（公演一覧 → 曲順）・作品（作品一覧 → 収録曲） ----
+  const KIND_UNIT = { lyric: "曲", setlist: "公演", release: "作品" };
+  const KIND_NOTE = {
+    lyric: "旧ホームページの「歌詞掲載」に載っていた歌詞を、1曲ずつに分けたものです。曲ごとに、収録された作品と、セットリストに残っている演奏の回数を付けています。",
+    setlist: "旧ホームページの「セットリスト」に載っていた公演を、1公演ずつに分けたものです。年が書かれていない2002年の分は、並び順から年を補っています。",
+    release: "旧ホームページの「ディスコグラフィー」から、デモ音源とインディーズ時代の作品を1作ずつに分けたものです。",
+  };
+  const wdOf = (d) => { const [y, mo, dd] = d.split("-"); return WEEK[new Date(+y, +mo - 1, +dd).getDay()]; };
+  const jpDate = (d) => {
+    if (!d) return "";
+    const [y, mo, dd] = d.split("-");
+    return dd ? `${y}年${+mo}月${+dd}日（${wdOf(d)}）` : `${y}年${+mo}月`;
+  };
+
+  async function viewOAItems(kind, my) {
+    const data = await api("/api/oa/items?kind=" + encodeURIComponent(kind));
+    if (my !== seq) return;
+    $("head").innerHTML = `<div class="panel lib-hero"><div class="crumbs"><a href="#oa">公式アーカイブ</a><span>まとめ</span></div>
+      <h1>${esc(data.label)}</h1><p class="meta">${data.items.length} ${KIND_UNIT[kind] || "件"}</p>
+      <p class="lead">${esc(KIND_NOTE[kind] || "")}</p></div>`;
+    let html = "";
+    if (kind === "setlist") {
+      const years = {};
+      data.items.forEach((x) => { (years[x.date.slice(0, 4)] = years[x.date.slice(0, 4)] || []).push(x); });
+      html = Object.keys(years).sort().map((y) => `<section class="toc-group"><h3>${y}年<small>${years[y].length} 公演</small></h3>
+        <div class="panel" style="margin-top:0.3rem">${years[y].map((x) => `<a class="it-row" href="${oaHref({ item: x.id })}">
+          <span class="t"><time>${+x.date.slice(5, 7)}月${+x.date.slice(8)}日（${wdOf(x.date)}）</time>${esc(x.title)}${x.sub ? `<span class="badge-soft">${esc(x.sub)}</span>` : ""}</span>
+          <span class="s">${esc(x.preview.join(" / "))}${x.n_songs > 4 ? " …" : ""}</span><em>${x.n_songs} 曲</em></a>`).join("")}</div></section>`).join("");
+    } else if (kind === "lyric") {
+      // 収録された作品ごとにまとめ、どこにも入っていない曲は「作品に入っていない曲」へ
+      const groups = new Map();
+      data.items.forEach((x) => {
+        const g = x.releases[0] || "作品に入っていない曲（初期曲・未発表曲）";
+        if (!groups.has(g)) groups.set(g, []);
+        groups.get(g).push(x);
+      });
+      // 作品の発売の早い順。作品に入っていない曲は最後
+      const order = [...groups.keys()].sort((a, b) => groups.get(a)[0].release_date.localeCompare(groups.get(b)[0].release_date));
+      html = order.map((g) => `<section class="toc-group"><h3>${esc(g)}<small>${groups.get(g).length} 曲</small></h3>
+        <div class="panel" style="margin-top:0.3rem">${groups.get(g).map((x) => `<a class="it-row" href="${oaHref({ item: x.id })}">
+          <span class="t">${esc(x.title)}</span><span class="s">${esc(x.sub)}${x.releases.length > 1 ? "・ほか " + esc(x.releases.slice(1).join("、")) : ""}</span>
+          <em>${x.plays ? `演奏 ${x.plays} 回` : "演奏の記録なし"}</em></a>`).join("")}</div></section>`).join("");
+    } else {
+      html = `<div class="panel" style="margin-top:0.6rem">${data.items.map((x) => `<a class="it-row" href="${oaHref({ item: x.id })}">
+        <span class="t"><time>${esc(jpDate(x.date))}</time>${esc(x.title)}</span><span class="s">${esc(x.preview.join(" / "))}</span><em>${x.n_songs} 曲</em></a>`).join("")}</div>`;
+    }
+    $("main").innerHTML = html;
+    window.scrollTo(0, 0);
+  }
+
+  function sourceBox(src) {
+    if (!src) return "";
+    const saved = src.wayback_ts ? `${src.wayback_ts.slice(0, 4)}.${src.wayback_ts.slice(4, 6)}.${src.wayback_ts.slice(6, 8)}` : "";
+    return `<div class="source-box"><b>出典</b>　${esc(SRC_NAME[src.source] || src.label || src.source)}「${esc(src.series)}」
+      <br>${esc((src.url || "").replace(/^https?:\/\//, "").replace(/:80(?=\/)/, ""))}${saved ? `・Internet Archive ${saved} 保存分` : ""}
+      <br><a href="${oaHref({ doc: src.id })}">元のページをそのまま見る →</a></div>`;
+  }
+
+  async function viewOAItem(id, tree, my) {
+    const data = await api("/api/oa/item?id=" + encodeURIComponent(id));
+    if (my !== seq) return;
+    const it = data.item;
+    if (!it) { $("main").innerHTML = `<div class="panel empty">見つかりません。</div>`; return; }
+    $("rail").innerHTML = `<nav class="panel">${treeHtml(tree, { c: it.kind })}</nav>`;
+    const label = { lyric: "歌詞", setlist: "セットリスト", release: "作品" }[it.kind];
+    $("head").innerHTML = `<div class="crumbs" style="margin:0.2rem 0 0"><a href="#oa">公式アーカイブ</a><span>まとめ</span><span><a href="${oaHref({ c: it.kind })}">${label}</a></span></div>`;
+    const songList = (songs) => {
+      let out = "", encore = false;
+      songs.forEach((x) => {
+        if (x.encore && !encore) { out += `<li class="enc">アンコール</li>`; encore = true; }
+        const title = x.lyric ? `<a href="${oaHref({ item: x.lyric })}" title="歌詞を見る">${esc(x.title)}</a>` : esc(x.title);
+        out += `<li><span class="no">${esc(String(x.no).replace("アンコール", "En"))}</span><span class="ttl">${title}</span><span class="meta2">${[x.lyric ? "歌詞あり" : "", x.plays ? `演奏 ${x.plays} 回` : ""].filter(Boolean).join("・")}</span></li>`;
+      });
+      return `<ol class="songs">${out}</ol>`;
+    };
+    let main = "", side = "";
+    if (it.kind === "lyric") {
+      main = `<p class="eyebrow">歌詞</p><h1 style="margin:0.2rem 0 0.1rem;font-size:clamp(1.4rem,3vw,1.9rem)">${esc(it.title)}</h1>
+        <p class="r-sub">${esc(it.sub)}</p><div class="lyric">${esc(it.body)}</div>`;
+      side = `<div class="panel side"><h3>収録された作品</h3><ul>${data.releases.length ? data.releases.map((r) => `<li><a href="${oaHref({ item: r.id })}">${esc(r.title)}</a></li>`).join("") : "<li>（旧ホームページの記録では無し）</li>"}</ul>
+        <h3>演奏した公演（${data.plays.length}）</h3><ul>${data.plays.length ? data.plays.map((r) => `<li><a href="${oaHref({ item: r.id })}">${esc(r.date.replace(/-/g, "."))}</a> ${esc(r.title)}</li>`).join("") : "<li>セットリストの記録には無し</li>"}</ul></div>`;
+    } else if (it.kind === "setlist") {
+      main = `<p class="eyebrow">セットリスト</p><div class="r-date" style="margin-top:0.3rem"><b>${+it.date.slice(8)}</b>${it.date.slice(0, 4)}年${+it.date.slice(5, 7)}月（${wdOf(it.date)}）</div>
+        <h1 style="margin:0.4rem 0 0.1rem;font-size:clamp(1.3rem,3vw,1.7rem)">${esc(it.title)}</h1>${it.sub ? `<p class="r-sub">${esc(it.sub)}</p>` : ""}${songList(data.songs)}`;
+      side = `<div class="panel side"><h3>この日のこと</h3><ul><li><a href="#from=${it.date}&to=${it.date}&order=old">この日の5chの書き込み</a></li>
+        <li><a href="${oaHref({ c: "setlist" })}">セットリストの一覧へ</a></li></ul></div>`;
+    } else {
+      main = `<p class="eyebrow">作品</p><h1 style="margin:0.2rem 0 0.2rem;font-size:clamp(1.3rem,3vw,1.8rem)">${esc(it.title)}</h1>
+        <p class="r-sub">${esc(jpDate(it.date))}${it.sub ? "・" + esc(it.sub.replace(it.title, "").trim()) : ""}</p>${songList(data.songs)}
+        ${it.body.includes("\n\n") ? `<p class="r-sub" style="white-space:pre-wrap;margin-top:1rem">${esc(it.body.split("\n\n").slice(1).join("\n"))}</p>` : ""}`;
+    }
+    const nav = `<div class="r-nav">${data.prev ? `<a class="prev" href="${oaHref({ item: data.prev })}"><small>← 前</small>前の${label}</a>` : `<span class="void"></span>`}
+      <span class="mid">${data.index + 1} / ${data.count}</span>${data.next ? `<a class="next" href="${oaHref({ item: data.next })}"><small>次 →</small>次の${label}</a>` : `<span class="void"></span>`}</div>`;
+    $("main").innerHTML = `<div class="item-grid"><article class="panel reader">${main}${sourceBox(data.source)}</article>${side ? `<aside>${side}</aside>` : ""}</div>${nav}`;
     window.scrollTo(0, 0);
   }
 

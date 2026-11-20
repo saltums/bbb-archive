@@ -364,7 +364,12 @@ def oa_tree(q):
         s["categories"].sort(key=lambda c: CATEGORY_ORDER.index(c["name"]) if c["name"] in CATEGORY_ORDER else 99)
         for c in s["categories"]:
             c["series"].sort(key=lambda x: x["a"] or "")
-    return {"sources": srcs}
+    con = blog_db()
+    has_items = con.execute("SELECT name FROM sqlite_master WHERE name = 'items'").fetchone()
+    counts = {k: n for k, n in con.execute("SELECT kind, COUNT(*) FROM items GROUP BY kind")} if has_items else {}
+    con.close()
+    collections_ = [{"kind": k, "label": v, "n": counts.get(k, 0)} for k, v in ITEM_KINDS.items() if counts.get(k)]
+    return {"sources": srcs, "collections": collections_}
 
 
 OA_COLS = "id, source, category, series, part, author, date, approx, title, heading, wayback_ts, url"
@@ -395,6 +400,75 @@ def oa_doc(q):
             "prev": sib[i - 1] if i > 0 else None, "next": sib[i + 1] if i + 1 < len(sib) else None}
 
 
+ITEM_KINDS = {"lyric": "歌詞", "setlist": "セットリスト", "release": "作品"}
+
+
+def song_key(title):
+    """build_blog_db.song_key と同じ（曲名の表記ゆれをならす）。"""
+    import unicodedata
+    t = unicodedata.normalize("NFKC", title or "").lower()
+    t = re.sub(r"[(（\[【].*?[)）\]】]", "", t)
+    t = t.replace("二", "2").replace("・", "").replace("’", "'")
+    return re.sub(r"[\s\-_:!！?？☆.,、。'\"~〜]", "", t)
+
+
+def _song_index(con):
+    """曲名 → 歌詞の id、曲名 → 演奏した公演、曲名 → 収録作品。"""
+    lyrics = {r["song_key"]: r["id"] for r in con.execute("SELECT id, song_key FROM items WHERE kind = 'lyric'")}
+    plays, rels = collections.defaultdict(list), collections.defaultdict(list)
+    for r in con.execute("SELECT id, kind, title, date, songs FROM items WHERE kind IN ('setlist','release') ORDER BY date"):
+        for s in json.loads(r["songs"] or "[]"):
+            k = song_key(s["title"])
+            (plays if r["kind"] == "setlist" else rels)[k].append({"id": r["id"], "title": r["title"], "date": r["date"]})
+    return lyrics, plays, rels
+
+
+def oa_items(q):
+    """まとめの一覧（歌詞・セットリスト・作品）。"""
+    con = blog_db()
+    kind = first(q, "kind")
+    rows = [dict(r) for r in con.execute("""SELECT id, kind, title, sub, date, songs, song_key, source_entry
+        FROM items WHERE kind = ? ORDER BY date, source_entry, position""", (kind,))]
+    lyrics, plays, rels = _song_index(con)
+    counts = {k: n for k, n in con.execute("SELECT kind, COUNT(*) FROM items GROUP BY kind")}
+    con.close()
+    for r in rows:
+        songs = json.loads(r.pop("songs") or "[]")
+        r["n_songs"] = len(songs)
+        r["preview"] = [s["title"] for s in songs[:4]]
+        if kind == "lyric":
+            r["plays"] = len(plays.get(r["song_key"], []))
+            r["releases"] = [x["title"] for x in rels.get(r["song_key"], [])]
+            r["release_date"] = (rels.get(r["song_key"]) or [{"date": "9999"}])[0]["date"]
+    return {"kind": kind, "label": ITEM_KINDS.get(kind, kind), "items": rows, "counts": counts}
+
+
+def oa_item(q):
+    """まとめの1件と、出典（元のページ）、曲ごとのつながり。"""
+    con = blog_db()
+    it = con.execute("SELECT * FROM items WHERE id = ?", (first(q, "id"),)).fetchone()
+    if not it:
+        con.close()
+        return {"item": None}
+    it = dict(it)
+    src = con.execute("""SELECT e.id, e.series, e.category, e.url, e.wayback_ts, e.source, s.label FROM entries e
+        LEFT JOIN sources s ON s.id = e.source WHERE e.id = ?""", (it["source_entry"],)).fetchone()
+    sib = [r[0] for r in con.execute("SELECT id FROM items WHERE kind = ? ORDER BY date, source_entry, position", (it["kind"],))]
+    lyrics, plays, rels = _song_index(con)
+    con.close()
+    songs = json.loads(it.pop("songs") or "[]")
+    for s in songs:
+        s["lyric"] = lyrics.get(song_key(s["title"]))
+        s["plays"] = len(plays.get(song_key(s["title"]), []))
+    i = sib.index(it["id"])
+    out = {"item": it, "songs": songs, "source": dict(src) if src else None, "index": i, "count": len(sib),
+           "prev": sib[i - 1] if i > 0 else None, "next": sib[i + 1] if i + 1 < len(sib) else None}
+    if it["kind"] == "lyric":
+        out["plays"] = plays.get(it["song_key"], [])
+        out["releases"] = rels.get(it["song_key"], [])
+    return out
+
+
 def day_count(q):
     """日記の日付ごとに、同じ日の 5ch の書き込み数（「この日のスレを見る」用）。dates=2004-12-01,2004-12-02"""
     dates = [d for d in first(q, "dates").split(",") if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d)][:100]
@@ -407,7 +481,7 @@ def day_count(q):
     return {"counts": out}
 
 
-ROUTES = {"/api/oa/tree": oa_tree, "/api/oa/series": oa_series, "/api/oa/doc": oa_doc, "/api/diary": diary, "/api/daycount": day_count, "/api/works": works, "/api/work": work, "/api/search": search, "/api/suggest": suggest, "/api/thread": thread, "/api/posts": some_posts,
+ROUTES = {"/api/oa/items": oa_items, "/api/oa/item": oa_item, "/api/oa/tree": oa_tree, "/api/oa/series": oa_series, "/api/oa/doc": oa_doc, "/api/diary": diary, "/api/daycount": day_count, "/api/works": works, "/api/work": work, "/api/search": search, "/api/suggest": suggest, "/api/thread": thread, "/api/posts": some_posts,
           "/api/threads": lambda q: threads(), "/api/home": lambda q: home()}
 
 
