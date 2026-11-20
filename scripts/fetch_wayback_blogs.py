@@ -18,15 +18,21 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 DELAY = 2.5
 
 # (id, 表示名, 書いた人, 保存の接頭辞, 取るページ, 外すページ)
+# 公式に出たものは全部残す。中身が入れ替わる一覧ページ（LIST）は、月ごとに別の版として残す。
+ASSETS = r"\.(css|js|swf|xml|jpg|jpeg|gif|png|ico|mp3|wav|zip|pdf)(\?|$)|/wp-(content|includes)/|/asset/|/img/|/images/"
 SOURCES = [
     ("seiryu", "小出の旧ホームページ（曖昧日記・旧小出日記）", "小出祐介", "www.venus.dti.ne.jp/~seiryu/", r"\.html?$|/~seiryu/?$", r"bbs"),
-    ("official-com", "公式サイト（日記）", "", "www.baseballbear.com/", r"cgi-bin/(epad|diary|hamripo)|aimaidiary|newpage\d*\.html|artist/profile|news/detail", r"\.(css|js|swf|xml|jpg|gif|png)$"),
-    ("official-net", "公式サイト旧ドメイン（日記）", "", "www.baseballbear.net/", r"cgi-bin/(epad|diary|hamripo)|swf/info\d*\.html", r"\.(css|js|swf|xml|jpg|gif|png)$"),
+    ("official-com", "公式サイト baseballbear.com", "", "www.baseballbear.com/", r".", ASSETS + r"|/related/|cgi-sys"),
+    ("official-net", "公式サイト baseballbear.net", "", "www.baseballbear.net/", r".", ASSETS + r"|/related/|cgi-sys|check_image"),
+    # 事務所（sma.co.jp）は robots.txt で Claude を全面禁止しているので、直接もアーカイブ経由も取らない
+    ("universal", "ユニバーサルのバンドページ", "", "www.universal-music.co.jp/base-ball-bear/", r".", ASSETS),
+    ("tumblr", "公式 tumblr", "", "baseballbearofficial.tumblr.com/", r"/post/|/page/|tumblr\.com/?$", ASSETS + r"|/image/"),
     ("playlog-koide", "小出メッセ（playlog）", "小出祐介", "playlog.jp/koide/", r"/blog", r"#"),
     ("playlog-sekine", "しおり暮らし（playlog）", "関根史織", "playlog.jp/sekine/", r"/blog", r"#"),
     ("playlog-syohei", "湯浅将平のブログ（playlog）", "湯浅将平", "playlog.jp/syohei/", r"/blog", r"#"),
     ("playlog-hori", "堀之内大介のブログ（playlog）", "堀之内大介", "playlog.jp/horinouchi/", r"/blog", r"#"),
-    ("bokuburo", "ボクブロ（seesaa）", "", "baseballbearblog.seesaa.net/", r"/article/\d+\.html|/archives/\d+-\d+\.html|/index-?\d*\.html|seesaa\.net/?$", r"upload|\.css|\.ico|robots"),
+    # ボクブロの robots.txt は /archives/ /upload/ /tag/ /comment などを禁止しているので、記事と目次だけ
+    ("bokuburo", "ボクブロ（seesaa）", "", "baseballbearblog.seesaa.net/", r"/article/\d+\.html|/index-?\d*\.html|seesaa\.net/?$", r"/archives/|/upload|/tag/|comment|\.css|\.ico|robots"),
     ("livedoor", "livedoor ブログ baseballbear", "", "blog.livedoor.jp/baseballbear/", r"archives|/baseballbear/?$", r"\.(css|js|jpg|gif|png)$"),
     ("jfn", "JFN 番組ブログ", "", "www2.jfn.co.jp/bbb/", r"/blog", r"\.(css|js|jpg|gif|png)$"),
     ("emi", "EMI のバンドページ", "", "www.toshiba-emi.co.jp/capitol/bbb/", r"\.html?$|\.php|/bbb/?$", r""),
@@ -68,23 +74,50 @@ def safe_name(u):
     return re.sub(r"[^A-Za-z0-9._-]+", "_", u)[:180]
 
 
+# 中身が入れ替わるページ（トップ・お知らせ一覧・ライブ一覧・告知の掲示板・事務所のデータ）
+LIST = re.compile(r"(baseballbear\.(com|net)(/(index\d*\.html?|sp|top\.html?|swf/info\d*\.html|news(/index\.html)?|live(/index\.html)?|info|media|disc|disco|bio)?)?/?$)"
+                  r"|kokuchi\.cgi|/artist/json/|seesaa\.net/?$|/index-?\d*\.html$|universal-music\.co\.jp/base-ball-bear(/news)?/?$")
+
+
 def plan():
-    """取るページ: 同じURLは1つ（いちばん新しい保存）。日記は記事ごとにURLがあるので、それで足りる。"""
+    """取るページ: ふつうは同じURLにつき1つ（いちばん新しい保存）。
+    中身が入れ替わる一覧ページは、内容が違う保存を月に1つずつ取る（過去のお知らせを取りこぼさないため）。"""
     jobs = []
     for sid, label, author, prefix, inc, exc in SOURCES:
         rows = cdx(prefix)
-        time.sleep(3)
+        time.sleep(4)
         seen = {}
         for ts, original, mime, digest in rows:
-            if "html" not in mime and "text" not in mime:
+            if not any(k in mime for k in ("html", "text", "json", "javascript")):
                 continue
             if not re.search(inc, original) or (exc and re.search(exc, original)):
                 continue
             key = norm_url(original)
-            seen[key] = {"source": sid, "ts": ts, "url": original, "norm": key, "digest": digest}
-        jobs.extend(seen.values())
-        print(f"  {label}: {len(seen)} ページ（保存の数 {len(rows)}）", flush=True)
+            if sid == "sma-json":
+                key = re.sub(r"\?.*$", "", key)
+            if LIST.search(key):
+                seen.setdefault((key, ts[:6], digest), {"source": sid, "ts": ts, "url": original, "norm": key, "digest": digest})
+            else:
+                seen[(key,)] = {"source": sid, "ts": ts, "url": original, "norm": key, "digest": digest}
+        # 同じ月の同じ内容（digest）は1つに
+        uniq = {}
+        for j in seen.values():
+            uniq.setdefault((j["norm"], j["digest"]), j)
+        jobs.extend(uniq.values())
+        print(f"  {label}: {len(uniq)} ページ（保存の数 {len(rows)}）", flush=True)
     return jobs
+
+
+ORDER = ["seiryu", "official-diary", "playlog-koide", "playlog-sekine", "playlog-syohei", "playlog-hori", "livedoor",
+         "bokuburo", "jfn", "sma-json", "universal", "emi", "emi2", "tumblr", "official-com", "official-net", "official-bbs"]
+
+
+def priority(j):
+    """日記・ブログ → お知らせのデータ → レーベル → 公式サイトのほかのページ → ファンの掲示板 の順に取る。"""
+    s = j["source"]
+    if s.startswith("official"):
+        s = "official-bbs" if "epad" in j["norm"] else "official-diary" if re.search(r"cgi-bin/(diary|hamripo)|aimaidiary", j["norm"]) else s
+    return (ORDER.index(s) if s in ORDER else len(ORDER), j["norm"], j["ts"])
 
 
 def main():
@@ -96,10 +129,13 @@ def main():
     man = json.load(open(MANIFEST, encoding="utf-8")) if os.path.exists(MANIFEST) else {"sources": {}, "pages": {}}
     if args.replan or not man.get("plan"):
         print("保存の一覧を確認しています…", flush=True)
-        man["plan"] = plan()
+        man["plan"] = sorted(plan(), key=priority)
         man["sources"] = {s[0]: {"label": s[1], "author": s[2], "prefix": s[3]} for s in SOURCES}
         json.dump(man, open(MANIFEST, "w", encoding="utf-8", newline="\n"), ensure_ascii=False, indent=0)
-    todo = [j for j in man["plan"] if f'{j["norm"]}|{j["digest"]}' not in man["pages"]]
+    # 一覧ページ以外は、同じURLを一度取っていればそれで足りる（保存の時期が違っても取り直さない）
+    have = {p["url"] and norm_url(p["url"]) for p in man["pages"].values() if p.get("file")}
+    todo = [j for j in man["plan"] if f'{j["norm"]}|{j["digest"]}' not in man["pages"]
+            and (LIST.search(j["norm"]) or j["norm"] not in have)]
     print(f"取る予定 {len(man['plan'])} ページ / 残り {len(todo)} ページ", flush=True)
     if args.list:
         return

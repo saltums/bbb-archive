@@ -189,21 +189,22 @@ def assign_years(entries, ts, start_year=None):
         e["base"] = base
 
 
+def part_number(part):
+    """「Vol.59」「Part12」「第6回」→ 59, 12, 6。番外編などは None。"""
+    if not part or "番外" in part:
+        return None
+    m = re.search(r"(\d+)", part)
+    return int(m.group(1)) if m else None
+
+
 def fix_series_years(rows):
     """連載（「曖昧Diary 第N回」など）は回の順に日付が続くはずなので、
     各回の最初の日が前の回の最後の日より前にならない、いちばん早い年に揃える。"""
-    def family(series):
-        m = re.match(r"^(.*?)(?:第\s*(\d+)\s*回|Part\s*(\d+)|vol\.?\s*(\d+)|(\d+))", series or "", re.I)
-        if not m:
-            return None, None
-        num = next((g for g in m.groups()[1:] if g), None)
-        return m.group(1).strip(), int(num) if num else None
-
     groups = collections.defaultdict(list)
     for page in rows:
-        fam, num = family(page["series"])
-        if fam is not None and num is not None and any("ymd" in e for e in page["entries"]):
-            groups[fam].append((num, page))
+        num = part_number(page.get("part"))
+        if page.get("series") and num is not None and any("ymd" in e for e in page["entries"]):
+            groups[page["series"]].append((num, page))
     for fam, pages in groups.items():
         pages.sort(key=lambda x: x[0])
         prev_last = None
@@ -221,6 +222,95 @@ PARSERS = {
     "bokuburo": parse_mt, "livedoor": parse_mt, "jfn": parse_mt,
 }
 
+# 置き場所ごとの、カテゴリーと連載の決まった名前（記事ごとに決まらないもの）
+DEFAULTS = {
+    "playlog-koide": ("日記", "小出メッセ"),
+    "playlog-sekine": ("日記", "しおり暮らし"),
+    "playlog-syohei": ("日記", "湯浅将平のブログ"),
+    "playlog-hori": ("日記", "堀之内大介のブログ"),
+    "bokuburo": ("ブログ", "ボクブロ"),
+    "livedoor": ("日記", "livedoor ブログ"),
+    "jfn": ("ラジオ", "JFN 番組ブログ"),
+}
+
+# ---- 旧ホームページ（www.venus.dti.ne.jp/~seiryu/）の分類 ----
+# (ファイル名, カテゴリー, 連載の名前, 書いた人, 種類)  連載の名前が空なら見出しから作る。種類 diary は日ごとに切る
+SEIRYU = [
+    (r"^nikki\d*\.html$", "日記", "小出日記", "小出祐介", "diary"),
+    (r"^neonikki\d*\.html$", "日記", "ネオ小出日詩", "小出祐介", "diary"),
+    (r"^aimainikki(bangai)?\d*\.html?$", "日記", "小出AIMAI日記", "小出祐介", "diary"),
+    (r"^aimaidiary\d*\.html$", "日記", "曖昧Diary", "小出祐介", "diary"),
+    (r"^taberu\d*\.html$", "メンバーのコーナー", "", "堀之内大介", "page"),
+    (r"^cream\d*\.html$", "メンバーのコーナー", "湯浅CREAM（写真）", "湯浅将平", "page"),
+    (r"^namacream\.html$", "メンバーのコーナー", "濃いで!!生クリーム（写真）", "小出祐介", "page"),
+    (r"^kakusi\.html$", "メンバーのコーナー", "隠したつもりのページ（写真）", "堀之内大介", "page"),
+    (r"^kasi\d*\.html$", "歌詞", "歌詞掲載", "小出祐介", "page"),
+    (r"^(index\d*\.html?)?$", "トップページ", "トップページ", "", "page"),
+    (r"^set\.html$", "ライブ", "セットリスト", "", "page"),
+    (r"^(recohatu|senkou)\.htm$", "ライブ・リリースの告知", "告知ページ", "", "page"),
+    (r"^disc\.htm$", "作品", "ディスコグラフィー", "", "page"),
+    (r"^demo\.htm$", "作品", "デモ音源の通信販売", "", "page"),
+    (r"^sekinemovie\.htm$", "お知らせ", "関根史織 映画『リンダ リンダ リンダ』出演", "", "page"),
+]
+SEIRYU_SKIP = r"^(koide|sekine|yuasa|horinouti)\.htm|^newpage|^livekan"   # 中身が「戻る」だけのページ
+
+PART = re.compile(r"(Vol\.?\s*\d+|Part\s*\d+|第\s*\d+\s*[回話]|番外編\s*\d*|Lv\.?\s*\d+)", re.I)
+HEAD_RANGE = re.compile(r"[(（](\d{1,2})月(\d{1,2})日")
+
+
+def seiryu_name(url):
+    return re.sub(r"^.*?~seiryu/?", "", url.replace("%7E", "~").replace("%7e", "~")).split("?")[0]
+
+
+def heading_of(page):
+    body = re.search(r"<body[^>]*>(.*)</body>", page, re.S | re.I)
+    raw_html = body.group(1) if body else page
+    head = re.search(r"<b>(.*?)</b>", raw_html, re.S | re.I)
+    first = unicodedata.normalize("NFKC", text_of(head.group(1) if head else raw_html)).strip().split("\n")[0]
+    return first[:80]
+
+
+def parse_seiryu(url, page, ts):
+    name = seiryu_name(url)
+    if re.search(SEIRYU_SKIP, name):
+        return [], None
+    rule = next((r for r in SEIRYU if re.search(r[0], name)), None)
+    category, series, author, mode = (rule[1:] if rule else ("その他", "その他のページ", "", "page"))
+    head = heading_of(page)
+    part_m = PART.search(head)
+    part = re.sub(r"\s+", "", part_m.group(1)) if part_m else ""
+    if not series:
+        series = re.sub(r"[『』]", "", PART.split(head)[0]).strip(" ・…!") or head
+    meta = {"category": category, "series": series, "author": author, "part": part, "heading": head}
+    if mode == "diary":
+        # 見出しに日付が1日だけの回（「小出日記Vol.58(12月30日)」）は1日分の日記。
+        # 本文中の「3月」「10日、」は振り返りや小見出しなので、分けずに見出しの日付で1件にする
+        single = re.search(r"[(（]\d{1,2}月\d{1,2}日[)）]", head)
+        entries = [] if single else parse_dated_text(page, ts)
+        if not any("ymd" in e for e in entries):
+            # 日付の見出しが無い回（「小出日記Vol.59(12月31日)」など）は、見出しの日付で1件にする
+            hm = HEAD_RANGE.search(head)
+            if hm:
+                txt = unicodedata.normalize("NFKC", text_of(re.search(r"<body[^>]*>(.*)</body>", page, re.S | re.I).group(1)
+                                                             if re.search(r"<body", page, re.I) else page))
+                body = txt.split("\n", 1)[1] if "\n" in txt else txt
+                entries = [{"ymd": (0, int(hm.group(1)), int(hm.group(2))), "time": "", "title": "", "body": body,
+                            "url": "", "author": ""}]
+                assign_years(entries, ts)
+        for e in entries:
+            e.update({k: v for k, v in meta.items() if k != "heading"})
+            e["series_heading"] = head
+        return entries, meta
+    # 日記以外は1ページを1件。日付は保存された日（おおよそ）
+    txt = tidy_lines(unicodedata.normalize("NFKC", text_of(re.search(r"<body[^>]*>(.*)</body>", page, re.S | re.I).group(1)
+                                                                if re.search(r"<body", page, re.I) else page)))
+    if len(re.sub(r"\s|戻る|☆|前の写真|次の写真", "", txt)) < 10:
+        return [], None
+    title = head if series in ("トップページ",) else head
+    entry = {"date": f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}", "time": "", "title": title, "body": txt, "url": "", "approx": True}
+    entry.update({k: v for k, v in meta.items() if k != "heading"})
+    return [entry], meta
+
 
 def parse(source, url, page, ts=""):
     if source in PARSERS:
@@ -232,7 +322,8 @@ def parse(source, url, page, ts=""):
     if source.startswith("playlog"):
         return parse_playlog(page, ts), "blog"
     if source == "seiryu":
-        return parse_dated_text(page, ts), "blog"
+        entries, meta = parse_seiryu(url, page, ts)
+        return entries, ("blog" if meta and meta["category"] == "日記" else "page")
     return parse_dated_text(page, ts), "page"
 
 
@@ -257,7 +348,9 @@ def main():
     con.executescript("""
     CREATE TABLE sources(id TEXT PRIMARY KEY, label TEXT, author TEXT, prefix TEXT, pages INTEGER, entries INTEGER);
     CREATE TABLE entries(id INTEGER PRIMARY KEY, source TEXT, author TEXT, date TEXT, time TEXT, title TEXT,
-      body TEXT, url TEXT, page_url TEXT, wayback_ts TEXT, kind TEXT, series TEXT, approx INTEGER);
+      body TEXT, url TEXT, page_url TEXT, wayback_ts TEXT, kind TEXT, series TEXT, approx INTEGER,
+      category TEXT, part TEXT, heading TEXT);
+    CREATE INDEX entries_series ON entries(source, category, series, date);
     CREATE INDEX entries_date ON entries(date);
     CREATE INDEX entries_source ON entries(source, date);
     CREATE VIRTUAL TABLE entries_fts USING fts5(title, body, content='entries', content_rowid='id', tokenize='trigram');
@@ -267,31 +360,39 @@ def main():
     pages = collections.Counter()
     parsed = []
     for key, p in sorted(man["pages"].items(), key=lambda kv: kv[1]["ts"], reverse=True):
-        if not p.get("file"):
+        path = os.path.join(RAW, p["file"]) if p.get("file") else ""
+        if not path or not os.path.exists(path):
             continue
-        page = decode(open(os.path.join(RAW, p["file"]), "rb").read())
+        page = decode(open(path, "rb").read())
         entries, kind = parse(p["source"], p["url"], page, p["ts"])
         pages[p["source"]] += 1
         parsed.append({"p": p, "kind": kind, "entries": entries, "ts": p["ts"],
-                       "series": entries[0].get("series", "") if entries else ""})
+                       "series": entries[0].get("series", "") if entries else "",
+                       "part": entries[0].get("part", "") if entries else ""})
     fix_series_years([x for x in parsed if x["p"]["source"] == "seiryu"])
+    # 古い保存から順に入れ、同じ中身（トップページの同じ版など）は最初の1つだけ残す
+    parsed.sort(key=lambda x: x["ts"])
     for x in parsed:
         p, kind, entries = x["p"], x["kind"], x["entries"]
         src = sources.get(p["source"], {})
+        cat_default, series_default = DEFAULTS.get(p["source"], ("その他", src.get("label", p["source"])))
         for e in entries:
             if not e.get("date"):
                 continue
             body = tidy_lines(e["body"])
             if len(body) < 8:
                 continue
-            h = hashlib.sha1(f'{p["source"]}|{e["date"]}|{re.sub(r"\s+", "", body)[:400]}'.encode("utf-8")).hexdigest()
+            key_date = "" if e.get("approx") else e["date"]
+            h = hashlib.sha1(f'{p["source"]}|{key_date}|{re.sub(r"\s+", "", body)[:600]}'.encode("utf-8")).hexdigest()
             if h in seen:
                 continue
             seen.add(h)
-            author = e["author"] or src.get("author", "")
-            con.execute("INSERT INTO entries(source,author,date,time,title,body,url,page_url,wayback_ts,kind,series,approx) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",
-                        (p["source"], author, e["date"], e["time"], e["title"], body, e["url"] or p["url"], p["url"], p["ts"], kind,
-                         e.get("series", ""), int(bool(e.get("approx")))))
+            author = e.get("author") or src.get("author", "")
+            con.execute("""INSERT INTO entries(source,author,date,time,title,body,url,page_url,wayback_ts,kind,series,approx,category,part,heading)
+                           VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                        (p["source"], author, e["date"], e.get("time", ""), e.get("title", ""), body, e.get("url") or p["url"], p["url"],
+                         p["ts"], kind, e.get("series") or series_default, int(bool(e.get("approx"))),
+                         e.get("category") or cat_default, e.get("part", ""), e.get("series_heading", "")))
             count[p["source"]] += 1
     for sid, s in sources.items():
         con.execute("INSERT INTO sources VALUES(?,?,?,?,?,?)", (sid, s["label"], s["author"], s["prefix"], pages[sid], count[sid]))

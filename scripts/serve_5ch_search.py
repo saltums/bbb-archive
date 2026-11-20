@@ -321,6 +321,80 @@ def diary(q):
             "sources": [dict(r) for r in base], "authors": [list(r) for r in authors]}
 
 
+# 整理が済んで、確認してもらえる置き場所（ほかは取得・整理の途中）
+OA_READY = {"seiryu"}
+CATEGORY_ORDER = ["日記", "ブログ", "メンバーのコーナー", "歌詞", "トップページ", "お知らせ", "ライブ", "ライブ・リリースの告知",
+                  "作品", "ラジオ", "その他"]
+
+
+def part_num(part):
+    m = re.search(r"(\d+)", part or "")
+    return int(m.group(1)) if m and "番外" not in (part or "") else None
+
+
+def oa_tree(q):
+    """置き場所 › カテゴリー › 連載 の一覧（件数・期間・残っていない回）。"""
+    if not os.path.exists(BLOG_DB):
+        return {"missing": True}
+    con = blog_db()
+    srcs = [dict(r) for r in con.execute("""SELECT s.id, s.label, s.prefix, COUNT(e.id) n, MIN(e.date) a, MAX(e.date) b
+        FROM sources s JOIN entries e ON e.source = s.id GROUP BY s.id ORDER BY MIN(e.date)""")]
+    rows = con.execute("""SELECT source, category, series, COALESCE(NULLIF(author,''),'-') author, COUNT(*) n,
+        MIN(date) a, MAX(date) b, SUM(approx) approx, GROUP_CONCAT(DISTINCT part) parts
+        FROM entries GROUP BY source, category, series""").fetchall()
+    con.close()
+    by_src = {s["id"]: s for s in srcs}
+    for s in srcs:
+        s["categories"] = []
+        s["ready"] = s["id"] in OA_READY
+    for r in rows:
+        nums = sorted({part_num(p) for p in (r["parts"] or "").split(",") if part_num(p) is not None})
+        missing = [n for n in range(nums[0], nums[-1] + 1) if n not in set(nums)] if nums else []
+        sample = next((p for p in (r["parts"] or "").split(",") if part_num(p) is not None), "")
+        item = {"series": r["series"], "author": r["author"], "n": r["n"], "a": r["a"], "b": r["b"],
+                "approx": bool(r["approx"] and r["approx"] == r["n"]), "parts": len(nums),
+                "missing": [re.sub(r"\d+", str(n), sample, count=1) for n in missing]}
+        cats = by_src[r["source"]]["categories"]
+        cat = next((c for c in cats if c["name"] == r["category"]), None)
+        if not cat:
+            cat = {"name": r["category"], "series": []}
+            cats.append(cat)
+        cat["series"].append(item)
+    for s in srcs:
+        s["categories"].sort(key=lambda c: CATEGORY_ORDER.index(c["name"]) if c["name"] in CATEGORY_ORDER else 99)
+        for c in s["categories"]:
+            c["series"].sort(key=lambda x: x["a"] or "")
+    return {"sources": srcs}
+
+
+OA_COLS = "id, source, category, series, part, author, date, approx, title, heading, wayback_ts, url"
+
+
+def oa_series(q):
+    """1つの連載の目次（日付順）。"""
+    con = blog_db()
+    rows = con.execute(f"""SELECT {OA_COLS}, substr(body, 1, 90) head FROM entries
+        WHERE source = ? AND series = ? ORDER BY date, id""", (first(q, "s"), first(q, "r"))).fetchall()
+    con.close()
+    return {"entries": [dict(r) for r in rows]}
+
+
+def oa_doc(q):
+    """1件の本文と、同じ連載の前後の記事。"""
+    con = blog_db()
+    e = con.execute(f"SELECT {OA_COLS}, body FROM entries WHERE id = ?", (first(q, "id"),)).fetchone()
+    if not e:
+        con.close()
+        return {"doc": None}
+    sib = [dict(r) for r in con.execute(f"""SELECT id, date, part, title FROM entries
+        WHERE source = ? AND series = ? ORDER BY date, id""", (e["source"], e["series"]))]
+    label = con.execute("SELECT label FROM sources WHERE id = ?", (e["source"],)).fetchone()
+    con.close()
+    i = next(k for k, s in enumerate(sib) if s["id"] == e["id"])
+    return {"doc": dict(e), "source_label": label[0] if label else e["source"], "index": i, "count": len(sib),
+            "prev": sib[i - 1] if i > 0 else None, "next": sib[i + 1] if i + 1 < len(sib) else None}
+
+
 def day_count(q):
     """日記の日付ごとに、同じ日の 5ch の書き込み数（「この日のスレを見る」用）。dates=2004-12-01,2004-12-02"""
     dates = [d for d in first(q, "dates").split(",") if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d)][:100]
@@ -333,7 +407,7 @@ def day_count(q):
     return {"counts": out}
 
 
-ROUTES = {"/api/diary": diary, "/api/daycount": day_count, "/api/works": works, "/api/work": work, "/api/search": search, "/api/suggest": suggest, "/api/thread": thread, "/api/posts": some_posts,
+ROUTES = {"/api/oa/tree": oa_tree, "/api/oa/series": oa_series, "/api/oa/doc": oa_doc, "/api/diary": diary, "/api/daycount": day_count, "/api/works": works, "/api/work": work, "/api/search": search, "/api/suggest": suggest, "/api/thread": thread, "/api/posts": some_posts,
           "/api/threads": lambda q: threads(), "/api/home": lambda q: home()}
 
 

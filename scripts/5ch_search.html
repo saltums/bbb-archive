@@ -304,6 +304,65 @@ tr:last-child td { border-bottom: none; }
 .src-row[aria-pressed="true"] { background: var(--accent-soft); }
 .src-row em { font-style: normal; color: var(--faint); font-size: 0.74rem; font-variant-numeric: tabular-nums; }
 .src-row small { grid-column: 1 / -1; color: var(--faint); font-size: 0.72rem; font-variant-numeric: tabular-nums; }
+/* ---- 公式アーカイブ（本棚） ---- */
+@media (min-width: 1080px) {
+  .layout.lib { grid-template-columns: 290px minmax(0, 1fr); grid-template-areas: "rail head" "rail main"; }
+  .layout.lib .rail { top: 8.4rem; }
+}
+.tree { padding: 0.6rem 0.5rem 0.8rem; }
+.tree h2 { margin: 0.4rem 0.5rem 0.3rem; font-size: 0.72rem; font-weight: 700; color: var(--faint); letter-spacing: 0.06em; }
+.tree a { display: block; color: var(--ink); border-radius: 8px; padding: 0.28rem 0.55rem; font-size: 0.85rem; }
+.tree a:hover { background: var(--sunk); text-decoration: none; }
+.tree a.on { background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+.tree .src { font-weight: 700; margin-top: 0.3rem; }
+.tree .cat { color: var(--dim); font-size: 0.74rem; margin: 0.45rem 0 0.1rem 0.55rem; }
+.tree .ser { padding-left: 1.2rem; display: flex; justify-content: space-between; gap: 0.5rem; }
+.tree .ser em { font-style: normal; color: var(--faint); font-size: 0.72rem; font-variant-numeric: tabular-nums; }
+.tree .pending { color: var(--faint); font-size: 0.8rem; padding: 0.2rem 0.55rem; }
+.crumbs { display: flex; flex-wrap: wrap; gap: 0.2rem 0.4rem; font-size: 0.78rem; color: var(--faint); margin-bottom: 0.4rem; }
+.crumbs a { color: var(--dim); }
+.crumbs span::before { content: "›"; margin-right: 0.4rem; color: var(--faint); }
+.lib-hero { padding: 1.2rem 1.3rem 1.1rem; }
+.lib-hero h1 { margin: 0.1rem 0 0.25rem; font-size: clamp(1.5rem, 3.4vw, 2.2rem); line-height: 1.25; text-wrap: balance; }
+.lib-hero .meta { color: var(--dim); font-size: 0.86rem; font-variant-numeric: tabular-nums; }
+.lib-hero .lead { margin: 0.7rem 0 0; max-width: 50em; line-height: 1.85; color: var(--dim); font-size: 0.9rem; }
+.miss { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.7rem; align-items: center; font-size: 0.78rem; color: var(--dim); }
+.miss b { font-weight: 400; border: 1px dashed var(--line); border-radius: 6px; padding: 0 0.45rem; color: var(--faint); }
+.cat-sec { margin-top: 1.4rem; }
+.cat-sec > h2 { font-size: 1rem; margin: 0 0 0.55rem; display: flex; gap: 0.6rem; align-items: baseline; }
+.cat-sec > h2 small { font-weight: 400; color: var(--faint); font-size: 0.78rem; }
+.ser-cards { display: grid; gap: 0.7rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); }
+.ser-card { display: block; padding: 0.85rem 1rem; color: var(--ink); border-top: 3px solid var(--c, var(--line)); }
+.ser-card:hover { text-decoration: none; border-color: var(--accent); }
+.ser-card h3 { margin: 0.1rem 0 0.3rem; font-size: 1rem; line-height: 1.4; }
+.ser-card .who { font-size: 0.72rem; font-weight: 700; color: var(--c, var(--dim)); }
+.ser-card p { margin: 0; font-size: 0.78rem; color: var(--dim); font-variant-numeric: tabular-nums; }
+.toc-group { margin-top: 1rem; }
+.toc-group h3 { position: sticky; top: 7.2rem; z-index: 2; margin: 0; padding: 0.45rem 1rem; font-size: 0.82rem; background: var(--sunk); border-radius: 8px; display: flex; justify-content: space-between; }
+.toc-group h3 small { font-weight: 400; color: var(--faint); font-variant-numeric: tabular-nums; }
+.toc-row { display: grid; grid-template-columns: 6.6rem minmax(0, 1fr); gap: 0 0.9rem; padding: 0.55rem 1rem; color: var(--ink); border-bottom: 1px solid var(--line); }
+.toc-row:hover { background: var(--accent-soft); text-decoration: none; }
+.toc-row time { font-variant-numeric: tabular-nums; font-size: 0.84rem; color: var(--dim); white-space: nowrap; }
+.toc-row span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.88rem; }
+.toc-row span b { font-weight: 700; margin-right: 0.5rem; }
+.toc-row.gone { color: var(--faint); border-bottom-style: dashed; }
+.toc-row.gone:hover { background: none; }
+.reader { padding: clamp(1.2rem, 4vw, 2.6rem) clamp(1.1rem, 5vw, 3.4rem) 2rem; }
+.reader .r-date { font-variant-numeric: tabular-nums; color: var(--dim); font-size: 0.9rem; letter-spacing: 0.04em; }
+.reader .r-date b { font-size: 2.6rem; line-height: 1; color: var(--ink); margin-right: 0.4rem; letter-spacing: -0.02em; }
+.reader h1 { margin: 0.6rem 0 0.2rem; font-size: clamp(1.15rem, 2.6vw, 1.45rem); line-height: 1.5; text-wrap: balance;
+  font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "BIZ UDPMincho", "Noto Serif JP", serif; }
+.reader .r-sub { color: var(--faint); font-size: 0.8rem; }
+.reader .r-body { margin-top: 1.4rem; max-width: 36em; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 1.04rem; line-height: 2.05;
+  font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "BIZ UDPMincho", "Noto Serif JP", serif; }
+.reader .r-foot { margin-top: 1.8rem; padding-top: 0.8rem; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem; font-size: 0.76rem; color: var(--faint); }
+.r-nav { display: grid; grid-template-columns: 1fr auto 1fr; gap: 0.7rem; align-items: stretch; margin-top: 0.9rem; }
+.r-nav a, .r-nav span.void { display: block; padding: 0.65rem 0.9rem; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--ink); font-size: 0.82rem; min-width: 0; }
+.r-nav a:hover { border-color: var(--accent); text-decoration: none; }
+.r-nav small { display: block; color: var(--faint); font-size: 0.72rem; }
+.r-nav .next { text-align: right; }
+.r-nav .mid { align-self: center; color: var(--faint); font-size: 0.76rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.r-nav span.void { visibility: hidden; }
 @media (prefers-reduced-motion: no-preference) { .bar-col i { transition: background 0.12s; } }
 </style>
 </head>
@@ -321,7 +380,7 @@ tr:last-child td { border-bottom: none; }
       <div class="tabs">
         <button type="button" data-tab="search" aria-pressed="true">さがす</button>
         <button type="button" data-tab="works" aria-pressed="false">作品</button>
-        <button type="button" data-tab="diary" aria-pressed="false">日記</button>
+        <button type="button" data-tab="oa" aria-pressed="false">公式アーカイブ</button>
         <button type="button" data-tab="threads" aria-pressed="false">スレ一覧</button>
         <button type="button" data-tab="marks" aria-pressed="false">しおり</button>
       </div>
@@ -469,6 +528,7 @@ tr:last-child td { border-bottom: none; }
     document.querySelectorAll(".tabs button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.tab === name)));
     $("filters").hidden = name !== "search";
     $("layout").classList.toggle("wide", name === "threads" || name === "marks" || name === "works");
+    $("layout").classList.toggle("lib", name === "oa");
     $("filters").hidden = name !== "search";
   }
   function go(p, replace) {
@@ -816,7 +876,7 @@ tr:last-child td { border-bottom: none; }
   const sourceLabel = (id) => (diarySources[id] || {}).label || id;
 
   async function viewDiary() {
-    setTab("diary");
+    setTab("oa");
     $("layout").classList.remove("wide");
     cur = null;
     const P = diaryParams();
@@ -894,6 +954,168 @@ tr:last-child td { border-bottom: none; }
     window.scrollTo(0, 0);
   }
 
+  // ---- 公式アーカイブ（置き場所 › カテゴリー › 連載 › 目次 › 本文） ----
+  const SRC_NAME = { seiryu: "小出の旧ホームページ" };
+  const SRC_NOTE = {
+    seiryu: "小出さんが高校時代から作っていたバンドのホームページ（www.venus.dti.ne.jp/~seiryu/）。2005年2月に公式サイト baseballbear.com へ移り、いまは消えています。Internet Archive に保存されていたページから取り戻しました。",
+  };
+  const srcName = (s) => SRC_NAME[s.id] || s.label;
+  const oaParams = () => new URLSearchParams(location.hash.replace(/^#oa&?/, ""));
+  const oaHref = (o) => "#oa" + (Object.keys(o).length ? "&" + new URLSearchParams(o).toString() : "");
+  const ymd = (d) => (d || "").replace(/-/g, ".");
+  const period = (a, b) => (a || "").slice(0, 7).replace("-", ".") + (b && b.slice(0, 7) !== (a || "").slice(0, 7) ? " – " + b.slice(0, 7).replace("-", ".") : "");
+  let oaTreeCache = null;
+
+  function treeHtml(tree, cur) {
+    const ready = tree.sources.filter((x) => x.ready), pending = tree.sources.filter((x) => !x.ready);
+    let h = `<div class="tree"><a href="#oa" class="${!cur.s && !cur.doc ? "on" : ""}">公式アーカイブのトップ</a>`;
+    ready.forEach((s) => {
+      h += `<a class="src ${cur.s === s.id && !cur.r ? "on" : ""}" href="${oaHref({ s: s.id })}">${esc(srcName(s))}</a>`;
+      s.categories.forEach((c) => {
+        h += `<div class="cat">${esc(c.name)}</div>`;
+        c.series.forEach((x) => {
+          h += `<a class="ser ${cur.s === s.id && cur.r === x.series ? "on" : ""}" href="${oaHref({ s: s.id, r: x.series })}"><span>${esc(x.series)}</span><em>${x.n}</em></a>`;
+        });
+      });
+    });
+    if (pending.length) {
+      h += `<h2>取得・整理の途中</h2>` + pending.map((s) => `<div class="pending">${esc(srcName(s))}</div>`).join("");
+    }
+    return h + `</div>`;
+  }
+
+  async function viewOA() {
+    setTab("oa");
+    cur = null;
+    const P = oaParams();
+    const my = ++seq;
+    if (!oaTreeCache) oaTreeCache = await api("/api/oa/tree");
+    if (my !== seq) return;
+    const tree = oaTreeCache;
+    if (tree.missing) { $("main").innerHTML = `<div class="panel empty">アーカイブのデータベースがまだありません。</div>`; return; }
+    const curSel = { s: P.get("s"), r: P.get("r"), doc: P.get("doc") };
+    if (curSel.doc) return viewOADoc(curSel.doc, tree, my);
+    $("rail").innerHTML = `<nav class="panel">${treeHtml(tree, curSel)}</nav>`;
+    const src = tree.sources.find((x) => x.id === curSel.s);
+    if (src && curSel.r) return viewOASeries(src, curSel.r, my);
+    if (src) return viewOASource(src);
+    // トップ: 置き場所のカード
+    const ready = tree.sources.filter((x) => x.ready);
+    $("head").innerHTML = `<div class="panel lib-hero"><p class="eyebrow">Internet Archive の保存分から取り戻したもの</p>
+      <h1>公式アーカイブ</h1>
+      <p class="lead">公式に発表されていた日記・お知らせ・作品やライブの情報などを、置き場所ごとに「カテゴリー › 連載 › 日付順」で並べています。いまは小出さんの旧ホームページの整理が済んでいます。ほかの置き場所は取得と整理の途中です。</p></div>`;
+    $("main").innerHTML = ready.map((s) => `<section class="cat-sec"><h2><a href="${oaHref({ s: s.id })}">${esc(srcName(s))}</a><small>${period(s.a, s.b)}・${fmt(s.n)} 件</small></h2>
+      <div class="ser-cards">${s.categories.map((c) => `<a class="panel ser-card" href="${oaHref({ s: s.id, r: c.series[0].series })}">
+        <p class="who" style="color:var(--dim)">${esc(c.name)}</p><h3>${esc(c.series.map((x) => x.series).join("・"))}</h3>
+        <p>${fmt(c.series.reduce((t, x) => t + x.n, 0))} 件</p></a>`).join("")}</div></section>`).join("");
+    window.scrollTo(0, 0);
+  }
+
+  function seriesCard(src, x) {
+    const m = member(x.author);
+    return `<a class="panel ser-card" href="${oaHref({ s: src.id, r: x.series })}" style="--c: var(${x.author === "-" ? "--line" : m.c})">
+      ${x.author !== "-" ? `<span class="who">${esc(m.short)}</span>` : ""}<h3>${esc(x.series)}</h3>
+      <p>${x.approx ? "保存時期 " : ""}${period(x.a, x.b)}・${fmt(x.n)} 件${x.parts ? `・${x.parts} 回分` : ""}</p>
+      ${x.missing.length ? `<p style="margin-top:0.25rem;color:var(--faint)">残っていない回 ${x.missing.length}</p>` : ""}</a>`;
+  }
+
+  function viewOASource(src) {
+    $("head").innerHTML = `<div class="panel lib-hero"><div class="crumbs"><a href="#oa">公式アーカイブ</a><span>${esc(srcName(src))}</span></div>
+      <h1>${esc(srcName(src))}</h1><p class="meta">${period(src.a, src.b)}・${fmt(src.n)} 件</p>
+      ${SRC_NOTE[src.id] ? `<p class="lead">${esc(SRC_NOTE[src.id])}</p>` : ""}</div>`;
+    $("main").innerHTML = src.categories.map((c) => `<section class="cat-sec"><h2>${esc(c.name)}<small>${c.series.length} 連載・${fmt(c.series.reduce((t, x) => t + x.n, 0))} 件</small></h2>
+      <div class="ser-cards">${c.series.map((x) => seriesCard(src, x)).join("")}</div></section>`).join("");
+    window.scrollTo(0, 0);
+  }
+
+  async function viewOASeries(src, seriesName, my) {
+    const cat = src.categories.find((c) => c.series.some((x) => x.series === seriesName));
+    const info = cat.series.find((x) => x.series === seriesName);
+    const data = await api(`/api/oa/series?s=${encodeURIComponent(src.id)}&r=${encodeURIComponent(seriesName)}`);
+    if (my !== seq) return;
+    const m = member(info.author);
+    $("head").innerHTML = `<div class="panel lib-hero" style="border-top:3px solid var(${info.author === "-" ? "--line" : m.c})">
+      <div class="crumbs"><a href="#oa">公式アーカイブ</a><span><a href="${oaHref({ s: src.id })}">${esc(srcName(src))}</a></span><span>${esc(cat.name)}</span></div>
+      <h1>${esc(seriesName)}</h1>
+      <p class="meta">${info.author !== "-" ? esc(m.short) + "・" : ""}${info.approx ? "保存時期 " : ""}${period(info.a, info.b)}・${fmt(info.n)} 件${info.parts ? `・${info.parts} 回分` : ""}</p>
+      ${info.missing.length ? `<div class="miss">保存されていない回<span>${info.missing.map((x) => `<b>${esc(x)}</b>`).join(" ")}</span></div>` : ""}</div>`;
+    // 1回に何日分も入る連載（Part・第N回）は回ごと、1回1日の連載や回の無いものは月ごとにまとめる。
+    // 残っていない回は、その位置に点線の行で示す
+    const parts = new Set(data.entries.map((e) => e.part).filter(Boolean));
+    const byPart = parts.size > 0 && data.entries.length / parts.size >= 1.5;
+    const groups = [];
+    data.entries.forEach((e) => {
+      const key = byPart ? (e.part || "そのほか") : e.date.slice(0, 7);
+      let g = groups.find((x) => x.key === key);
+      if (!g) { g = { key, items: [] }; groups.push(g); }
+      g.items.push(e);
+    });
+    const missing = new Set(info.missing);
+    const num = (k) => +(((k || "").match(/\d+/) || [0])[0]);
+    const counted = (p) => p && /\d/.test(p) && !/番外/.test(p);
+    const goneRows = (from, to, sample) => {
+      let out = "";
+      for (let n = from + 1; n < to; n++) {
+        const label = sample.replace(/\d+/, n);
+        if (missing.has(label)) out += `<div class="toc-row gone"><time>${esc(label)}</time><span>保存されていません</span></div>`;
+      }
+      return out;
+    };
+    let html = "", prevNum = null;
+    groups.forEach((g) => {
+      if (byPart && counted(g.key)) {
+        if (prevNum !== null && num(g.key) > prevNum + 1) html += `<div class="panel" style="margin-top:1rem">${goneRows(prevNum, num(g.key), g.key)}</div>`;
+        prevNum = num(g.key);
+      }
+      const first = g.items[0], last = g.items[g.items.length - 1];
+      const label = byPart ? g.key : `${g.key.replace("-", "年")}月`;
+      const sub = byPart ? `${ymd(first.date)}${first.date !== last.date ? " – " + ymd(last.date).slice(5) : ""}` : `${g.items.length} 件`;
+      html += `<section class="toc-group"><h3>${esc(label)}<small>${esc(sub)}</small></h3><div class="panel" style="margin-top:0.3rem">${g.items.map((e) => {
+        let gap = "";
+        if (!byPart && counted(e.part)) {
+          if (prevNum !== null && num(e.part) > prevNum + 1) gap = goneRows(prevNum, num(e.part), e.part);
+          prevNum = num(e.part);
+        }
+        const [y, mo, d] = e.date.split("-");
+        const wd = WEEK[new Date(+y, +mo - 1, +d).getDay()];
+        const lead = (e.head || "").replace(/\s+/g, " ").trim();
+        const tag = !byPart && e.part ? `<b>${esc(e.part)}</b>` : e.title ? `<b>${esc(e.title)}</b>` : "";
+        return `${gap}<a class="toc-row" href="${oaHref({ doc: e.id })}"><time>${e.approx ? "保存 " : ""}${+mo}月${+d}日（${wd}）</time><span>${tag}${esc(lead)}</span></a>`;
+      }).join("")}</div></section>`;
+    });
+    $("main").innerHTML = html;
+    window.scrollTo(0, 0);
+  }
+
+  async function viewOADoc(id, tree, my) {
+    const data = await api("/api/oa/doc?id=" + encodeURIComponent(id));
+    if (my !== seq) return;
+    const d = data.doc;
+    if (!d) { $("main").innerHTML = `<div class="panel empty">この記事は見つかりません。</div>`; return; }
+    const src = tree.sources.find((x) => x.id === d.source) || { id: d.source, label: data.source_label };
+    $("rail").innerHTML = `<nav class="panel">${treeHtml(tree, { s: d.source, r: d.series })}</nav>`;
+    const [y, mo, dd] = d.date.split("-");
+    const wd = WEEK[new Date(+y, +mo - 1, +dd).getDay()];
+    const m = member(d.author);
+    const saved = d.wayback_ts ? `${d.wayback_ts.slice(0, 4)}.${d.wayback_ts.slice(4, 6)}.${d.wayback_ts.slice(6, 8)}` : "";
+    const navLink = (x, cls, label) => x ? `<a class="${cls}" href="${oaHref({ doc: x.id })}"><small>${label}</small>${esc(ymd(x.date))}${x.part ? "・" + esc(x.part) : ""}</a>` : `<span class="void"></span>`;
+    const nav = `<div class="r-nav">${navLink(data.prev, "prev", "← 前の記事")}<span class="mid">${data.index + 1} / ${data.count}</span>${navLink(data.next, "next", "次の記事 →")}</div>`;
+    $("head").innerHTML = `<div class="crumbs" style="margin:0.2rem 0 0"><a href="#oa">公式アーカイブ</a><span><a href="${oaHref({ s: src.id })}">${esc(srcName(src))}</a></span><span>${esc(d.category)}</span><span><a href="${oaHref({ s: src.id, r: d.series })}">${esc(d.series)}</a></span></div>`;
+    $("main").innerHTML = `<article class="panel reader" style="border-top:3px solid var(${d.author ? m.c : "--line"})">
+        <div class="r-date">${d.approx ? "保存された日 " : ""}<b>${+dd}</b>${y}年${+mo}月（${wd}）</div>
+        <h1>${esc(d.heading || d.title || d.series)}</h1>
+        <p class="r-sub">${d.author ? esc(m.short) + "・" : ""}${esc(d.series)}${d.part ? "・" + esc(d.part) : ""}${d.title && d.heading ? "・" + esc(d.title) : ""}</p>
+        <div class="r-body">${esc(d.body)}</div>
+        <div class="r-foot">${saved ? `<span>Internet Archive ${saved} 保存分</span>` : ""}<span title="元の場所">${esc((d.url || "").replace(/^https?:\/\//, "").replace(/:80(?=\/)/, ""))}</span>
+          <a href="#from=${d.date}&to=${d.date}&order=old" data-day="${d.date}" hidden>この日のスレを見る</a></div>
+      </article>${nav}`;
+    if (!d.approx) api("/api/daycount?dates=" + d.date).then((r) => {
+      const a = document.querySelector("a[data-day]"), n = r.counts[d.date] || 0;
+      if (a && n) { a.hidden = false; a.textContent = `この日のスレを見る（${fmt(n)}件）`; }
+    });
+    window.scrollTo(0, 0);
+  }
+
   function route() {
     hidePop();
     const raw = location.hash.replace(/^#/, "");
@@ -902,6 +1124,7 @@ tr:last-child td { border-bottom: none; }
     if (raw === "marks") return viewMarks();
     if (raw === "works") return viewWorks();
     if (raw === "diary" || raw.startsWith("diary&")) return viewDiary();
+    if (raw === "oa" || raw.startsWith("oa&")) return viewOA();
     if (P.get("work")) return viewWork(P.get("work"));
     if (isThreadView(P)) return viewThread(P);
     return viewSearch(P);
@@ -975,6 +1198,10 @@ tr:last-child td { border-bottom: none; }
   });
   $("qClear").addEventListener("click", () => { $("q").value = ""; $("qClear").hidden = true; searchFromInput(false); $("q").focus(); });
   document.addEventListener("keydown", (e) => {
+    if ((e.key === "ArrowLeft" || e.key === "ArrowRight") && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) {
+      const a = document.querySelector(e.key === "ArrowLeft" ? ".r-nav a.prev" : ".r-nav a.next");
+      if (a) { location.hash = a.getAttribute("href"); return; }
+    }
     if (e.key === "/" && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { e.preventDefault(); $("q").focus(); $("q").select(); }
     if (e.key === "Escape") hidePop();
   });
