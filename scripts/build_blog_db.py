@@ -341,6 +341,16 @@ def parse_playlog(page, ts=""):
 
 # ---- 見せるためのまとめ（元のページから、歌詞・セットリスト・作品を1件ずつに分ける） ----
 
+# まとめでは要らない、ページの操作用の言葉（「戻る」「前の歌詞」「トップへ」など）
+NAV_WORDS = re.compile(r"\[画像\]|戻る|(?:前|次|最新)の(?:歌詞|写真|ページ|記事|日記)|(?:トップ|TOP|top|ページの先頭|上)へ|BACK|HOME|NEXT|PREV|[→←↑↓]")
+
+
+def clean_nav(text):
+    """画像の印と操作用の言葉だけでできた行を落とす（本文の言葉は残す）。元のページには使わない。"""
+    lines = [ln for ln in (text or "").split("\n") if NAV_WORDS.sub("", ln).strip(" 　・|｜/")]
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip()
+
+
 def song_key(title):
     """曲名の表記ゆれをならす（「かげない2人」「かげない二人」、全角半角、記号、括弧の注記）。"""
     t = unicodedata.normalize("NFKC", title).lower()
@@ -455,6 +465,7 @@ def build_items(con):
         if not fn:
             continue
         for pos, it in enumerate(fn({"body": body})):
+            it["body"], it["sub"] = clean_nav(it["body"]), clean_nav(it["sub"])
             key = (it["kind"], song_key(it["title"]) if it["kind"] == "lyric" else it["title"], it["date"])
             if key in seen:
                 continue
