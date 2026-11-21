@@ -19,7 +19,34 @@ MEMBERS = ["小出祐介", "関根史織", "湯浅将平", "堀之内大介"]
 DATE_JP = re.compile(r"(20\d\d|19\d\d)\s*[年/.\-]\s*(\d{1,2})\s*[月/.\-]\s*(\d{1,2})")
 
 
+def _decode_best(raw):
+    """宣言どおりの文字コードで読んで文字化けする（半角カナだらけになる）ページは、ほかの文字コードも試して自然な方を選ぶ。"""
+    head = raw[:4000].decode("ascii", "ignore").lower()
+    m = re.search(r'charset=["\']?([\w-]+)', head)
+    declared = (m.group(1) if m else "").replace("x-sjis", "cp932").replace("shift_jis", "cp932").replace("euc-jp", "euc_jp")
+    scored = []
+    for enc in ["utf-8", "cp932", "euc_jp"]:
+        t = raw.decode(enc, errors="replace")   # \u4e00\u90e8\u3060\u3051\u58ca\u308c\u305f\u30d0\u30a4\u30c8\u304c\u3042\u308b\u30da\u30fc\u30b8\u3082\u3042\u308b\u306e\u3067\u3001\u7f6e\u304d\u63db\u3048\u3066\u6570\u3067\u6bd4\u3079\u308b
+        kana = len(re.findall(r"[\u3040-\u30ff\u4e00-\u9fff]", t))
+        half = len(re.findall(r"[\uff61-\uff9f]", t))
+        bad = t.count("\ufffd")
+        scored.append((kana - 3 * half - 5 * bad + (50 if enc == declared else 0), enc, t))
+    if not scored:
+        return None
+    scored.sort(reverse=True)
+    return scored[0][2]
+
+
 def decode(raw):
+    if raw[:2] == b"\x1f\x8b":   # 圧縮されたまま保存されたページ
+        import gzip
+        try:
+            raw = gzip.decompress(raw)
+        except Exception:
+            pass
+    best = _decode_best(raw)
+    if best is not None:
+        return best
     head = raw[:4000].decode("ascii", "ignore").lower()
     m = re.search(r'charset=["\']?([\w-]+)', head)
     cs = (m.group(1) if m else "").replace("x-sjis", "cp932").replace("shift_jis", "cp932").replace("euc-jp", "euc_jp")
@@ -459,11 +486,13 @@ def parse(source, url, page, ts=""):
         if mode == "skip":
             return [], "page"
         if mode == "lock":
-            entries = parse_lock(page)
+            entries, found = parse_lock(page)
             if entries:
                 for e in entries:
                     e.update({"category": category, "series": series})
                 return entries, "blog"
+            if found or ts[:6] > "201404":
+                return [], "page"   # ほかの授業の記事、番組が終わったあとのトップ
             category, series, mode = "特設ページ", "ベボベLOCKS! のページ", "page"
         entries = parse_cgi_diary(page) if mode == "cgi" else parse_tumblr(url, page, ts) if mode == "tumblr" else parse_page(url, page, ts)
         for e in entries:
@@ -478,13 +507,19 @@ LOCK_ENTRY = re.compile(r'<h3 class="fontArticleTitle">(.*?)</h3>\s*<p class="fo
                         r'.*?<div class="item fontArticleItem">(.*?)</div><!-- /div\.item -->', re.S)
 
 
+LOCK_SP_ENTRY = re.compile(r'<article>\s*<div class="meta">\s*<p><time>(.*?)</time></p>\s*<h3>(.*?)</h3>.*?<div class="entry">(.*?)</article>', re.S)
+LOCK_LAST = "2014-03-31"   # ベボベLOCKS! の最終回は 2014-03-25。あとは同じ仕組みのほかの授業の記事
+
+
 def parse_lock(page):
-    out = []
-    for t, d, b in LOCK_ENTRY.findall(page):
+    """戻り値 (記事, 記事の形が見つかったか)。ベボベLOCKS! の期間外の記事は捨てる。"""
+    out, found = [], False
+    for d, t, b in [(d, t, b) for t, d, b in LOCK_ENTRY.findall(page)] + LOCK_SP_ENTRY.findall(page):
+        found = True
         m = re.search(r"(20\d\d)\.(\d{1,2})\.(\d{1,2})", d)
-        if m:
+        if m and iso(*m.groups()) <= LOCK_LAST:
             out.append({"date": iso(*m.groups()), "time": "", "title": text_of(t), "body": text_of(b), "url": "", "author": ""})
-    return out
+    return out, found
 
 
 PLAYLOG_ENTRY = re.compile(r'<div class="title-area(?:-single)?">(.*?)</div>\s*<div class="article">(.*?)</div>\s*<div class="posted">\s*'
@@ -719,6 +754,8 @@ def main():
                 continue
             key_date = "" if e.get("approx") else e["date"]
             h = hashlib.sha1(f'{p["source"]}|{key_date}|{re.sub(r"\s+", "", body)[:600]}|{" ".join(u for _, u in urls)}'.encode("utf-8")).hexdigest()
+            if p["source"] == "lock" and kind == "blog":
+                h = "lock|" + e["date"] + "|" + re.sub(r"\W+", "", unicodedata.normalize("NFKC", e.get("title", "")))
             if h in seen:
                 continue
             seen.add(h)
