@@ -380,7 +380,9 @@ def parse_page(url, page, ts):
         return []
     d = re.search(r"/(20\d\d)/(\d\d)/(\d\d)/?$", url) or re.search(r"/(20\d\d)-(\d\d)-(\d\d)", url)
     date, approx = (iso(*d.groups()), False) if d else (f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}", True)
-    return [{"date": date, "time": "", "title": page_title(page), "body": txt, "url": "", "author": "", "approx": approx}]
+    title = page_title(page) or next((ln.strip()[:40] for ln in txt.splitlines()
+                                      if ln.strip() and ln.strip() != "［画像］"), "")
+    return [{"date": date, "time": "", "title": title, "body": txt, "url": "", "author": "", "approx": approx}]
 
 
 def parse_tumblr(url, page, ts):
