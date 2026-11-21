@@ -151,7 +151,9 @@ def main():
         json.dump(man, open(MANIFEST, "w", encoding="utf-8", newline="\n"), ensure_ascii=False, indent=0)
     # 一覧ページ以外は、同じURLを一度取っていればそれで足りる（保存の時期が違っても取り直さない）
     have = {p["url"] and norm_url(p["url"]) for p in man["pages"].values() if p.get("file")}
-    todo = [j for j in man["plan"] if f'{j["norm"]}|{j["digest"]}' not in man["pages"]
+    # 一時的に取れなかったページ（status 0・5xx・429）は取り直す
+    retry = {k for k, p in man["pages"].items() if not p.get("file") and p.get("status") in (0, 429, 500, 502, 503, 504)}
+    todo = [j for j in man["plan"] if (f'{j["norm"]}|{j["digest"]}' not in man["pages"] or f'{j["norm"]}|{j["digest"]}' in retry)
             and (LIST.search(j["norm"]) or j["norm"] not in have)]
     print(f"取る予定 {len(man['plan'])} ページ / 残り {len(todo)} ページ", flush=True)
     if args.list:

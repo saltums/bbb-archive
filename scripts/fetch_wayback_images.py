@@ -91,29 +91,39 @@ def main():
     man = json.load(open(IMG_MANIFEST, encoding="utf-8")) if os.path.exists(IMG_MANIFEST) else {}
     con = sqlite3.connect(os.path.join(OUT, "blogs.sqlite"))
     rows = con.execute("SELECT url, source, wayback_ts FROM images ORDER BY source, first_date").fetchall()
+    thumbs = dict(con.execute("SELECT url, thumb FROM images WHERE thumb IS NOT NULL"))
     if args.source:
         rows = [r for r in rows if r[1] in args.source.split(",")]
     con.close()  # 取得中に DB を作り直せるよう、すぐ閉じる
-    todo = [r for r in rows if r[0] not in man or (args.retry and not man[r[0]].get("file"))]
+    # 一時的に取れなかったもの（status 0・5xx・429）は毎回取り直す。--retry なら保存なし以外も全部
+    todo = [r for r in rows if r[0] not in man or (not man[r[0]].get("file") and
+            (args.retry or man[r[0]].get("status") in (0, 429, 500, 502, 503, 504)))]
     print(f"画像 {len(rows)} 枚 / 取得済み {len(rows) - len(todo)} / 残り {len(todo)}", flush=True)
     if args.list:
         return
-    found = archived([r[0] for r in todo])
+    found = archived([r[0] for r in todo] + [thumbs[r[0]] for r in todo if r[0] in thumbs])
+    via = {}
     for url, source, ts in todo:
+        if key(url) not in found and url in thumbs and key(thumbs[url]) in found:
+            via[url] = thumbs[url]   # 大きい方は残っていない。縮小版を取る
+            continue
         if key(url) not in found:
             man[url] = {"source": source, "ts": ts, "status": 404, "file": None, "note": "保存なし"}
     save(man)
-    todo = [r for r in todo if key(r[0]) in found]
+    todo = [r for r in todo if key(r[0]) in found or r[0] in via]
     print(f"保存がある画像 {len(todo)} 枚を取ります", flush=True)
     by_sha = {m["sha1"]: u for u, m in man.items() if m.get("sha1")}
     for i, (url, source, ts) in enumerate(todo, 1):
-        status, data, ctype = http(f"https://web.archive.org/web/{found[key(url)] or ts}id_/{url}")
+        src = via.get(url, url)
+        status, data, ctype = http(f"https://web.archive.org/web/{found[key(src)] or ts}id_/{src}")
         rec = {"source": source, "ts": ts, "status": status, "file": None}
+        if src != url:
+            rec["note"] = "縮小版"
         if status == 200 and data and not ctype.startswith("text/"):
             w, h, fmt = describe(data)
             if w:
                 sha = hashlib.sha1(data).hexdigest()
-                name = local_name(source, url)
+                name = local_name(source, src)
                 path = os.path.join(IMG_DIR, name)
                 os.makedirs(os.path.dirname(path), exist_ok=True)
                 open(path, "wb").write(data)

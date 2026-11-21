@@ -41,6 +41,9 @@ def img_mark(tag):
     if not m or m.group(1).startswith("data:"):
         return "［画像］"
     src = htmllib.unescape(m.group(1)).strip()
+    full = re.search(r'\sdata-full="([^"]+)"', tag.group(0))
+    if full:   # 大きい画像へのリンクで囲まれた縮小版は「大きい方<TAB>縮小版」で持つ
+        src = htmllib.unescape(full.group(1)).strip() + "\t" + src
     if src not in IMG_INDEX:
         IMG_INDEX[src] = len(IMG_SRCS)
         IMG_SRCS.append(src)
@@ -50,6 +53,8 @@ def img_mark(tag):
 def text_of(fragment):
     s = re.sub(r"<script.*?</script>|<style.*?</style>|<!--.*?-->", "", fragment, flags=re.S | re.I)
     s = re.sub(r"<br\s*/?>|</p>|</div>|<p[^>]*>", "\n", s, flags=re.I)
+    s = re.sub(r'<a\s[^>]*?href\s*=\s*["\']?([^"\'\s>]+\.(?:jpe?g|png|gif)(?:\?[^"\'\s>]*)?)["\']?[^>]*>\s*(<img\s[^>]*>)\s*</a>',
+               lambda m: m.group(2).replace("<img", f'<img data-full="{m.group(1)}"', 1), s, flags=re.I | re.S)
     s = re.sub(r"<img[^>]*>", img_mark, s, flags=re.I)
     s = re.sub(r"<[^>]+>", "", s)
     s = htmllib.unescape(s).replace("　", "　")
@@ -650,7 +655,7 @@ def main():
     -- 画像: url は元の画像のURL。file は手元の保存（data/blog-archive/images/ から）、pcloud_path は pCloud の置き場所
     CREATE TABLE images(id INTEGER PRIMARY KEY, url TEXT UNIQUE, source TEXT, first_date TEXT, wayback_ts TEXT,
       file TEXT, status INTEGER, bytes INTEGER, width INTEGER, height INTEGER, kind TEXT,
-      pcloud_path TEXT, pcloud_fileid INTEGER, uses INTEGER);
+      pcloud_path TEXT, pcloud_fileid INTEGER, uses INTEGER, thumb TEXT);
     CREATE TABLE entry_images(entry_id INTEGER, pos INTEGER, image_id INTEGER, PRIMARY KEY(entry_id, pos));
     CREATE INDEX entry_images_img ON entry_images(image_id);
     """)
@@ -698,8 +703,16 @@ def main():
                 continue
             # urls は (本文の何番目の［画像］か, 画像のURL)。取らない画像の［画像］も数に入れる
             body = tidy_lines(e["body"])
-            urls = [(k, u) for k, n in enumerate(IMG_MARK.findall(body))
-                    for u in [img_url(p["url"], IMG_SRCS[int(n)]) if n else None] if u]
+            urls, thumbs = [], {}
+            for k, n in enumerate(IMG_MARK.findall(body)):
+                if not n:
+                    continue
+                full, _, small = IMG_SRCS[int(n)].rpartition("\t")
+                big, little = img_url(p["url"], full) if full else None, img_url(p["url"], small)
+                if big or little:
+                    urls.append((k, big or little))
+                    if big and little and little != big:
+                        thumbs[big] = little
             body = re.sub(r"画像#\d+", "画像", body)
             e["title"] = IMG_MARK.sub("", e.get("title", "")).strip()
             if len(body) < 8:
@@ -719,10 +732,11 @@ def main():
             for pos, u in urls:
                 if u not in img_ids:
                     m = img_man.get(u, {})
-                    cur = con.execute("""INSERT INTO images(url,source,first_date,wayback_ts,file,status,bytes,width,height,kind,pcloud_path,pcloud_fileid,uses)
-                                         VALUES(?,?,?,?,?,?,?,?,?,?,?,?,0)""",
+                    cur = con.execute("""INSERT INTO images(url,source,first_date,wayback_ts,file,status,bytes,width,height,kind,pcloud_path,pcloud_fileid,uses,thumb)
+                                         VALUES(?,?,?,?,?,?,?,?,?,?,?,?,0,?)""",
                                       (u, p["source"], e["date"], m.get("ts") or p["ts"], m.get("file"), m.get("status"), m.get("bytes"),
-                                       m.get("width"), m.get("height"), m.get("kind"), m.get("pcloud_path"), m.get("pcloud_fileid")))
+                                       m.get("width"), m.get("height"), m.get("kind"), m.get("pcloud_path"), m.get("pcloud_fileid"),
+                                       thumbs.get(u)))
                     img_ids[u] = cur.lastrowid
                 con.execute("INSERT INTO entry_images VALUES(?,?,?)", (eid, pos, img_ids[u]))
                 con.execute("UPDATE images SET uses = uses + 1 WHERE id = ?", (img_ids[u],))
