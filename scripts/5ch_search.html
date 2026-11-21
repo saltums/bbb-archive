@@ -294,6 +294,11 @@ tr:last-child td { border-bottom: none; }
 .entry__series { font-size: 0.74rem; color: var(--faint); }
 .entry__title { margin: 0.1rem 0 0.35rem; font-size: 1.02rem; }
 .entry .body { line-height: 1.85; }
+.oa-img { display: inline-block; vertical-align: top; max-width: 100%; margin: 0.3rem 0.4rem 0.3rem 0; line-height: 0; border-radius: 6px; overflow: hidden;
+  box-shadow: 0 0 0 1px var(--line); }
+.oa-img img { display: block; max-width: 100%; height: auto; max-height: min(70vh, 32rem); width: auto; }
+.oa-img.small img { max-height: 9rem; }
+.img-ph { display: inline-block; font-size: 0.78em; color: var(--faint); border: 1px dashed var(--line); border-radius: 4px; padding: 0 0.4em; line-height: 1.6; }
 .entry .body.clip { max-height: 21em; }
 .entry__foot { display: flex; flex-wrap: wrap; gap: 0.2rem 1rem; margin-top: 0.5rem; font-size: 0.74rem; color: var(--faint); }
 .entry__foot a, .entry__foot button { font-size: 0.74rem; }
@@ -896,6 +901,24 @@ tr:last-child td { border-bottom: none; }
     if (location.hash === h) route(); else location.hash = h;
   }
 
+  // 本文の［画像］を、取れた画像に差し替える（pos は本文の何番目の［画像］か）
+  function withImages(body, imgs) {
+    const at = new Map((imgs || []).map((x) => [x.pos, x]));
+    let k = 0;
+    const html = esc(body).replace(/[［\[]画像[］\]]/g, (mk) => {
+      const x = at.get(k++);
+      if (!x) return `<span class="img-ph">［画像］</span>`;
+      if (x.kind === "ui") return "";
+      if (!x.have) return x.status === 404 || x.status === -1 ? `<span class="img-ph" title="Internet Archive に保存されていませんでした">［画像・保存なし］</span>`
+        : `<span class="img-ph" title="まだ取得していません">［画像］</span>`;
+      const small = x.w && x.h && Math.max(x.w, x.h) < 200;
+      return `<a class="oa-img${small ? " small" : ""}" href="/img/${x.id}" target="_blank" rel="noopener" title="${esc(x.pcloud || "")}"><img src="/img/${x.id}" loading="lazy" alt=""${x.w ? ` width="${x.w}" height="${x.h}"` : ""}></a>`;
+    });
+    // 画像だけの行が続くところは、空行を詰めて横に並べる
+    return html.replace(/(<\/a>|<span class="img-ph"[^>]*>[^<]*<\/span>)[ \t　]*\n[\s　]*(?=<a class="oa-img|<span class="img-ph")/g, "$1 ")
+      .replace(/\n{2,}(?=<a class="oa-img)/g, "\n");
+  }
+
   function entryHtml(e) {
     const m = member(e.author);
     const [y, mo, d] = e.date.split("-");
@@ -908,7 +931,7 @@ tr:last-child td { border-bottom: none; }
       <div>
         <div class="entry__head"><span class="entry__who">${esc(m.short)}</span>${e.series ? `<span class="entry__series">${esc(e.series)}</span>` : ""}</div>
         ${e.title ? `<h3 class="entry__title">${esc(e.title)}</h3>` : ""}
-        <div class="body${long ? " clip" : ""}">${esc(e.body)}</div>
+        <div class="body${long ? " clip" : ""}${e.images && e.images.length ? " has-img" : ""}">${withImages(e.body, e.images)}</div>
         ${long ? `<button class="link-btn" data-act="unclip" style="font-size:0.8rem;margin-top:0.3rem">続きを読む</button>` : ""}
         <div class="entry__foot">
           <a href="#from=${e.date}&to=${e.date}&order=old" title="同じ日の5chの書き込みを見る" data-day="${e.date}" hidden>この日のスレを見る</a>
@@ -981,7 +1004,7 @@ tr:last-child td { border-bottom: none; }
     if (pages > 1) html += `<div class="pager"><button data-act="dpage" data-page="${data.page - 1}" ${data.page <= 1 ? "disabled" : ""}>← 前へ</button>
       <span>${data.page} / ${fmt(pages)}</span><button data-act="dpage" data-page="${data.page + 1}" ${data.page >= pages ? "disabled" : ""}>次へ →</button></div>`;
     $("main").innerHTML = html;
-    if (data.terms.length) $("main").querySelectorAll(".entry .body, .entry__title").forEach((el) => { el.innerHTML = decorate(el.textContent, data.terms, ""); });
+    if (data.terms.length) $("main").querySelectorAll(".entry .body:not(.has-img), .entry__title").forEach((el) => { el.innerHTML = decorate(el.textContent, data.terms, ""); });
     // 同じ日に 5ch の書き込みがあるときだけ「この日のスレを見る」を件数付きで出す
     const days = [...new Set(data.entries.map((e) => e.date))];
     if (days.length) api("/api/daycount?dates=" + days.join(",")).then((r) => {
@@ -1182,7 +1205,7 @@ tr:last-child td { border-bottom: none; }
         <div class="r-date">${d.approx ? "保存された日 " : ""}<b>${+dd}</b>${y}年${+mo}月（${wd}）</div>
         <h1>${esc(d.heading || d.title || d.series)}</h1>
         <p class="r-sub">${d.author ? esc(m.short) + "・" : ""}${esc(d.series)}${d.part ? "・" + esc(d.part) : ""}${d.title && d.heading ? "・" + esc(d.title) : ""}</p>
-        <div class="r-body">${esc(d.body)}</div>
+        <div class="r-body">${withImages(d.body, data.images)}</div>
         <div class="r-foot">${saved ? `<span>Internet Archive ${saved} 保存分</span>` : ""}<span title="元の場所">${esc((d.url || "").replace(/^https?:\/\//, "").replace(/:80(?=\/)/, ""))}</span>
           <a href="#from=${d.date}&to=${d.date}&order=old" data-day="${d.date}" hidden>この日のスレを見る</a></div>
       </article>${nav}`;

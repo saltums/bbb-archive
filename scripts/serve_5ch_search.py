@@ -315,15 +315,56 @@ def diary(q):
                           GROUP BY s.id ORDER BY MIN(e.date)""").fetchall()
     authors = con.execute("""SELECT COALESCE(NULLIF(author,''),'-') a, COUNT(*) n FROM entries WHERE kind='blog'
                              GROUP BY a ORDER BY n DESC""").fetchall()
+    imgs = images_of(con, [r["id"] for r in rows])
     con.close()
     return {"total": total, "page": page, "page_size": DIARY_PAGE, "terms": terms,
-            "entries": [dict(r) for r in rows], "years": [list(r) for r in years],
+            "entries": [dict(r, images=imgs.get(r["id"], [])) for r in rows], "years": [list(r) for r in years],
             "sources": [dict(r) for r in base], "authors": [list(r) for r in authors]}
+
+
+IMG_DIR = os.path.join(ROOT, "data", "blog-archive", "images")
+IMG_TYPES = {"jpg": "image/jpeg", "jpeg": "image/jpeg", "gif": "image/gif", "png": "image/png", "webp": "image/webp", "bmp": "image/bmp"}
+
+
+def images_of(con, ids):
+    """記事ごとの画像（本文の何番目の［画像］か・大きさ・手元/pCloud にあるか）。"""
+    out = {}
+    if not ids or not con.execute("SELECT 1 FROM sqlite_master WHERE name = 'entry_images'").fetchone():
+        return out
+    marks = ",".join("?" * len(ids))
+    for r in con.execute(f"""SELECT x.entry_id, x.pos, i.id, i.width, i.height, i.kind, i.status,
+                                    i.file IS NOT NULL OR i.pcloud_fileid IS NOT NULL have, i.pcloud_path
+                             FROM entry_images x JOIN images i ON i.id = x.image_id
+                             WHERE x.entry_id IN ({marks}) ORDER BY x.entry_id, x.pos""", list(ids)):
+        out.setdefault(r[0], []).append({"pos": r[1], "id": r[2], "w": r[3], "h": r[4], "kind": r[5],
+                                         "status": r[6], "have": bool(r[7]), "pcloud": r[8]})
+    return out
+
+
+def image_file(img_id):
+    """画像の中身。手元に無ければ pCloud から（接続情報は pcloud-sorter/config.json を実行時に読む）。"""
+    con = blog_db()
+    r = con.execute("SELECT file, pcloud_fileid, url FROM images WHERE id = ?", (img_id,)).fetchone()
+    con.close()
+    if not r:
+        return None, None
+    ext = os.path.splitext((r["file"] or r["url"]).split("?")[0])[1].lstrip(".").lower()
+    ctype = IMG_TYPES.get(ext, "application/octet-stream")
+    if r["file"] and os.path.exists(os.path.join(IMG_DIR, r["file"])):
+        return open(os.path.join(IMG_DIR, r["file"]), "rb").read(), ctype
+    if r["pcloud_fileid"]:
+        import urllib.request, urllib.parse
+        cfg = json.load(open(os.path.join(os.path.dirname(ROOT), "pcloud-sorter", "config.json"), encoding="utf-8"))["pcloud"]
+        q = urllib.parse.urlencode({"fileid": r["pcloud_fileid"], "auth": cfg["token"]})
+        d = json.loads(urllib.request.urlopen(f"https://{cfg.get('api_host', 'api.pcloud.com')}/getfilelink?{q}", timeout=30).read())
+        if d.get("result") == 0:
+            return urllib.request.urlopen(f"https://{d['hosts'][0]}{d['path']}", timeout=60).read(), ctype
+    return None, None
 
 
 # 整理が済んで、確認してもらえる置き場所（ほかは取得・整理の途中）
 OA_READY = {"seiryu", "official-com", "official-net", "playlog-koide", "playlog-sekine", "playlog-syohei", "playlog-hori",
-            "livedoor", "bokuburo", "jfn", "universal", "emi", "emi2", "tumblr"}
+            "livedoor", "bokuburo", "jfn", "universal", "emi", "emi2", "emi3", "tumblr", "site29", "site31", "lock"}
 CATEGORY_ORDER = ["日記", "ブログ", "スタッフ", "メンバーのコーナー", "連載", "ラジオ", "歌詞", "お知らせ", "ライブ",
                   "ライブ・リリースの告知", "作品", "プロフィール", "メディア", "写真", "グッズ", "特設ページ", "トップページ", "その他"]
 
@@ -396,9 +437,10 @@ def oa_doc(q):
     sib = [dict(r) for r in con.execute(f"""SELECT id, date, part, title FROM entries
         WHERE source = ? AND series = ? ORDER BY date, id""", (e["source"], e["series"]))]
     label = con.execute("SELECT label FROM sources WHERE id = ?", (e["source"],)).fetchone()
+    imgs = images_of(con, [e["id"]]).get(e["id"], [])
     con.close()
     i = next(k for k, s in enumerate(sib) if s["id"] == e["id"])
-    return {"doc": dict(e), "source_label": label[0] if label else e["source"], "index": i, "count": len(sib),
+    return {"doc": dict(e), "images": imgs, "source_label": label[0] if label else e["source"], "index": i, "count": len(sib),
             "prev": sib[i - 1] if i > 0 else None, "next": sib[i + 1] if i + 1 < len(sib) else None}
 
 
@@ -502,6 +544,17 @@ class Handler(BaseHTTPRequestHandler):
         try:
             if u.path == "/":
                 self.send(open(PAGE, "rb").read(), "text/html; charset=utf-8")
+            elif u.path.startswith("/img/") and u.path[5:].isdigit():
+                data, ctype = image_file(int(u.path[5:]))
+                if data:
+                    self.send_response(200)
+                    self.send_header("Content-Type", ctype)
+                    self.send_header("Content-Length", str(len(data)))
+                    self.send_header("Cache-Control", "max-age=86400")
+                    self.end_headers()
+                    self.wfile.write(data)
+                else:
+                    self.send("no image", "text/plain; charset=utf-8", 404)
             elif u.path in ROUTES:
                 self.send(json.dumps(ROUTES[u.path](parse_qs(u.query)), ensure_ascii=False),
                           "application/json; charset=utf-8")

@@ -37,6 +37,11 @@ SOURCES = [
     ("jfn", "JFN 番組ブログ", "", "www2.jfn.co.jp/bbb/", r"/blog", r"\.(css|js|jpg|gif|png)$"),
     ("emi", "EMI のバンドページ", "", "www.toshiba-emi.co.jp/capitol/bbb/", r"\.html?$|\.php|/bbb/?$", r""),
     ("emi2", "EMI のバンドページ（emimusic）", "", "www.emimusic.jp/capitol/bbb/", r"\.html?$|\.php|/bbb/?$", r""),
+    # 特設サイト・番組（ドメインが手放されたあとの保存は別物なので、使われていた時期だけ）
+    ("site29", "特設サイト『二十九歳』baseballbear29.com", "", "baseballbear29.com/", r".", ASSETS, "2014", "2017"),
+    ("site31", "特設サイト baseballbear31.com", "", "baseballbear31.com/", r".", ASSETS, "2015", "2018"),
+    ("emi3", "EMI の特設ページ（emimusic.jp/bbb）", "", "www.emimusic.jp/bbb/", r".", ASSETS),
+    ("lock", "SCHOOL OF LOCK!『Base Ball Bear LOCKS!』", "", "www.tfm.co.jp/lock/bbb/", r".", ASSETS + r"|bbs\.html"),
 ]
 
 
@@ -76,18 +81,22 @@ def safe_name(u):
 
 # 中身が入れ替わるページ（トップ・お知らせ一覧・ライブ一覧・告知の掲示板・事務所のデータ）
 LIST = re.compile(r"(baseballbear\.(com|net)(/(index\d*\.html?|sp|top\.html?|swf/info\d*\.html|news(/index\.html)?|live(/index\.html)?|info|media|disc|disco|bio)?)?/?$)"
-                  r"|kokuchi\.cgi|/artist/json/|seesaa\.net/?$|/index-?\d*\.html$|universal-music\.co\.jp/base-ball-bear(/news)?/?$")
+                  r"|baseballbear(29|31)\.com(/index\.html|/top\.html)?/?$|lock/bbb(/index\d*\.(html|php))?/?$|kokuchi\.cgi|/artist/json/|seesaa\.net/?$|/index-?\d*\.html$|universal-music\.co\.jp/base-ball-bear(/news)?/?$")
 
 
-def plan():
+def plan(only=None):
     """取るページ: ふつうは同じURLにつき1つ（いちばん新しい保存）。
     中身が入れ替わる一覧ページは、内容が違う保存を月に1つずつ取る（過去のお知らせを取りこぼさないため）。"""
     jobs = []
-    for sid, label, author, prefix, inc, exc in SOURCES:
+    for sid, label, author, prefix, inc, exc, *span in SOURCES:
+        if only and sid not in only:
+            continue
         rows = cdx(prefix)
         time.sleep(4)
         seen = {}
         for ts, original, mime, digest in rows:
+            if span and not (span[0] <= ts[:4] <= span[1]):
+                continue
             if not any(k in mime for k in ("html", "text", "json", "javascript")):
                 continue
             if not re.search(inc, original) or (exc and re.search(exc, original)):
@@ -109,7 +118,7 @@ def plan():
 
 
 ORDER = ["seiryu", "official-diary", "playlog-koide", "playlog-sekine", "playlog-syohei", "playlog-hori", "livedoor",
-         "bokuburo", "jfn", "sma-json", "universal", "emi", "emi2", "tumblr", "official-com", "official-net", "official-bbs"]
+         "bokuburo", "jfn", "sma-json", "universal", "emi", "emi2", "emi3", "site29", "site31", "lock", "tumblr", "official-com", "official-net", "official-bbs"]
 
 
 def priority(j):
@@ -124,10 +133,18 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--list", action="store_true")
     ap.add_argument("--replan", action="store_true", help="取る予定を作り直す")
+    ap.add_argument("--add", help="この置き場所（カンマ区切り）だけ予定に足す")
     args = ap.parse_args()
     os.makedirs(RAW, exist_ok=True)
     man = json.load(open(MANIFEST, encoding="utf-8")) if os.path.exists(MANIFEST) else {"sources": {}, "pages": {}}
-    if args.replan or not man.get("plan"):
+    if args.add:
+        only = args.add.split(",")
+        print(f"保存の一覧を確認しています（{args.add}）…", flush=True)
+        known = {(j["norm"], j["digest"]) for j in man["plan"]}
+        man["plan"] = sorted(man["plan"] + [j for j in plan(only) if (j["norm"], j["digest"]) not in known], key=priority)
+        man["sources"] = {s[0]: {"label": s[1], "author": s[2], "prefix": s[3]} for s in SOURCES}
+        json.dump(man, open(MANIFEST, "w", encoding="utf-8", newline="\n"), ensure_ascii=False, indent=0)
+    elif args.replan or not man.get("plan"):
         print("保存の一覧を確認しています…", flush=True)
         man["plan"] = sorted(plan(), key=priority)
         man["sources"] = {s[0]: {"label": s[1], "author": s[2], "prefix": s[3]} for s in SOURCES}

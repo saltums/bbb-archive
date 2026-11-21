@@ -6,6 +6,8 @@ data/blog-archive/blogs.sqlite を作り直す。
   python scripts/build_blog_db.py
 """
 import collections, hashlib, html as htmllib, json, os, re, sqlite3, sys, unicodedata
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from bbb_images import IMG_MANIFEST, img_url
 
 sys.stdout.reconfigure(encoding="utf-8")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -29,10 +31,26 @@ def decode(raw):
     return raw.decode("cp932", errors="replace")
 
 
+# 画像は本文に「［画像#番号］」の印で残し、記事に入れるときに元のURLとして取り出す（本文は［画像］に戻す）
+IMG_SRCS, IMG_INDEX = [], {}
+IMG_MARK = re.compile(r"[［\[]画像(?:#(\d+))?[］\]]")
+
+
+def img_mark(tag):
+    m = re.search(r'\ssrc\s*=\s*["\']?([^"\'\s>]+)', tag.group(0), re.I)
+    if not m or m.group(1).startswith("data:"):
+        return "［画像］"
+    src = htmllib.unescape(m.group(1)).strip()
+    if src not in IMG_INDEX:
+        IMG_INDEX[src] = len(IMG_SRCS)
+        IMG_SRCS.append(src)
+    return f"［画像#{IMG_INDEX[src]}］"
+
+
 def text_of(fragment):
     s = re.sub(r"<script.*?</script>|<style.*?</style>|<!--.*?-->", "", fragment, flags=re.S | re.I)
     s = re.sub(r"<br\s*/?>|</p>|</div>|<p[^>]*>", "\n", s, flags=re.I)
-    s = re.sub(r"<img[^>]*>", "［画像］", s, flags=re.I)
+    s = re.sub(r"<img[^>]*>", img_mark, s, flags=re.I)
     s = re.sub(r"<[^>]+>", "", s)
     s = htmllib.unescape(s).replace("　", "　")
     lines = [ln.rstrip() for ln in s.split("\n")]
@@ -337,6 +355,23 @@ PAGE_RULES = [
     (r"^universal", r"/products/", "作品", "商品ページ", "", "page"),
     (r"^universal", r"/biography", "プロフィール", "バイオグラフィー", "", "page"),
     (r"^universal", r".", "トップページ", "トップページ", "", "page"),
+    # 特設サイト（ドメインが切れたあとの売り物ページは parse_page で落とす）
+    (r"^site29", r"robots\.txt|gtnjs", "", "", "", "skip"),
+    (r"^site29", r"/tour", "特設ページ", "ツアー『二十九歳』特設サイト", "", "page"),
+    (r"^site29", r".", "特設ページ", "『二十九歳』特設サイト", "", "page"),
+    (r"^site31", r"robots\.txt", "", "", "", "skip"),
+    (r"^site31", r"hub", "特設ページ", "“三十一” 小出祐介×渋谷タワレコ", "小出祐介", "page"),
+    (r"^site31", r"band-b", "特設ページ", "“三十一” バンドBについて", "", "page"),
+    (r"^site31", r".", "特設ページ", "“三十一” 特設サイト", "", "page"),
+    (r"^emi3", r"hatsukoi/sol_no", "ラジオ", "ベボベLOCKS!×「初恋」誌上放送", "", "page"),
+    (r"^emi3", r"hatsukoi", "特設ページ", "ベボベLOCKS!×「初恋」スペシャルサイト", "", "page"),
+    (r"^emi3", r"recommend", "作品", "『(WHAT IS THE) LOVE & POP?』推薦コメント", "", "page"),
+    (r"^emi3", r"zenkyoku", "特設ページ", "「全曲Tシャツ」プレゼント", "", "page"),
+    (r"^emi3", r".", "特設ページ", "EMI の特設ページ", "", "page"),
+    (r"^lock", r"onair_\d{6}", "ラジオ", "ベボベLOCKS! 放送の書き起こし", "", "page"),
+    (r"^lock", r"budokan", "ライブ", "SCHOOL OF LOCK! 武道館のレポート", "", "page"),
+    (r"^lock", r"bbs\.html|left\.html|robots", "", "", "", "skip"),
+    (r"^lock", r".", "ラジオ", "ベボベLOCKS!", "", "lock"),
     (r"^emi", r"variety/backnumber", "連載", "バラエティ（バックナンバー）", "", "page"),
     (r"^emi", r"about_band_b", "作品", "小冊子「バンドBについて」", "", "page"),
     (r"^emi", r"about_album_c|c_archive", "作品", "『C』特設ページ", "", "page"),
@@ -376,12 +411,17 @@ def parse_page(url, page, ts):
         raw_html = raw_html[m.start():]
         raw_html = re.split(r'<(?:div|footer)[^>]+(?:class|id)="(?:footer|footerWrap|local-footer|notes|social)', raw_html)[0]
     txt = tidy_lines(unicodedata.normalize("NFKC", text_of(raw_html)).replace("ご使用のブラウザはJavascriptに対応していません", ""))
-    if len(re.sub(r"\s|［画像］", "", txt)) < 20 or "ページが見つかりません" in txt:
-        return []
+    plain = len(re.sub(r"\s", "", IMG_MARK.sub("", txt)))
+    if (plain < 20 and not (plain >= 5 and IMG_MARK.search(txt))) or "ページが見つかりません" in txt:
+        return []   # 中身の無いページ（Flash だけ・404）。写真のページは短い説明でも残す
+    if re.search(r"for sale|Resources and Information|Expired or Suspended|domain .{0,40}may be|Sponsored Listings", txt + page_title(page), re.I):
+        return []   # ドメインが切れたあとの売り物・駐車ページ
     d = re.search(r"/(20\d\d)/(\d\d)/(\d\d)/?$", url) or re.search(r"/(20\d\d)-(\d\d)-(\d\d)", url)
-    date, approx = (iso(*d.groups()), False) if d else (f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}", True)
+    o = re.search(r"onair_(\d\d)(\d\d)(\d\d)", url)   # SCHOOL OF LOCK! の放送日（onair_110726 → 2011-07-26）
+    date, approx = ((iso(*d.groups()), False) if d else (iso(2000 + int(o.group(1)), o.group(2), o.group(3)), False) if o
+                    else (f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}", True))
     title = page_title(page) or next((ln.strip()[:40] for ln in txt.splitlines()
-                                      if ln.strip() and ln.strip() != "［画像］"), "")
+                                      if ln.strip() and not IMG_MARK.fullmatch(ln.strip())), "")
     return [{"date": date, "time": "", "title": title, "body": txt, "url": "", "author": "", "approx": approx}]
 
 
@@ -413,12 +453,33 @@ def parse(source, url, page, ts=""):
         _, _, category, series, author, mode = rule
         if mode == "skip":
             return [], "page"
+        if mode == "lock":
+            entries = parse_lock(page)
+            if entries:
+                for e in entries:
+                    e.update({"category": category, "series": series})
+                return entries, "blog"
+            category, series, mode = "特設ページ", "ベボベLOCKS! のページ", "page"
         entries = parse_cgi_diary(page) if mode == "cgi" else parse_tumblr(url, page, ts) if mode == "tumblr" else parse_page(url, page, ts)
         for e in entries:
             e.update({"category": category, "series": series})
             e["author"] = e.get("author") or author
         return entries, ("blog" if mode == "cgi" else "page")
     return parse_dated_text(page, ts), "page"
+
+
+# SCHOOL OF LOCK! の「ベボベLOCKS!」の授業のブログ（トップ・月ごと・1件のページ、どれも同じ形）
+LOCK_ENTRY = re.compile(r'<h3 class="fontArticleTitle">(.*?)</h3>\s*<p class="fontArticleDate">(.*?)</p>'
+                        r'.*?<div class="item fontArticleItem">(.*?)</div><!-- /div\.item -->', re.S)
+
+
+def parse_lock(page):
+    out = []
+    for t, d, b in LOCK_ENTRY.findall(page):
+        m = re.search(r"(20\d\d)\.(\d{1,2})\.(\d{1,2})", d)
+        if m:
+            out.append({"date": iso(*m.groups()), "time": "", "title": text_of(t), "body": text_of(b), "url": "", "author": ""})
+    return out
 
 
 PLAYLOG_ENTRY = re.compile(r'<div class="title-area(?:-single)?">(.*?)</div>\s*<div class="article">(.*?)</div>\s*<div class="posted">\s*'
@@ -586,7 +647,22 @@ def main():
     CREATE INDEX entries_date ON entries(date);
     CREATE INDEX entries_source ON entries(source, date);
     CREATE VIRTUAL TABLE entries_fts USING fts5(title, body, content='entries', content_rowid='id', tokenize='trigram');
+    -- 画像: url は元の画像のURL。file は手元の保存（data/blog-archive/images/ から）、pcloud_path は pCloud の置き場所
+    CREATE TABLE images(id INTEGER PRIMARY KEY, url TEXT UNIQUE, source TEXT, first_date TEXT, wayback_ts TEXT,
+      file TEXT, status INTEGER, bytes INTEGER, width INTEGER, height INTEGER, kind TEXT,
+      pcloud_path TEXT, pcloud_fileid INTEGER, uses INTEGER);
+    CREATE TABLE entry_images(entry_id INTEGER, pos INTEGER, image_id INTEGER, PRIMARY KEY(entry_id, pos));
+    CREATE INDEX entry_images_img ON entry_images(image_id);
     """)
+    img_man = json.load(open(IMG_MANIFEST, encoding="utf-8")) if os.path.exists(IMG_MANIFEST) else {}
+    synced = os.path.join(OUT, "images_pcloud.json")
+    for u, v in (json.load(open(synced, encoding="utf-8")) if os.path.exists(synced) else {}).items():
+        img_man.setdefault(u, {}).update(pcloud_path=v["path"], pcloud_fileid=v["fileid"])
+    for m in img_man.values():  # 同じ中身の画像は1枚目の pCloud の場所を使う
+        first = img_man.get(m.get("same_as") or "", {})
+        if first.get("pcloud_path") and not m.get("pcloud_path"):
+            m.update(pcloud_path=first["pcloud_path"], pcloud_fileid=first["pcloud_fileid"])
+    img_ids = {}
     seen = set()
     count = collections.Counter()
     pages = collections.Counter()
@@ -620,11 +696,16 @@ def main():
         for e in entries:
             if not e.get("date"):
                 continue
+            # urls は (本文の何番目の［画像］か, 画像のURL)。取らない画像の［画像］も数に入れる
             body = tidy_lines(e["body"])
+            urls = [(k, u) for k, n in enumerate(IMG_MARK.findall(body))
+                    for u in [img_url(p["url"], IMG_SRCS[int(n)]) if n else None] if u]
+            body = re.sub(r"画像#\d+", "画像", body)
+            e["title"] = IMG_MARK.sub("", e.get("title", "")).strip()
             if len(body) < 8:
                 continue
             key_date = "" if e.get("approx") else e["date"]
-            h = hashlib.sha1(f'{p["source"]}|{key_date}|{re.sub(r"\s+", "", body)[:600]}'.encode("utf-8")).hexdigest()
+            h = hashlib.sha1(f'{p["source"]}|{key_date}|{re.sub(r"\s+", "", body)[:600]}|{" ".join(u for _, u in urls)}'.encode("utf-8")).hexdigest()
             if h in seen:
                 continue
             seen.add(h)
@@ -634,6 +715,17 @@ def main():
                         (p["source"], author, e["date"], e.get("time", ""), e.get("title", ""), body, e.get("url") or p["url"], p["url"],
                          p["ts"], kind, e.get("series") or series_default, int(bool(e.get("approx"))),
                          e.get("category") or cat_default, e.get("part", ""), e.get("series_heading", "")))
+            eid = con.execute("SELECT last_insert_rowid()").fetchone()[0]
+            for pos, u in urls:
+                if u not in img_ids:
+                    m = img_man.get(u, {})
+                    cur = con.execute("""INSERT INTO images(url,source,first_date,wayback_ts,file,status,bytes,width,height,kind,pcloud_path,pcloud_fileid,uses)
+                                         VALUES(?,?,?,?,?,?,?,?,?,?,?,?,0)""",
+                                      (u, p["source"], e["date"], m.get("ts") or p["ts"], m.get("file"), m.get("status"), m.get("bytes"),
+                                       m.get("width"), m.get("height"), m.get("kind"), m.get("pcloud_path"), m.get("pcloud_fileid")))
+                    img_ids[u] = cur.lastrowid
+                con.execute("INSERT INTO entry_images VALUES(?,?,?)", (eid, pos, img_ids[u]))
+                con.execute("UPDATE images SET uses = uses + 1 WHERE id = ?", (img_ids[u],))
             count[p["source"]] += 1
     for sid, s in sources.items():
         con.execute("INSERT INTO sources VALUES(?,?,?,?,?,?)", (sid, s["label"], s["author"], s["prefix"], pages[sid], count[sid]))
